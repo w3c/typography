@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Authoring HTML &amp; CSS techniques</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="i18n internationalisation internationalization localisation localization translation techniques index" name="keywords" />
+<meta content="Allows you to find articles, tutorials, tests, etc at the W3C Internationalization subsite using lists of tasks." name="description" />
+<link rel="stylesheet" type="text/css" href="http://www.w3.org/International/style/level2.css" />
+<link rel="stylesheet" type="text/css" href="http://www.w3.org/International/techniques/techniques-v2.css" />
+<style>
+body { font-size: 16px; }
+h2 { margin-left: 0; margin-top: 4em; }
+h3 { margin-top: 3em; }
+h3 a { color: #006; }
+h3 a:link { color: #006; }
+h3 a:active { color: #006; }
+h3 a:visited { color: #006; }
+#toclocation .toc1 { padding-left: 0.5em; margin-top: 2em; }
+#toclocation .toc2 { padding-left: 2em; }
+.toc2 a {  color: #697FB1; }
+#toclocation ol { padding: 0; margin: 0; }
+</style>
+<script type="text/javascript" src="http://www.w3.org/International/javascript/articletoc-html5.js"></script>
+</head>
+
+
+
+<body>
+
+<!-- Top left icons -->
+<div id="topLeft"><a href="http://www.w3.org/"><img src="http://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72" /></a><a href="http://www.w3.org/International/" title="Go to the Internationalization home page."><img src="http://www.w3.org/International/icons/sitetitle.gif"
+			alt="W3C Internationalization (I18n) Activity: Making the World Wide Web truly world wide!" /></a></div>
+
+<!-- Top left links -->
+<div id="sitelinks"><a href="http://www.w3.org/International/" title="Internationalization Activity home page.">Home</a>&#xA0; <a href="http://www.w3.org/International/about" title="About the Internationalization Activity.">About</a>&#xA0; <a href="http://www.w3.org/International/about#scope" title="Groups that make up the Internationalization Activity.">Groups</a>&#xA0; <a href="http://www.w3.org/International/resource-index" title="Topic index for information on this site">Topics</a>&#xA0; <a href="http://www.w3.org/International/technique-index" title="Task-based index of i18n techniques">Techniques</a>&#xA0; <a href="http://www.w3.org/International/resources" title="Information resources on the Internationalization site.">Resources</a>&#xA0; <a href="http://www.w3.org/International/log/description" title="Information about news filters and RSS feeds for W3C Internationalization.">News</a>&#xA0;
+  &#xA0;</div>
+  
+<div class="directory">
+  <nav>
+  <h2  id="links" class="notoc"><a id="links">On this page</a></h2>
+	<div id="toclocation"> </div>
+	</nav>
+</div>
+
+
+<div class="content">
+  <h1>Improving text layout and typography on the Web and in eBooks </h1>
+<div class="section">
+<p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as  people expect around the world.
+</p><p>To that end we have experts in various parts of the world documenting layout and typographic requirements and gaps between what is needed and what is currently supported in browsers and ebook readers. 
+</p><p>The flagship document is <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/">Requirements for Japanese Text Layout</a>. The information in this document has been widely used, and the process used for creating it was extremely effective. It was developed in Japan, by a task force using mailing lists and holding meetings in japanese, then converted to english for review. It was published in both languages.
+</p><p>We now have groups working on <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//">Indic Layout Requirements</a> , <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/">Requirements for Hangul Text Layout and Typography</a> and <a rel="nofollow" class="external text" href="http://w3c.github.io/dpub-pagination/">Requirements for Latin Text Layout and Pagination</a>. There is also work taking place around <a rel="nofollow" class="external text" href="http://www.w3.org/International/groups/chinese-layout/">Chinese layout requirements</a>, and we recently heard from experts in Mongolian, Tibetan, and Uyghur who are keen to also participate in the Chinese task force and produce similar documents for their part of the world.
+</p><p>The Internationalization (i18n) Working Group at the W3C has also been working on aspects of the mutlilingual user experience. For example, improvements for bidirectional text support (Arabic, Hebrew, Thaana, etc) for HTML and CSS, and supporting the work on <a rel="nofollow" class="external text" href="http://www.w3.org/TR/predefined-counter-styles/">counter styles</a> at CSS.
+</p><p>To support local relevance of Web pages and eBook formats we need local experts to participate in gathering information in these task forces, to review the task force outputs, and to lobby or support via coding the implementation of features in browsers and ereaders.  If you are one of these people, or know some, please get in touch!  (We particularly need more information about how to handle typographic features of the Arabic script.)
+</p><p>To help, the following pulls together some W3C information on current areas of interest, with pointers to useful information. It is <b>not exhaustive</b>, and will be added to from time to time.
+</p><p>Look through the list and check whether your needs are being adequately covered. If not, write to www-international@w3.org (you need to <a rel="nofollow" class="external text" href="http://lists.w3.org/Archives/Public/www-international/">subscribe</a> first) and make the case. If the spec does cover your needs, but the browsers don't support your needs, raise bugs against the browsers.
+</div>
+  
+<section>
+<h2 id="characters_phrases"><a href="#characters_phrases">Characters &amp; phrases</a></h2>
+
+<section>
+<h3 id="graphemes"><a href="#graphemes">Identifying boundaries of graphemes, words and larger groupings</a></h3>
+<p>Does the browser correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words?  Are you able to select appropriate units, for example by double-clicking in the text, whether or not 'words' are separated by spaces? Should triple-clicking select a paragraph, etc.?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#text-segmentation">Indic Layout Requirements, Text segmentation</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://r12a.github.io/scripts/tibetan#formatting">Tibetan script notes</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="transforming_characters"><a href="#transforming_characters">Transforming characters</a></h3>
+<p>What transformations does your language need? For example, are you able to convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Are browsers able to convert between half-width and full-width presentation forms?
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#transforming">CSS3 Text, Transforming text</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="https://wiki.csswg.org/ideas/at-text-transform">(proposal) Defining Custom Text Transforms: the @text-transform rule</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/text-transform">CSS3 Text, text transform</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="letter_spacing"><a href="#letter_spacing">Letter spacing</a></h3>
+<p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for other scripts that we should add?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#letter-spacing">Indic Layout Requirements, Letter spacing</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#punc-process">Hangul Layout Requirements, Writing Process for Punctuation Marks, etc.</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#spacing">CSS3 Text, Spacing</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="quotations"><a href="#quotations">Quotations</a></h3>
+<p>What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#line_head_indent_and_line_end_indent">Japanese Layout Requirements, Line Head Indent and Line End Indent</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#processing_of_spaces_between_paragraphs">Japanese Layout Requirements, Processing of Spaces between Paragraphs</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#adjustment_of_processing_of_realm_in_block_direction">Japanese Layout Requirements, Adjustment of Processing of Realm in Block Direction</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks">Japanese Layout Requirements, Differences in Vertical and Horizontal Composition in Use of Punctuation Marks</a>
+</li>
+</ul>
+<p>See also Punctuation.
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/html5/text-level-semantics.html#the-q-element">HTML5, The q element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element">HTML5, The blockquote element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-content/#quotes">CSS3 Generated and Replaced Content, Specifying quotes with the 'quotes' property</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="bidirectional_text_direction"><a href="#bidirectional_text_direction">Bidirectional text direction</a></h3>
+<p>Is bidirectional text support adequate for scripts like Arabic, Hebrew, Thaana, etc.
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/docs/html-bidi-requirements/">Additional Requirements for Bidi in HTML</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/html5/dom.html#the-dir-attribute">HTML5, The dir attribute</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#text-direction">CSS3 Writing Modes, Inline direction and bidirectionality</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-basics">HTML5, dir basics</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-isolation">HTML5, dir isolation</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-auto">HTML5, dir=auto</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-bdo-element/results-bdo">HTML5, the bdo element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-br-element/results-br">HTML5, the br element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-pre-element/results-pre">HTML5, the pre element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-dirname-attribute/results-dirname">HTML5, the dirname attribute</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-textarea-element/results-textarea">HTML5, the textarea element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/native-user-interfaces/results-chrome">HTML5, native user interfaces</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/writing-modes-bidi">CSS3 Writing Modes, Bidi </a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="baselines_inline_alignment"><a href="#baselines_inline_alignment">Baselines &amp; inline alignment</a></h3>
+<p>Does the specification accurately and comprehensively cover requirements for baseline alignment between mixed scripts and in general?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#baseline-grids">Latin Layout Requirements, Baseline Grids</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#inline-alignment">CSS3 Writing Modes, Inline-level Alignment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-line-grid/">CSS Line Grid</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx">Mongolian script layout requirements (.ppt)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://r12a.github.io/scripts/tibetan#alignment">Tibetan script notes</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="ruby_annotation"><a href="#ruby_annotation">Ruby annotation</a></h3>
+<p>The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">Japanese Layout Requirements, Ruby and Emphasis Dots</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#positioning_of_jukugoruby">Japanese Layout Requirements, Positioning of Jukugo-ruby</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/ruby-use-cases/">Use Cases &amp; Exploratory Approaches for Ruby Markup</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element">HTML5, The ruby element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-ruby-1/">CSS3 Ruby</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/html5/the-ruby-element/results-ruby">HTML5, the ruby element and its children</a>
+</li>
+</ul>
+<p>Other links
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://rishida.net/scripts/bopomofo/ontheweb">Bopomofo on the Web</a>&#160;: phonetic annotations
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="line_decoration"><a href="#line_decoration">Line decoration</a></h3>
+<p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of strike-through may vary depending on the script. What about vertical text? Does this section cover your needs?
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-decor-3/#line-decoration">CSS3 Text Decoration, Line Decoration: Underline, Overline, and Strike-Through</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="emphasis"><a href="#emphasis">Emphasis</a></h3>
+<p>Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all.  Can you find what you need for your script in this section?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">Japanese Layout Requirements, Ruby and Emphasis Dots</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-decor-3/#emphasis-marks">CSS3 Text Decoration, Emphasis Marks</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://r12a.github.io/scripts/tibetan#emphasis">Tibetan script notes</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="fonts"><a href="#fonts">Fonts</a></h3>
+<p>This CSS3 module describes how font properties are specified and how font resources are loaded dynamically. Are there things missing for your script?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#fonts-letterfaceposn">Korean layout requirements, 'Letter Face Position in Character Frame' Standard</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#fonts-kerning">Korean layout requirements, Kerning for Hangul Fonts</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-fonts/">CSS3 Fonts</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/html-css/webfonts/results-auto">Language-based font assignment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/html-css/webfonts/results-webfonts">Webfonts</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx">Mongolian script layout requirements (.ppt)</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+
+<section>
+<h2 id="blocks_paragraphs"><a href=""="blocks_paragraphs">Blocks &amp; paragraphs</a></h2>
+
+<section>
+<h3 id="line_breaking"><a href="#line_breaking">Line breaking</a></h3>
+<p>Does CSS capture the rules about the way text in your script wraps when it hits the end of a line? Note that there are some specific rules about Chinese and Japanese, but we know that more information is needed for Korean, and for other scripts.
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#possibilities_for_linebreaking_between_characters">Japanese Layout Requirements, Possibilities for Line-breaking between Characters</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#guiding-principles-of-line-breaking-for-indian-languages">Indic Layout Requirements, Guiding principles of Line breaking for Indian languages</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#punc-process">Hangul Layout Requirements, Writing Process for Punctuation Marks, etc.</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#line-break">Hangul Layout Requirements, Line Breaking Rules</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#line-breaking">CSS3 Text, Line Breaking and Word Boundaries</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-ba">Line break, BA: Break after</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-text/line-break-opclns/results-opclns">Line break, OP, CL and NS</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-gl-wj">Non-tailorable line breaking</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-ja">Line break, Japanese</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-zh">Line break, Chinese</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/word-break">Word-break</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx">Mongolian script layout requirements (.ppt)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://r12a.github.io/scripts/tibetan#linebreak">Tibetan script notes</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="hyphenation"><a href="#hyphenation">Hyphenation</a></h3>
+<p>Is hyphenation or its alternatives correctly described when it comes to your script or language?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#hyphenation">Indic Layout Requirements, Hyphenation</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#hyphenation">Latin Layout Requirements, Hyphenation</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">Latin Layout Requirements,  The Classical Rules of Hyphenation and Pagination</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#hyphenation">CSS3 Text, Breaking Within Words</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/hyphens">Hyphenation</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx">Mongolian script layout requirements (.ppt)</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="justification"><a href="#justification">Line-end alignment and justification</a></h3>
+<p>Do the start and end values work (particularly useful for right-to-left scripts)? 
+When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? We know there are open questions here for scripts such as Korean, Arabic and Tibetan. Can you provide information?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#line_adjustment">Japanese Layout Requirements, Line Adjustment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Japanese Layout Requirements, Opportunities for Inter-character Space Reduction during Line Adjustment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_expansion_during_line_adjustment">Japanese Layout Requirements, Opportunities for Inter-character Space Expansion during Line Adjustment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#paraadjust">Hangul Layout Requirements, Paragraph Adjustment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#line-adjust">Hangul Layout Requirements, Line Adjustment Process</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#justification">Latin Layout Requirements, Justification</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#justification">CSS3 Text, Alignment and Justification</a>
+</li>
+</ul>
+<p>Tests
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/text-align">CSS3 Text, text-align, text-align-last, text-justify</a>
+</li>
+</ul>
+<p>Other links
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.tug.org/tugboat/tb27-2/tb87benatia.pdf">Arabic text justification</a> 
+</li>
+<li> <a rel="nofollow" class="external text" href="http://rishida.net/blog/?p=1059">Typography questions for HTML &amp; CSS: Arabic justification</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf">Rule-based expert system for Urdu nastaleeq justification</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf">Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://r12a.github.io/scripts/tibetan#justification">Tibetan script notes</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.chinaw3c.org/layout-workshop-report.html#talk5">Tibetan script requirements (.ppt)</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="white_space_wrapping_in_source_code"><a href="#white_space_wrapping_in_source_code">White space and wrapping in source code</a></h3>
+<p>Do the rules for transforming white space in the source text for display meet the requirements of your script?  
+This is particularly relevant for Far Eastern and South East Asian scripts, that don't use spaces between words.
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#white-space-property">CSS3 Text, White Space and Wrapping: the white-space property</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/white-space">White space</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="counters"><a href="#counters">Counters, lists, etc</a></h3>
+<p>The CSS specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct?
+We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed?
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-counter-styles/#predefined-counters">CSS3 Counter Styles</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/predefined-counter-styles/">Ready-made counter styles</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repo/results/predefined-counter-styles">CSS3 Counter Styles, predefined counters</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/predefined-counter-styles/results-predefined-counter-styles">Predefined counter styles</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="other_para_features"><a href="#other_para_features">Other paragraph features</a></h3>
+<p>Are the rules for indenting text at the start of a paragraph sufficient to support your language or script?
+Does your script allow punctuation to hang outside the text box at the start or end of a line?  If so, does this section cover your needs?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#page_wise_arrangement_of_kihonhanmen_elements">Japanese Layout Requirements, Page wise Arrangement of Kihon-hanmen Elements</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#paragraph_adjustment_rules">Japanese Layout Requirements, Paragraph Adjustment Rules</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs">Japanese Layout Requirements, Block Direction Setting Process of Lines, Paragraphs etc.</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#paraadjust">Hangul Layout Requirements, Paragraph Adjustment</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation">Latin Layout Requirements, Paragraphs and indentation</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-text-3/#edge-effects">CSS3 Text, Edge effects</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+
+<section>
+<h2 id="layout"><a href="layout">Layout &amp; pages</a></h2>
+
+<section>
+<h3 id="initial_letter"><a href="#initial_letter">Initial letter styling</a></h3>
+<p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#first-letter">Indic Layout Requirements, First Letter</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#initial-capitals">Latin Layout Requirements, Initial Capitals</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-selectors/#first-letter">CSS3 Selectors, The&#160;::first-letter pseudo-element</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-inline/#initial-letter-styling">CSS3 Inline Layout, Initial Letters</a>
+</li>
+</ul>
+<p>Tests:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-selectors/first-letter/results-first-letter">CSS3 Selectors, first-letter</a>
+</li>
+</ul>
+<p><br />
+</p>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="direction_agnostic"><a href="#direction_agnostic">Direction-agnostic layout</a></h3>
+<p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. 
+</p><p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-logical-props/">CSS Logical Properties Level 1</a>
+</li>
+</ul>
+<p><br />
+</p>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="vertical_text"><a href="#vertical_text">Vertical text</a></h3>
+<p>How well does the spec cover the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal – does that work as described?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Japanese Layout Requirements, Vertical Writing Mode and Horizontal Writing Mode</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#para-direction">Hangul Layout Requirements, Writing Direction (Horizontal Writing, Vertical Writing)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#punc-process">Hangul Layout Requirements, Writing Process for Punctuation Marks, etc.</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">CSS3 Writing Modes, Vertical Text Layout</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx">Mongolian script layout requirements (.ppt)</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="mixed_horizontal_and_vertical"><a href="#mixed_horizontal_and_vertical">Mixed horizontal and vertical text</a></h3>
+<p>The spec describes rules for embedding horizontal runs of text in vertical lines, as is often seen with numbers in Chinese, Japanese and Korean vertically-set text. Is this adequately covered?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition">Japanese Layout Requirements, Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://w3c.github.io/ilreq//#letter-spacing">Indic Layout Requirements, Vertical arrangements of characters</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#hangulromanmix">Hangul Layout Requirements, Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a>
+</li>
+</ul>
+<p>Spec links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">CSS3 Writing Modes, Glyph Composition</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="notes_footnotes"><a href="#notes_footnotes">Notes, footnotes, etc</a></h3>
+<p>Does the browser or ereader provide support for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#inline_cutting_note">Japanese Layout Requirements, Inline Cutting Note (Warichu)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#processing_of_notes">Japanese Layout Requirements, Processing of Notes</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#notes">Hangul Layout Requirements, Notes (Footnote, Endnote)</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#footnotes">Latin Layout Requirements, Footnotes</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="page_numbering_running_headers"><a href="#page_numbering_running_headers">Page numbering, running headers, etc</a></h3>
+<p>Are there special conventions for page numbering, or the way that running headers and the like are handled in your culture?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#running_heads_and_page_numbers">Japanese Layout Requirements, Running Heads and Page Numbers</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#page-number">Hangul Layout Requirements, Page Numbers</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#running-headers-and-footers">Latin Layout Requirements, Running headers and footers</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="more_page_layout_and_pagination"><a href="#more_page_layout_and_pagination">More page layout and pagination</a></h3>
+<p>Some cultures define page areas and page progression direction very differently from those in the West. Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR?
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Japanese Layout Requirements, Vertical Writing Mode and Horizontal Writing Mode</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents">Japanese Layout Requirements, Page Formats for Japanese Documents</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen">Japanese Layout Requirements, Specifying the Kihon-hanmen</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#page-layout">Hangul Layout Requirements</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text">Latin Layout Requirements, Paginating Single-Column Text </a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#heads">Latin Layout Requirements,  Heads</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">Latin Layout Requirements,  The Classical Rules of Hyphenation and Pagination</a>
+</li>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text">Latin Layout Requirements,  Paginating Single-Column Text</a>
+</li>
+</ul>
+<p>Other links:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.chinaw3c.org/layout-workshop-report.html#talk5">Tibetan script requirements (.ppt)</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+
+<section>
+<h2 id="other"><a href="other">Other</a></h2>
+
+<section>
+<h3 id="culture_specific"><a href="#culture_specific">Culture-specific features</a></h3>
+<p>Sometimes a script or language does things that are not common outside of it sphere of influence. This is a loose bag of additional items that weren't previously mentioned.
+</p><p>Requirements:
+</p>
+<ul>
+<li> <a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#other_rules_of_japanese_typesetting">Japanese Layout Requirements, Other Rules of Japanese Typesetting</a>
+</li>
+</ul>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+
+<section>
+<h3 id="what_else"><a href="#what_else">What else?</a></h3>
+<p>There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications. 
+</p><p>What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?
+</p><p><br />
+</p><p><small>If you have comments about this page, send them to ishida@w3.org.</small>
+</p>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+  
+  <hr />
+  <section>
+    <div class="smallprint">
+      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2015-05-19  12:45<!-- #EndDate --></span> GMT</p>
+      <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="/"><abbr
+						title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr
+						title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.org/"><abbr
+						title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights
+        Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+						href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in
+        accordance with our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and <a
+						href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p>
+    </div>
+  <p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+</section>
+<script type="text/javascript">if (document.getElementById('toclocation')) { createtoc(); }</script>
+</body>
+</html>
