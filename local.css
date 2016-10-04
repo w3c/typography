@@ -1,0 +1,195 @@
+@font-face {
+  font-family: NoToFu;
+  font-style: normal;
+  font-weight: 400;
+  src: url('font.woff2') format('woff2');
+}
+
+body {
+	counter-reset: requirement;
+}
+
+h2 {
+	margin-top: 3em;
+	margin-bottom: 0em;
+	}
+.head h2, #abstract h2, #sotd h2 {
+	margin-top: 0;
+	}
+h3 {
+	margin-top: 4em;
+	}
+h4  { 
+	font-size: 100%; 
+    font-weight: normal; 
+    color: #005a9c; 
+    margin-top: 2em;  
+    }
+.leadin {
+	font-weight: bold;
+	}
+
+ins { 
+	background-color: #99FF99; 
+	text-decoration: none; 
+	}
+del { 
+	display: inline; 
+	color: silver; 
+	}
+
+figure { 
+	margin-bottom: 2em; 
+}
+figcaption {
+	text-align: center;
+	margin: 0.5em 2em;
+	font-style: italic;
+	font-size: 90%;
+	}
+.figno:after {
+	content: ':\00A0  ';
+}
+
+a.termref:link {
+	color:#C60;
+	text-decoration:none;
+	border-bottom: 1px dotted #FC0; 
+	}
+a.termref:hover {
+	color:#C60;
+	text-decoration:none;
+	border-bottom: 1px dotted #FC0; 
+	}
+a.termref:visited {
+	color:#C60;
+	text-decoration:none;
+	border-bottom: 1px dotted #FC0; 
+	}
+a.termref:active {
+	color:#C60;
+	text-decoration:none;
+	border-bottom: 1px dotted #FC0; 
+	}
+
+.qterm:before, .qchar:before { content: "'"; }
+.qterm:after, .qchar:after { content: "'"; }
+.quote:before { content: '"'; }
+.quote:after { content: '"'; }
+code { 
+	color: #A52A2A; 
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", NoToFu, monospace; 
+    font-size: 100%; 
+    }
+samp, kbd { 
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", NoToFu, monospace; 
+    font-size: 100%; 
+    }
+.uname {
+	text-transform: uppercase;
+	font-size: 85%;
+	letter-spacing:0.03em;
+	}
+
+
+
+
+div.requirement { 
+    counter-increment: requirement;
+    background-color:#FFC;
+}
+
+div.requirement p:before {
+	content: "C" counter(requirement) " \00A0";
+	font-family:Tahoma, Geneva, NoToFu, sans-serif;
+	font-weight: bold;
+	font-size: smaller;
+	text-transform: capitalize;
+	color: #63F;
+}
+
+SPAN.h\e9llo { 
+      text-decoration: underline; 
+}
+
+span.tableSub {
+	font-size: 12px;
+}
+    
+span.dropExample {
+    float: left;
+    width: 6em;
+    margin-left: -6em;
+    text-align: center;
+    font-size: 200%;
+    font-family: sans-serif;
+    line-height: 80%;
+}
+    
+ul.dropExampleList {
+   list-style-type: none;
+}
+    
+li.dropExampleItem {
+   padding-left: 6em;
+   margin-bottom: 1em;
+}
+    
+
+td.b1 {
+	background-color:#FF9;
+}
+
+td.b2 {
+	background-color:#6FC;
+}
+
+td.b3 {
+	background-color: #F99;
+}
+
+td.b-clear {
+	background-color: white;
+}
+
+div.exampleBox {
+	padding: 25px;
+	border-style: solid;
+	border-width: 1px;
+	margin-left: 12pt;
+	width: 80%;
+}
+
+.markup {
+	font-family: Lucida Console,NoToFu, monospaced;
+}
+
+.shakespeare {
+  color: #03F;
+  font-weight: bold;
+  background-color: #EfEfEf;
+}
+
+.userValue {
+	font-style: italic;
+}
+
+.vocabulary {
+   color: red;
+   text-decoration: underline;
+}
+
+.sampleCharacter {
+	font-family: "NoToFu", "Code2000", "Lucida Console", sans-serif;
+}
+.reslinks {
+	margin: 0 7em 0 3em;
+	font-size: 90%;
+	}
+.reslinks dt {
+	margin-top: 1em;
+	font-style: italic;
+}
+.reslinks a[href] {
+	border: 0;
+	}
