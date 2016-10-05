@@ -103,7 +103,8 @@
   <h2>Characters &amp; phrases</h2>
   <section id="graphemes">
     <h3>Identifying boundaries of graphemes, words and larger groupings</h3>
-    <p>Does the browser correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words? Are you able to select appropriate units, for example by double-clicking in the text, whether or not 'words' are separated by spaces? Should triple-clicking select a paragraph, etc.? </p>
+    <p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
+    <p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -122,7 +123,7 @@
   </section>
   <section id="punctuation">
     <h3>Punctuation</h3>
-    <p>What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking.) </p>
+    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text. (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking.) </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -148,7 +149,7 @@
   </section>
   <section id="quotations">
     <h3>Quotations</h3>
-    <p>What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially? </p>
+    <p>Quotation marks vary from language to language, not just from script to script. Also, you should expect variations in behavior when quotation marks are nested. Furthermore, the quotation marks used for vertical Japanese text are not the same as those typically used for the same text when horizontally laid out.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -174,8 +175,15 @@
   </section>
   <section id="transforming_characters">
     <h3>Transforming characters</h3>
-    <p>What transformations does your language need? For example, are you able to convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Are browsers able to convert between half-width and full-width presentation forms? </p>
+    <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language.</p>
+    <p>In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms? </p>
     <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><a rel="nofollow" class="external text" href="http://rishida.net/blog/?p=1762"><cite>Notes on case conversion</cite></a></li>
+        </ul>
+      </dd>
     <dt>Spec links</dt>
     <dd>
       <ul>
@@ -193,7 +201,7 @@
   </section>
   <section id="letter_spacing">
     <h3>Letter spacing</h3>
-    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts. Can you provide information? Are there requirements for other scripts that we should add? </p>
+    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -213,8 +221,7 @@
   </section>
   <section id="bidirectional_text_direction">
     <h3>Bidirectional text direction</h3>
-    <p>Is bidirectional text support adequate for scripts like Arabic, Hebrew, Thaana, etc. </p>
-    <dl class="reslinks">
+    <p>Scripts whose characters are typically written right-to-left, like Arabic, Hebrew, Thaana, and so on, become bidirectional when they include numbers or text from other scripts (such as Latin acronyms). Browsers and applications need to support bidirectionality. This means supporting the Unicode Bidirectional Algorithm, but also different visual locations of line start and end, isolation of embedded strings, correct line alignment, and so forth.</p><dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
         <ul>
@@ -247,7 +254,7 @@
   </section>
   <section id="baselines_inline_alignment">
     <h3>Baselines &amp; inline alignment</h3>
-    <p>Does the specification accurately and comprehensively cover requirements for baseline alignment between mixed scripts and in general? </p>
+    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -273,7 +280,7 @@
   </section>
   <section id="ruby_annotation">
     <h3>Ruby annotation</h3>
-    <p>The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. Is is adequate for what it sets out to do? What other controls will be needed in the future? </p>
+    <p>Ruby is used for  phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. In addition to positioning annotations along the correct side of the base text, there are many fine adjustments of the annotation and base text to support.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -313,7 +320,7 @@
   </section>
   <section id="line_decoration">
     <h3>Line decoration</h3>
-    <p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of strike-through may vary depending on the script. What about vertical text? Does this section cover your needs? </p>
+    <p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of strike-through may vary depending on the script. There may also be special considerations to consider for vertical text. </p>
     <dl class="reslinks">
     <dt>Spec links</dt>
     <dd>
@@ -325,7 +332,7 @@
   </section>
   <section id="emphasis">
     <h3>Emphasis</h3>
-    <p>Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Can you find what you need for your script in this section? </p>
+    <p>Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -349,7 +356,7 @@
   </section>
   <section id="fonts">
     <h3>Fonts</h3>
-    <p>This CSS3 module describes how font properties are specified and how font resources are loaded dynamically. Are there things missing for your script? </p>
+    <p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -387,7 +394,7 @@
   <h2 id="blocks_paragraphs">Lines &amp; paragraphs</h2>
   <section id="line_breaking">
   <h3>Line breaking</h3>
-  <p>Does CSS capture the rules about the way text in your script wraps when it hits the end of a line? Note that there are some specific rules about Chinese and Japanese, but we know that more information is needed for Korean, and for other scripts. </p>
+  <p>There are some specific rules about how scripts such as Chinese, Japanese and Korean behave when a line is wrapped. For example, these scripts tend to break a line in the middle of a word (with no hyphenation). Furthermore, in these and other scripts, certain characters cannot appear at the start or end of a line, and special rules need to be applied in order to avoid this happening.</p>
   <dl class="reslinks">
     <dt>Requirements:</dt>
     <dd>
@@ -428,7 +435,7 @@
   </section>
   <section id="hyphenation">
     <h3>Hyphenation</h3>
-    <p>Is hyphenation or its alternatives correctly described when it comes to your script or language? </p>
+    <p>Some scripts don't use hyphenation, those that do have particular rules about how it should be applied.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -460,7 +467,9 @@
   </section>
   <section id="justification">
     <h3>Justification &amp; line-end alignment</h3>
-    <p>Do the start and end values work (particularly useful for right-to-left scripts)? When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script conform to a grid pattern? Can you provide information? </p>
+    <p>Since the amount of content on a line tends to vary, even if minutely, from line to line within a paragraph, typographers have come up with various methods for effective full justification —causing the text to completely fill the text—in order to create visual alignment on both edges of a paragraph.</p>
+    <p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
+    <p>This section just after the links provides a hint at some of the different strategies used in different writing systems, but the devil is very much in the detail. Furthermore, other factors such as line-break rules, hyphenation, and other inline features, have to be taken into account during justification.</p>
     <section id="justification_links">
       <h3>Links</h3>
       <dl class="reslinks">
@@ -495,7 +504,7 @@
           <ul>
             <li><a rel="nofollow" class="external text" href="https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf"><cite>Arabic text justification</cite></a> </li>
             <li><a rel="nofollow" class="external text" href="https://quod.lib.umich.edu/j/jep/3336451.0013.105/--justify-just-or-just-justify?rgn=main;view=fulltext"><cite>Justify Just or Just Justify</cite> (Arabic text justification</a>) </li>
-            <li><a rel="nofollow" class="external text" href="https://rishida.net/blog/?p=1059"><cite>Typography questions for HTML &amp; CSS: Arabic justification</cite></a></li>
+            <li><a rel="nofollow" class="external text" href="http://rishida.net/blog/?p=1059"><cite>Typography questions for HTML &amp; CSS: Arabic justification</cite></a></li>
             <li><a rel="nofollow" class="external text" href="https://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf"><cite>Rule-based expert system for Urdu nastaleeq justification</cite></a></li>
             <li><a rel="nofollow" class="external text" href="https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf"><cite>Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol</cite></a></li>
             <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#justification"><cite>Tibetan script notes</cite></a></li>
@@ -506,9 +515,6 @@
     </section>
     <section id="justification_summaries">
       <h3>High-level overview of various approaches to full justification</h3>
-      <p>Since the amount of content on a line tends to vary, even if minutely, from line to line within a paragraph, typographers have come up with various methods for effective full justification —causing the text to completely fill the text—in order to create visual alignment on both edges of a paragraph.</p>
-      <p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
-      <p>This section provides a hint at some of the different strategies used in different writing systems, but the devil is very much in the detail. Furthermore, other factors such as line-break rules, hyphenation, and other inline features, have to be taken into account during justification.</p>
       <section id="justification_zh">
         <h4>Chinese Writing System (Han Ideographs)</h4>
         <p>Historically, Chinese was written as Han ideographs, with no punctuation.
