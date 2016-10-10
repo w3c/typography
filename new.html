@@ -99,53 +99,63 @@
 	please suggest  additions, clarifications, corrections, and other improvements
 	using the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</strong>&nbsp;</p>
 </section>
+
+
+
 <section id="characters_and_phrases">
   <h2>Characters &amp; phrases</h2>
-  <section id="graphemes">
-    <h3>Identifying boundaries of graphemes, words and larger groupings</h3>
-    <p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
-    <p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
-    <dl class="reslinks">
-      <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition"><cite>Chinese Layout Requirements</cite>, Characters and Principles for Setting them in Chinese Composition</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/ilreq/#text-segmentation"><cite><cite>Indic Layout Requirements</cite></cite>, Text segmentation</a></li>
-        </ul>
-      </dd>
-      <dt>Other links</dt>
-      <dd>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#formatting"><cite><cite>Tibetan script notes</cite></cite></a></li>
-        </ul>
-      </dd>
-    </dl>
-  </section>
+
   <section id="punctuation">
     <h3>Punctuation</h3>
-    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text. (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking.) </p>
+    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
       <ul>
-        <li class="reqBox">
-          <p><cite>Chinese Layout Requirements</cite></p>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#categories_and_usage_of_punctuation_marks">Categories and Usage of Punctuation Marks</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">Sizes and positions of Punctuation Marks</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#atypical_punctuation_marks_and_their_arrangements">Atypical punctuation marks and their composition</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks"> Punctuation marks in Chinese</a></li>
+        <li class="reqBox"><cite>Chinese Layout Requirements</cite>: 
+        <ul class="linkList">
+          <li><a href="https://www.w3.org/TR/clreq/#categories_and_usage_of_punctuation_marks">Categories and Usage of Punctuation Marks</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">Sizes and positions of Punctuation Marks</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#atypical_punctuation_marks_and_their_arrangements">Atypical punctuation marks and their composition</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks">Punctuation marks in Chinese</a></li>
+          <li><a href="http://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a></li>
+          <li><a href="http://w3c.github.io/clreq/#h-unbreakable_marks_punctuation">Prohibition Rules for Unbreakable Marks</a></li>
         </ul>
         </li>
+           <li><cite>Ethiopic Layout Requirements</cite>: <a href="http://w3c.github.io/elreq/#punctuation">Punctuation</a></li>
+           <li class="reqBox"><cite>Hangul Layout Requirements</cite>:
+             <ul class="linkList">
+               <li><a href="https://w3c.github.io/klreq/#fonts-punctuationcodes">Hangul Punctuation Mark Code Ranges based on Unicode</a></li>
+               <li><a href="https://w3c.github.io/klreq/#fonts-horizvertpunct">Hangul Punctuation Marks in Horizontal and Vertical Writing</a></li>
+               <li><a href="https://w3c.github.io/klreq/#fonts-faceposnparens">Arrangement of 'Letter Face Position in Character Frame' for Full Width Parentheses</a></li>
+               <li><a href="https://w3c.github.io/klreq/#fonts-facepos-punc">Arrangement of 'Letter Face Position in Character Frame' for Punctuation</a></li>
+               <li><a href="https://w3c.github.io/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
+             </ul>
+           </li>
+           <li class="reqBox"><cite>Indic Layout Requirements</cite>:
+             <ul class="linkList">
+               <li><a href="http://w3c.github.io/ilreq/#h_guiding_principles_line_breaking_indian_languages">Guiding principles of Line breaking for Indian languages</a></li>
+             </ul>
+           </li>
+           <li class="reqBox"><cite>Japanese Layout Requirements</cite>:
+             <ul class="linkList">
+               <li><a href="https://w3c.github.io/jlreq/#characters_used_for_japanese_composition">Characters Used for Japanese Composition</a></li>
+               <li><a href="https://w3c.github.io/jlreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a></li>
+               <li><a href="https://w3c.github.io/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen">Examples of Items Jutting Out of the Kihon-hanmen</a></li>
+               <li><a href="https://w3c.github.io/jlreq/#character_positioning_based_on_kihonhanmen_design">Character Positioning based on Kihon-hanmen Design</a></li>
+               <li><a href="https://w3c.github.io/jlreq/#grouping_of_characters_and_symbols_depending_on_their_positioning">Grouping of Characters and Symbols depending on their Positioning</a></li>
+             </ul>
+           </li>
+           <li class="reqBox"><cite>Tibetan Layout Requirements</cite>:
+             <ul class="linkList">
+               <li><a href="http://w3c.github.io/tlreq/#punctuation">Tibetan Punctuation</a></li>
+               <li><a href="http://w3c.github.io/tlreq/#character_list">Character List</a></li>
+             </ul>
+           </li>
       </ul>
       </dd>
-      <!--ul>
-      <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#categories_and_usage_of_punctuation_marks">Chinese Layout Requirements, Categories and Usage of Punctuation Marks</a></li>
-      <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">Chinese Layout Requirements, Sizes and positions of Punctuation Marks</a></li>
-      <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#atypical_punctuation_marks_and_their_arrangements">Chinese Layout Requirements, Atypical punctuation marks and their composition</a></li>
-      <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks">Chinese Layout Requirements,  Punctuation marks in Chinese</a></li>
-    </ul-->
     </dl>
+      <p>See also <a href="#quotations"></a> and <a href="#line_breaking"></a>.</p>
   </section>
   <section id="quotations">
     <h3>Quotations</h3>
@@ -154,25 +164,102 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#line_head_indent_and_line_end_indent"><cite>Japanese Layout Requirements</cite>, Line Head Indent and Line End Indent</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#processing_of_spaces_between_paragraphs"><cite>Japanese Layout Requirements</cite>, Processing of Spaces between Paragraphs</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#adjustment_of_processing_of_realm_in_block_direction"><cite>Japanese Layout Requirements</cite>, Adjustment of Processing of Realm in Block Direction</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks"><cite>Japanese Layout Requirements</cite>, Differences in Vertical and Horizontal Composition in Use of Punctuation Marks</a></li>
+         	<li><cite>Chinese Layout Requirements</cite>: <a href="http://w3c.github.io/clreq/#indication_punctuation_marks">Indicator Punctuation Marks</a></li>
+          <li><cite>Ethiopic Layout Requirements</cite>: <a href="http://w3c.github.io/elreq/#quotation">Quotation</a></li>
+         <li><cite>Japanese Layout Requirements</cite>:
+            <ul class="linkList">
+              <li><a href="https://www.w3.org/TR/jlreq/#line_head_indent_and_line_end_indent">Line Head Indent and Line End Indent</a></li>
+              <li><a href="https://www.w3.org/TR/jlreq/#processing_of_spaces_between_paragraphs">Processing of Spaces between Paragraphs</a></li>
+              <li><a href="https://www.w3.org/TR/jlreq/#adjustment_of_processing_of_realm_in_block_direction">Adjustment of Processing of Realm in Block Direction</a></li>
+              <li><a href="https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks">Differences in Vertical and Horizontal Composition in Use of Punctuation Marks</a></li>
+            </ul>
+          </li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-q-element"><cite>HTML5</cite>, The q element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element"><cite>HTML5</cite>, The blockquote element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/css3-content/#quotes"><cite>CSS3 Generated and Replaced Content</cite>, Specifying quotes with the 'quotes' property</a></li>
+          <li><cite>HTML5</cite>: 
+          <ul class="linkList">
+          <li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-q-element">The q element</a></li>
+          <li><a href="https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element">The blockquote element</a></li>
+          </ul></li>
+          <li><cite>CSS3 Generated and Replaced Content</cite>: <a href="https://www.w3.org/TR/css3-content/#quotes">Specifying quotes with the 'quotes' property</a></li>
         </ul>
       </dd>
     </dl>
+<p>See also <a href="#punctuation"></a>.</p>
+  </section>
+
+  <section id="graphemes">
+    <h3>Identifying boundaries of graphemes, words and larger groupings</h3>
+    <p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
+    <p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
     <dl class="reslinks">
-      <p>See also <a href="#punctuation">Punctuation</a>. </p>
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Chinese Layout Requirements</cite>: <a href="https://www.w3.org/TR/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition">Characters and Principles for Setting them in Chinese Composition</a></li>
+          <li><cite>Indic Layout Requirements</cite>: 
+          <ul class="linkList">
+          <li><a href="http://w3c.github.io/ilreq/#h_indic_orthographic_syllable_boundaries">Indic orthographic syllable boundaries</a></li>
+          <li><a href="https://www.w3.org/TR/ilreq/#text-segmentation">Text segmentation</a></li>
+          </ul></li>
+          <li><cite>Tibetan Layout Requirements</cite>:
+            <ul class="linkList">
+              <li><a href="http://w3c.github.io/tlreq/#tibetan_syllables">Tibetan Syllables</a></li>
+              <li><a href="http://w3c.github.io/tlreq/#text_segmentation">Text Segmentation in Tibetan</a></li>
+            </ul>
+          </li>
+        </ul>
+      </dd>
     </dl>
   </section>
+
+  <section id="baselines_inline_alignment">
+    <h3>Baselines &amp; inline alignment</h3>
+    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
+    <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Latin Layout Requirements</cite>, <a href="https://www.w3.org/TR/dpub-latinreq/#baseline-grids">Baseline Grids</a></li>
+          <li><cite>Tibetan Layout Requirements</cite>: <ul class="linkList">
+          <li><a href="http://w3c.github.io/tlreq/#baseline_alignment">Baseline alignment</a></li>
+          </ul></li>
+        </ul>
+      </dd>
+      <dt>Spec links</dt>
+      <dd>
+        <ul>
+          <li><cite>CSS3 Writing Modes</cite>, <a href="https://dev.w3.org/csswg/css-writing-modes-3/#inline-alignment">Inline-level Alignment</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-line-grid/"><cite>CSS Line Grid</cite></a></li>
+        </ul>
+      </dd>
+      <dt>Other links</dt>
+      <dd>
+        <ul>
+          <li><a href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
+          <li><a href="https://r12a.github.io/scripts/tibetan#alignment"><cite>Tibetan script notes</cite></a></li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+
+  <section id="glyph_controls">
+    <h3>Glyph controls</h3>
+    <p>In some scripts, such as Arabic, it may be desirable to control the placement of glyphs such as diacritics, or to control ligation, etc.</p>
+    <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Arabic Layout Requirements</cite>: <a href="http://localhost/git/alreq/index.html#h_diacritics">Positioning diacritics relative to base characters</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+
+
   <section id="transforming_characters">
     <h3>Transforming characters</h3>
     <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language.</p>
@@ -181,24 +268,25 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://rishida.net/blog/?p=1762"><cite>Notes on case conversion</cite></a></li>
+          <li><a href="http://rishida.net/blog/?p=1762"><cite>Notes on case conversion</cite></a></li>
         </ul>
       </dd>
     <dt>Spec links</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#transforming"><cite>CSS3 Text</cite>, Transforming text</a></li>
-        <li><a rel="nofollow" class="external text" href="https://wiki.csswg.org/ideas/at-text-transform">(proposal) Defining Custom Text Transforms: the @text-transform rule</a></li>
+        <li><cite>CSS3 Text</cite>: <a href="https://dev.w3.org/csswg/css-text-3/#transforming">Transforming text</a></li>
+        <li><a href="https://wiki.csswg.org/ideas/at-text-transform">(proposal) Defining Custom Text Transforms: the @text-transform rule</a></li>
       </ul>
     </dd>
     <dt>Tests</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/text-transform"><cite>CSS3 Text</cite>, text transform</a></li>
+        <li><cite>CSS3 Text</cite>: <a href="https://www.w3.org/International/tests/repo/results/text-transform">text transform</a></li>
       </ul>
     </dd>
     </dl>
   </section>
+
   <section id="letter_spacing">
     <h3>Letter spacing</h3>
     <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
@@ -206,15 +294,15 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"><cite>Chinese Layout Requirements</cite>, Principles for Arranging Characters during Chinese Composition</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/ilreq/#letter-spacing"><cite>Indic Layout Requirements</cite>, Letter spacing</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#punc-process"><cite><cite>Hangul Layout Requirements</cite></cite>, Writing Process for Punctuation Marks, etc.</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"><cite>Chinese Layout Requirements</cite>, Principles for Arranging Characters during Chinese Composition</a></li>
+          <li><a href="https://www.w3.org/TR/ilreq/#letter-spacing"><cite>Indic Layout Requirements</cite>, Letter spacing</a></li>
+          <li><a href="https://www.w3.org/TR/klreq/#punc-process"><cite><cite>Hangul Layout Requirements</cite></cite>, Writing Process for Punctuation Marks, etc.</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#spacing"><cite>CSS3 Text</cite>, Spacing</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-text-3/#spacing"><cite>CSS3 Text</cite>, Spacing</a></li>
         </ul>
       </dd>
     </dl>
@@ -225,59 +313,35 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/docs/html-bidi-requirements/"><cite>Additional Requirements for Bidi in HTML</cite></a></li>
+          <li><a href="https://www.w3.org/International/docs/html-bidi-requirements/"><cite>Additional Requirements for Bidi in HTML</cite></a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/html5/dom.html#the-dir-attribute"><cite>HTML5</cite>, The dir attribute</a></li>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-writing-modes-3/#text-direction"><cite>CSS3 Writing Modes</cite>, Inline direction and bidirectionality</a></li>
+          <li><a href="https://www.w3.org/TR/html5/dom.html#the-dir-attribute"><cite>HTML5</cite>, The dir attribute</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-writing-modes-3/#text-direction"><cite>CSS3 Writing Modes</cite>, Inline direction and bidirectionality</a></li>
         </ul>
       </dd>
       <dt>Tests</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-basics">HTML5, dir basics</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-isolation">HTML5, dir isolation</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-auto">HTML5, dir=auto</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-bdo-element/results-bdo">HTML5, the bdo element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-br-element/results-br">HTML5, the br element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-pre-element/results-pre">HTML5, the pre element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-dirname-attribute/results-dirname">HTML5, the dirname attribute</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-textarea-element/results-textarea">HTML5, the textarea element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/native-user-interfaces/results-chrome">HTML5, native user interfaces</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/writing-modes-bidi">CSS3 Writing Modes, Bidi </a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-basics">HTML5, dir basics</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-isolation">HTML5, dir isolation</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-auto">HTML5, dir=auto</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-bdo-element/results-bdo">HTML5, the bdo element</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-br-element/results-br">HTML5, the br element</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-pre-element/results-pre">HTML5, the pre element</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-dirname-attribute/results-dirname">HTML5, the dirname attribute</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-textarea-element/results-textarea">HTML5, the textarea element</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/native-user-interfaces/results-chrome">HTML5, native user interfaces</a></li>
+          <li><a href="https://www.w3.org/International/tests/repo/results/writing-modes-bidi">CSS3 Writing Modes, Bidi </a></li>
         </ul>
       </dd>
     </dl>
   </section>
-  <section id="baselines_inline_alignment">
-    <h3>Baselines &amp; inline alignment</h3>
-    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
-    <dl class="reslinks">
-      <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/dpub-latinreq/#baseline-grids"><cite>Latin Layout Requirements</cite>, Baseline Grids</a></li>
-        </ul>
-      </dd>
-      <dt>Spec links</dt>
-      <dd>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-writing-modes-3/#inline-alignment"><cite>CSS3 Writing Modes</cite>, Inline-level Alignment</a></li>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-line-grid/"><cite>CSS Line Grid</cite></a></li>
-        </ul>
-      </dd>
-      <dt>Other links</dt>
-      <dd>
-        <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
-          <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#alignment"><cite>Tibetan script notes</cite></a></li>
-        </ul>
-      </dd>
-    </dl>
-  </section>
+
+
   <section id="ruby_annotation">
     <h3>Ruby annotation</h3>
     <p>Ruby is used for  phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. In addition to positioning annotations along the correct side of the base text, there are many fine adjustments of the annotation and base text to support.</p>
@@ -285,35 +349,35 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#interlinear_annotations"><cite>Chinese Layout Requirements</cite>,  Interlinear annotations</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots"><cite>Japanese Layout Requirements</cite>, Ruby and Emphasis Dots</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#positioning_of_jukugoruby"><cite>Japanese Layout Requirements</cite>, Positioning of Jukugo-ruby</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/ruby-use-cases/"><cite>Use Cases &amp; Exploratory Approaches for Ruby Markup</cite></a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#interlinear_annotations"><cite>Chinese Layout Requirements</cite>,  Interlinear annotations</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots"><cite>Japanese Layout Requirements</cite>, Ruby and Emphasis Dots</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#positioning_of_jukugoruby"><cite>Japanese Layout Requirements</cite>, Positioning of Jukugo-ruby</a></li>
+          <li><a href="https://www.w3.org/TR/ruby-use-cases/"><cite>Use Cases &amp; Exploratory Approaches for Ruby Markup</cite></a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element"><cite>HTML5</cite>, The ruby element</a></li>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-ruby-1/"><cite>CSS3 Ruby</cite></a></li>
+          <li><a href="https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element"><cite>HTML5</cite>, The ruby element</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-ruby-1/"><cite>CSS3 Ruby</cite></a></li>
         </ul>
       </dd>
       <dt>Tests</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/html5/the-ruby-element/results-ruby"><cite>HTML5</cite>, the ruby element and its children</a></li>
+          <li><a href="https://www.w3.org/International/tests/repository/html5/the-ruby-element/results-ruby"><cite>HTML5</cite>, the ruby element and its children</a></li>
         </ul>
       </dd>
       <p>Other links </p>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://rishida.net/scripts/bopomofo/ontheweb"><cite>Bopomofo on the Web</cite></a>&nbsp;: phonetic annotations </li>
+          <li><a href="https://rishida.net/scripts/bopomofo/ontheweb"><cite>Bopomofo on the Web</cite></a>&nbsp;: phonetic annotations </li>
         </ul>
       </dd>
       <p>Questions pending </p>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/Mail/flatten/index?subject=Emphasis+marks+and+auto-hiding+ruby+annotation&amp;list=www-style">Emphasis marks and auto-hiding ruby annotation</a></li>
+          <li><a href="https://www.w3.org/Mail/flatten/index?subject=Emphasis+marks+and+auto-hiding+ruby+annotation&amp;list=www-style">Emphasis marks and auto-hiding ruby annotation</a></li>
         </ul>
       </dd>
     </dl>
@@ -325,7 +389,7 @@
     <dt>Spec links</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-decor-3/#line-decoration"><cite>CSS3 Text Decoration</cite>, Line Decoration: Underline, Overline, and Strike-Through</a></li>
+        <li><a href="https://dev.w3.org/csswg/css-text-decor-3/#line-decoration"><cite>CSS3 Text Decoration</cite>, Line Decoration: Underline, Overline, and Strike-Through</a></li>
       </ul>
     </dd>
     </dl>
@@ -337,19 +401,19 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots"><cite>Japanese Layout Requirements</cite>, Ruby and Emphasis Dots</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots"><cite>Japanese Layout Requirements</cite>, Ruby and Emphasis Dots</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-decor-3/#emphasis-marks"><cite>CSS3 Text Decoration</cite>, Emphasis Marks</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-text-decor-3/#emphasis-marks"><cite>CSS3 Text Decoration</cite>, Emphasis Marks</a></li>
         </ul>
       </dd>
       <dt>Other links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#emphasis"><cite>Tibetan script notes</cite></a></li>
+          <li><a href="https://r12a.github.io/scripts/tibetan#emphasis"><cite>Tibetan script notes</cite></a></li>
         </ul>
       </dd>
     </dl>
@@ -361,28 +425,28 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#commonly_used_chinese_typefaces"><cite>Chinese Layout Requirements</cite>, Typefaces for Chinese Characters</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#fonts-letterfaceposn"><cite>Hangul Layout Requirements</cite>, 'Letter Face Position in Character Frame' Standard</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#fonts-kerning"><cite>Hangul Layout Requirements</cite>, Kerning for Hangul Fonts</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#commonly_used_chinese_typefaces"><cite>Chinese Layout Requirements</cite>, Typefaces for Chinese Characters</a></li>
+          <li><a href="https://www.w3.org/TR/klreq/#fonts-letterfaceposn"><cite>Hangul Layout Requirements</cite>, 'Letter Face Position in Character Frame' Standard</a></li>
+          <li><a href="https://www.w3.org/TR/klreq/#fonts-kerning"><cite>Hangul Layout Requirements</cite>, Kerning for Hangul Fonts</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-fonts/"><cite>CSS3 Fonts</cite></a></li>
+          <li><a href="https://dev.w3.org/csswg/css-fonts/"><cite>CSS3 Fonts</cite></a></li>
         </ul>
       </dd>
       <dt>Tests</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/html-css/webfonts/results-auto">Language-based font assignment</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/html-css/webfonts/results-webfonts">Webfonts</a></li>
+          <li><a href="https://www.w3.org/International/tests/html-css/webfonts/results-auto">Language-based font assignment</a></li>
+          <li><a href="https://www.w3.org/International/tests/html-css/webfonts/results-webfonts">Webfonts</a></li>
         </ul>
       </dd>
       <dt>Other links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
+          <li><a href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
         </ul>
       </dd>
     </dl>
@@ -399,36 +463,44 @@
     <dt>Requirements:</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks"><cite>Chinese Layout Requirements</cite>, Line Composition Rules for Punctuation Marks</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end"><cite>Chinese Layout Requirements</cite>, Hanging Punctuation at Line End</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#possibilities_for_linebreaking_between_characters"><cite>Japanese Layout Requirements</cite>, Possibilities for Line-breaking between Characters</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/ilreq/#guiding-principles-of-line-breaking-for-indian-languages"><cite>Indic Layout Requirements</cite>, Guiding principles of Line breaking for Indian languages</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#punc-process"><cite>Hangul Layout Requirements</cite>, Writing Process for Punctuation Marks, etc.</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#line-break"><cite>Hangul Layout Requirements</cite>, Line Breaking Rules</a></li>
+        <li><cite>Chinese Layout Requirements</cite>:<ul class="linkList">
+        <li><a href="https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a></li>
+        <li><a href="https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end">Hanging Punctuation at Line End</a></li>
+        </ul></li>
+        <li><cite>Hangul Layout Requirements</cite>:
+          <ul class="linkList">
+            <li><a href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
+            <li><a href="https://www.w3.org/TR/klreq/#line-break">Line Breaking Rules</a></li>
+            </ul>
+        </li>
+        <li><cite>Indic Layout Requirements</cite>: <a href="https://www.w3.org/TR/ilreq/#guiding-principles-of-line-breaking-for-indian-languages">Guiding principles of Line breaking for Indian languages</a></li>
+        <li><cite>Japanese Layout Requirements</cite>: <a href="https://www.w3.org/TR/jlreq/#possibilities_for_linebreaking_between_characters">Possibilities for Line-breaking between Characters</a></li>
+        <li><cite>Tibetan Layout Requirements</cite>:<ul class="linkList">
+        <li><a href="http://w3c.github.io/tlreq/#line_breaking">Line breaking</a></li>
+        </ul></li>
       </ul>
     </dd>
     <dt>Spec links:</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#line-breaking"><cite>CSS3 Text</cite>, Line Breaking and Word Boundaries</a></li>
+        <li><cite>CSS3 Text</cite>: <a href="https://dev.w3.org/csswg/css-text-3/#line-breaking">Line Breaking and Word Boundaries</a></li>
       </ul>
     </dd>
     <dt>Tests: </dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-ba">Line break, BA: Break after</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/css3-text/line-break-opclns/results-opclns">Line break, OP, CL and NS</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-gl-wj">Non-tailorable line breaking</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-ja">Line break, Japanese</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-zh">Line break, Chinese</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/word-break">Word-break</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-ba">Line break, BA: Break after</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/css3-text/line-break-opclns/results-opclns">Line break, OP, CL and NS</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-gl-wj">Non-tailorable line breaking</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-ja">Line break, Japanese</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-zh">Line break, Chinese</a></li>
+        <li><a href="https://www.w3.org/International/tests/repo/results/word-break">Word-break</a></li>
       </ul>
     </dd>
     <dt>Other links:</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
-        <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#linebreak"><cite>Tibetan script notes</cite></a></li>
+        <li><a href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
       </ul>
     </dd>
   </dl>
@@ -440,27 +512,29 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/ilreq/#hyphenation"><cite>Indic Layout Requirements</cite>, Hyphenation</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/dpub-latinreq/#hyphenation"><cite>Latin Layout Requirements</cite>, Hyphenation</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination"><cite>Latin Layout Requirements</cite>,  The Classical Rules of Hyphenation and Pagination</a></li>
+          <li><cite>Indic Layout Requirements</cite>: <a href="https://www.w3.org/TR/ilreq/#hyphenation">Hyphenation</a></li>
+          <li><cite>Latin Layout Requirements</cite>:<ul class="linkList">
+          <li><a href="https://www.w3.org/TR/dpub-latinreq/#hyphenation">Hyphenation</a></li>
+          <li><a href="https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
+          </ul></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#hyphenation"><cite>CSS3 Text</cite>, Breaking Within Words</a></li>
+          <li><cite>CSS3 Text</cite>: <a href="https://dev.w3.org/csswg/css-text-3/#hyphenation">Breaking Within Words</a></li>
         </ul>
       </dd>
       <dt>Tests</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/hyphens">Hyphenation</a></li>
+          <li><a href="https://www.w3.org/International/tests/repo/results/hyphens">Hyphenation</a></li>
         </ul>
       </dd>
       <dt>Other links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
+          <li><a href="https://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
         </ul>
       </dd>
     </dl>
@@ -476,39 +550,52 @@
         <dt>Requirements</dt>
         <dd>
           <ul>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks">Chinese Layout Requirements, Line Composition Rules for Punctuation Marks</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition">Chinese Layout Requirements, Composition of Chinese and Western Mixed Texts</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#line_adjustment"><cite>Japanese Layout Requirements</cite>, Line Adjustment</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_reduction_during_line_adjustment"><cite>Japanese Layout Requirements</cite>, Opportunities for Inter-character Space Reduction during Line Adjustment</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_expansion_during_line_adjustment"><cite>Japanese Layout Requirements</cite>, Opportunities for Inter-character Space Expansion during Line Adjustment</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#paraadjust"><cite>Hangul Layout Requirements</cite>, Paragraph Adjustment</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#line-adjust"><cite>Hangul Layout Requirements</cite>, Line Adjustment Process</a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/dpub-latinreq/#justification"><cite>Latin Layout Requirements</cite>, Justification</a></li>
-            <li><a href="https://w3c.github.io/elreq/#ethiopic_justification"><cite>Ethiopic Layout Requirements</cite>, Justification</a></li>
+            <li><cite>Arabic Layout Requirements</cite>:
+<ul class="linkList">
+                <li><a href="http://w3c.github.io/alreq/index.html#h_justification"><cite>Justification</cite></a></li>
+              </ul>
+            </li>
+            <li>Arabic articles:
+              <ul class="linkList">
+                <li><a href="https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf"><cite>Arabic text justification</cite></a></li>
+                <li><a href="https://quod.lib.umich.edu/j/jep/3336451.0013.105/--justify-just-or-just-justify?rgn=main;view=fulltext"><cite>Justify Just or Just Justify</cite></a></li>
+                <li><a href="http://rishida.net/blog/?p=1059"><cite>Typography questions for HTML &amp; CSS: Arabic justification</cite></a></li>
+                <li><a href="https://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf"><cite>Rule-based expert system for Urdu nastaleeq justification</cite></a></li>
+              </ul>
+            </li>
+            <li><cite>Chinese Layout Requirements</cite>:
+              <ul class="linkList">
+            <li><a href="https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a></li>
+            <li><a href="https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition">Composition of Chinese and Western Mixed Texts</a></li>
+            </ul></li>
+            <li><cite>Ethiopic Layout Requirements</cite>: <a href="https://w3c.github.io/elreq/#ethiopic_justification">Justification</a></li>
+            <li>Ethiopic articles: <a href="https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf"><cite>Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol</cite></a></li>
+            <li><cite>Hangul Layout Requirements</cite>:
+              <ul class="linkList">
+                <li><a href="https://www.w3.org/TR/klreq/#paraadjust">Paragraph Adjustment</a></li>
+                <li><a href="https://www.w3.org/TR/klreq/#line-adjust">Line Adjustment Process</a></li>
+              </ul>
+            </li>
+            <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
+            <li><a href="https://www.w3.org/TR/jlreq/#line_adjustment">Line Adjustment</a></li>
+            <li><a href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Opportunities for Inter-character Space Reduction during Line Adjustment</a></li>
+            <li><a href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_expansion_during_line_adjustment">Opportunities for Inter-character Space Expansion during Line Adjustment</a></li>
+            </ul></li>
+            <li><cite>Latin Layout Requirements</cite>: <a href="https://www.w3.org/TR/dpub-latinreq/#justification">Justification</a></li>
+            <li><cite>Tibetan Layout Requirements</cite>: <a href="http://w3c.github.io/tlreq/#punctuation_marks">Justification</a></li>
+            <li>Tibetan articles: <a href="https://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
           </ul>
         </dd>
         <dt>Spec links</dt>
         <dd>
           <ul>
-            <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#justification"><cite>CSS3 Text</cite>, Alignment and Justification</a></li>
+            <li><cite>CSS3 Text</cite>: <a href="https://dev.w3.org/csswg/css-text-3/#justification">Alignment and Justification</a></li>
           </ul>
         </dd>
         <dt>Tests </dt>
         <dd>
           <ul>
-            <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/text-align"><cite>CSS3 Text</cite>, text-align, text-align-last, text-justify</a></li>
-          </ul>
-        </dd>
-        <dt>Other links</dt>
-        <dd>
-          <ul>
-            <li><a rel="nofollow" class="external text" href="https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf"><cite>Arabic text justification</cite></a> </li>
-            <li><a rel="nofollow" class="external text" href="https://quod.lib.umich.edu/j/jep/3336451.0013.105/--justify-just-or-just-justify?rgn=main;view=fulltext"><cite>Justify Just or Just Justify</cite> (Arabic text justification</a>) </li>
-            <li><a rel="nofollow" class="external text" href="http://rishida.net/blog/?p=1059"><cite>Typography questions for HTML &amp; CSS: Arabic justification</cite></a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf"><cite>Rule-based expert system for Urdu nastaleeq justification</cite></a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf"><cite>Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol</cite></a></li>
-            <li><a rel="nofollow" class="external text" href="https://r12a.github.io/scripts/tibetan#justification"><cite>Tibetan script notes</cite></a></li>
-            <li><a rel="nofollow" class="external text" href="https://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
+            <li><cite>CSS3 Text</cite>: <a href="https://www.w3.org/International/tests/repo/results/text-align">text-align, text-align-last, text-justify</a></li>
           </ul>
         </dd>
       </dl>
@@ -729,13 +816,13 @@
     <dt>Spec links</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#white-space-property"><cite>CSS3 Text</cite>, White Space and Wrapping: the white-space property</a></li>
+        <li><a href="https://dev.w3.org/csswg/css-text-3/#white-space-property"><cite>CSS3 Text</cite>, White Space and Wrapping: the white-space property</a></li>
       </ul>
     </dd>
     <dt>Tests</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/white-space">White space</a></li>
+        <li><a href="https://www.w3.org/International/tests/repo/results/white-space">White space</a></li>
       </ul>
     </dd>
     </dl>
@@ -747,15 +834,15 @@
     <dt>Spec links</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-counter-styles/#predefined-counters"><cite>CSS3 Counter Styles</cite></a></li>
-        <li><a rel="nofollow" class="external text" href="https://w3c.github.io/predefined-counter-styles/"><cite>Ready-made counter styles</cite></a></li>
+        <li><a href="https://dev.w3.org/csswg/css-counter-styles/#predefined-counters"><cite>CSS3 Counter Styles</cite></a></li>
+        <li><a href="https://w3c.github.io/predefined-counter-styles/"><cite>Ready-made counter styles</cite></a></li>
       </ul>
     </dd>
     <dt>Tests</dt>
     <dd>
       <ul>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repo/results/predefined-counter-styles"><cite>CSS3 Counter Styles</cite>, predefined counters</a></li>
-        <li><a rel="nofollow" class="external text" href="https://www.w3.org/International/tests/repository/predefined-counter-styles/results-predefined-counter-styles"><cite>Predefined counter styles</cite></a></li>
+        <li><a href="https://www.w3.org/International/tests/repo/results/predefined-counter-styles"><cite>CSS3 Counter Styles</cite>, predefined counters</a></li>
+        <li><a href="https://www.w3.org/International/tests/repository/predefined-counter-styles/results-predefined-counter-styles"><cite>Predefined counter styles</cite></a></li>
       </ul>
     </dd>
     </dl>
@@ -767,19 +854,19 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end"><cite>Chinese Layout Requirements</cite>, Hanging Punctuation at Line End</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/clreq/#paragraph_adjustment_rules"><cite>Chinese Layout Requirements</cite>, Paragraph Adjustment Rules</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#page_wise_arrangement_of_kihonhanmen_elements"><cite>Japanese Layout Requirements</cite>, Page wise Arrangement of Kihon-hanmen Elements</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#paragraph_adjustment_rules"><cite>Japanese Layout Requirements</cite>, Paragraph Adjustment Rules</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs"><cite>Japanese Layout Requirements</cite>, Block Direction Setting Process of Lines, Paragraphs etc.</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/klreq/#paraadjust"><cite>Hangul Layout Requirements</cite>, Paragraph Adjustment</a></li>
-          <li><a rel="nofollow" class="external text" href="https://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation"><cite>Latin Layout Requirements</cite>, Paragraphs and indentation</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end"><cite>Chinese Layout Requirements</cite>, Hanging Punctuation at Line End</a></li>
+          <li><a href="https://www.w3.org/TR/clreq/#paragraph_adjustment_rules"><cite>Chinese Layout Requirements</cite>, Paragraph Adjustment Rules</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#page_wise_arrangement_of_kihonhanmen_elements"><cite>Japanese Layout Requirements</cite>, Page wise Arrangement of Kihon-hanmen Elements</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#paragraph_adjustment_rules"><cite>Japanese Layout Requirements</cite>, Paragraph Adjustment Rules</a></li>
+          <li><a href="https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs"><cite>Japanese Layout Requirements</cite>, Block Direction Setting Process of Lines, Paragraphs etc.</a></li>
+          <li><a href="https://www.w3.org/TR/klreq/#paraadjust"><cite>Hangul Layout Requirements</cite>, Paragraph Adjustment</a></li>
+          <li><a href="https://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation"><cite>Latin Layout Requirements</cite>, Paragraphs and indentation</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="https://dev.w3.org/csswg/css-text-3/#edge-effects"><cite>CSS3 Text</cite>, Edge effects</a></li>
+          <li><a href="https://dev.w3.org/csswg/css-text-3/#edge-effects"><cite>CSS3 Text</cite>, Edge effects</a></li>
         </ul>
       </dd>
     </dl>
@@ -794,37 +881,27 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/ilreq/#first-letter"><cite>Indic Layout Requirements</cite>, First Letter</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#initial-capitals"><cite>Latin Layout Requirements</cite>, Initial Capitals</a></li>
+          <li><a href="http://www.w3.org/TR/ilreq/#first-letter"><cite>Indic Layout Requirements</cite>, First Letter</a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#initial-capitals"><cite>Latin Layout Requirements</cite>, Initial Capitals</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-selectors/#first-letter"><cite>CSS3 Selectors</cite>, The&nbsp;::first-letter pseudo-element</a></li>
-          <li><a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-inline/#initial-letter-styling"><cite>CSS3 Inline Layout</cite>, Initial Letters</a></li>
+          <li><a href="http://www.w3.org/TR/css3-selectors/#first-letter"><cite>CSS3 Selectors</cite>, The&nbsp;::first-letter pseudo-element</a></li>
+          <li><a href="http://dev.w3.org/csswg/css-inline/#initial-letter-styling"><cite>CSS3 Inline Layout</cite>, Initial Letters</a></li>
         </ul>
       </dd>
       <dt>Tests</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/International/tests/repository/css3-selectors/first-letter/results-first-letter">CSS3 Selectors, first-letter</a></li>
+          <li><a href="http://www.w3.org/International/tests/repository/css3-selectors/first-letter/results-first-letter">CSS3 Selectors, first-letter</a></li>
         </ul>
       </dd>
     </dl>
   </section>
-  <section id="direction_agnostic">
-    <h3>Direction-agnostic layout</h3>
-    <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. </p>
-    <dl class="reslinks">
-    <dt>Spec links</dt>
-    <dd>
-      <ul>
-        <li><a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-logical-props/"><cite>CSS Logical Properties Level 1</cite></a></li>
-      </ul>
-    </dd>
-    </dl>
-  </section>
+  
+  
   <section id="vertical_text">
     <h3>Vertical text</h3>
     <p>How well does the spec cover the requirements for vertically oriented text? What about if you mix vertical text with scripts that are normally only horizontal – does that work as described? </p>
@@ -832,22 +909,22 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/clreq/#writing_modes"><cite>Chinese Layout Requirements</cite>, Writing Mode</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"><cite>Japanese Layout Requirements</cite>, Vertical Writing Mode and Horizontal Writing Mode</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#para-direction"><cite>Hangul Layout Requirements</cite>, Writing Direction (Horizontal Writing, Vertical Writing)</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#punc-process"><cite>Hangul Layout Requirements</cite>, Writing Process for Punctuation Marks, etc.</a></li>
+          <li><a href="http://www.w3.org/TR/clreq/#writing_modes"><cite>Chinese Layout Requirements</cite>, Writing Mode</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"><cite>Japanese Layout Requirements</cite>, Vertical Writing Mode and Horizontal Writing Mode</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#para-direction"><cite>Hangul Layout Requirements</cite>, Writing Direction (Horizontal Writing, Vertical Writing)</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#punc-process"><cite>Hangul Layout Requirements</cite>, Writing Process for Punctuation Marks, etc.</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout"><cite>CSS3 Writing Modes</cite>, Vertical Text Layout</a></li>
+          <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout"><cite>CSS3 Writing Modes</cite>, Vertical Text Layout</a></li>
         </ul>
       </dd>
       <dt>Other links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
+          <li><a href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
         </ul>
       </dd>
     </dl>
@@ -859,15 +936,15 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition"><cite>Japanese Layout Requirements</cite>, Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/ilreq/#letter-spacing"><cite>Indic Layout Requirements</cite>, Vertical arrangements of characters</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#hangulromanmix"><cite>Hangul Layout Requirements</cite>, Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition"><cite>Japanese Layout Requirements</cite>, Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a></li>
+          <li><a href="http://www.w3.org/TR/ilreq/#letter-spacing"><cite>Indic Layout Requirements</cite>, Vertical arrangements of characters</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#hangulromanmix"><cite>Hangul Layout Requirements</cite>, Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout"><cite>CSS3 Writing Modes</cite>, Glyph Composition</a></li>
+          <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout"><cite>CSS3 Writing Modes</cite>, Glyph Composition</a></li>
         </ul>
       </dd>
     </dl>
@@ -879,10 +956,10 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#inline_cutting_note"><cite>Japanese Layout Requirements</cite>, Inline Cutting Note (Warichu)</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#processing_of_notes"><cite>Japanese Layout Requirements</cite>, Processing of Notes</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#notes"><cite>Hangul Layout Requirements</cite>, Notes (Footnote, Endnote)</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#footnotes"><cite>Latin Layout Requirements</cite>, Footnotes</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#inline_cutting_note"><cite>Japanese Layout Requirements</cite>, Inline Cutting Note (Warichu)</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#processing_of_notes"><cite>Japanese Layout Requirements</cite>, Processing of Notes</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#notes"><cite>Hangul Layout Requirements</cite>, Notes (Footnote, Endnote)</a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#footnotes"><cite>Latin Layout Requirements</cite>, Footnotes</a></li>
         </ul>
       </dd>
     </dl>
@@ -894,9 +971,9 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#running_heads_and_page_numbers"><cite>Japanese Layout Requirements</cite>, Running Heads and Page Numbers</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#page-number"><cite>Hangul Layout Requirements</cite>, Page Numbers</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#running-headers-and-footers"><cite>Latin Layout Requirements</cite>, Running headers and footers</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#running_heads_and_page_numbers"><cite>Japanese Layout Requirements</cite>, Running Heads and Page Numbers</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#page-number"><cite>Hangul Layout Requirements</cite>, Page Numbers</a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#running-headers-and-footers"><cite>Latin Layout Requirements</cite>, Running headers and footers</a></li>
         </ul>
       </dd>
     </dl>
@@ -908,23 +985,23 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/clreq/#type_area"><cite>Chinese Layout Requirements</cite>, The Type Area (or Printing Area)</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows"><cite>Chinese Layout Requirements</cite>, Handling of Widows and Orphans</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/clreq/#handling_of_headings"><cite>Chinese Layout Requirements</cite>, Headings &amp; Page Breaks</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"><cite>Japanese Layout Requirements</cite>, Vertical Writing Mode and Horizontal Writing Mode</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents"><cite>Japanese Layout Requirements</cite>, Page Formats for Japanese Documents</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen"><cite>Japanese Layout Requirements</cite>, Specifying the Kihon-hanmen</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/klreq/#page-layout"><cite>Hangul Layout Requirements</cite></a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text"><cite>Latin Layout Requirements</cite>, Paginating Single-Column Text </a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#heads"><cite>Latin Layout Requirements</cite>,  Heads</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination"><cite>Latin Layout Requirements</cite>,  The Classical Rules of Hyphenation and Pagination</a></li>
-          <li><a rel="nofollow" class="external text" href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text"><cite>Latin Layout Requirements</cite>,  Paginating Single-Column Text</a></li>
+          <li><a href="http://www.w3.org/TR/clreq/#type_area"><cite>Chinese Layout Requirements</cite>, The Type Area (or Printing Area)</a></li>
+          <li><a href="http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows"><cite>Chinese Layout Requirements</cite>, Handling of Widows and Orphans</a></li>
+          <li><a href="http://www.w3.org/TR/clreq/#handling_of_headings"><cite>Chinese Layout Requirements</cite>, Headings &amp; Page Breaks</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"><cite>Japanese Layout Requirements</cite>, Vertical Writing Mode and Horizontal Writing Mode</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents"><cite>Japanese Layout Requirements</cite>, Page Formats for Japanese Documents</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen"><cite>Japanese Layout Requirements</cite>, Specifying the Kihon-hanmen</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#page-layout"><cite>Hangul Layout Requirements</cite></a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text"><cite>Latin Layout Requirements</cite>, Paginating Single-Column Text </a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#heads"><cite>Latin Layout Requirements</cite>,  Heads</a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination"><cite>Latin Layout Requirements</cite>,  The Classical Rules of Hyphenation and Pagination</a></li>
+          <li><a href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text"><cite>Latin Layout Requirements</cite>,  Paginating Single-Column Text</a></li>
         </ul>
       </dd>
       <dt>Other links</dt>
       <dd>
         <ul>
-          <li><a rel="nofollow" class="external text" href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
+          <li><a href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
         </ul>
       </dd>
     </dl>
