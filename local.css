@@ -193,3 +193,8 @@ div.exampleBox {
 .reslinks a[href] {
 	border: 0;
 	}
+.linkList { margin: 0; padding: 0; display: inline; }
+.linkList li { display: inline; list-style-type: none; }
+.linkList li:first-child:before { content: ''; }
+.linkList li:before { content: ' \2022  '; }
+	
