@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta content="i18n internationalisation internationalization localisation localization translation techniques index" name="keywords" />
 <meta content="Allows you to find articles, tutorials, tests, etc at the W3C Internationalization subsite using lists of tasks." name="description" />
-<link rel="stylesheet" type="text/css" href="https://www.w3.org/International/style/level2.css" />
-<link rel="stylesheet" type="text/css" href="https://www.w3.org/International/techniques/techniques-v2.css" />
+<link rel="stylesheet" type="text/css" href="/International/style/level2.css" />
+<link rel="stylesheet" type="text/css" href="/International/techniques/techniques-v2.css" />
 <style>
 body { font-size: 16px; }
 h2 { margin-left: 0; margin-top: 4em; }
@@ -20,8 +20,14 @@ h3 a:visited { color: #006; }
 #toclocation .toc2 { padding-left: 2em; }
 .toc2 a {  color: #697FB1; }
 #toclocation ol { padding: 0; margin: 0; }
+
+.flexContainer { vertical-align: top; display: flex; flex-flow: row nowrap; }
+.flexContainer h3 { margin:0 1em 0 0; flex: 2; }
+.flexContainer > p { flex: 3; }
+.flexContainer > div { flex: 3; }
+.flexContainer p a { white-space: nowrap; font-style: italic; }
 </style>
-<script type="text/javascript" src="https://www.w3.org/International/javascript/articletoc-html5.js"></script>
+<script type="text/javascript" src="/International/javascript/articletoc-html5.js"></script>
 </head>
 
 
@@ -29,11 +35,11 @@ h3 a:visited { color: #006; }
 <body>
 
 <!-- Top left icons -->
-<div id="topLeft"><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72" /></a><a href="https://www.w3.org/International/" title="Go to the Internationalization home page."><img src="https://www.w3.org/International/icons/sitetitle.gif"
+<div id="topLeft"><a href="https://www.w3.org/"><img src="/Icons/w3c_home" alt="W3C" height="48" width="72" /></a><a href="/International/" title="Go to the Internationalization home page."><img src="/International/icons/sitetitle.gif"
 			alt="W3C Internationalization (I18n) Activity: Making the World Wide Web truly world wide!" /></a></div>
 
 <!-- Top left links -->
-<div id="sitelinks"><a href="https://www.w3.org/International/" title="Internationalization Activity home page.">Home</a>&#xA0; <a href="https://www.w3.org/International/about" title="About the Internationalization Activity.">About</a>&#xA0; <a href="https://www.w3.org/International/about#scope" title="Groups that make up the Internationalization Activity.">Groups</a>&#xA0; <a href="https://www.w3.org/International/resource-index" title="Topic index for information on this site">Topics</a>&#xA0; <a href="https://www.w3.org/International/technique-index" title="Task-based index of i18n techniques">Techniques</a>&#xA0; <a href="https://www.w3.org/International/resources" title="Information resources on the Internationalization site.">Resources</a>&#xA0; <a href="https://www.w3.org/International/log/description" title="Information about news filters and RSS feeds for W3C Internationalization.">News</a>&#xA0;
+<div id="sitelinks"><a href="/International/" title="Internationalization Activity home page.">Home</a>&#xA0; <a href="/International/about" title="About the Internationalization Activity.">About</a>&#xA0; <a href="/International/about#scope" title="Groups that make up the Internationalization Activity.">Groups</a>&#xA0; <a href="/International/resource-index" title="Topic index for information on this site">Topics</a>&#xA0; <a href="/International/technique-index" title="Task-based index of i18n techniques">Techniques</a>&#xA0; <a href="/International/resources" title="Information resources on the Internationalization site.">Resources</a>&#xA0; <a href="/International/log/description" title="Information about news filters and RSS feeds for W3C Internationalization.">News</a>&#xA0;
   &#xA0;</div>
   
 <div class="directory">
@@ -50,163 +56,145 @@ h3 a:visited { color: #006; }
 <p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as  people expect around the world.
 </p><p>To that end we have experts in various parts of the world documenting layout and typographic requirements and gaps between what is needed and what is currently supported in browsers and ebook readers. 
 </p>
-<p>The mainstay of this work is a series of documents describing requirements for text layout and typography support on the Web and in digital publications. The documents cover Japanese, Korean, Chinese, Latin, Arabic, Ethiopic, Tibetan, various Indic scripts, and hopefully soon Mongolian and other scripts. In addition, there are other documents looking at specific aspects what is needed to properly represent content for local speakers of the many languages around the world. See a <a href="https://www.w3.org/International/layout">list of relevant work in this area</a>.</p>
+<p>The mainstay of this work is a series of documents describing requirements for text layout and typography support on the Web and in digital publications. The documents cover Japanese, Korean, Chinese, Latin, Arabic, Ethiopic, Tibetan, various Indic scripts, and hopefully soon Mongolian and other scripts. In addition, there are other documents looking at specific aspects what is needed to properly represent content for local speakers of the many languages around the world. See a <a href="/International/layout">list of relevant work in this area</a>.</p>
 <p>This page is a checklist of items to consider when describing typography for a given script. It can be used by someone setting up a layout requirements document, but may also be useful for other situations.</p>
 <p>Each item in the checklist points to a W3C document that lists links to known requirements, spec text, tests, and articles. If you want to raise an issue or comment against this page, use the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</p>
 </section>
   
+
+
+
+<section>
+<h2 id="overview"><a href="#overview">Script overview</a></h2>
+
+<p>This section should be just high level and introductory.  It should give an overall picture of how the script works and leave discussion of specific typographic features and how they work to the later sections. This section is aimed at descriptive text and text that provides context in which to understand later sections – the later sections typically look at how to implement interactive features of typographic design.</p>
+
+<section class="flexContainer">
+<h3 id="overview_encoding"><a href="#overview_encoding">Encoding considerations</a></h3>
+<p>Are there any particular encoding issues to consider for this script?</p>
+</section>
+<section class="flexContainer">
+  <h3 id="overview_cursive"><a href="#overview_cursive">Main features of the script</a></h3>
+<p>Are glyphs in the script regularly joined up, as in Arabic, or not? Are there other special features, such as stacking, syllabic clusters and conjuncts, etc. Is there a set of characters used for special purposes, such as transcription? Are multiple scripts used? What are the basic directional features of the script? Is the script written right-to-left, or bidirectionally?  Is is written vertically? If so, can it also be written horizontally, what is the frequency with which it is written one way or the other, and which side is the first line on? Are there special considerations about page layout that should be described briefly at this point, eg. Japanese kihon-hanmen?</p>
+</section>
+
+<section class="flexContainer">
+<h3 id="overview_fonts"><a href="#overview_fonts">Fonts and font styles</a></h3>
+<p>What are key fonts and or font styles used for this script? Are there standard fallback fonts in use? Does the script use fixed-width font glyphs, proportionally-spaced fonts, or a combination?</p>
+</section>
+
+<section class="flexContainer">
+<h3 id="overview_punctuation"><a href="#overview_punctuation">Punctuation</a></h3>
+<p>What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.)</p>
+</section>
+
+<section class="flexContainer">
+<h3 id="overview_symbols"><a href="#overview_symbols">Symbols</a></h3>
+<p>Does the script use special symbols that are worth noting, eg. head marks in Tibetan?</p>
+</section>
+
+<section class="flexContainer">
+<h3 id="overview_numbers"><a href="#overview_numbers">Numbers and digits</a></h3>
+<p>Does the script have its own set of number digits?  Does the numbering system use base-10, or some other type of base?</p>
+</section>
+
+</section>
+
 <section>
 <h2 id="characters_phrases"><a href="#characters_phrases">Characters &amp; phrases</a></h2>
 
-<section>
+<section class="flexContainer">
 <h3 id="graphemes"><a href="#graphemes">Identifying boundaries of graphemes, words and larger groupings</a></h3>
-<p>Does the browser correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words?  Are you able to select appropriate units, for example by double-clicking in the text, whether or not 'words' are separated by spaces? Should triple-clicking select a paragraph, etc.?
-</p>
-<p><a href="index#graphemes">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<p>What are the basic units of the text, and how are they demarcated, eg. characters, character sequences, syllables, or words?  Are spaces or different symbols used between 'words'? Is it important to treat clusters of characters as a single unit? What should happen if you double- or triple-click in the text, whether or not 'words' are separated by spaces?
+<a href="index#graphemes">more ...</a>.</p>
 </section>
 
 
-<section>
-<h3 id="punctuation"><a href="#punctuation">Punctuation</a></h3>
-<p>What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking.)
-</p>
-<p><a href="index#punctuation">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
-</section>
-
-<section>
+<section class="flexContainer">
 <h3 id="quotations"><a href="#quotations">Quotations</a></h3>
 <p>What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially?
-</p>
-<p><a href="index#quotations">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#quotations">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="transforming_characters"><a href="#transforming_characters">Transforming characters</a></h3>
 <p>What transformations does your language need? For example, are you able to convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Are browsers able to convert between half-width and full-width presentation forms?
-</p>
-<p><a href="index#transforming_characters">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#transforming_characters">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="letter_spacing"><a href="#letter_spacing">Letter spacing</a></h3>
 <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for other scripts that we should add?
-</p>
-<p><a href="index#letter_spacing">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#letter_spacing">more ...</a>.</p>
 </section>
-
-<section>
-<h3 id="bidirectional_text_direction"><a href="#bidirectional_text_direction">Bidirectional text direction</a></h3>
-<p>Is bidirectional text support adequate for scripts like Arabic, Hebrew, Thaana, etc.
-</p>
-<p><a href="index#bidirectional_text_direction">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
-</section>
-
-<section>
-<h3 id="baselines_inline_alignment"><a href="#baselines_inline_alignment">Baselines &amp; inline alignment</a></h3>
+<section class="flexContainer">
+  <h3 id="baselines_inline_alignment"><a href="#baselines_inline_alignment">Baselines &amp; inline alignment</a></h3>
 <p>Does the specification accurately and comprehensively cover requirements for baseline alignment between mixed scripts and in general?
-</p>
-<p><a href="index#baselines_inline_alignment">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#baselines_inline_alignment">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="ruby_annotation"><a href="#ruby_annotation">Ruby annotation</a></h3>
 <p>The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future?
-</p>
-<p><a href="index#ruby_annotation">Get more information</a>.</p>
-<p>Questions pending
-</p>
-<ul>
-<li><a rel="nofollow" class="external text" href="https://www.w3.org/Mail/flatten/index?subject=Emphasis+marks+and+auto-hiding+ruby+annotation&list=www-style">Emphasis marks and auto-hiding ruby annotation</a></li>
-</ul>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#ruby_annotation">more ...</a>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="line_decoration"><a href="#line_decoration">Line decoration</a></h3>
 <p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of strike-through may vary depending on the script. What about vertical text? Does this section cover your needs?
-</p>
-<p><a href="index#line_decoration">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#line_decoration">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="emphasis"><a href="#emphasis">Emphasis</a></h3>
 <p>Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all.  Can you find what you need for your script in this section?
-</p>
-<p><a href="index#emphasis">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#emphasis">more ...</a>.</p>
 </section>
 
-<section>
-<h3 id="fonts"><a href="#fonts">Fonts</a></h3>
-<p>This CSS3 module describes how font properties are specified and how font resources are loaded dynamically. Are there things missing for your script?
-</p>
-<p><a href="index#fonts">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
-</section>
 </section>
 
 
 <section>
 <h2 id="blocks_paragraphs"><a href="blocks_paragraphs">Blocks &amp; paragraphs</a></h2>
 
-<section>
+<section class="flexContainer">
 <h3 id="line_breaking"><a href="#line_breaking">Line breaking</a></h3>
 <p>Does CSS capture the rules about the way text in your script wraps when it hits the end of a line? Note that there are some specific rules about Chinese and Japanese, but we know that more information is needed for Korean, and for other scripts.
-</p>
-<p><a href="index#line_breaking">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#line_breaking">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="hyphenation"><a href="#hyphenation">Hyphenation</a></h3>
 <p>Is hyphenation or its alternatives correctly described when it comes to your script or language?
-</p>
-<p><a href="index#hyphenation">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#hyphenation">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="justification"><a href="#justification">Justification &amp; line-end alignment</a></h3>
 <p>Do the start and end values work (particularly useful for right-to-left scripts)? 
-When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script conform to a grid pattern? Can you provide information?
-</p>
-<p><a href="index#justification">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script conform to a grid pattern? 
+Does your script allow punctuation to hang outside the text box at the start or end of a line?
+<a href="index#justification">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="white_space_wrapping_in_source_code"><a href="#white_space_wrapping_in_source_code">White space and wrapping in source code</a></h3>
 <p>Do the rules for transforming white space in the source text for display meet the requirements of your script?  
 This is particularly relevant for Far Eastern and South East Asian scripts, that don't use spaces between words.
-</p>
-<p><a href="index#white_space_wrapping_in_source_code">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#white_space_wrapping_in_source_code">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="counters"><a href="#counters">Counters, lists, etc</a></h3>
 <p>The CSS specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct?
 We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed?
-</p>
-<p><a href="index#counters">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#counters">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="other_para_features"><a href="#other_para_features">Other paragraph features</a></h3>
 <p>Are the rules for indenting text at the start of a paragraph sufficient to support your language or script?
-Does your script allow punctuation to hang outside the text box at the start or end of a line?  If so, does this section cover your needs?
-</p>
-<p><a href="index#other_para_features">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#other_para_features">more ...</a>.</p>
 </section>
 </section>
 
@@ -214,64 +202,48 @@ Does your script allow punctuation to hang outside the text box at the start or 
 <section>
 <h2 id="layout"><a href="layout">Layout &amp; pages</a></h2>
 
-<section>
+<section class="flexContainer">
 <h3 id="initial_letter"><a href="#initial_letter">Initial letter styling</a></h3>
 <p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps?
+<a href="index#initial_letter">more ...</a>.<br />
 </p>
-<p><a href="index#initial_letter">Get more information</a>.</p>
-<p><br />
-</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="direction_agnostic"><a href="#direction_agnostic">Direction-agnostic layout</a></h3>
 <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. 
+<a href="index#direction_agnostic">more ...</a>.<br />
 </p>
-<p><a href="index#direction_agnostic">Get more information</a>.</p>
-<p><br />
-</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="vertical_text"><a href="#vertical_text">Vertical text</a></h3>
 <p>How well does the spec cover the requirements for vertically oriented text?  What about if you mix vertical text with scripts that are normally only horizontal – does that work as described?
-</p>
-<p><a href="index#vertical_text">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#vertical_text">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="mixed_horizontal_and_vertical"><a href="#mixed_horizontal_and_vertical">Mixed horizontal and vertical text</a></h3>
 <p>The spec describes rules for embedding horizontal runs of text in vertical lines, as is often seen with numbers in Chinese, Japanese and Korean vertically-set text. Is this adequately covered?
-</p>
-<p><a href="index#mixed_horizontal_and_vertical">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#mixed_horizontal_and_vertical">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="notes_footnotes"><a href="#notes_footnotes">Notes, footnotes, etc</a></h3>
 <p>Does the browser or ereader provide support for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture?
-</p>
-<p><a href="index#notes_footnotes">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#notes_footnotes">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="page_numbering_running_headers"><a href="#page_numbering_running_headers">Page numbering, running headers, etc</a></h3>
 <p>Are there special conventions for page numbering, or the way that running headers and the like are handled in your culture?
-</p>
-<p><a href="index#page_numbering_running_headers">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#page_numbering_running_headers">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="more_page_layout_and_pagination"><a href="#more_page_layout_and_pagination">More page layout and pagination</a></h3>
 <p>Some cultures define page areas and page progression direction very differently from those in the West. Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR?
-</p>
-<p><a href="index#more_page_layout_and_pagination">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#more_page_layout_and_pagination">more ...</a>.</p>
 </section>
 </section>
 
@@ -279,19 +251,16 @@ Does your script allow punctuation to hang outside the text box at the start or 
 <section>
 <h2 id="other"><a href="other">Other</a></h2>
 
-<section>
+<section class="flexContainer">
 <h3 id="culture_specific"><a href="#culture_specific">Culture-specific features</a></h3>
 <p>Sometimes a script or language does things that are not common outside of it sphere of influence. This is a loose bag of additional items that weren't previously mentioned.
-</p>
-<p><a href="index#culture_specific">Get more information</a>.</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
+<a href="index#culture_specific">more ...</a>.</p>
 </section>
 
-<section>
+<section class="flexContainer">
 <h3 id="what_else"><a href="#what_else">What else?</a></h3>
 <p>There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications.</p>
 <p>What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?</p>
-<p style="font-size: 60%; text-align: right;"><a href="#topLeft">Back to top</a></p>
 </section>
 </section>
   
@@ -299,7 +268,7 @@ Does your script allow punctuation to hang outside the text box at the start or 
   <section>
     <div class="smallprint">
 	<p>If you have comments about this page, send them to ishida@w3.org.</p>
-      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2016-10-04  19:54<!-- #EndDate --></span> GMT</p>
+      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2016-10-10  13:20<!-- #EndDate --></span> GMT</p>
       <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="/"><abbr
 						title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr
 						title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.org/"><abbr
