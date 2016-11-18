@@ -248,7 +248,7 @@
 
   <section id="glyph_controls">
     <h3>Glyph controls</h3>
-    <p>In some scripts, such as Arabic, it may be desirable to control the placement of glyphs such as diacritics, or to control ligation, etc.</p>
+    <p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -263,7 +263,7 @@
   <section id="transforming_characters">
     <h3>Transforming characters</h3>
     <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language.</p>
-    <p>In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms? </p>
+    <p>In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -289,7 +289,7 @@
 
   <section id="letter_spacing">
     <h3>Letter spacing</h3>
-    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
+    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -479,7 +479,8 @@
   <h2 id="blocks_paragraphs">Lines &amp; paragraphs</h2>
   <section id="line_breaking">
   <h3>Line breaking</h3>
-  <p>There are some specific rules about how scripts such as Chinese, Japanese and Korean behave when a line is wrapped. For example, these scripts tend to break a line in the middle of a word (with no hyphenation). Furthermore, in these and other scripts, certain characters cannot appear at the start or end of a line, and special rules need to be applied in order to avoid this happening.</p>
+  <p>There are some specific rules about how scripts such as Chinese, Japanese and Korean behave when a line is wrapped. For example, these scripts tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words.</p>
+  <p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
   <dl class="reslinks">
     <dt>Requirements:</dt>
     <dd>
@@ -528,7 +529,7 @@
   </section>
   <section id="hyphenation">
     <h3>Hyphenation</h3>
-    <p>Some scripts don't use hyphenation, those that do have particular rules about how it should be applied.</p>
+    <p>Some scripts don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -861,7 +862,7 @@
 
   <section id="counters">
     <h3>Counters, lists, etc</h3>
-    <p>The CSS specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct? We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed? </p>
+    <p>The CSS specification describes a  set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. It also provides a generic mechanism for content authors to create their own counter styles. One has to consider not only the characters and algorithms to be used (numeric, alphabetic, additive, etc), but also what the separator or other associated marks look like.</p>
     <dl class="reslinks">
     <dt>Spec links</dt>
     <dd>
@@ -883,7 +884,7 @@
   
   <section id="other_para_features">
     <h3>Other paragraph features</h3>
-    <p>Are the rules for indenting text at the start of a paragraph sufficient to support your language or script? Does your script allow punctuation to hang outside the text box at the start or end of a line? If so, does this section cover your needs? </p>
+    <p>Some scripts have particular rules about indenting text at the start of a paragraph, or indeed whether that's normal. Some allow punctuation to hang outside the text box at the start or end of a line. There may be other aspects of how paragraphs are presented that vary from script to script, or need to be controlled by the content author.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -914,65 +915,52 @@
   <h2>Layout &amp; pages</h2>
   <section id="vertical_text">
     <h3>Vertical text</h3>
-    <p>How well does the spec cover the requirements for vertically oriented text? What about if you mix vertical text with scripts that are normally only horizontal – does that work as described? </p>
+    <p>There are special requirements for vertically oriented text. For example, it's common for content authors to want to mix short horizontal runs of text, such as 2-digit numbers, in a vertical column (tate chu yoko). It's also important to provide appropriate support for text in scripts that are normally only horizontal. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
         <ul>
           <li><cite>Chinese Layout Requirements</cite>: <a href="http://www.w3.org/TR/clreq/#writing_modes">Writing Mode</a></li>
-          <li><cite>Japanese Layout Requirements</cite>: <a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a></li>
+          <li><cite>Indic Layout Requirements</cite>: <a href="http://www.w3.org/TR/ilreq/#letter-spacing">Vertical arrangements of characters</a></li>
+          <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
+          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition">Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a></li>
+          </ul></li>
           <li><cite>Hangul Layout Requirements</cite>:<ul class="linkList">
           <li><a href="http://www.w3.org/TR/klreq/#para-direction">Writing Direction (Horizontal Writing, Vertical Writing)</a></li>
           <li><a href="http://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
+          <li><a href="http://www.w3.org/TR/klreq/#hangulromanmix">Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a></li>
+          </ul></li>
+          <li>Mongolian information:<ul class="linkList">
+          <li><a href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
           </ul></li>
         </ul>
       </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
-          <li><cite>CSS3 Writing Modes</cite>: <a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">Vertical Text Layout</a></li>
-        </ul>
-      </dd>
-      <dt>Other links</dt>
-      <dd>
-        <ul>
-          <li><a href="http://www.w3.org/2014/Talks/0911-Beihang-ZhReqWorkshop/Mongolian.pptx"><cite>Mongolian script layout requirements</cite> (.ppt)</a></li>
-        </ul>
-      </dd>
-    </dl>
-  </section>
-  <section id="mixed_horizontal_and_vertical">
-    <h3>Mixed horizontal and vertical text</h3>
-    <p>The spec describes rules for embedding horizontal runs of text in vertical lines, as is often seen with numbers in Chinese, Japanese and Korean vertically-set text. Is this adequately covered? </p>
-    <dl class="reslinks">
-      <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><cite>Japanese Layout Requirements</cite>: <a href="http://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition">Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a></li>
-          <li><cite>Indic Layout Requirements</cite>: <a href="http://www.w3.org/TR/ilreq/#letter-spacing">Vertical arrangements of characters</a></li>
-          <li><cite>Hangul Layout Requirements</cite>: <a href="http://www.w3.org/TR/klreq/#hangulromanmix">Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a></li>
-        </ul>
-      </dd>
-      <dt>Spec links</dt>
-      <dd>
-        <ul>
-          <li><cite>CSS3 Writing Modes</cite>: <a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">Glyph Composition</a></li>
+          <li><cite>CSS3 Writing Modes</cite>:<ul class="linkList">
+          <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">Vertical Text Layout</a></li>
+          <li><a href="http://dev.w3.org/csswg/css-writing-modes-3/#intro-text-layout">Glyph Composition</a></li>
+          </ul></li>
         </ul>
       </dd>
     </dl>
   </section>
   <section id="notes_footnotes">
     <h3>Notes, footnotes, etc</h3>
-    <p>Does the browser or ereader provide support for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture? </p>
+    <p>Support for notes, footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to represent notes inline or to link to footnotes.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><cite>Japanese Layout Requirements</cite>: <a href="http://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a></li>
-          <li><cite>Japanese Layout Requirements</cite>: <a href="http://www.w3.org/TR/jlreq/#processing_of_notes">Processing of Notes</a></li>
+          <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
+          <li><a href="http://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a></li>
+          <li><a href="http://www.w3.org/TR/jlreq/#processing_of_notes">Processing of Notes</a></li>
+          </ul></li>
           <li><cite>Hangul Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="http://www.w3.org/TR/klreq/#notes">Notes (Footnote, Endnote)</a></li>
-          <li><a href="http://www.w3.org/TR/dpub-latinreq/#footnotes">Footnotes</a></li>
+            <li><a href="http://www.w3.org/TR/klreq/#notes">Notes (Footnote, Endnote)</a></li>
+            <li><a href="http://www.w3.org/TR/dpub-latinreq/#footnotes">Footnotes</a></li>
           </ul></li>
         </ul>
       </dd>
@@ -980,7 +968,7 @@
   </section>
   <section id="page_numbering_running_headers">
     <h3>Page numbering, running headers, etc</h3>
-    <p>Are there special conventions for page numbering, or the way that running headers and the like are handled in your culture? </p>
+    <p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -994,7 +982,7 @@
   </section>
   <section id="more_page_layout_and_pagination">
     <h3>More page layout and pagination</h3>
-    <p>Some cultures define page areas and page progression direction very differently from those in the West. Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR? </p>
+    <p>Some cultures define page areas and page progression direction very differently from those in the West. For example, the size of the Japanese kihon-hanmen, or main text block, is traditionally established by counting character cells, and margin space is then defined by the remaining space.  In right-to-left scripts, pages also progress from right to left.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -1004,8 +992,8 @@
           <li><a href="http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows">Handling of Widows and Orphans</a></li>
           <li><a href="http://www.w3.org/TR/clreq/#handling_of_headings">Headings &amp; Page Breaks</a></li>
           </ul></li>
-          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"><cite>Japanese Layout Requirements</cite>: Vertical Writing Mode and Horizontal Writing Mode</a></li>
           <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
+          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a></li>
           <li><a href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents">Page Formats for Japanese Documents</a></li>
           <li><a href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen">Specifying the Kihon-hanmen</a></li>
           </ul></li>
@@ -1016,7 +1004,7 @@
           <li><a href="http://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
           <li><a href="http://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text">Paginating Single-Column Text</a></li>
           </ul></li>
-          <li>Tibetan links: <a href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
+          <li>Tibetan information: <a href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
         </ul>
       </dd>
     </dl>
@@ -1025,19 +1013,19 @@
 <section>
   <h2 id="changeLog" class="informative">Changes Since the Last Published
     Version</h2>
-  <p>The following changes have been made since the <a href="http://www.w3.org/TR/2014/WD-charmod-norm-20140715/Overview.html">Editor's
+  <!--p>The following changes have been made since the <a href="http://www.w3.org/TR/2014/WD-charmod-norm-20140715/Overview.html">Editor's
     Draft</a> of @@@@: </p>
   <ul>
     <li>@@@ changes go here.</li>
-  </ul>
-  <p>See the <a href="https://github.com/w3c/string-search/commits/gh-pages">github
+  </ul-->
+  <p>See the <a href="https://github.com/w3c/typography/commits/gh-pages/index.html">github
     commit log</a> for more details.</p>
 </section>
-<section>
+<!--<section>
   <h2 id="Acknowledgements" class="informative">Acknowledgements</h2>
   <p>The W3C Internationalization Working Group and Interest Group, as well
-    as others, provided many comments and suggestions. The Working Group
-    would like to thank: @@@ names go here. </p>
-</section>
+    as others, provided  comments and suggestions.The Working Group
+    would like to thank: @@@ names go here.</p>
+</section>-->
 </body>
 </html>
