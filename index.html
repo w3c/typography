@@ -90,7 +90,12 @@
   <h2>Introduction</h2>
   <p>The W3C and browser implementers need to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as users expect.</p>
   <p>To that end experts in various parts of the world are documenting layout and typographic requirements, as well as gaps between what is needed and what is currently supported in browsers and ebook readers. (See a <a href="https://www.w3.org/International/layout">list of relevant work in this area</a> that is supported by the W3C Internationalization groups.)</p>
-  <p>This page points browser implementers and specification developers to information about how to support features of scripts or writing systems from around the world, and also points to relevant information in specifications, to tests, and to useful articles and papers. It is not exhaustive, and will be added to from time to time. </p>
+  <p>This page points browser implementers and specification developers to information about how to support features of scripts or writing systems from around the world, and also points to relevant information in specifications, to tests, and to useful articles and papers. It is not exhaustive, and will be added to from time to time.</p>
+  <p>The <em>Issues</em> links point to ongoing discussions of two types:</p>
+  <ol>
+    <li><strong>Requests for information</strong> are pointers to requests for more information about how one or more scripts work.</li>
+    <li><strong>Implementation requests</strong> are pointers to requests for implementation of a particular script feature in a technology.</li>
+  </ol>
   <p><strong class="advisement"> Additional information and references are hereby solicited;
 	please suggest  additions, clarifications, corrections, and other improvements
 	using the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</strong>&nbsp;</p>
@@ -219,7 +224,7 @@
       <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><cite>Arabic Layout Requirements</cite>: <a href="http://localhost/git/alreq/index.html#h_diacritics">Positioning diacritics relative to base characters</a></li>
+          <li><cite>Arabic Layout Requirements</cite>: <a href="http://w3c.github.io/alreq/index.html#h_diacritics">Positioning diacritics relative to base characters</a></li>
         </ul>
       </dd>
     </dl>
@@ -254,8 +259,8 @@
   </section>
 
   <section id="letter_spacing">
-    <h3>Letter spacing</h3>
-    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
+    <h3>Inline spacing</h3>
+    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters. Another aspect of inline-spacing relates to separation of characters or items in text. For example, French uses spaces before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -265,18 +270,22 @@
           <li><cite>Hangul Layout Requirements</cite>: <a href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
         </ul>
       </dd>
+    <dt>Issues</dt>
+    <dd>
+      <!--ul>
+        <li>CSS3,  <a href="https://github.com/w3c/csswg-drafts/issues/318">[css-text-4] Clarify text-spacing: punctuation</a></li>
+      </ul-->
+      <ul>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Ainfo-req">Requests for information</a></li>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Aimpl-req">Implementation requests</a></li>
+      </ul>
+    </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
           <li><cite>CSS3 Text</cite>: <a href="https://dev.w3.org/csswg/css-text-3/#spacing">Spacing</a></li>
         </ul>
       </dd>
-    <dt>Issues</dt>
-    <dd>
-      <ul>
-        <li>CSS3,  <a href="https://github.com/w3c/csswg-drafts/issues/318">[css-text-4] Clarify text-spacing: punctuation</a></li>
-      </ul>
-    </dd>
     </dl>
   </section>
 
@@ -296,6 +305,13 @@
           <li>Japanese information: <a href="https://www.w3.org/TR/ruby-use-cases/"><cite>Use Cases &amp; Exploratory Approaches for Ruby Markup</cite></a></li>
         </ul>
       </dd>
+      <dt>Issues </dt>
+      <dd>
+        <ul>
+          <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Ainfo-req">Requests for information</a></li>
+          <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Aimpl-req">Implementation requests</a></li>
+        </ul>
+      </dd>
       <dt>Spec links</dt>
       <dd>
         <ul>
@@ -309,12 +325,13 @@
           <li><a href="https://www.w3.org/International/tests/repository/html5/the-ruby-element/results-ruby"><cite>HTML5</cite>, the ruby element and its children</a></li>
         </ul>
       </dd>
-      <dt>Questions pending </dt>
+      <!--dt>Questions pending </dt>
       <dd>
         <ul>
           <li><a href="https://www.w3.org/Mail/flatten/index?subject=Emphasis+marks+and+auto-hiding+ruby+annotation&amp;list=www-style">Emphasis marks and auto-hiding ruby annotation</a></li>
+          <li>All scripts • Arabic • Chinese • Ethiopic • Hebrew • Indic • Japanese • </li>
         </ul>
-      </dd>
+      </dd-->
     </dl>
   </section>
   <section id="text_decoration">
@@ -341,26 +358,30 @@
           </li>
         </ul>
       </dd>
-    <dt>Requests for information</dt>
+    <!--dt>Requests for information</dt>
     <dd>
       <ul>
         <li><a href="checklist#text_decoration"><cite>Improving text layout and typography on the Web and in eBooks</cite></a></li>
+      </ul>
+    </dd-->
+    <dt>Issues</dt>
+    <dd>
+      <!--ul>
+        <li>CSS,  <a href="https://github.com/w3c/csswg-drafts/issues/707">[css-text-decor] `text-decoration-skip: ink` should allow not to skip for CJK and certain ideographic scripts</a></li>
+        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/727">[css-text-decor] Add auto value for text-decoration-skip:</a></li>
+        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/711">[css-text-decor] Should text-decoration-skip applied on overline and line-through?</a></li>
+        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/459">[css-text-decor] text-decoration-thickness &amp; text-underline-position properties</a></li>
+        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/239">No way to set the underline width/thickness </a></li>
+      </ul-->
+      <ul>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Ainfo-req">Requests for information</a></li>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Aimpl-req">Implementation requests</a> </li>
       </ul>
     </dd>
     <dt>Spec links</dt>
     <dd>
       <ul>
         <li><cite>CSS3 Text Decoration</cite>: <a href="https://dev.w3.org/csswg/css-text-decor-3/#line-decoration">Line Decoration: Underline, Overline, and Strike-Through</a></li>
-      </ul>
-    </dd>
-    <dt>Issues</dt>
-    <dd>
-      <ul>
-        <li>CSS,  <a href="https://github.com/w3c/csswg-drafts/issues/707">[css-text-decor] `text-decoration-skip: ink` should allow not to skip for CJK and certain ideographic scripts</a></li>
-        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/727">[css-text-decor] Add auto value for text-decoration-skip:</a></li>
-        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/711">[css-text-decor] Should text-decoration-skip applied on overline and line-through?</a></li>
-        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/459">[css-text-decor] text-decoration-thickness &amp; text-underline-position properties</a></li>
-        <li>CSS, <a href="https://github.com/w3c/csswg-drafts/issues/239">No way to set the underline width/thickness </a></li>
       </ul>
     </dd>
     </dl>
@@ -482,12 +503,20 @@
         </ul></li>
       </ul>
     </dd>
-    <dt>Requests for information</dt>
+    <!--dt>Requests for information</dt>
     <dd>
       <ul>
         <li><a href="checklist#line_breaking"><cite>Improving text layout and typography on the Web and in eBooks</cite></a></li>
       </ul>
+    </dd-->
+    <dt>Issues</dt>
+    <dd>
+      <ul>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Ainfo-req">Requests for information</a></li>
+        <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Aimpl-req">Implementation requests</a></li>
+      </ul>
     </dd>
+    <dd>&nbsp; </dd>
     <dt>Spec links:</dt>
     <dd>
       <ul>
@@ -583,12 +612,19 @@
             <li>Tibetan information: <a href="https://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
           </ul>
         </dd>
-     <dt>Requests for information</dt>
+        <dt>Issues</dt>
+        <dd>
+          <ul>
+            <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Ainfo-req">Requests for information</a></li>
+            <li><a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Aimpl-req">Implementation requests</a></li>
+          </ul>
+        </dd>
+        <!--dt>Requests for information</dt>
     <dd>
       <ul>
         <li><a href="checklist#justification"><cite>Improving text layout and typography on the Web and in eBooks</cite></a></li>
       </ul>
-    </dd>
+    </dd-->
        <dt>Spec links</dt>
         <dd>
           <ul>
