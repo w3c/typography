@@ -60,8 +60,8 @@ h4 { margin-left: 0; }
 <p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as  people expect around the world.
 </p><p>To that end we have experts in various parts of the world documenting layout and typographic requirements and gaps between what is needed and what is currently supported in browsers and ebook readers. 
 </p>
-<p>The mainstay of this work is a series of documents describing requirements for text layout and typography support on the Web and in digital publications. The documents cover Japanese, Korean, Chinese, Latin, Arabic, Ethiopic, Tibetan, some Indic scripts, and hopefully soon Mongolian and other scripts. See a <a href="https://www.w3.org/International/layout">list of relevant work in this area</a>. </p>
-<p>In addition, there is a document that points to <a href="index">information about typographic practices</a> in various scripts around the world, which is likely to be a useful resource for browser and spec developers.</p>
+<p>The mainstay of this work is a series of documents describing requirements for text layout and typography support on the Web and in digital publications. The documents cover Japanese, Korean, Chinese, Latin, Arabic, Ethiopic, Tibetan, some Indic scripts, and hopefully soon Hebrew, Mongolian and other scripts. See a <a href="https://www.w3.org/International/layout">list of relevant work in this area</a>. </p>
+<p>In addition, there is an index to <a href="index">information about typographic practices</a> in various scripts around the world, which is likely to be a useful resource for browser and spec developers.</p>
 <p>This page is a checklist of items to consider when describing typography for a given script. It can be used by someone setting up a layout requirements document, but may also be useful for other situations. If you want to raise an issue or comment against this page, use the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</p>
 </section>
   
@@ -94,12 +94,18 @@ h4 { margin-left: 0; }
 
 <section class="flexContainer">
 <h3 id="overview_fonts"><a href="#overview_fonts">Fonts and font styles</a></h3>
-<p>What are key fonts and or font styles used for this script? Are there standard fallback fonts in use in browsers, and if so do they match expectations? Does the script use fixed-width font glyphs, proportionally-spaced fonts, or a combination? <a href="index#fonts">See available information</a></p>
+<p>What are key fonts and or font styles used for this script? Are there standard fallback fonts in use in browsers, and if so do they match expectations? Does the script use fixed-width font glyphs, proportionally-spaced fonts, or a combination? <a href="index#fonts">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afonts%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="overview_punctuation"><a href="#overview_punctuation">Punctuation</a></h3>
-<p>What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.) <a href="index#punctuation">See available information</a></p>
+<p>What are the typical punctuation marks used, and how are they used? (See other sections for information about how quotations work, and how punctuation interacts with boundary detection and line-breaking, etc.) <a href="index#punctuation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apunctuation%20label%3Ainfo-req">check for currently needed data</a>.</p>
+</section>
+
+<section class="flexContainer">
+<h3 id="quotations"><a href="#quotations">Quotations</a></h3>
+<p>What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially?
+<a href="index#quotations">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
@@ -109,7 +115,7 @@ h4 { margin-left: 0; }
 
 <section class="flexContainer">
 <h3 id="overview_numbers"><a href="#overview_numbers">Numbers and digits</a></h3>
-<p>Does the script have its own set of number digits?  Does the numbering system use base-10, or some other type of base?</p>
+<p>Does the script have its own set of number digits?  How are they used, and how frequently? Does the numbering system use base-10, or some other type of base?</p>
 </section>
 
 
@@ -121,52 +127,36 @@ h4 { margin-left: 0; }
 
 
 <section class="flexContainer">
-<h3 id="quotations"><a href="#quotations">Quotations</a></h3>
-<p>What is the expected behaviour for quotations marks, especially when nested? Should block quotes be indented or handled specially?
-<a href="index#quotations">See available information</a>.</p>
-</section>
-
-<section class="flexContainer">
 <h3 id="transforming_characters"><a href="#transforming_characters">Transforming characters</a></h3>
 <p>What transformations does your script need? For example, does your script convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Do you need to to convert between half-width and full-width presentation forms?
-<a href="index#transforming_characters">See available information</a>.</p>
+<a href="index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acharacter-transforms%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
-<h3 id="letter_spacing"><a href="#letter_spacing">Letter spacing</a></h3>
-<p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for other scripts that we should add?
-<a href="index#letter_spacing">See available information</a>.</p>
+<h3 id="letter_spacing"><a href="#letter_spacing">Inline spacing</a></h3>
+<p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Can you provide information? Are there requirements for other scripts that we should add? See 
+<a href="index#letter_spacing">available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 
 <section class="flexContainer">
 <h3 id="ruby_annotation"><a href="#ruby_annotation">Ruby annotation</a></h3>
 <p>The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future?
-<a href="index#ruby_annotation">See available information</a></p>
+<a href="index#ruby_annotation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="text_decoration"><a href="#text_decoration">Text decoration</a></h3>
 <div>
 <p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of strike-through may vary depending on the script. What about vertical text?
-<a href="index#text_decoration">See available information</a>.</p>
-  <h4>Specific information needed:</h4>
-<ol class="threads">
-  <li>
-    <p><b class="runin">All scripts:</b> <a href="https://github.com/w3c/csswg-drafts/issues/459">[css-text-decor] text-decoration-thickness &amp; text-underline-position properties</a>. Where is underlining positioned relative to the text? And if one wants to modify the position of the underline, what is the best reference point to specify the distance from the text?
-  </p>
-  </li>
-  <li>
-    <p><b class="runin">Chinese:</b> <a href="https://github.com/w3c/clreq/issues/113">Should mention position of underline for vertical writing mode</a>. On which side should underlines appear in vertical text? </p>
-  </li>
-</ol>
+<a href="index#text_decoration">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </div>
 </section>
 
 <section class="flexContainer">
 <h3 id="emphasis"><a href="#emphasis">Emphasis</a></h3>
 <p>Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all.
-<a href="index#emphasis">See available information</a>.</p>
+<a href="index#emphasis">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 </section>
@@ -179,34 +169,21 @@ h4 { margin-left: 0; }
 <h3 id="line_breaking"><a href="#line_breaking">Line breaking</a></h3>
 <div>
 <p>Does CSS capture the rules about the way text in your script wraps when it hits the end of a line?  What characters should not appear at the end or start of a line, and what should be done to prevent that? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan)?
-<a href="index#line_breaking">See available information</a>.</p>
-  <h4>Specific information needed:</h4>
-<ol class="threads">
-  <li>
-    <p><b class="runin">Korean:</b> <a href="https://drafts.csswg.org/css-text-3/#issue-58f62752">[css-text] Justifying Korean text</a>. Korean rules in CSS Text don’t allow the Chinese/Japanese-specific breaks. However, the resulting behavior could use some review and feedback to make sure they are correct, particularly when “word basis” breaking is used (word-break: keep-all) in Korean. </p>
-  </li>
-</ol>
+<a href="index#line_breaking">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </div>
 </section>
 
 <section class="flexContainer">
 <h3 id="hyphenation"><a href="#hyphenation">Hyphenation</a></h3>
 <p>Is hyphenation used for your script, or something else? If hyphenation is used, where should the hyphen appear?
-<a href="index#hyphenation">See available information</a>.</p>
+<a href="index#hyphenation">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ahyphenation%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="justification"><a href="#justification">Justification &amp; line-end alignment</a></h3>
 <div>
 <p> When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script conform to a grid pattern? 
-Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="index#justification">See available information</a>.</p>
-  <h4>Specific information needed:</h4>
-<ol class="threads">
-  <li>
-    <p><b class="runin">Korean:</b> <a href="https://www.w3.org/Mail/flatten/index?subject=https%3A%2F%2Flists.w3.org%2FArchives%2FPublic%2Fpublic-i18n-cjk%2F2014JulSep%2F0002.html&list=">[css-text] Justifying Korean text</a>. Should the hanja be stretched with inter-character spacing at the same time as the Korean inter-word spaces are stretched? What if only a single word fits on a line, should it be stretched using inter-character spacing? Are there more sophisticated rules involving choices of justification location, as there are in Japanese where you adjust punctuation first and do inter-character spacing later? What if the whole text is hanja, such as for an ancient document?
-  </p>
-  </li>
-</ol>
+Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="index#justification">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </div>
 </section>
 
@@ -215,14 +192,14 @@ Does your script allow punctuation to hang outside the text box at the start or 
 <h3 id="counters"><a href="#counters">Counters, lists, etc</a></h3>
 <p>The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct?
 We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed?
-<a href="index#counters">See available information</a>.</p>
+<a href="index#counters">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acounters%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 
 <section class="flexContainer">
 <h3 id="initial_letter"><a href="#initial_letter">Initial letter styling</a></h3>
 <p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps?
-<a href="index#initial_letter">See available information</a>.<br />
+<a href="index#initial_letter">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Ainfo-req">check for currently needed data</a>.<br />
 </p>
 </section>
 
@@ -230,7 +207,7 @@ We have another document that provides over 120 templates for user-defined count
 <section class="flexContainer">
   <h3 id="baselines_inline_alignment"><a href="#baselines_inline_alignment">Baselines &amp; inline alignment</a></h3>
 <p>What are the  requirements for baseline alignment between mixed scripts and in general?
-<a href="index#baselines_inline_alignment">See available information</a>.</p>
+<a href="index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 
@@ -244,7 +221,7 @@ This is particularly relevant for Far Eastern and South East Asian scripts, that
 <section class="flexContainer">
 <h3 id="other_para_features"><a href="#other_para_features">Other paragraph features</a></h3>
 <p>In your script, is the first line of text typically indented at the start of a paragraph? Are there other features of paragraph design that are peculiar to your script?
-<a href="index#other_para_features">See available information</a>.</p>
+<a href="index#other_para_features">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 </section>
 
@@ -255,8 +232,7 @@ This is particularly relevant for Far Eastern and South East Asian scripts, that
 <section class="flexContainer">
 <h3 id="direction_agnostic"><a href="#direction_agnostic">Direction-agnostic layout</a></h3>
 <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. 
-<a href="index#direction_agnostic">See available information</a>.<br />
-</p>
+<a href="index#direction_agnostic">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abidi-controls%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
@@ -268,25 +244,25 @@ This is particularly relevant for Far Eastern and South East Asian scripts, that
 <section class="flexContainer">
 <h3 id="mixed_horizontal_and_vertical"><a href="#mixed_horizontal_and_vertical">Mixed horizontal and vertical text</a></h3>
 <p>The spec describes rules for embedding horizontal runs of text in vertical lines, as is often seen with numbers in Chinese, Japanese and Korean vertically?
-<a href="index#mixed_horizontal_and_vertical">See available information</a>.</p>
+<a href="index#mixed_horizontal_and_vertical">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Avertical-text%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="notes_footnotes"><a href="#notes_footnotes">Notes, footnotes, etc</a></h3>
 <p>Does your script have special requirements for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture?
-<a href="index#notes_footnotes">See available information</a>.</p>
+<a href="index#notes_footnotes">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Anotes-footnotes%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="page_numbering_running_headers"><a href="#page_numbering_running_headers">Page numbering, running headers, etc</a></h3>
 <p>Are there special conventions for page numbering, or the way that running headers and the like are handled?
-<a href="index#page_numbering_running_headers">See available information</a>.</p>
+<a href="index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 
 <section class="flexContainer">
 <h3 id="more_page_layout_and_pagination"><a href="#more_page_layout_and_pagination">More page layout and pagination</a></h3>
 <p>Some cultures define page areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR?
-<a href="index#more_page_layout_and_pagination">See available information</a>.</p>
+<a href="index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/typography/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Ainfo-req">check for currently needed data</a>.</p>
 </section>
 </section>
 
@@ -310,7 +286,7 @@ This is particularly relevant for Far Eastern and South East Asian scripts, that
   <section>
     <div class="smallprint">
 	<p>If you have comments about this page, send them to ishida@w3.org.</p>
-      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2016-11-18  16:31<!-- #EndDate --></span> GMT</p>
+      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2017-02-06  18:38<!-- #EndDate --></span> GMT</p>
       <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="/"><abbr
 						title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr
 						title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.org/"><abbr
