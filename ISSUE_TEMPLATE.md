@@ -1,5 +1,5 @@
 description
 
-**Do not add a comment here, use the following link to make comments visible on the original thread:**
+**Do not add a comment here, follow the link below so that comments are visible on the original thread:**
 link
 
