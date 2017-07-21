@@ -275,6 +275,10 @@
     </dl>
   </section>
 
+
+
+
+
   <section id="glyphs_diacritics">
     <h3>Glyphs and diacritics</h3>
     <p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted.</p>
@@ -290,8 +294,34 @@
         <ul>
           <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">Requests for information</a></li>
           <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Aspec-type-issue">Spec issues</a>
-          </li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aglyph-diacritics%20label%3Abrowser-type-bug">Browser bugs</a>
+          </li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Abrowser-type-bug">Browser bugs</a>
          </li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=glyphs-diacritics">Type samples</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+
+
+
+
+
+  <section id="cursive">
+    <h3>Cursive text</h3>
+    <p>In  scripts such as Arabic, Mongolian and N'Ko adjacent characters are joined together in normal printed text. It is important to ensure that those connections can be maintained correctly when characters are forced apart, or when transparency is applied to the text, etc. There are also situations where cursive joining behaviour exists when there is no adjacent character, or where joining needs to be disabled between glyphs.</p>
+    <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Arabic Layout Requirements</cite>: <a href="https://w3c.github.io/alreq/#h_letterhighlights">Special requirements when dealing with cursive glyphs</a></li>
+        </ul>
+      </dd>
+      <dt>GitHub resources</dt>
+      <dd>
+        <ul>
+          <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">Requests for information</a></li>
+          <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Aspec-type-issue">Spec issues</a>
+          </li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Abrowser-type-bug">Browser bugs</a>
+         </li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=cursive">Type samples</a></li>
         </ul>
       </dd>
     </dl>
@@ -1041,6 +1071,7 @@
     Version</h2>
   <p>The following changes have been made since the document was last published to the TR space:</p>
   <ul>
+    <li>added section on cursive text</li>
     <li>changed 'Issues' to 'GitHub resources', added more links, and added Type samples links.</li>
     <li>made the counter styles section more generally about lists.</li>
     <li>changed the glyph-controls section to glyphs &amp; diacritics</li>
