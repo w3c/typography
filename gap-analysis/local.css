@@ -1,0 +1,31 @@
+body { font-size: 16px; }
+#toc { background-color: white; }
+h2 { margin-left: 0; margin-top: 4em; }
+h3 { margin-top: 3em; }
+h3 a { color: #006; }
+h3 a:link { color: #006; }
+h3 a:active { color: #006; }
+h3 a:visited { color: #006; }
+h4 { margin-left: 0; }
+#toclocation .toc1 { padding-left: 0.5em; margin-top: 2em; }
+#toclocation .toc2 { padding-left: 2em; }
+.toc2 a {  color: #697FB1; }
+#toclocation ol { padding: 0; margin: 0; }
+
+.flexContainer { vertical-align: top; display: flex; flex-flow: row nowrap; }
+.flexContainer h3 { margin:0 1em 0 0; flex: 2; }
+.flexContainer > p { flex: 3; }
+.flexContainer > div { flex: 3; }
+.flexContainer p a { font-style: italic; }
+.threads { font-size: 90%; font-style: italic; }
+
+	.topic {  border: 1px solid #ddd; margin: 8px; }
+	.prompt { font-style: italic; color: #aaa; }
+	.details { color: black; padding-left: 0; font-size: 120%; font-weight: 400; margin-bottom: 2em;  }
+	.details p { margin: 1em; }
+		
+	.ok, .na { border-left: 20px solid green; padding-left: 2em;}
+	.advanced { border-left: 20px solid #0f0; padding-left: 2em;}
+	.basic { border-left: 20px solid orange; padding-left: 2em;}
+	.broken { border-left: 20px solid red;padding-left: 2em; }
+	.status { color: gray; font-weight: normal; font-size: 80%; }

@@ -8,37 +8,7 @@
 <meta content="Allows you to find articles, tutorials, tests, etc at the W3C Internationalization subsite using lists of tasks." name="description" />
 <link rel="stylesheet" type="text/css" href="https://www.w3.org/International/style/level2.css" />
 <link rel="stylesheet" type="text/css" href="https://www.w3.org/International/techniques/techniques-v2.css" />
-<style>
-body { font-size: 16px; }
-#toc { background-color: white; }
-h2 { margin-left: 0; margin-top: 4em; }
-h3 { margin-top: 3em; }
-h3 a { color: #006; }
-h3 a:link { color: #006; }
-h3 a:active { color: #006; }
-h3 a:visited { color: #006; }
-h4 { margin-left: 0; }
-#toclocation .toc1 { padding-left: 0.5em; margin-top: 2em; }
-#toclocation .toc2 { padding-left: 2em; }
-.toc2 a {  color: #697FB1; }
-#toclocation ol { padding: 0; margin: 0; }
-
-.flexContainer { vertical-align: top; display: flex; flex-flow: row nowrap; }
-.flexContainer h3 { margin:0 1em 0 0; flex: 2; }
-.flexContainer > p { flex: 3; }
-.flexContainer > div { flex: 3; }
-.flexContainer p a { font-style: italic; }
-.threads { font-size: 90%; font-style: italic; }
-
-	.prompt { font-style: italic;}
-	.details { color: gray; padding-left: 3em; }
-		
-	.ok, .na { border-left: 20px solid green; padding-left: 2em;}
-	.advanced { border-left: 20px solid #0f0; padding-left: 2em;}
-	.basic { border-left: 20px solid orange; padding-left: 2em;}
-	.broken { border-left: 20px solid red;padding-left: 2em; }
-	.status { color: gray; font-weight: normal; font-size: 80%; }
-</style>
+<link rel="stylesheet" type="text/css" href="local.css" />
 <!--script type="text/javascript" src="https://www.w3.org/International/javascript/toc_2016.js"></script-->
 <script type="text/javascript" src="http://localhost/International/javascript/toc_2016.js"></script>
 </head>
@@ -78,7 +48,7 @@ h4 { margin-left: 0; }
   <li>na (not applicable)</li>
   <li>advanced (work needed to support advanced applications, such as fine quality book production)</li>
   <li>basic (work needed to support basic styling for basic web page use)</li>
-  <li>broken (work needed to enable interoperable semantic basics on the Web).</li>
+  <li>broken (work needed to enable interoperable semantics, or basic display on the Web).</li>
 </ul>
 </section>
   
@@ -96,6 +66,7 @@ h4 { margin-left: 0; }
 <p class="prompt">Are there any  character repertoire issues preventing use of this script on the Web? Do variation selectors need attention?</p>
 </section>
 <section class="details">
+<p>Unicode recently introduced case for Cherokee, so character coverage is ok.</p>
 </section>
 </section>
 
@@ -106,6 +77,7 @@ h4 { margin-left: 0; }
 <p class="prompt">Do the standard fallback fonts used in browsers match expectations? Are special font features needed for this script that are not available? Do italic fonts lean in the right direction? <a href="index#fonts">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afonts%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
 <section class="details">
+<p>Assumed same as for Latin.</p>
 </section>
 </section>
 
@@ -118,6 +90,7 @@ h4 { margin-left: 0; }
 <p class="prompt">Does this script require additional work to support altering the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way? <a href="index#fonts">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afonts%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
 <section class="details">
+<p>No diacritics or special glyph issues.</p>
 </section>
 </section>
 
@@ -143,6 +116,7 @@ h4 { margin-left: 0; }
 <a href="index#graphemes">See available information</a>.</p>
 </section>
 <section class="details">
+<p>Assumed same as for Latin.</p>
 </section>
 </section>
 
@@ -155,6 +129,7 @@ h4 { margin-left: 0; }
 <a href="index#quotations">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
 <section class="details">
+<p>Assumed same as for Latin.</p>
 </section>
 </section>
 
@@ -178,7 +153,11 @@ h4 { margin-left: 0; }
 <a href="index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-transform%20label%3Atype-info-request">check for currently needed data</a>.</p>
 </section>
 <section class="details">
-<p>CSS text transforms (uppercase, lowercase, capitalize) don't work on Safari or Edge.</p>
+<p>CSS text transforms (uppercase, lowercase, capitalize) don't work on Safari or Edge. See the tests:</p>
+<ul>
+  <li><a href="https://www.w3.org/International/tests/repo/results/text-transform#cherokee_ul">upper/lowercase transforms</a></li>
+  <li><a href="https://www.w3.org/International/tests/repo/results/text-transform#cherokee_cap">capitalization</a></li>
+</ul>
 </section>
 </section>
 
@@ -475,7 +454,7 @@ This is particularly relevant for Far Eastern and South East Asian scripts, that
   <section>
     <div class="smallprint">
 	<p>If you have comments about this page, send them to ishida@w3.org.</p>
-      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2017-08-25  16:30<!-- #EndDate --></span> GMT</p>
+      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2017-08-29  12:09<!-- #EndDate --></span> GMT</p>
       <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="/"><abbr
 						title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr
 						title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.org/"><abbr
