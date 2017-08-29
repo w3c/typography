@@ -19,7 +19,7 @@ h4 { margin-left: 0; }
 .flexContainer p a { font-style: italic; }
 .threads { font-size: 90%; font-style: italic; }
 
-	.topic {  border: 1px solid #ddd; margin: 8px; }
+	.topic {  border: 1px solid #ddd; margin: 8px; border-left: 20px solid white; }
 	.prompt { font-style: italic; color: #aaa; }
 	.details { color: black; padding-left: 0; font-size: 120%; font-weight: 400; margin-bottom: 2em;  }
 	.details p { margin: 1em; }
