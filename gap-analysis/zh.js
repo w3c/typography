@@ -16,16 +16,14 @@ var report = {
 'ruby': { 'status':'advanced', "comments": `` },
 'textdecoration': { 'status':'advanced', "comments": `` },
 'emphasis': { 'status':'ok', "comments": `` },
-'inlinenotes': { 'status':'', "comments": `<p>We (the Chinese Layout Task Force) don't understand what this column is about. It links to Initial letter styling, but we don't understand why "inline notes" is related to "Initial letter styling".</p>
-<p>We also don't know what "etc" means in this case. Therefore, we mark it as "unknown" for now.</p>
-<p>(If "inline notes" means <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>, then it should be "something prevents interoperable or effective use in webpages (0)", i.e., red.).</p>` },
+'inlinenotes': { 'status':'advanced', "comments": `<p>Support needed for <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>.</p>` },
 'bidi': { 'status':'na', "comments": `` },
 
 'linebreak': { 'status':'advanced', "comments": `` },
-'hyphenation': { 'status':'advanced', "comments": `<p>Chinese characters don't use hyphenation, but pinyin might use it.</p>` },
+'hyphenation': { 'status':'ok', "comments": `<p>Chinese characters don't use hyphenation, but pinyin might use it.</p>` },
 'justification': { 'status':'advanced', "comments": `` },
 'counters': { 'status':'advanced', "comments": `` },
-'initialletter': { 'status':'basic', "comments": `` },
+'initialletter': { 'status':'advanced', "comments": `<p>See <a href="https://www.zhihu.com/question/19644477">https://www.zhihu.com/question/19644477</a> for more information.</p>` },
 'baselines': { 'status':'advanced', "comments": `` },
 'whitespace': { 'status':'advanced', "comments": `` },
 'otherpara': { 'status':'advanced', "comments": `` },
