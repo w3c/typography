@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Language matrix</title>
+<script src="language-matrix-data.js"> </script>
+<style>
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 3em;
+}
+#flexwrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	margin: 2em;
+}
+#flexwrapper div {
+	margin: 2em;
+}
+th {
+	text-align: end;
+}
+td {
+	text-align: center;
+	border-radius: 2px;
+}
+.na {
+	background-color: #7CFF7C;
+	background-color: green;
+	color: green;
+	/* color: #7CFF7C; */
+}
+.l3 {
+	background-color: green;
+	color: green;
+}
+.l2 {
+	background-color: #F4CB77;
+	background-color: yellow;
+	background-color: #00ff00;
+	color: #00ff00;
+}
+.l1 {
+	background-color: #FF9A00;
+	color: #FF9A00;
+	color: orange;
+}
+.l0 {
+	background-color: #ff0000;
+	color: #ff0000;
+}
+p {
+	margin: 0;
+}
+thead td {
+	text-align: start;
+	font-weight: bold;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	line-height: 1.5;
+	width: 20px;
+	text-align: end;
+	text-align: right;
+	vertical-align: bottom;
+}
+thead td div {
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+	height: 15em;
+}
+.sum {
+	border-right: 5px solid #0623ED;
+	width: 3em;
+}
+.future {
+	border: 1px dotted blue;
+	border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+<h1>Internationalization support on the Web<br>
+  HTML/CSS
+</h1>
+
+<div id="flexwrapper">
+  <div id="key">
+    <h2>Key:</h2>
+    <p>
+      <span class="l3"> ■</span> All needs covered (3), or Not applicable<br/>
+      <span class="l2"> ■</span> Basic needs covered, but work needed for advance publishing  (2)<br/>
+      <span class="l1"> ■</span> Can create interoperable web pages, but work still needed for basic features (1)<br/>
+      <span class="l0"> ■</span> Something prevents interoperable or effective use of the language in webpages (0)</p>
+      <p>* next to a language name indicates a tentative score, pending validation by experts</p>
+  </div>
+  <div id="resultsSummary">
+    <h2>Results:</h2>
+    <p>Total number of languages <strong><span id="totalScore"></span></strong></p>
+    <p><span class="l3"> ■</span> <strong><span id="level3"></span></strong> are Ok, based on what information we have for them</p>
+<p><span class="l2"> ■</span> <strong><span id="level2"></span></strong> need work for advanced publishing</p>
+    <p><span class="l1"> ■</span> <strong><span id="level1"></span></strong> need work for basic features</p>
+    <p><span class="l0"> ■</span> <strong><span id="level0"></span></strong> don't work on the Web</p>
+    <p><strong><span style="background-color:white; border:1px solid gray;">?</span></strong> <span id="unknown"></span></p>
+  </div>
+</div>
+<p>&nbsp;</p>
+<table id="results">
+  <thead>
+    <tr id="table_headers">
+      <th scope="row">script</th>
+      <td>language</td>
+      <td>Level</td>
+      <td><div><abbr title="Character encodings">Encoding</abbr></div></td>
+      <td><a href="https://w3c.github.io/typography/#fonts"><abbrev title="Fonts">Fonts</ABBREV></a></td>
+	  <td><div><a href="https://w3c.github.io/typography/#font-style"><abbr title="font styling">Font styles</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#glyphs_diacritics"><abbr title="glyph controls">Glyph control</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#cursive"><abbr title="cursive text">Cursive text</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#transforming_characters"><abbr title="transforming characters">Char transforms</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#numbers"><abbr title="native numbers">Numbers &amp; digits</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#graphemes"><abbr title="boundary selection">Boundaries &amp; selection</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#quotations"><abbr title="Quotations">Quotation</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#letter_spacing"><abbr title="inline spacing">Inter-char spacing</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#ruby_annotation"><abbr title="ruby annotation">Ruby</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#text_decoration"><abbr title="text decoration">Text decoration</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#emphasis"><abbr title="emphasis">Emphasis &amp; highlight</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#bidirectional_text_direction"><abbr title="bidirectional text">Bidi text</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#initial_letter"><abbr title="Other inline features">Other inline</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#line_breaking"><abbr title="line breaking">Line breaking</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#hyphenation"><abbr title="hyphenation">Hyphenation</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#justification"><abbr title="justification and alignment">Justification &amp; alignment</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#counters"><abbr title="lists, counters, etc">Lists, counters</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#initial_letter"><abbr title="initial letter styling">Initial letter style</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#baselines_inline_alignment"><abbr title="baselines &amp; inline alignment">Baselines, inline align</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#other_para_features"><abbr title="other paragraph features">Other paragraph</abbr></a></div></td>
+      <td><a href="https://w3c.github.io/typography/#bidi_layout">Bidi layout</a></td>
+      <td><div><a href="https://w3c.github.io/typography/#vertical_text"><abbr title="vertical text">Vertical text</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#notes_footnotes"><abbr title="notes, footnotes, etc">Notes, footnotes</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#page_numbering_running_headers"><abbr title="page numbering & running headers, etc">Page numbers, running heads</abbr></a></div></td>
+      <td><div><a href="https://w3c.github.io/typography/#more_page_layout_and_pagination"><abbr title="other page layout">Other pagination</abbr></a></div></td>
+    </tr>
+  </thead>
+  <tbody id="langData">
+ 
+  </tbody>
+</table>
+	<p><em>Total number of languages in the table: <span id="langCount">&nbsp;</span></em></p>
+<p>&nbsp;</p>
+<p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order the highest to lowest number of speakers. </p>
+<p>&nbsp;</p>
+<p>The list currently targets some of the more common languages, or scripts that have important implications for general support. It is expected that the list will grow as data becomes available, and we welcome contributions for other languages from local experts.</p>
+<p>&nbsp;</p>
+<p>The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
+<p>&nbsp;</p>
+<p>The asterisk next to the language name indicates that these are tentative scores, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
+<p>&nbsp;</p>
+<p>When a language name has a link, you can follow that link to find a draft report that gives details about work needed. That also needs validation and prioritization by experts if the language name has an asterisk.</p>
+<p>&nbsp;</p>
+<p>Click on top row feature groups to get an idea of what kind of features are included in that group. You are taken to the typography index document. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
+<p>&nbsp;</p>
+<p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
+<p>&nbsp;</p>
+<p>The colour of the third column from the left is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The numeric score in that column is a non-scientific way of hinting at the amount of work to be done to get the language level to OK. (We may change the algorithm used for that at some future point.)</p>
+</body>
+<script>
+
+// add rows to table from .js file
+var table = ''
+for (let s=0;s<langData.length;s++) {
+	for (let l=0;l<langData[s].languages.length;l++){
+		var cLang = langData[s].languages[l]
+		table += '<tr'
+		if (cLang.url) table += ' data-url="'+cLang.url+'"'
+		table += '>\n'
+		if (l===0) table += '<th scope="row">'+langData[s].script+'</th>'
+		else table += '<th>&nbsp;</td>'
+		
+		table += '<td class="language'
+		if (cLang.tentative) table += ' tentative'
+		table += '">'
+		if (cLang.url) table += '<a href="'+cLang.url+'">'
+		table += cLang.lang
+		if (cLang.url) table += '</a>'
+		table += '</td>'
+		
+		table += '<td class="sum">&nbsp;</td>'
+		
+		table += '<td>'+cLang.encoding+'</td>'
+		table += '<td>'+cLang.fonts+'</td>'
+		table += '<td>'+cLang.fontstyle+'</td>'
+		table += '<td>'+cLang.glyphcontrol+'</td>'
+		table += '<td>'+cLang.cursive+'</td>'
+		table += '<td>'+cLang.transforms+'</td>'
+		table += '<td>'+cLang.digits+'</td>'
+		table += '<td>'+cLang.boundaries+'</td>'
+		table += '<td>'+cLang.quotations+'</td>'
+		table += '<td>'+cLang.spacing+'</td>'
+		table += '<td>'+cLang.ruby+'</td>'
+		table += '<td>'+cLang.textdecor+'</td>'
+		table += '<td>'+cLang.emphasis+'</td>'
+		table += '<td>'+cLang.bidi+'</td>'
+		table += '<td>'+cLang.otherinline+'</td>'
+		table += '<td>'+cLang.linebreak+'</td>'
+		table += '<td>'+cLang.hyphenation+'</td>'
+		table += '<td>'+cLang.justification+'</td>'
+		table += '<td>'+cLang.counters+'</td>'
+		table += '<td>'+cLang.initialletter+'</td>'
+		table += '<td>'+cLang.baselines+'</td>'
+		table += '<td>'+cLang.otherpara+'</td>'
+		table += '<td>'+cLang.bidilayout+'</td>'
+		table += '<td>'+cLang.vertical+'</td>'
+		
+		table += '<td class="future">'+cLang.notes+'</td>'
+		table += '<td class="future">'+cLang.pagehead+'</td>'
+		table += '<td class="future">'+cLang.otherpage+'</td>'
+		table += '</tr>\n'
+		}
+	}
+document.getElementById('langData').innerHTML = table
+
+
+// add colours to cells & identify tentative scores
+var tds = document.querySelectorAll('td')
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].textContent === '-') tds[i].classList.add('na')
+	if (tds[i].textContent === '3') tds[i].classList.add('l3')
+	if (tds[i].textContent === '2') tds[i].classList.add('l2')
+	if (tds[i].textContent === '1') tds[i].classList.add('l1')
+	if (tds[i].textContent === '0') tds[i].classList.add('l0')
+	if (tds[i].textContent == '') tds[i].textContent = '?'
+	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '*'
+	}
+
+// get overall scores
+/*document.getElementById('totalScore').textContent = tds.length
+
+var unknown = level0 = level1 = level2 = level3 = 0
+for (let i=0;i<tds.length;i++) {
+	switch (tds[i].textContent) {
+		case '-': ++level3; break;
+		case '3': ++level3; break;
+		case '2': ++level2; break;
+		case '1': ++level1; break;
+		case '0': ++level0; break;
+		case '?': ++unknown; break;
+		}
+	}
+document.getElementById('level3').textContent = level3
+document.getElementById('level2').textContent = level2
+document.getElementById('level1').textContent = level1
+document.getElementById('level0').textContent = level0
+document.getElementById('unknown').textContent = unknown
+*/
+
+
+
+// calculate a score for each language
+var lowest, lowestClass
+var rows = document.querySelectorAll('.sum')
+for (let i=0;i<rows.length;i++) {
+	tds = rows[i].parentNode.querySelectorAll('td')
+	score = 0
+	count = 0
+	for (let c=0;c<tds.length;c++) {
+		if (tds[c].textContent === '3' || tds[c].textContent === '-') {
+			score += 3; count++ }
+		if (tds[c].textContent === '2') {
+			score += 2; count++ }
+		if (tds[c].textContent === '1') {
+			score += 1; count++ }
+		}
+	
+	rows[i].textContent = (Math.round(((score/count)-2)*100)/100)
+	//rows[i].classList.add(lowestClass)
+	}
+
+// add number of languages below table
+document.getElementById('langCount').textContent = document.querySelectorAll('.language').length
+
+// calculate the level for each language
+var lowest, lowestClass
+var rows = document.querySelectorAll('.sum')
+for (let i=0;i<rows.length;i++) {
+	tds = rows[i].parentNode.querySelectorAll('td')
+	lowestClass = 'unknown'
+	lowest = 3
+	for (let c=0;c<tds.length;c++) {
+		let ccell = parseInt(tds[c].textContent)
+		if (ccell < lowest && tds[c].className !== 'sum') lowest = ccell
+		//console.log(i,tds[c].textContent,ccell,lowest)
+		}
+	lowestClass = 'l'+lowest
+	
+	//rows[i].textContent = lowest
+	rows[i].classList.add(lowestClass)
+	rows[i].style.color = 'black'
+	}
+
+
+// get overall scores
+tds = document.querySelectorAll('.sum')
+console.log(tds.length)
+document.getElementById('totalScore').textContent = tds.length
+
+var unknown = level0 = level1 = level2 = level3 = 0
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].classList.contains('na')) ++level3
+	else if (tds[i].classList.contains('l3')) ++level3
+	else if (tds[i].classList.contains('l2')) ++level2
+	else if (tds[i].classList.contains('l1')) ++level1
+	else if (tds[i].classList.contains('l0')) ++level0
+	}
+document.getElementById('level3').textContent = level3
+document.getElementById('level2').textContent = level2
+document.getElementById('level1').textContent = level1
+document.getElementById('level0').textContent = level0
+document.getElementById('unknown').textContent = unknown
+
+// get percentage of unknown cells
+tds = document.querySelectorAll('td')
+var unknown = 0
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].textContent === '?') unknown++
+	}
+document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.length)+'% of cells still need investigation.'
+
+
+// array of ids for links from cells
+idlinks = [
+'',
+'encoding',
+'fonts',
+'fontstyle',
+'glyphs',
+'cursive',
+'transforms',
+'numbers',
+'boundaries',
+'quotations',
+'spacing',
+'ruby',
+'textdecoration',
+'emphasis',
+'bidi',
+'otherinline',
+'linebreak',
+'hyphenation',
+'justification',
+'counters',
+'initialletter',
+'baselines',
+'otherpara',
+'bidilayout',
+'vertical',
+'notes',
+'pageheaders',
+'otherpage',
+]
+
+
+// add titles for each colored cell
+rows = document.querySelectorAll('.sum')
+var headers = document.getElementById('table_headers').querySelectorAll('td')
+for (let i=0;i<rows.length;i++) {
+	tds = rows[i].parentNode.querySelectorAll('td')
+	for (let c=0;c<tds.length;c++) {
+		tds[c].title = headers[c].textContent
+		if (tds[c].parentNode.dataset.url) {
+			tds[c].addEventListener('click', function(evt) {
+			details = window.open('index?data='+evt.target.parentNode.dataset.url+'#'+idlinks[c-1], 'details'); details.focus();
+			console.log(evt.target.parentNode.dataset.url, idlinks[c-1], evt) 
+			})
+			tds[c].style.cursor = 'pointer'
+			}
+		}
+	}
+	
+	</script>
+
+
+</html>
