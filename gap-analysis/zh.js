@@ -16,8 +16,8 @@ var report = {
 'ruby': { 'status':'advanced', "comments": `` },
 'textdecoration': { 'status':'advanced', "comments": `` },
 'emphasis': { 'status':'ok', "comments": `` },
-'inlinenotes': { 'status':'advanced', "comments": `<p>Support needed for <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>.</p>` },
 'bidi': { 'status':'na', "comments": `` },
+'otherinline': { 'status':'advanced', "comments": `<p>Support needed for <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>.</p>` },
 
 'linebreak': { 'status':'advanced', "comments": `` },
 'hyphenation': { 'status':'ok', "comments": `<p>Chinese characters don't use hyphenation, but pinyin might use it.</p>` },
@@ -33,7 +33,7 @@ var report = {
 'notes': { 'status':'advanced', "comments": `` },
 'pageheaders': { 'status':'', "comments": `<p>We're not quite familiar with specifications like <a href="https://drafts.csswg.org/css-break/">CSS Fragmentation</a>, <a href="https://drafts.csswg.org/css-gcpm/">CSS Generated Content for Paged Media</a>, or <a href="https://drafts.csswg.org/css-page/">CSS Paged Media</a>, so we need help from the CSS Working Group and the publishing WG/IG/BG/CGs.</p>
 <p>We mark it as "unknown" for now.</p>` },
-'morepage': { 'status':'', "comments": `` },
+'otherpage': { 'status':'', "comments": `` },
 
 'culture': { 'status':'', "comments": `` },
 'other': { 'status':'', "comments": `` },
