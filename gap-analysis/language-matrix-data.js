@@ -18,7 +18,7 @@ langData = [
 ]},
 
 {script:"Cher", languages:[
- {lang: "Cherokee", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"-", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"3", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"", vertical:"-", notes:"", pagehead:"", otherpage:""  },
+ {lang: "Cherokee", url: "cher", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"-", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"3", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
 
 {script:"Cyrl", languages:[
@@ -40,8 +40,8 @@ langData = [
 ]},
 
 {script:"Ethi", languages:[
- {lang: "Amharic", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"1", digits:"", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"3", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2", otherpage:""  },
- {lang: "Tigriña", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"1", digits:"", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"3", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2", otherpage:""  },
+ {lang: "Amharic", url: "ethi", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", digits:"", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"1", emphasis:"2", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"3", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2", otherpage:""  },
+ {lang: "Tigriña", url: "ethi", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", digits:"", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"1", emphasis:"2", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"3", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2", otherpage:""  },
 ]},
 
 {script:"Guju", languages:[
