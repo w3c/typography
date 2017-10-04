@@ -90,20 +90,20 @@ thead td div {
   <div id="key">
     <h2>Key:</h2>
     <p>
-      <span class="l3"> ■</span> All needs covered (3), or Not applicable<br/>
-      <span class="l2"> ■</span> Basic needs covered, but work needed for advance publishing  (2)<br/>
-      <span class="l1"> ■</span> Can create interoperable web pages, but work still needed for basic features (1)<br/>
-      <span class="l0"> ■</span> Something prevents interoperable or effective use of the language in webpages (0)</p>
+      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered, or <i class="highlight">-</i> Not applicable<br/>
+      <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
+      <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
+      <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
       <p>* next to a language name indicates a tentative score, pending validation by experts</p>
   </div>
   <div id="resultsSummary">
     <h2>Results:</h2>
-    <p>Number of  languages listed <strong><span id="totalScore"></span></strong></p>
+    <p>Number of  languages listed: <strong><span id="totalScore"></span></strong></p>
     <p><span class="l3"> ■</span> <strong><span id="level3"></span></strong> may be Ok, based on what information we have for them</p>
 <p><span class="l2"> ■</span> <strong><span id="level2"></span></strong> need work for advanced publishing</p>
     <p><span class="l1"> ■</span> <strong><span id="level1"></span></strong> need work for basic features</p>
     <p><span class="l0"> ■</span> <strong><span id="level0"></span></strong> don't work on the Web</p>
-    <p><strong><span style="background-color:white; border:1px solid gray;">?</span></strong> <span id="unknown"></span></p>
+    <p><strong><span style="background-color:white; border:1px solid gray;">?</span> <span id="unknown"></span></strong> of cells still need investigation.</p>
   </div>
 </div>
 <p>&nbsp;</p>
@@ -180,7 +180,7 @@ for (let s=0;s<langData.length;s++) {
 		table += '<td class="language'
 		if (cLang.tentative) table += ' tentative'
 		table += '">'
-		if (cLang.url) table += '<a href="'+cLang.url+'">'
+		if (cLang.url) table += '<a target="details" href="index?data='+cLang.url+'">'
 		table += cLang.lang
 		if (cLang.url) table += '</a>'
 		table += '</td>'
@@ -324,7 +324,7 @@ var unknown = 0
 for (let i=0;i<tds.length;i++) {
 	if (tds[i].textContent === '?') unknown++
 	}
-document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.length)+'% of cells still need investigation.'
+document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.length)+'%'
 
 
 // array of ids for links from cells
@@ -360,14 +360,14 @@ idlinks = [
 ]
 
 
-// add titles for each colored cell
+// add titles and links for each colored cell
 rows = document.querySelectorAll('.sum')
 var headers = document.getElementById('table_headers').querySelectorAll('td')
 for (let i=0;i<rows.length;i++) {
 	tds = rows[i].parentNode.querySelectorAll('td')
 	for (let c=0;c<tds.length;c++) {
 		tds[c].title = headers[c].textContent
-		if (tds[c].parentNode.dataset.url) {
+		if (tds[c].parentNode.dataset.url && ! tds[c].classList.contains('language')) {
 			tds[c].addEventListener('click', function(evt) {
 			details = window.open('index?data='+evt.target.parentNode.dataset.url+'#'+idlinks[c-1], 'details'); details.focus();
 			console.log(evt.target.parentNode.dataset.url, idlinks[c-1], evt) 
