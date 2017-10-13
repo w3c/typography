@@ -57,8 +57,8 @@ langData = [
 ]},
 
 {script:"Hani", languages:[
- {lang: "SChinese", url: "zh", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", ruby:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"2", justification:"2", counters:"2", initialletter:"1", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"", otherpage:""  },
- {lang: "TChinese", url: "zh", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", ruby:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"2", justification:"2", counters:"2", initialletter:"1", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"", otherpage:""  },
+ {lang: "SChinese", url: "zh", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", ruby:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"3", justification:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"", otherpage:""  },
+ {lang: "TChinese", url: "zh", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", ruby:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"3", justification:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"", otherpage:""  },
 ]},
 
 {script:"Hebr", languages:[
