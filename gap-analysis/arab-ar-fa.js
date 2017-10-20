@@ -5,8 +5,8 @@ var compilers = "r12a"
 var report = {
 
 'encoding': { 'status':'ok', "comments": `` },
-'fontstyle': { 'status':'advanced', "comments": `<p>It would be useful to be able to control the direction in which 'italicised' or 'oblique' text slants, since it may need to slant to the left.</p>` },
-'glyphs': { 'status':'advanced', "comments": `<p>It would be useful to be able to control the height of diacritics relative to the base consonant for advanced typographic control.</p>` },
+'fontstyle': { 'status':'advanced', "comments": `<p>There should be means available to control the direction in which 'italicised' or 'oblique' text slants, since in some schools of Arabic script typography, text in these styles need to slant to the left.</p>` },
+'glyphs': { 'status':'advanced', "comments": `<p>For advanced typographic purposes, the fixed position of diacritical marks relative to base letter or baseline and the logical stacking behvaior of them might not be sufficient. Therefore, it should be possible to adjust the positioning and combining order and changes to the individual marks when combining. Fonts and other systems may implement the logic needed to result in an optimal presentation of diacritical mark clusters by default.</p>` },
 'cursive': { 'status':'basic', "comments": `<p>Various changes in styling currently break cursive connections. This should not happen. (Add details)</p>` },
 'boundaries': { 'status':'ok', "comments": `` },
 'quotations': { 'status':'basic', "comments": `<p>In HTML and CSS the styling applied to nested multilingual quotations when using the q element chooses quotation marks based on the language of the text inside the quotation, rather than outside.</p>` },
