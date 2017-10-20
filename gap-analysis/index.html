@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Text layout and typography checklist</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="i18n internationalisation internationalization localisation localization translation techniques index" name="keywords" />
+<meta content="Allows you to find articles, tutorials, tests, etc at the W3C Internationalization subsite using lists of tasks." name="description" />
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/International/style/level2.css" />
+<link rel="stylesheet" type="text/css" href="https://www.w3.org/International/techniques/techniques-v2.css" />
+<link rel="stylesheet" type="text/css" href="local.css" />
+<!--script type="text/javascript" src="https://www.w3.org/International/javascript/toc_2016.js"></script-->
+<script type="text/javascript" src="https://www.w3.org/International/javascript/toc_2016.js"></script>
+
+<script>
+// read in data
+parameters = location.search.split('&');
+parameters[0] = parameters[0].substring(1);
+for (var p=0;p<parameters.length;p++) {  
+	pairs = parameters[p].split('=');
+	if (pairs[0] == 'data') { if (pairs[1]) { var data = pairs[1] } }
+	}
+
+// load the appropriate db file	
+if (! data || data.match(/\.\./)) alert('Bad or missing data= parameter.')
+else {
+	var db = document.createElement('script')
+	db.src = data+'.js'
+	db.async = false
+	document.head.appendChild(db)
+	}
+
+function init () {
+	document.querySelector('title').textContent = doctitle
+	document.querySelector('h1').innerHTML = "Gap analysis checklist</br>"+doctitle
+	
+	document.getElementById('compilers').innerHTML = compilers
+	
+	
+	var sections = document.querySelectorAll('.topic')
+	for (let i=0;i<sections.length;i++) {
+		var id = sections[i].id
+		console.log(id)
+		if (report[id]) {
+			if (report[id].status === '') report[id].status = 'unknown'
+			console.log(report[id].status)
+			sections[i].classList.add(report[id].status)
+			var details = document.createElement('section')
+			details.classList.add('details')
+			details.innerHTML = report[id].comments
+			sections[i].appendChild(details)
+
+			// add subtitle
+			var levelText = ''
+			var found = false
+			if (report[id].status === 'ok') { levelText = 'OK'; found = true }
+			else if (report[id].status === 'na') { levelText = 'NA'; found = true }
+			else if (report[id].status === 'advanced') { levelText = 'Needs work for advanced level support.'; found = true }
+			else if (report[id].status === 'basic') { levelText = 'Needs work for basic styling support.'; found = true }
+			else if (report[id].status === 'broken') { levelText = 'Needs work for interoperable semantic support.'; found = true }
+			if (found) {
+				var title = sections[i].querySelector('h3')
+				if (title) {
+					title.innerHTML = title.innerHTML + '<br/><span class="status">' + levelText + '</span>'
+					}
+				}
+			}
+		}
+	}
+</script>
+</head>
+
+
+
+<body onLoad="init()">
+
+<!-- Top left icons -->
+<div id="topLeft"><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72" /></a><a href="https://www.w3.org/International/" title="Go to the Internationalization home page."><img src="https://www.w3.org/International/icons/sitetitle.gif"
+			alt="W3C Internationalization (I18n) Activity: Making the World Wide Web truly world wide!" /></a></div>
+
+<!-- Top left links -->
+<div id="sitelinks"><a href="https://www.w3.org/International/" title="Internationalization Activity home page.">Home</a>&#xA0; <a href="https://www.w3.org/International/about" title="About the Internationalization Activity.">About</a>&#xA0; <a href="https://www.w3.org/International/about#scope" title="Groups that make up the Internationalization Activity.">Groups</a>&#xA0; <a href="https://www.w3.org/International/resource-index" title="Topic index for information on this site">Topics</a>&#xA0; <a href="https://www.w3.org/International/technique-index" title="Task-based index of i18n techniques">Techniques</a>&#xA0; <a href="https://www.w3.org/International/resources" title="Information resources on the Internationalization site.">Resources</a>&#xA0; <a href="https://www.w3.org/International/log/description" title="Information about news filters and RSS feeds for W3C Internationalization.">News</a>&#xA0;
+  &#xA0;</div>
+  
+<div class="directory">
+  <nav>
+  <h2  id="toclinks" class="notoc"><a id="links">On this page</a></h2>
+	<div id="toc"> </div>
+	</nav>
+</div>
+
+
+<div class="content">
+  <h1>Gap analysis checklist<br>
+    Language &amp; script X for HTML/CSS
+  (Draft)</h1>
+<section>
+<p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as  people expect around the world.
+</p>
+<p>This page documents issues for a given script or language in terms of support in specifications or user agents. If you want to raise an issue or comment against this page, use the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</p>
+<p>A summary of this report and others can be found as part of a <a href="language-matrix.html">matrix in the overview page</a>.</p>
+<p>Each section starts with a prompt in italicised text, intended to help you think of things that might be addressed in that section. When summarising the situation, try to indicate which languages you are covering with your text. Use clear signposting where there are divergent issues related to specific languages.</p>
+<p>Data for this page is provided in a javascript file.  For each section,  add all useful comments to the <code class="kw" translate="no">comments</code> field.<code class="kw" translate="no"></code> Set the <code class="kw" translate="no">status</code> to one of the following, which indicates <em>the impact of the missing features on the ability to use the language on the Web</em> (ie. if a feature is unavailable the appropriate label isn't necessarily 'broken', the label assigned depends on the importance of that feature to using the language on the Web).</p>
+<ul>
+  <li>ok (no problems)</li>
+  <li>na (not applicable)</li>
+  <li>advanced (work needed to support advanced applications, such as fine quality book production)</li>
+  <li>basic (work is needed to support  styling for basic/common web page use in this language)</li>
+  <li>broken (work needed to enable interoperable semantics, or basic display on the Web that prevents effective use of the Web for this language).</li>
+  </ul>
+<p>This report was compiled by: <span id="compilers"></span></p>
+</section>
+  
+
+
+
+	
+<section>
+<h2 id="characters_phrases"><a href="#characters_phrases">Characters &amp; phrases</a></h2>
+
+
+<section class="topic" id="encoding">
+<section class="flexContainer">
+<h3><a href="#encoding">Encoding considerations</a></h3>
+<p class="prompt">Are there any  character repertoire issues preventing use of this script on the Web? Do variation selectors need attention?</p>
+</section>
+</section>
+
+
+<section class="topic" id="fonts">
+<section class="flexContainer">
+<h3><a href="#fonts">Fonts</a></h3>
+<p class="prompt">Do the standard fallback fonts used in browsers (eg. serif, sans-serif, cursive, etc.) match expectations? Are special font or OpenType features needed for this script that are not available?  <a href="../index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="fontstyle">
+<section class="flexContainer">
+<h3><a href="#fontstyle">Font styles</a></h3>
+<p class="prompt"> Do italic fonts lean in the right direction? Is synthesised italicisation problematic? <a href="../index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="glyphs">
+<section class="flexContainer">
+<h3><a href="#glyphs">Glyph control</a></h3>
+<p class="prompt">Does this script require additional work to support altering the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way? <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="cursive">
+<section class="flexContainer">
+<h3><a href="#cursive">Cursive text</a></h3>
+<p class="prompt">If this script is cursive (eg. Arabic, N'Ko, Syriac, etc), are there problems or needed features related to the handling of cursive text? <a href="../index#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="transforms">
+<section class="flexContainer">
+<h3><a href="#transforms">Transforming characters</a></h3>
+<p class="prompt">Does your script need special text transforms that are not supported? Does your script convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Do you need to to convert between half-width and full-width presentation forms?
+<a href="../index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-transform%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="numbers">
+<section class="flexContainer">
+  <h3><a href="#numbers">Numbers and digits</a></h3>
+<p class="prompt">If  the script has its own set of number digits, are there any issues in how they are used? Does the script or language use special format patterns that are problematic?
+  <a href="../index#numbers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Anumbers%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="boundaries">
+<section class="flexContainer">
+<h3><a href="#boundaries">Text boundaries and selection</a></h3>
+<p class="prompt">When you double- or triple-click on the text, is the expected range of characters highlighted? When you move through the text with the cursor, or backspace, etc. do you see the expected behaviour? Are there issues when applying punctuation than could be fixed by the application?
+<a href="../index#graphemes">See available information</a>  or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aboundaries%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="quotations">
+<section class="flexContainer">
+  <h3><a href="#quotations">Quotations</a></h3>
+<p class="prompt">Are there any issues when dealing with quotations marks, especially when nested? Should block quotes be indented or handled specially?
+<a href="../index#quotations">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="spacing">
+<section class="flexContainer">
+<h3><a href="#spacing">Inter-character spacing</a></h3>
+<p class="prompt">Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. We know there are questions here about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts.  Are there requirements for other scripts that we should add? (For justification related spacing, see below.) See 
+<a href="../index#letter_spacing">available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="ruby">
+<section class="flexContainer">
+<h3><a href="#ruby">Ruby annotation</a></h3>
+<p class="prompt">The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future?
+<a href="../index#ruby_annotation">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="textdecoration">
+<section class="flexContainer">
+<h3><a href="#textdecoration">Text decoration</a></h3>
+<div>
+<p class="prompt">Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. Do underlines need to be broken in special ways for this script? Do you need support for additional line shapes or widths? Does the distance or position of the lines relative to the text need to vary in ways that are not achievable? Are lines correctly drawn relative to vertical text?
+<a href="../index#text_decoration">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</div>
+</section>
+</section>
+
+
+
+<section class="topic" id="emphasis">
+  <section class="flexContainer">
+  <h3><a href="#emphasis">Emphasis &amp; highlights</a></h3>
+  <p class="prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?
+  <a href="../index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request">check for currently needed data</a>.</p>
+  </section>
+</section>
+
+
+
+<section class="topic" id="bidi">
+<section class="flexContainer">
+<h3><a href="#bidi">Bidirectional text</a></h3>
+<p class="prompt">If this script runs right-to-left, are there any issues when handling that? Is bidirectional text adequately supported?
+<a href="../index#bidirectional_text_direction">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="otherinline">
+<section class="flexContainer">
+<h3><a href="#otherinline">Other inline features</a></h3>
+<p class="prompt">Does your script have special ways of representing inline notes (such as wakiten or kumimoji in Japanese) or other inline features that need to be supported?
+<a href="../index#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+</section>
+
+
+<section>
+<h2 id="lines_paragraphs"><a href="#lines_paragraphs">Lines &amp; paragraphs</a></h2>
+
+<section class="topic" id="linebreak">
+<section class="flexContainer">
+<h3><a href="#linebreak">Line breaking</a></h3>
+<div>
+<p class="prompt">Does the browser capture the rules about the way text in your script wraps when it hits the end of a line?  What characters should not appear at the end or start of a line, and what should be done to prevent that? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan)?
+<a href="../index#line_breaking">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</div>
+</section>
+</section>
+
+
+
+<section class="topic" id="hyphenation">
+<section class="flexContainer">
+<h3><a href="#hyphenation">Hyphenation</a></h3>
+<p class="prompt">Is hyphenation used for your script, or something else? If hyphenation is used, does it work as expected?
+<a href="../index#hyphenation">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ahyphenation%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="justification">
+<section class="flexContainer">
+<h3><a href="#justification">Justification &amp; line-end alignment</a></h3>
+<div>
+  <p class="prompt"> When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script need assistance to conform to a grid pattern? 
+    Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? <a href="../index#justification">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</div>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="counters">
+<section class="flexContainer">
+<h3><a href="#counters">Counters, lists, etc</a></h3>
+<p class="prompt">The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct?
+We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed?
+<a href="../index#counters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Acounter-styles%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="initialletter">
+  <section class="flexContainer">
+  <h3><a href="#initialletter">Initial letter styling</a></h3>
+<p class="prompt">Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps or similar?
+<a href="../index#initial_letter">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Atype-info-request">check for currently needed data</a>.<br />
+</p>
+</section>
+</section>
+
+
+<section class="topic" id="baselines">
+<section class="flexContainer">
+  <h3><a href="#baselines">Baselines &amp; inline alignment</a></h3>
+<p class="prompt">Does the browser support  requirements for baseline alignment between mixed scripts and in general?
+<a href="../index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="whitespace">
+<section class="flexContainer">
+<h3><a href="#whitespace">White space and wrapping in source code</a></h3>
+<p class="prompt">Do the rules for transforming white space in the source text for display meet the requirements of your script?  
+This is particularly relevant for Far Eastern and South East Asian scripts, that don't use spaces between words.</p>
+</section>
+</section>
+
+
+
+
+<section class="topic" id="otherpara">
+<section class="flexContainer">
+<h3><a href="#otherpara">Other paragraph features</a></h3>
+<p class="prompt">In your script, is the first line of text typically indented at the start of a paragraph? Are there other features of paragraph design that are peculiar to your script?
+<a href="../index#other_para_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+</section>
+
+
+<section>
+<h2 id="layout"><a href="#layout">Layout &amp; pages</a></h2>
+
+<section class="topic" id="bidilayout">
+<section class="flexContainer">
+<h3><a href="#bidilayout">Bidirectional layout</a></h3>
+<p class="prompt">When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. 
+<a href="../index#direction_agnostic">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="vertical">
+<section class="flexContainer">
+<h3><a href="#vertical">Vertical text</a></h3>
+<p class="prompt">Are the script requirements for vertically oriented text met?  What about if you mix vertical text with scripts that are normally only horizontal? Do you need a switch to use different characters in vertical vs. horizontal text? Does the browser support short runs of horizontal text in vertical lines (tate-chu-yoko in Japanese) as expected? Is the orientation of characters and the directional ordering of characters supported as needed?
+<a href="../index#vertical_text">See available information</a>.</p>
+</section>
+</section>
+
+
+<section class="topic" id="notes">
+<section class="flexContainer">
+<h3><a href="#notes">Notes, footnotes, etc</a></h3>
+<p class="prompt">Does your script have special requirements for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture?
+<a href="../index#notes_footnotes">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Anotes-footnotes%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="pageheaders">
+<section class="flexContainer">
+<h3><a href="#pageheaders">Page numbering, running headers, etc</a></h3>
+<p class="prompt">Are there special conventions for page numbering, or the way that running headers and the like are handled?
+<a href="../index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="morepage">
+<section class="flexContainer">
+<h3><a href="#morepage">Other page layout and pagination</a> features</h3>
+<p class="prompt">Some cultures define page areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? In what order do pages progress, RTL or LTR?
+<a href="../index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Atype-info-request">check for currently needed data</a>.</p>
+</section>
+</section>
+
+
+</section>
+
+
+<section>
+<h2 id="other"><a href="other">Other</a></h2>
+
+<section class="topic" id="culture">
+<section class="flexContainer">
+<h3 id="culture_specific"><a href="#culture_specific">Culture-specific features</a></h3>
+<p class="prompt">Sometimes a script or language does things that are not common outside of it sphere of influence. This is a loose bag of additional items that weren't previously mentioned.</p>
+<p class="prompt">This section may also be relevant for observations related to locale formats (such as number, date, currency, format support).</p>
+</section>
+</section>
+
+
+
+<section class="topic" id="other">
+<section class="flexContainer">
+<h3 id="what_else"><a href="#what_else">What else?</a></h3>
+<p class="prompt">There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications.</p>
+<p class="prompt">What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?</p>
+</section>
+</section>
+
+
+</section>
+  
+  <hr />
+  <section>
+    <div class="smallprint">
+	<p>If you have comments about this page, send them to ishida@w3.org.</p>
+      <p id="version">Content last changed <span id="version-info"><!-- #BeginDate format:IS1m -->2017-10-06  15:03<!-- #EndDate --></span> GMT</p>
+      <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017 <a href="/"><abbr
+						title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr
+						title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.org/"><abbr
+						title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn/">Beihang</a>), All Rights
+        Reserved. W3C <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a
+						href="/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in
+        accordance with our <a href="/Consortium/Legal/privacy-statement#Public">public</a> and <a
+						href="/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p>
+    </div>
+</section>
+<script>
+	if (document.getElementById('toc')) { createtoc(3); }
+	
+	var levels = document.querySelectorAll('.topic')
+	console.log(levels.length)
+	for (let i=0;i<levels.length;i++) {
+		var levelText = ''
+		var found = false
+		console.log(levels[i].className)
+		if (levels[i].classList.contains('ok')) { levelText = 'OK'; found = true }
+		else if (levels[i].classList.contains('na')) { levelText = 'NA'; found = true }
+		else if (levels[i].classList.contains('advanced')) { levelText = 'Needs work for advanced level support.'; found = true }
+		else if (levels[i].classList.contains('basic')) { levelText = 'Needs work for basic styling support.'; found = true }
+		else if (levels[i].classList.contains('broken')) { levelText = 'Needs work for interoperable semantic support.'; found = true }
+		if (found) {
+			var title = levels[i].querySelector('h3')
+			if (title) {
+				title.innerHTML = title.innerHTML + '<br/><span class="status">' + levelText + '</span>'
+				}
+			}
+		/*if (found) {
+			var section = levels[i].querySelector('.details')
+			console.log(section)
+			if (section) {
+				p = document.createElement('p')
+				p.appendChild(document.createTextNode(levelText))
+				p.className = 'status'
+				section.insertBefore(p, section.firstChild)
+				}
+			}*/
+		}
+</script>
+</div>
+</body>
+</html>
