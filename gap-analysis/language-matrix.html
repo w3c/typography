@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Language matrix</title>
 <script src="language-matrix-data.js"> </script>
+<link rel="stylesheet" href="matrix.css"/>
 <style>
 body {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -78,19 +79,36 @@ thead td div {
 	border: 1px dotted blue;
 	border-radius: 10px;
 }
+table { 
+    margin:auto;
+    }
 </style>
 </head>
 
 <body>
-<h1>Internationalization support on the Web<br>
-  HTML/CSS
-</h1>
+<header>
+<nav id="topbar">
+<div id="w3cIcon"><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></a></div>
+
+<div id="banner"><a href="https://www.w3.org/International">
+<p id="sitename">Internationalization (i18n) Activity</p>
+<p id="subtitle">Making the World Wide Web worldwide!</p></a>
+</div>
+<br style="clear:both;">	
+<div id="sitelinks" class="noprint"><a href="https://www.w3.org/International/" title="Internationalization Activity home page.">Home</a>&nbsp;	<a href="https://www.w3.org/International/resources" title="Information resources on the Internationalization site.">Resources</a>&nbsp;	<a href="https://www.w3.org/International/technique-index" title="Task-based index of i18n techniques.">Techniques</a>&nbsp;	<a href="https://www.w3.org/International/resource-index" title="Topic index for information on this site.">Topics</a>&nbsp;	<a href="https://www.w3.org/International/log/description" title="Information about news filters and RSS feeds for W3C Internationalization.">News</a>&nbsp;	<a href="https://www.w3.org/International/about#scope" title="Groups that make up the Internationalization Activity.">Groups</a>&nbsp;	<a href="https://www.w3.org/International/about" title="About the Internationalization Activity.">About</a>&nbsp;	&nbsp; </div>
+<div id="line">&nbsp;</div>	
+</nav>
+
+<h1>Internationalization support on the Web</h1>
+</header>
+
+
 
 <div id="flexwrapper">
   <div id="key">
     <h2>Key:</h2>
     <p>
-      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered, or <i class="highlight">-</i> Not applicable<br/>
+      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
       <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
       <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
       <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
@@ -106,7 +124,7 @@ thead td div {
     <p><strong><span style="background-color:white; border:1px solid gray;">?</span> <span id="unknown"></span></strong> of cells still need investigation.</p>
   </div>
 </div>
-<p>If a language has a link, click on any cell in that row to see more detail about why the cell was scored that way.</p>
+<p>If a language has a link, click on any cell in that row to see more detail about why the cell was scored that way. An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
 <p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of the support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
 <table id="results">
   <thead>
@@ -148,18 +166,18 @@ thead td div {
   </tbody>
 </table>
 	<p><em>Total number of languages in the table: <span id="langCount">&nbsp;</span></em></p>
-<p>&nbsp;</p>
-<p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order the highest to lowest number of speakers. </p>
+    <h2>How to read the chart</h2>
+<p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers. </p>
 <p>&nbsp;</p>
 <p>The list currently targets some of the more common languages, or scripts that have important implications for general support. It is expected that the list will grow as data becomes available, and we welcome contributions for other languages from local experts.</p>
 <p>&nbsp;</p>
-<p>The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
+<p>Each cell is the intersection of a language and a category of typographic features. The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
 <p>&nbsp;</p>
-<p>The asterisk next to the language name indicates that these are tentative scores, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
+<p>An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
 <p>&nbsp;</p>
 <p>When a language name has a link, you can follow that link to find a draft report that gives details about work needed. That also needs validation and prioritization by experts if the language name has an asterisk.</p>
 <p>&nbsp;</p>
-<p>Click on top row feature groups to get an idea of what kind of features are included in that group. You are taken to the typography index document. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
+<p>Click the feature categories along the top of the chart to get an idea of what kind of typographic features are included in that category. You are taken to the document <a href="https://w3c.github.io/typography/">International Text Layout and Typography Index</a>. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
 <p>&nbsp;</p>
 <p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
 <p>&nbsp;</p>
