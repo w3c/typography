@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Ethiopic numeral bars</title>
+<link rel="author" title="Richard Ishida" href="mailto:ishida@w3.org">
+<link rel="help" href="https://drafts.csswg.org/css-text-3/#text-align-property">
+<meta name="assert" content="Bars across numbers should be a continuous line, rather a sequence of lines.">
+<style type="text/css">
+/* the CSS below is not part of the test */
+.test {
+margin: 20px;
+font-size: 4em;
+}
+</style>
+</head>
+<body>
+<div id="instructions">Select the fonts you have on your system and check whether there is a single line above and below the sequence of numbers.</div>
+<div class="test" id="test">፲፱፻፺፩</div>
+<div class="control">Select a font:<br>
+<select id="fontList" name="fontList" onchange="document.getElementById('test').style.fontFamily = this.value; return false;">
+<optgroup label="Mac fonts ">
+<option value="Kefo">Kefa</option>
+</optgroup>
+<optgroup label="Windows fonts ">
+<option value="Nyala">Nyala</option>
+</optgroup>
+<optgroup label="Google fonts ">
+<option value="Noto Sans Ethiopic">Noto Sans Ethiopic</option>
+<option value="Noto Serif Ethiopic">Noto Serif Ethiopic</option>
+<option value="Droid Sans Ethiopic">Droid Sans Ethiopic</option>
+</optgroup>
+<optgroup label="Other fonts ">
+<option value="Abyssinica SIL">Abyssinica SIL</option>
+<option value="AmharicLSU">AmharicLSU</option>
+<option value="Ethiopia Jiret">Ethiopia Jiret</option>
+<option value="Ethiopia Jiret Slant">Ethiopia Jiret Slant</option>
+<option value="Ethiopic Fantuwua">Ethiopic Fantuwua</option>
+<option value="Ethiopic Hiwua">Ethiopic Hiwua</option>
+<option value="Ethiopic Tint">Ethiopic Tint</option>
+<option value="Ethiopic Wookianos">Ethiopic Wookianos</option>
+<option value="Ethiopic Yebse">Ethiopic Yebse </option>
+<option value="Ethiopic Yigezu Bisrat Goffer">Ethiopic Yigezu Bisrat Goffer</option>
+<option value="EthiopicLSU">EthiopicLSU</option>
+<option value="Geez Unicode">Geez Unicode</option>
+<option value="GF Zemen Unicode">GF Zemen Unicode</option>
+<option value="GS GeezMahtemUnicode">GS GeezMahtemUnicode</option>
+<option value="Visual Geez Unicode">Visual Geez Unicode</option>
+<option value="Visual Geez Unicode Agazian">Visual Geez Unicode Agazian</option>
+<option value="Visual Geez Unicode Title">Visual Geez Unicode Title</option>
+</optgroup>
+<optgroup label="General fonts ">
+<option value="Arial Unicode MS">Arial Unicode MS</option>
+<option value="Code2000">Code2000</option>
+<option value="Free Serif">Free Serif</option>
+<option value="sans-serif">sans-serif</option>
+<option value="serif">serif</option>
+</optgroup>
+</select>
+</div>
+</body>
+</html>

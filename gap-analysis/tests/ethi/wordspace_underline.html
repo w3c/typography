@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  lang="en" >
+<head>
+<meta charset="utf-8">
+<title>Ethiopic wordspace underline</title>
+<link rel="author" title="Richard Ishida" href="mailto:ishida@w3.org">
+<link rel="help" href="https://drafts.csswg.org/css-text-3/#text-align-property">
+<meta name="assert" content="An underline should continue below the wordspace character following an underlined word.">
+<style type="text/css">
+/* the CSS below is not part of the test */
+.test {
+margin: 20px;
+font-size: 4em;
+text-decoration: underline;
+text-decoration-skip:spaces;
+}
+</style>
+</head>
+<body>
+<div id="instructions">Test passes if the space characters are not underlined and the wordspace characters are underlined.</div>
+<div class="test" id="test">ህብረ፡ህሔራዊነት እንቅስቃሴ፡</div>
+</body>
+</html>
