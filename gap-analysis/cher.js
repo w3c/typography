@@ -5,7 +5,7 @@ var compilers = "r12a"
 var report = {
 
 'encoding': { 'status':'ok', "comments": `<p>Unicode recently introduced case for Cherokee, so character coverage is ok.</p>` },
-'fonts': { 'status':'ok', "comments": `<p></p>` },
+'fonts': { 'status':'basic', "comments": `<p>Fonts that existed prior to Unicode 8.0 need updating to support lowercase characters.</p>` },
 'fontstyle': { 'status':'ok', "comments": `<p>Assumed same as for Latin.</p>` },
 'glyphs': { 'status':'na', "comments": `<p>No diacritics or special glyph issues.</p>` },
 'cursive': { 'status':'na', "comments": `<p></p>` },

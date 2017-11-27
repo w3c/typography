@@ -18,7 +18,7 @@ langData = [
 ]},
 
 {script:"Cher", languages:[
- {lang: "Cherokee", url: "cher", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"-", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"3", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
+ {lang: "Cherokee", url: "cher", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"-", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"3", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
 
 {script:"Cyrl", languages:[
