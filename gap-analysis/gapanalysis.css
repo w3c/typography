@@ -1,0 +1,58 @@
+body { font-size: 16px; }
+#toc { background-color: white; }
+h2 { margin-left: 0; margin-top: 4em; }
+h3 { margin-top: 3em; }
+h3 a { color: #006; }
+h3 a:link { color: #006; }
+h3 a:active { color: #006; }
+h3 a:visited { color: #006; }
+h4 { margin-left: 0; }
+#toclocation .toc1 { padding-left: 0.5em; margin-top: 2em; }
+#toclocation .toc2 { padding-left: 2em; }
+.toc2 a {  color: #697FB1; }
+#toclocation ol { padding: 0; margin: 0; }
+
+.flexContainer { vertical-align: top; display: flex; flex-flow: row nowrap; }
+.flexContainer h3 { margin:0 1em 0 0; flex: 2; }
+.flexContainer > p { flex: 3; }
+.flexContainer > div { flex: 3; }
+.flexContainer p a { font-style: italic; }
+.threads { font-size: 90%; font-style: italic; }
+
+	.topic {  border: 1px solid #ddd; margin: 8px; border-left: 20px solid white; }
+	.prompt { font-style: italic; color: #aaa; }
+	.details { color: black; padding-left: 0; font-size: 120%; font-weight: 400; margin-bottom: 2em;  }
+	.details p { margin: 1em; }
+		
+	.okx, .na { border-left: 20px solid green; padding-left: 2em;}
+	.advancedx { border-left: 20px solid #0f0; padding-left: 2em;}
+	.basicx { border-left: 20px solid orange; padding-left: 2em;}
+	.brokenx { border-left: 20px solid red;padding-left: 2em; }
+	.status { color: gray; font-weight: normal; font-size: 80%; }
+
+
+.status_prompt {
+    font-style: italic;
+    color: #aaa;
+    font-size: 90%;
+    }
+
+
+.ok { border-left: 5em solid green; padding-left: 2em; }
+.ok:after { content: 'OK'; color: gray; font-weight: normal; font-size: 120%; }
+
+.na { border-left: 5em solid green; padding-left: 2em; }
+.na:after { content: 'Not applicable'; color: gray; font-weight: normal; font-size: 120%; }
+
+.advanced { border-left: 5em solid #0f0; padding-left: 2em; }
+.advanced:after { content: 'Needs work for advanced level support.'; color: gray; font-weight: normal; font-size: 120%; }
+
+.basic { border-left: 5em solid orange; padding-left: 2em; }
+.basic:after { content: 'Needs work for basic styling support.'; color: gray; font-weight: normal; font-size: 120%; }
+
+.broken { border-left: 5em solid red; padding-left: 2em; }
+.broken:after { content: 'Basic display issues that prevent effective use on the Web for this language.'; color: gray; font-weight: normal; font-size: 120%; }
+
+
+
+
