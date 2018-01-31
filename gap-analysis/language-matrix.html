@@ -209,7 +209,7 @@ for (let s=0;s<langData.length;s++) {
 		table += '<td class="language'
 		if (cLang.tentative) table += ' tentative'
 		table += '">'
-		if (cLang.url) table += '<a target="details" href="index?data='+cLang.url+'">'
+		if (cLang.url) table += '<a target="details" href="'+cLang.url+'">'
 		table += cLang.lang
 		if (cLang.url) table += '</a>'
 		table += '</td>'
@@ -398,7 +398,7 @@ for (let i=0;i<rows.length;i++) {
 		tds[c].title = headers[c].textContent
 		if (tds[c].parentNode.dataset.url && ! tds[c].classList.contains('language')) {
 			tds[c].addEventListener('click', function(evt) {
-			details = window.open('index?data='+evt.target.parentNode.dataset.url+'#'+idlinks[c-1], 'details'); details.focus();
+			details = window.open(evt.target.parentNode.dataset.url+'#'+idlinks[c-1], 'details'); details.focus();
 			console.log(evt.target.parentNode.dataset.url, idlinks[c-1], evt) 
 			})
 			tds[c].style.cursor = 'pointer'
