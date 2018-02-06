@@ -26,7 +26,7 @@ var report = {
 'hyphenation': { 'status':'na', "comments": `<p>No hyphenation is used for Arabic when used with Arabic and Persian languages.</p>` },
 'justification': { 'status':'advanced', "comments": `<p>Arabic script text uses various strategies for justification, which are different from say Latin script text. CSS doesn't provide any way to manage most of these behaviours. [Not sure whether to mark this a basic or advanced issue.]</p>` },
 'counters': { 'status':'basic', "comments": `<p>Arabic script text uses local counter styles. While some of these are supported by some browsers, the set of symbols used and their order varies by language. Custom counter styles can be created using Firefox only. The CSS spec needs to become a Rec and more browsers need to support it.</p>` },
-'initialletter': { 'status':'advanced', "comments": `<p>The parameters for managing initial-letter styling for the Arabic script are not well understood by the technology (for example, how to manage cursiveness across the boundary).</p>` },
+'initialletter': { 'status':'ok', "comments": `<p>Although initial letter styling is not an innate feature of the Arabic script, there have been occurences of its usage noted. However, the specifications and guidelines for composition of these decorative elements are undefined or insubstantial; for example, which of the joining forms of letters is to be used or how the joining behaviour is treated accross the boundary between the styled initial letter and rest of the paragraph.</p>` },
 'baselines': { 'status':'ok', "comments": `<p></p>` },
 'whitespace': { 'status':'na', "comments": `<p></p>` },
 'otherpara': { 'status':'', "comments": `<p></p>` },
