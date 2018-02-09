@@ -17,6 +17,11 @@ langData = [
  {lang: "Chittagonian", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"3", transforms:"", digits:"3", boundaries:"3", quotations:"3", spacing:"1", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"", counters:"", initialletter:"1", baselines:"", otherpara:"", bidilayout:"-", vertical:"2", notes:"", pagehead:"", otherpage:""  }, 
 ]},
 
+{script:"Cans", languages:[
+{lang: "Inuktitut", url:"docs/cans-iu-cr-gap/", tentative:true, encoding:"3", fonts:"3", fontstyle:"", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"-", boundaries:"", quotations:"3", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+{lang: "Cree", url:"docs/cans-iu-cr-gap/", tentative:true, encoding:"3", fonts:"3", fontstyle:"", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"-", boundaries:"", quotations:"3", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+]},
+
 {script:"Cher", languages:[
  {lang: "Cherokee", url: "docs/cher", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"-", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"3", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
