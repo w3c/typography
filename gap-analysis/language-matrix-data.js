@@ -49,6 +49,10 @@ langData = [
  {lang: "Tigriña", url: "https://w3c.github.io/elreq/gap-analysis/", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", digits:"", boundaries:"3", quotations:"3", spacing:"3", ruby:"-", textdecor:"1", emphasis:"2", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"3", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2", otherpage:""  },
 ]},
 
+{script:"Grek", languages:[
+{lang: "Greek", url:"docs/el-gap/", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"", cursive:"-", transforms:"2", digits:"3", boundaries:"", quotations:"3", spacing:"", ruby:"-", textdecor:"3", emphasis:"", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"", justification:"", counters:"1", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+]},
+
 {script:"Guju", languages:[
  {lang: "Gujarati", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"-", transforms:"", digits:"-", boundaries:"3", quotations:"", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
