@@ -1,6 +1,6 @@
 # How to contribute to a gap-analysis document
 
-Practical steps for editing the document gap-analysis/index.html
+Practical steps for editing a gap-analysis document starting from a [standard template](https://github.com/w3c/i18n-activity/blob/gh-pages/templates/gap-analysis/gap-analysis_template.html).
 
 ## Describing a gap
 
