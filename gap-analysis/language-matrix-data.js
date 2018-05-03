@@ -78,11 +78,11 @@ langData = [
 ]},
 
 {script:"Java", languages:[
-{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-jv-gap", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"3", digits:"3", boundaries:"1", quotations:"", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"0", hyphenation:"-", justification:"", counters:"", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-jv-gap", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"3", digits:"3", boundaries:"1", quotations:"2", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"0", hyphenation:"-", justification:"", counters:"", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
 ]},
 
 {script:"Japn", languages:[
-{lang: "Japanese", url:"https://w3c.github.io/jlreq/gap-analysis/", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"3", boundaries:"", quotations:"", spacing:"", ruby:"1", textdecor:"", emphasis:"2", bidi:"-", otherinline:"", linebreak:"", hyphenation:"-", justification:"", counters:"1", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""},
+{lang: "Japanese", url:"https://w3c.github.io/jlreq/gap-analysis/", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"3", boundaries:"", quotations:"2", spacing:"", ruby:"1", textdecor:"", emphasis:"2", bidi:"-", otherinline:"", linebreak:"", hyphenation:"-", justification:"", counters:"1", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""},
 ]},
 
 {script:"Knda", languages:[
@@ -144,7 +144,7 @@ langData = [
 ]},
 
 {script:"Taml", languages:[
- {lang: "Tamil", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"-", transforms:"", digits:"3", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
+{lang: "Tamil", url:"https://w3c.github.io/iip/gap-analysis/taml-gap", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"2", boundaries:"1", quotations:"", spacing:"1", ruby:"-", textdecor:"1", emphasis:"3", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"3", counters:"2", initialletter:"1", baselines:"1", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""},
 ]},
 
 {script:"Telu", languages:[
