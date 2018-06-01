@@ -1,144 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8" />
 <title>Language matrix</title>
-<script src="language-matrix-data.js"> </script>
-<link rel="stylesheet" href="matrix.css"/>
-<style>
-#results {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-	padding: 3em;
-    padding-top: 0;
-}
-#flexwrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: no-wrap;
-	margin: 2em;
-}
-#flexwrapper div {
-	margin: 2em;
-}
-th {
-	text-align: end;
-}
-td {
-	text-align: center;
-	border-radius: 2px;
-}
-.na {
-	background-color: #7CFF7C;
-	background-color: green;
-	color: green;
-	/* color: #7CFF7C; */
-}
-.l3 {
-	background-color: green;
-	color: green;
-}
-.l2 {
-	background-color: #F4CB77;
-	background-color: yellow;
-	background-color: #00ff00;
-	color: #00ff00;
-}
-.l1 {
-	background-color: #FF9A00;
-	color: #FF9A00;
-	color: orange;
-}
-.l0 {
-	background-color: #ff0000;
-	color: #ff0000;
-}
-p {
-	margin: 0;
-}
-thead td {
-	text-align: start;
-	font-weight: bold;
-	-webkit-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
-	line-height: 1.5;
-	width: 20px;
-	text-align: end;
-	text-align: right;
-	vertical-align: bottom;
-}
-thead td div {
-	-webkit-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
-	height: 15em;
-}
-.sum {
-	border-right: 5px solid #0623ED;
-	width: 3em;
-}
-.future {
-	border: 1px dotted blue;
-	border-radius: 10px;
-}
-table { 
-    margin:auto;
-    }
-</style>
+<script src="language-matrix-data/language-matrix-data.js"> </script>
+<link rel="stylesheet" href="language-matrix-data/matrix.css"/>
+
+<script type="text/javascript">
+var f = { }
+
+// AUTHORS should fill in these assignments:
+f.directory = 'getting-started'+'/'; // the path to this file, not including /International or the file name
+f.filename = 'contentdev'; // the file name WITHOUT extensions
+f.authors = 'Richard Ishida, W3C'; // author(s) and affiliations
+f.previousauthors = ''; // as above
+f.modifiers = ''; // people making substantive changes, and their affiliation
+f.searchString = 'level2-contentdev'; // blog search string - usually the filename without extensions
+f.firstPubDate = '2017-08-07'; // date of the first publication of the document (after review)
+f.lastSubstUpdate = { date:'2017-08-07', time:'12:18'}  // date and time of latest substantive changes to this document
+f.status = 'notreviewed';  // should be one of draft, review, published, notreviewed or obsolete
+f.path = '../../' // what you need to prepend to a URL to get to the /International directory 
+
+// AUTHORS AND TRANSLATORS should fill in these assignments:
+f.thisVersion = { date:'2017-08-07', time:'12:18'} // date and time of latest edits to this document/translation
+f.contributors = ''; // people providing useful contributions or feedback during review or at other times
+// also make sure that the lang attribute on the html tag is correct!
+
+// TRANSLATORS should fill in these assignments:
+f.translators = 'xxxNAME, ORG'; // translator(s) and their affiliation - a elements allowed, but use double quotes for attributes
+
+f.breadcrumb = '';
+
+f.additionalLinks = ''
+</script>
+<script src="language-matrix-data/translations.js"> </script>
+<script src="../../i18n-drafts/javascript/doc-structure/article-dt.js"> </script>
+<script src="../../i18n-drafts/javascript/boilerplate-text/boilerplate-en.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
+<script src="../../i18n-drafts/javascript/doc-structure/sitepage.js"> </script>
+<script src="../../i18n-drafts/javascript/articletoc-html5.js"></script>
+<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2016.css" type="text/css" />
+<link rel="stylesheet" href="language-matrix-data/local.css" type="text/css" />
+<link rel="copyright" href="#copyright"/>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
 <body>
 <header>
-<nav id="topbar">
-<div id="w3cIcon"><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" height="48" width="72"></a></div>
-
-<div id="banner"><a href="https://www.w3.org/International">
-<p id="sitename">Internationalization (i18n)</p>
-<p id="subtitle">Making the World Wide Web worldwide!</p></a>
-</div>
-<br style="clear:both;">	
-<div id="sitelinks" class="noprint">
-<a href="https://www.w3.org/International/technique-index" title="Learn techniques and requirements for internationalization.">Learn</a>&nbsp;	
-<a href="https://www.w3.org/International/resources" title="Find information on this site.">Find</a>&nbsp;	
-<a href="https://www.w3.org/International/participate" title="Participate in W3C Internationalization work.">Join</a>&nbsp;	
-<a href="https://www.w3.org/International/log/description" title="Follow the work at W3C Internationalization.">Follow</a>&nbsp;	
-<a href="https://www.w3.org/International/about" title="Get help from W3C Internationalization.">Contact</a>&nbsp;	&nbsp; </div>
-<div id="line">&nbsp;</div>	
-</nav>
-
-<h1>Typographic support on the Web<br>
+  	<nav id="mainNavigation"></nav><script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script>
+	</header>
+<h1>International typography on the Web<br>
 <span style="font-size: 80%; font-style: italic;">Language matrix</span> </h1>
-</header>
 
 
+<section id="sidebarExtras">
+</section>
 
-<p style="font-size: 120%; color: #666;">Languages and writing systems have typographic conventions of their own that users and content authors expect to be available on the Web and in eBooks. This page provides a 'heat-map' indicating levels of support for relevant features, by language.</p>
-<p style="font-size: 120%; color: #666;">Across the top are features, and languages are listed by writing-system down the side. Dark green means there's no problem; red means the language is very difficult or impossible to use.</p>
-<div id="flexwrapper">
-  <div id="key">
-    <h2>Key:</h2>
-    <p>
-      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
-      <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
-      <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
-      <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
-      <p>* next to a language name indicates a tentative score, pending validation by experts</p>
-  </div>
-  <div id="resultsSummary">
-    <h2>Results:</h2>
-    <p>Number of  languages listed: <strong><span id="totalScore"></span></strong></p>
-    <p><span class="l3"> ■</span> <strong><span id="level3"></span></strong> may be Ok, based on what information we have for them</p>
+
+<section>
+<p class="intro">Languages and writing systems have unique typographic conventions that users and content authors expect to be available on the Web and in eBooks. This page provides a ‘heat-map’ indicating levels of support for those typographic features, by language.</p>
+<p class="intro">Across the top are types of feature, and down the side are languages, listed by writing-system. Dark green means there's no problem; red means the language is very difficult or impossible to use.</p>
+
+<p class="intro">For the <span id="langCount">&nbsp;</span> languages currently listed, we see the following problem areas. This page is updated as information is provided.</p>
+
+<div id="resultsSummary">
+    <!--p><span class="l3"> ■</span> <strong><span id="level3"></span></strong> may be Ok, based on what information we have for them</p-->
 <p><span class="l2"> ■</span> <strong><span id="level2"></span></strong> need work for advanced publishing</p>
     <p><span class="l1"> ■</span> <strong><span id="level1"></span></strong> need work for basic features</p>
     <p><span class="l0"> ■</span> <strong><span id="level0"></span></strong> don't work on the Web</p>
-    <p><strong><span style="background-color:white; border:1px solid gray;">?</span> <span id="unknown"></span></strong> of cells still need investigation.</p>
-  </div>
+    <p><span style="background-color:white; border:1px solid gray;">?</span> <strong><span id="unknown"></span></strong> of cells still need investigation.</p>
 </div>
-<p>If a language has a link, click on any cell in that row to see more detail about why the cell was scored that way. An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
-<p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of the support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
+</section>
+
+<div id="bodycontent" style="clear: both;">
+  <section>
+    <h2 id="reference"><a href="#reference">The matrix</a></h2>
+<p>Where a language name has a link, you can click on any cell in that row for more detailed information.</p>
 <table id="results">
   <thead>
     <tr id="table_headers">
-      <th scope="row">script</th>
+      <th scope="row">&nbsp;</th>
       <td>language</td>
       <td>Level</td>
       <td><div><abbr title="Character encodings">Encoding</abbr></div></td>
@@ -174,33 +114,51 @@ table {
  
   </tbody>
 </table>
-	<p><em>Total number of languages in the table: <span id="langCount">&nbsp;</span></em></p>
-    <h2>How to read the chart</h2>
-<p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers. </p>
-<p>&nbsp;</p>
+</section>
+
+  <section>
+    <h2 id="colors"><a href="#colors">Color key</a></h2>
+  <div id="key">
+    <p>
+      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
+      <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
+      <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
+      <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
+      <p>* next to a language name indicates a tentative score, pending validation by experts</p>
+  </div>
+  </section>
+  
+  <section>
+    <h2 id="howto"><a href="#howto">Detailed information about the chart</a></h2>
+<p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of  support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
+<p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers.</p>
 <p>The list currently targets some of the more common languages, or scripts that have important implications for general support. It is expected that the list will grow as data becomes available, and we welcome contributions for other languages from local experts.</p>
-<p>&nbsp;</p>
 <p>Each cell is the intersection of a language and a category of typographic features. The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
-<p>&nbsp;</p>
-<p>An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community. </p>
-<p>&nbsp;</p>
+<p>An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community.</p>
 <p>When a language name has a link, you can follow that link to find a draft report that gives details about work needed. That also needs validation and prioritization by experts if the language name has an asterisk.</p>
-<p>&nbsp;</p>
 <p>Click the feature categories along the top of the chart to get an idea of what kind of typographic features are included in that category. You are taken to the document <a href="https://w3c.github.io/typography/">International Text Layout and Typography Index</a>. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
-<p>&nbsp;</p>
 <p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
-<p>&nbsp;</p>
 <p>The colour of the third column from the left is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The numeric score in that column is a non-scientific way of hinting at the amount of work to be done to get the language level to OK. (We may change the algorithm used for that at some future point.)</p>
-<p>&nbsp;</p>
-    <h2>How to help</h2>
+  </section>
+  
+  
+    <section>
+    <h2 id="help"><a href="#help">How to help</a></h2>
 <p>We are actively looking for people and organizations that can help us complete the missing information in the matrix, and compile requirements for spec and browser developers. The following links may be helpful.</p>
-<p>&nbsp;</p>
-<p><a href="https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web">Analysing support for text layout on the Web</a></p>
-<p><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">Setting up a Gap Analysis Project</a></p>
-<p><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></p>
-<hr/>
-<p><em><a href="https://github.com/w3c/typography/tree/gh-pages/gap-analysis">Raise an issue or see the source code</a>.</em></p>
-</body>
+
+<ul>
+<li><a href="https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web">Analysing support for text layout on the Web</a></li>
+<li><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">Setting up a Gap Analysis Project</a></li>
+<li><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></li>
+<li><a href="https://github.com/w3c/typography/tree/gh-pages/gap-analysis">Raise an issue or see the source code</a></li>
+</ul>
+</section>
+</div>
+
+
+<br style="clear: both;" />
+
+<footer id="thefooter"></footer><script type="text/javascript">document.getElementById('thefooter').innerHTML = g.bottomOfPage</script>
 <script>
 
 // add rows to table from .js file
@@ -339,7 +297,7 @@ for (let i=0;i<rows.length;i++) {
 // get overall scores
 tds = document.querySelectorAll('.sum')
 console.log(tds.length)
-document.getElementById('totalScore').textContent = tds.length
+//document.getElementById('totalScore').textContent = tds.length
 
 var unknown = level0 = level1 = level2 = level3 = 0
 for (let i=0;i<tds.length;i++) {
@@ -349,7 +307,7 @@ for (let i=0;i<tds.length;i++) {
 	else if (tds[i].classList.contains('l1')) ++level1
 	else if (tds[i].classList.contains('l0')) ++level0
 	}
-document.getElementById('level3').textContent = level3
+//document.getElementById('level3').textContent = level3
 document.getElementById('level2').textContent = level2
 document.getElementById('level1').textContent = level1
 document.getElementById('level0').textContent = level0
@@ -414,7 +372,5 @@ for (let i=0;i<rows.length;i++) {
 		}
 	}
 	
-	</script>
-
-
+	</script></body>
 </html>
