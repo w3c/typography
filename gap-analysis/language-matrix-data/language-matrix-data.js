@@ -78,7 +78,7 @@ langData = [
 ]},
 
 {script:"Java", languages:[
-{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-jv-gap", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"3", digits:"3", boundaries:"1", quotations:"2", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"0", hyphenation:"-", justification:"", counters:"", initialletter:"", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-gap", tentative:true, encoding:"3", fonts:"1", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"3", digits:"3", boundaries:"1", quotations:"2", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"0", hyphenation:"-", justification:"", counters:"", initialletter:"-", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
 ]},
 
 {script:"Japn", languages:[
