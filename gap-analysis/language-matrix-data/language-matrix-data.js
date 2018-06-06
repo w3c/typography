@@ -89,6 +89,10 @@ langData = [
  {lang: "Kannada", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"-", transforms:"", digits:"3", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
 
+{script:"Laoo", languages:[
+{lang: "Lao", url:"https://w3c.github.io/sealreq/gap-analysis/laoo-gap", tentative:true, encoding:"3", fonts:"3", fontstyle:"", glyphcontrol:"", cursive:"-", transforms:"", digits:"", boundaries:"", quotations:"2", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+]},
+
 {script:"Latn", languages:[
  {lang: "English", url: "", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"3", digits:"-", boundaries:"3", quotations:"2", spacing:"2", ruby:"-", textdecor:"", emphasis:"3", bidi:"-", otherinline:"", linebreak:"3", hyphenation:"3", justification:"3", counters:"3", initialletter:"2", baselines:"3", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
  {lang: "Spanish", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"-", transforms:"", digits:"-", boundaries:"3", quotations:"2", spacing:"", ruby:"-", textdecor:"", emphasis:"3", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
