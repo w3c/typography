@@ -85,6 +85,10 @@ langData = [
 {lang: "Japanese", url:"https://w3c.github.io/jlreq/gap-analysis/", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"-", cursive:"-", transforms:"1", digits:"3", boundaries:"", quotations:"2", spacing:"", ruby:"1", textdecor:"", emphasis:"2", bidi:"-", otherinline:"", linebreak:"", hyphenation:"-", justification:"", counters:"1", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""},
 ]},
 
+{script:"Khmr", languages:[
+{lang: "Khmer", url:"https://w3c.github.io/sealreq/gap-analysis/khmr-gap", tentative:true, encoding:"3", fonts:"3", fontstyle:"", glyphcontrol:"", cursive:"-", transforms:"", digits:"", boundaries:"", quotations:"2", spacing:"2", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"2", hyphenation:"", justification:"", counters:"3", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""},
+]},
+
 {script:"Knda", languages:[
  {lang: "Kannada", url: "", tentative:true, encoding:"3", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"-", transforms:"", digits:"3", boundaries:"3", quotations:"3", spacing:"", ruby:"-", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"-", notes:"", pagehead:"", otherpage:""  },
 ]},
