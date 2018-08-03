@@ -719,10 +719,16 @@
 <h2 id="blocks_paragraphs">Lines &amp; paragraphs</h2>
   <section id="line_breaking">
   <h3>Line breaking</h3>
-  <p>There are some specific rules about how scripts such as Chinese, Japanese and Korean behave when a line is wrapped. For example, these scripts tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words.</p>
+  <p>There are often specific rules about how scripts behave when a line is wrapped. For example,   Chinese, Japanese and Korean tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words. Others break lines at syllable boundaries. (See below for hyphenation.)</p>
   <p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
-  <dl class="reslinks">
-    <dt>Requirements:</dt>
+<dl class="reslinks">
+<dt>Background reading: </dt>
+    <dd>
+      <ul>
+        <li><a href="http://w3c.github.io/i18n-drafts/articles/typography/linebreak.en">Approaches to line breaking</a></li>
+      </ul>
+    </dd>
+<dt>Requirements:</dt>
     <dd>
       <ul>
         <li><cite>Chinese Layout Requirements</cite>:<ul class="linkList">
@@ -816,9 +822,14 @@
     <h3>Justification &amp; line-end alignment</h3>
     <p>Typographers have come up with various methods for effective full justification – causing the text to completely fill the line, in order to create visual alignment on both edges of a paragraph.    </p>
     <p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
-    <!--p>The article <a href="https://w3c.github.io/i18n-drafts/articles/typography/justification.en">Approaches to full justification (draft)</a> provides a hint at some of the different strategies used in different writing systems, but the devil is very much in the detail. Furthermore, other factors such as line-break rules, hyphenation, and other inline features, have to be taken into account during justification.</p-->
-      <dl class="reslinks">
-        <dt>Requirements</dt>
+<dl class="reslinks">
+  <dt>Background reading: </dt>
+    <dd>
+      <ul>
+        <li><a href="https://www.w3.org/International/articles/typography/justification">Approaches to full justification</a></li>
+      </ul>
+    </dd>
+  <dt>Requirements</dt>
         <dd>
           <ul>
             <li><cite>Arabic Layout Requirements</cite>:
@@ -1057,7 +1068,7 @@
 
   <section id="bidi_layout">
     <h3><a href="#bidi_layout">Bidirectional layout</a></h3>
-    <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. </p>
+    <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. (See <a href="#more_page_layout_and_pagination">More page layout and pagination</a> for right-to-left pagination.)</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -1199,9 +1210,10 @@
   </section>
   <section id="more_page_layout_and_pagination">
     <h3>More page layout and pagination</h3>
-    <p>Some cultures define page areas and page progression direction very differently from those in the West. For example, the size of the Japanese kihon-hanmen, or main text block, is traditionally established by counting character cells, and margin space is then defined by the remaining space.  In right-to-left scripts, pages also progress from right to left.</p>
+    <p>Some cultures define page areas and page progression direction very differently from those in the West. For example, the size of the Japanese kihon-hanmen, or main text block, is traditionally established by counting character cells, and margin space is then defined by the remaining space.  In paged media for right-to-left scripts, pages  progress from right to left, and the front and back cover are in the opposite locations to, say, and English book. </p>
+<p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, columns, printer marks,  tables of contents and indexes.</p>
     <dl class="reslinks">
-      <dt>Requirements</dt>
+    <dt>Requirements</dt>
       <dd>
         <ul>
           <li><cite>Chinese Layout Requirements</cite>:<ul class="linkList">
