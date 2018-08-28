@@ -1072,9 +1072,51 @@
 
 
 
+
+<section id="general_page_layout_and_progression">
+<h3><a href="#general_page_layout_and_progression">General page layout and progression</a></h3>
+<p>In paged media for right-to-left scripts or vertically set documents, pages  progress from right to left, and  the front and back cover are in the opposite locations to, say, an English book. Unlike the general Western approach, the size of the  main text block in Japanese pages (called the <span class="foreign">hanmen</span>) is traditionally established by counting character cells, and margin space is then defined by the remaining space.  Columns run across a page in vertically-set pages. The standard page layout for Mongolian is landscape, and horizontal scrolling within a page is much more important than in the West, so default scrollbar positions may need special support.</p>
+<p>Other topics that belong here include any local requirements for things such as  printer marks,  tables of contents and indexes.</p>
+    <dl class="reslinks">
+    <dt>Requirements</dt>
+      <dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>:
+<ul class="linkList">
+<li><a href="http://www.w3.org/TR/clreq/#type_area">The Type Area (or Printing Area)</a></li>
+<li><a href="http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows">Handling of Widows and Orphans</a></li>
+<li><a href="http://www.w3.org/TR/clreq/#handling_of_headings">Headings &amp; Page Breaks</a></li>
+</ul>
+</li>
+<li><cite>Japanese Layout Requirements</cite>:
+<ul class="linkList">
+<li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a></li>
+<li><a href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents">Page Formats for Japanese Documents</a></li>
+<li><a href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen">Specifying the Kihon-hanmen</a></li>
+</ul>
+</li>
+<li><a href="http://www.w3.org/TR/klreq/#page-layout"><cite>Hangul Layout Requirements</cite></a></li>
+<li><cite>Latin Layout Requirements</cite>:
+<ul class="linkList">
+<li><a href="http://w3c.github.io/dpub-pagination/#paginating-single-column-text">Paginating Single-Column Text </a></li>
+<li><a href="http://w3c.github.io/dpub-pagination/#heads">Heads</a></li>
+<li><a href="http://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
+<li><a href="http://w3c.github.io/dpub-pagination/#paginating-single-column-text">Paginating Single-Column Text</a></li>
+</ul>
+</li>
+<li><a href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
+</ul>
+</dd>
+    </dl>
+  </section>
+  
+  
+
+
+
   <section id="bidi_layout">
     <h3><a href="#bidi_layout">Bidirectional layout</a></h3>
-    <p>When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. (See <a href="#more_page_layout_and_pagination">More page layout and pagination</a> for right-to-left pagination.)</p>
+    <p>Within a page, when content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. (See <a href="#more_page_layout_and_pagination">More page layout and pagination</a> for right-to-left pagination.)</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
       <dd>
@@ -1121,8 +1163,8 @@
 
 
   <section id="vertical_text">
-    <h3>Vertical text</h3>
-    <p>There are special requirements for vertically oriented text. For example, it's common for content authors to want to mix short horizontal runs of text, such as 2-digit numbers, in a vertical column (tate chu yoko). It's also important to provide appropriate support for text in scripts that are normally only horizontal. </p>
+  <h3><a href="#vertical_text">Vertical text</a></h3>
+    <p>Within a laid out page, there are special requirements for vertically oriented text. For example, it's common for content authors to want to mix short horizontal runs of text, such as 2-digit numbers, in a vertical column (tate chu yoko). It's also important to provide appropriate support for text in scripts that are normally only horizontal. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
     <dd>
@@ -1170,8 +1212,11 @@
       </dd>
     </dl>
   </section>
+  
+  
+  
   <section id="notes_footnotes">
-    <h3>Notes, footnotes, etc</h3>
+  <h3><a href="#notes_footnotes">Notes, footnotes, etc</a></h3>
     <p>Support for notes, footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to represent notes inline or to link to footnotes.</p>
     <dl class="reslinks">
       <dt>Requirements</dt>
@@ -1200,8 +1245,11 @@
       </dd>
     </dl>
   </section>
+  
+  
+  
   <section id="page_numbering_running_headers">
-    <h3>Page numbering, running headers, etc</h3>
+  <h3><a href="#page_numbering_running_headers">Page numbering, running headers, etc</a></h3>
     <p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
     <dl class="reslinks">
       <dt>Requirements</dt>
@@ -1214,33 +1262,49 @@
       </dd>
     </dl>
   </section>
+  
+  
+  
+  <!--section id="tables">
+  <h3><a href="#tables">Tables</a></h3>
+    <p>Are there any special considerations related to the layout and design of tables?</p>
+    <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Japanese Layout Requirements</cite>: <a href="http://www.w3.org/TR/jlreq/#running_heads_and_page_numbers">Running Heads and Page Numbers</a></li>
+          <li><cite>Hangul Layout Requirements</cite>: <a href="http://www.w3.org/TR/klreq/#page-number">Page Numbers</a></li>
+          <li><cite>Latin Layout Requirements</cite>: <a href="http://w3c.github.io/dpub-pagination/#running-headers-and-footers">Running headers and footers</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </section-->
+  
+  
+  
+  <section id="user_interaction">
+  <h3><a href="#user_interaction">User interaction</a></h3>
+    <p>Where a page allows users to input information in forms or interact with a page, there may be special requirements for the layout and orientation of the input fields and associated labels. There may also be other aspects of user interaction with the page that differ.</p>
+    <dl class="reslinks">
+      <dt>Requirements</dt>
+      <dd>
+        <ul>
+          <li><cite>Mongolian Layout Requirements</cite>: <a href="http://www.w3.org/TR/mlreq/#input">User interaction</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </section>
+  
+  
   <section id="more_page_layout_and_pagination">
-    <h3>More page layout and pagination</h3>
-    <p>Some cultures define page areas and page progression direction very differently from those in the West. For example, the size of the Japanese kihon-hanmen, or main text block, is traditionally established by counting character cells, and margin space is then defined by the remaining space.  In paged media for right-to-left scripts, pages  progress from right to left, and the front and back cover are in the opposite locations to, say, and English book. </p>
-<p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, columns, printer marks,  tables of contents and indexes.</p>
+  <h3><a href="#more_page_layout_and_pagination">Other page- or document-level features</a></h3>
+<p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, and so forth.</p>
     <dl class="reslinks">
     <dt>Requirements</dt>
       <dd>
         <ul>
-          <li><cite>Chinese Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="http://www.w3.org/TR/clreq/#type_area">The Type Area (or Printing Area)</a></li>
-          <li><a href="http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows">Handling of Widows and Orphans</a></li>
-          <li><a href="http://www.w3.org/TR/clreq/#handling_of_headings">Headings &amp; Page Breaks</a></li>
-          </ul></li>
-          <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a></li>
-          <li><a href="http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents">Page Formats for Japanese Documents</a></li>
-          <li><a href="http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen">Specifying the Kihon-hanmen</a></li>
-          </ul></li>
-          <li><a href="http://www.w3.org/TR/klreq/#page-layout"><cite>Hangul Layout Requirements</cite></a></li>
-          <li><cite>Latin Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="http://w3c.github.io/dpub-pagination/#paginating-single-column-text">Paginating Single-Column Text </a></li>
-          <li><a href="http://w3c.github.io/dpub-pagination/#heads">Heads</a></li>
-          <li><a href="http://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
-          <li><a href="http://w3c.github.io/dpub-pagination/#paginating-single-column-text">Paginating Single-Column Text</a></li>
-          </ul></li>
-          <li><a href="http://www.chinaw3c.org/layout-workshop-report.html#talk5"><cite>Tibetan script requirements</cite> (.ppt)</a></li>
-        </ul>
+          <li><cite>TBD</cite></li>
+</ul>
       </dd>
     </dl>
   </section>
@@ -1250,15 +1314,8 @@
 Version</h2>
 <p>The following changes have been made since the document was last published to the TR space:</p>
   <ul>
-    <li>added links to Netflix requirements</li>
-<li>reorganized to match developments in the gap analysis reports</li>
-    <li>added sections for fonts, other inline features, and bidi layout</li>
-    <li>added section on cursive text</li>
-    <li>changed 'Issues' to 'GitHub resources', added more links, and added Type samples links.</li>
-    <li>made the counter styles section more generally about lists.</li>
-    <li>changed the glyph-controls section to glyphs &amp; diacritics</li>
-    <li>added a font-style section and a numbers section.</li>
-  </ul>
+    <li>Reorganised the Layout &amp; Pages section. Added new subsections for general page layout and progression, and for user interaction.</li>
+</ul>
   <p>See the <a href="https://github.com/w3c/typography/commits/gh-pages/index.html">github
     commit log</a> for more details.</p>
 </section>
