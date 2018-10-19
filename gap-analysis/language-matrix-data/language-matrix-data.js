@@ -131,7 +131,7 @@ langData = [
 ]},
 
 {script:"Mong", languages:[
- {lang: "Mongolian", url: "", tentative:true, encoding:"0", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"", transforms:"", digits:"3", boundaries:"", quotations:"", spacing:"", ruby:"2", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""  },
+ {lang: "Mongolian", url: "", tentative:true, encoding:"1", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"", transforms:"", digits:"3", boundaries:"", quotations:"", spacing:"", ruby:"2", textdecor:"", emphasis:"", bidi:"-", otherinline:"", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"", bidilayout:"-", vertical:"1", notes:"", pagehead:"", otherpage:""  },
 ]},
 
 {script:"Mymr", languages:[
