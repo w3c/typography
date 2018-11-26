@@ -36,6 +36,9 @@ h4 { margin-left: 0; }
 .tbd { border-left: 5em solid #eee; padding-left: 2em; }
 .tbd:after { content: 'Needs research.'; color: gray; font-weight: normal; font-size: 120%; }
 
+  .pass { background-color:greenyellow; padding: 0 4px; border-radius: 2px;  }
+  .fail { padding: 0 4px; color: white; background-color: crimson; border-radius: 2px; }
+  .partial { background-color: orange;  padding: 0 4px; color: white;  }
 
 
 
