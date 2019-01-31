@@ -92,5 +92,7 @@ table {
     font-style: italic;
     }
 
-
+.language a {
+    font-weight: bold;
+    }
 
