@@ -195,9 +195,9 @@ for (let s=0;s<langData.length;s++) {
 		table += '<td>'+cLang.cursive+'</td>'
 		table += '<td>'+cLang.transforms+'</td>'
 		table += '<td>'+cLang.boundaries+'</td>'
-		table += '<td>'+cLang.emphasis+'</td>'
+		table += '<td>'+cLang.textdecor+'</td>'
 		table += '<td>'+cLang.quotations+'</td>'
-		table += '<td>'+cLang.ruby+'</td>'
+		table += '<td>'+cLang.inlinenotes+'</td>'
 		table += '<td>'+cLang.digits+'</td>'
 		table += '<td>'+cLang.otherinline+'</td>'
         
@@ -207,13 +207,13 @@ for (let s=0;s<langData.length;s++) {
 		table += '<td>'+cLang.spacing+'</td>'
 		table += '<td>'+cLang.counters+'</td>'
 		table += '<td>'+cLang.initialletter+'</td>'
-		table += '<td>'+cLang.interactive+'</td>'
 		table += '<td>'+cLang.baselines+'</td>'
 		table += '<td>'+cLang.otherpara+'</td>'
         
 		table += '<td class="newSection">'+cLang.pagelayout+'</td>'
 		table += '<td class="future">'+cLang.notes+'</td>'
 		table += '<td class="future">'+cLang.pagehead+'</td>'
+		table += '<td>'+cLang.interaction+'</td>'
 		table += '<td class="future">'+cLang.otherpage+'</td>'
 		table += '</tr>\n'
 		}
@@ -340,7 +340,7 @@ idlinks = [
 'cursive',
 'transforms',
 'boundaries',
-'textdecoration',
+'textdecor',
 'quotations',
 'inlinenotes',
 'numbers',
@@ -358,7 +358,7 @@ idlinks = [
 'pagelayout',
 'notes',
 'pageheaders',
-'interactive',
+'interaction',
 'otherpage',
 ]
 
