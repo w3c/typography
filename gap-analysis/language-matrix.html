@@ -48,8 +48,8 @@ f.additionalLinks = ''
 <header>
   	<nav id="mainNavigation"></nav><script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script>
 	</header>
-<h1>International typography on the Web<br>
-<span style="font-size: 80%; font-style: italic;">Language matrix</span> </h1>
+<h1>Language matrix<br>
+<span style="font-size: 80%; font-style: italic;">International typography on the Web</span> </h1>
 
 
 <section id="sidebarExtras">
@@ -80,7 +80,7 @@ f.additionalLinks = ''
     <tr id="table_headers">
       <th scope="row">script</th>
       <th>language</th>
-      <td>level</td>
+      <td>summary</td>
         <td><div>Vertical text</div></td>
         <td><div>Bidirectional text</div></td>
         
@@ -133,6 +133,7 @@ f.additionalLinks = ''
   
   <section>
     <h2 id="howto"><a href="#howto">Detailed information about the chart</a></h2>
+<p>The colour to the left of the language is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The column immediately to the right of the language name graphically summarises the available data for that language (by reordering the squares in the main part of the table).</p>
 <p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of  support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
 <p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers.</p>
 <p>The list currently targets some of the more common languages, or scripts that have important implications for general support. It is expected that the list will grow as data becomes available, and we welcome contributions for other languages from local experts. Some less common languages are already represented, sometimes because they present features that need to be taken into account while designing the overall technological architecture, other times simply because we have information about them and including them helps the local community ensure the survival of their language on the Web.</p>
@@ -141,8 +142,7 @@ f.additionalLinks = ''
 <p>When a language name has a link, you can follow that link to find a draft report that gives details about work needed. That also needs validation and prioritization by experts if the language name has an asterisk.</p>
 <p>Click the feature categories along the top of the chart to get an idea of what kind of typographic features are included in that category. You are taken to the document <a href="https://w3c.github.io/typography/">International Text Layout and Typography Index</a>. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
 <p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
-<p>The colour of the third column from the left is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The numeric score in that column is a non-scientific way of hinting at the amount of work to be done to get the language level to OK. (We may change the algorithm used for that at some future point.)</p>
-  </section>
+</section>
   
   
     <section>
@@ -170,7 +170,7 @@ for (let s=0;s<langData.length;s++) {
 	for (let l=0;l<langData[s].languages.length;l++){
 		var cLang = langData[s].languages[l]
 		table += '<tr'
-		if (cLang.url) table += ' data-url="'+cLang.url+'"'
+		if (cLang.url) table += ' data-url="'+cLang.url+'" id="'+cLang.lang.replace(/ /g,'').toLowerCase()+'"'
 		table += '>\n'
 		if (l===0) table += '<th scope="row">'+langData[s].script+'</th>'
 		else table += '<th>&nbsp;</td>'
@@ -233,26 +233,7 @@ for (let i=0;i<tds.length;i++) {
 	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '*'
 	}
 
-// get overall scores
-/*document.getElementById('totalScore').textContent = tds.length
 
-var unknown = level0 = level1 = level2 = level3 = 0
-for (let i=0;i<tds.length;i++) {
-	switch (tds[i].textContent) {
-		case '-': ++level3; break;
-		case '3': ++level3; break;
-		case '2': ++level2; break;
-		case '1': ++level1; break;
-		case '0': ++level0; break;
-		case '?': ++unknown; break;
-		}
-	}
-document.getElementById('level3').textContent = level3
-document.getElementById('level2').textContent = level2
-document.getElementById('level1').textContent = level1
-document.getElementById('level0').textContent = level0
-document.getElementById('unknown').textContent = unknown
-*/
 
 
 
@@ -261,56 +242,60 @@ var lowest, lowestClass
 var rows = document.querySelectorAll('.sum')
 for (let i=0;i<rows.length;i++) {
 	tds = rows[i].parentNode.querySelectorAll('td')
-	score = 0
-	count = 0
+    if (rows[i].parentNode.id) cLang = rows[i].parentNode.id
+    else cLang = ''
+	level0 = level1 = level2 = level3 = levelq = 0
+    
 	for (let c=0;c<tds.length;c++) {
-		if (tds[c].textContent === '3' || tds[c].textContent === '-') {
-			score += 3; count++ }
-		if (tds[c].textContent === '2') {
-			score += 2; count++ }
-		if (tds[c].textContent === '1') {
-			score += 1; count++ }
+		if (tds[c].textContent === '3' || tds[c].textContent === '-') level3+=3
+		else if (tds[c].textContent === '2') level2+=3
+		else if (tds[c].textContent === '1') level1+=3
+		else if (tds[c].textContent === '0') level0+=3
+        else levelq += 3
 		}
 	
-	rows[i].textContent = (Math.round(((score/count)-2)*100)/100)
-	//rows[i].classList.add(lowestClass)
+    temp = ''
+    if (level0) temp += '<span class="guage0" style="width:'+level0+'px;"></span>'
+    if (level1) temp += '<span class="guage1" style="width:'+level1+'px;"></span>'
+    if (level2) temp += '<span class="guage2" style="width:'+level2+'px;"></span>'
+    if (level3) temp += '<span class="guage3" style="width:'+level3+'px;"></span>'
+    if (levelq) temp += '<span class="guageq" style="width:'+levelq+'px;"></span>'
+    temp += ''
+
+    // calculate the lowest level for this language
+    lowestClass = 'unknown'
+    if (level0) lowest = lowestClass = '0'
+    else if (level1) lowest = lowestClass = '1'
+    else if (level2) lowest = lowestClass = '2'
+    else if (level3) lowest = lowestClass = '3'
+    
+    //temp = '<span class="lowest '+lowestClass+'">'+lowestClass+'</span> '+temp
+    rows[i].parentNode.querySelector('.language').classList.add('low'+lowestClass)
+    
+    rows[i].innerHTML = temp
 	}
+
+
+
 
 // add number of languages below table
 document.getElementById('langCount').textContent = document.querySelectorAll('.language').length
 
-// calculate the level for each language
-var lowest, lowestClass
-var rows = document.querySelectorAll('.sum')
-for (let i=0;i<rows.length;i++) {
-	tds = rows[i].parentNode.querySelectorAll('td')
-	lowestClass = 'unknown'
-	lowest = 3
-	for (let c=0;c<tds.length;c++) {
-		let ccell = parseInt(tds[c].textContent)
-		if (ccell < lowest && tds[c].className !== 'sum') lowest = ccell
-		//console.log(i,tds[c].textContent,ccell,lowest)
-		}
-	lowestClass = 'l'+lowest
-	
-	//rows[i].textContent = lowest
-	rows[i].classList.add(lowestClass)
-	rows[i].style.color = 'black'
-	}
+
 
 
 // get overall scores
-tds = document.querySelectorAll('.sum')
+tds = document.querySelectorAll('.language')
 console.log(tds.length)
 //document.getElementById('totalScore').textContent = tds.length
 
 var unknown = level0 = level1 = level2 = level3 = 0
 for (let i=0;i<tds.length;i++) {
 	if (tds[i].classList.contains('na')) ++level3
-	else if (tds[i].classList.contains('l3')) ++level3
-	else if (tds[i].classList.contains('l2')) ++level2
-	else if (tds[i].classList.contains('l1')) ++level1
-	else if (tds[i].classList.contains('l0')) ++level0
+	else if (tds[i].classList.contains('low3')) ++level3
+	else if (tds[i].classList.contains('low2')) ++level2
+	else if (tds[i].classList.contains('low1')) ++level1
+	else if (tds[i].classList.contains('low0')) ++level0
 	}
 //document.getElementById('level3').textContent = level3
 document.getElementById('level2').textContent = level2

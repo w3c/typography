@@ -31,7 +31,7 @@ td {
 .l3 {
 	background-color: green;
 	color: green;
-}
+    }
 .l2 {
 	background-color: #F4CB77;
 	background-color: yellow;
@@ -64,9 +64,10 @@ thead td div {
 	height: 15em;
 }
 .sum {
-	border-right: 5px solid #0623ED;
-	width: 3em;
-}
+	/*border-right: 5px solid #0623ED;*/
+    width: 100px;
+    text-align: left;
+    }
 .future {
 	border: 1px dotted blue;
 	border-radius: 10px;
@@ -92,7 +93,65 @@ table {
     font-style: italic;
     }
 
+.language {
+    text-align: left;
+    padding-left: 5px;
+    }
 .language a {
     font-weight: bold;
     }
+
+
+
+.guage0 {
+    display: inline-block;
+    height:16px;
+    background-color:red;
+    }
+.guage1 {
+    display: inline-block;
+    height:16px;
+    background-color:orange;
+    }
+.guage2 {
+     display: inline-block;
+   height:16px;
+    background-color:#00FF00;
+    }
+.guage3 {
+    display: inline-block;
+    height:16px;
+    background-color:green;
+    }
+.guageq {
+    display: inline-block;
+    height:16px;
+    background-color:#eee;
+    }
+
+.lowest {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 6px;
+    vertical-align: top;
+    }
+
+
+.low0 {
+    border-left: 12px solid red;
+    }
+.low1 {
+    border-left: 12px solid orange;
+    }
+.low2 {
+    border-left: 12px solid #00FF00;
+    }
+.low3 {
+    border-left: 12px solid green;
+    }
+
+
+
 
