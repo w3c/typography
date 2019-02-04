@@ -264,18 +264,18 @@
 
 
 <section id="q_defaults">
-<h4 id="x2-9-1-default-quotation-marks-for-q-element"><span class="secno">2.9.1<!---0.304674%--> </span><a href="#q_defaults">Default quotation marks for q element</a><a class="self-link" aria-label="§" href="#q_defaults"></a></h4>
+<h4>Default quotation marks for q element</h4>
 <p>If the <code class="kw" translate="no">html</code> tag sets the language of a page, the HTML specification says that  the <code class="kw" translate="no">q</code> element should by default produce quotation marks according to the information in CLDR for that language.</p>
 <p>For <strong>Greek</strong>, the default quote marks should be, reading right to left, «...», and embedded quote marks “...”. <span class="fail">Firefox</span> produces the default English quotes. <span class="pass">Chrome</span> &amp; <span class="pass">Safari</span> are ok. <span class="partial">Edge</span> produces the outer quote marks as expected, but uses single quotes for the inner ones. See a <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">test and results</a>.</p>
 </section>
 
 <section id="q_section">
-<h4 id="x2-9-2-default-quotation-marks-in-a-new-language-section"><span class="secno">2.9.2<!---0.304674%--> </span><a href="#q_section">Default quotation marks in a new language section</a><a class="self-link" aria-label="§" href="#q_section"></a></h4>
+<h4>Default quotation marks in a new language section</h4>
 <p>In addition, the default quotation marks for the <code class="kw" translate="no">q</code> element  are not set to the appropriate characters by the browser  when the element appears inside a Greek section of a page that has a different overall language. This is currently per the HTML specification (both <abbr title="World Wide Web Consortium">W3C<!---0.304674%--></abbr> and WhatWG).  There is <a href="https://github.com/whatwg/html/issues/3636#issuecomment-384340053">an issue</a> raised against the WhatWG version for this to be changed.</p>
 </section>
 
 <section id="q_multilingual">
-<h4 id="x2-9-3-embedded-quotations-in-a-different-language"><span class="secno">2.9.3<!---0.304674%--> </span><a href="#q_multilingual">Embedded quotations in a different language</a><a class="self-link" aria-label="§" href="#q_multilingual"></a></h4>
+<h4>Embedded quotations in a different language</h4>
 <p>Greek quotes embedded in text in another language can also be problematic if the outer language uses different quotation marks. This is due to the browsers choosing default quotation marks based on the language of the <em>quotation</em>, rather than that of the surrounding text. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#ml_nesting">a test</a>. This behaviour is specified in the WhatWG version of the HTML spec, but no longer in the <abbr title="World Wide Web Consortium">W3C<!---0.304674%--></abbr> version. There is <a href="https://github.com/whatwg/html/issues/3636#issuecomment-384340053">an issue</a> raised against the WhatWG version for this to be changed.</p>
 </section>
 
