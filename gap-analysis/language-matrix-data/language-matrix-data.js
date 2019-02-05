@@ -47,8 +47,8 @@ langData = [
 ]},
 
 {script:"Ethi", languages:[
- {lang: "Amharic", url: "https://w3c.github.io/elreq/gap-analysis/", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", digits:"", boundaries:"3", quotations:"3", spacing:"3", inlinenotes:"-", textdecor:"1", emphasis:"2", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"3", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2",interaction:"", otherpage:"", interactive:"", pagelayout:""  },
- {lang: "Tigriña", url: "https://w3c.github.io/elreq/gap-analysis/", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", digits:"", boundaries:"3", quotations:"3", spacing:"3", inlinenotes:"-", textdecor:"1", emphasis:"2", bidi:"-", otherinline:"", linebreak:"1", hyphenation:"", justification:"2", counters:"1", initialletter:"", baselines:"3", otherpara:"3", bidilayout:"-", vertical:"-", notes:"3", pagehead:"2",interaction:"", otherpage:"", interactive:"", pagelayout:""  },
+{lang: "Amharic", url:"https://w3c.github.io/elreq/gap-analysis/", tentative:true, vertical:"-", bidi:"-", encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", boundaries:"3", textdecor:"1", quotations:"3", inlinenotes:"3", digits:"", otherinline:"3", linebreak:"1", hyphenation:"", justification:"2", spacing:"3", counters:"1", initialletter:"", baselines:"3", otherpara:"3", pagelayout:"", notes:"3", pagehead:"2", interaction:"", otherpage:"3"},
+{lang: "Tigriña", url:"https://w3c.github.io/elreq/gap-analysis/", tentative:true, vertical:"-", bidi:"-", encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"3", cursive:"-", transforms:"2", boundaries:"3", textdecor:"1", quotations:"3", inlinenotes:"3", digits:"", otherinline:"3", linebreak:"1", hyphenation:"", justification:"2", spacing:"3", counters:"1", initialletter:"", baselines:"3", otherpara:"3", pagelayout:"", notes:"3", pagehead:"2", interaction:"", otherpage:"3"},
 ]},
 
 {script:"Grek", languages:[
