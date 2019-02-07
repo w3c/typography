@@ -69,8 +69,8 @@ langData = [
 ]},
 
 {script:"Hani", languages:[
- {lang: "SChinese", url: "https://w3c.github.io/clreq/gap-analysis/", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", inlinenotes:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"3", justification:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"",interaction:"", otherpage:"3", interactive:"", pagelayout:""  },
- {lang: "TChinese", url: "https://w3c.github.io/clreq/gap-analysis/", tentative:true, encoding:"3", fonts:"", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"3", boundaries:"3", quotations:"3", spacing:"2", inlinenotes:"2", textdecor:"2", emphasis:"3", bidi:"-", otherinline:"2", linebreak:"2", hyphenation:"3", justification:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"2", bidilayout:"-", vertical:"2", notes:"2", pagehead:"",interaction:"", otherpage:"3", interactive:"", pagelayout:""  },
+{lang: "SChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:true, vertical:"2", bidi:"-", encoding:"3", fonts:"2", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", boundaries:"3", textdecor:"2", quotations:"2", inlinenotes:"2", digits:"3", otherinline:"3", linebreak:"2", hyphenation:"3", justification:"2", spacing:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"3", pagelayout:"", notes:"2", pagehead:"", interaction:"", otherpage:"3"},
+{lang: "TChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:true, vertical:"2", bidi:"-", encoding:"3", fonts:"2", fontstyle:"-", glyphcontrol:"-", cursive:"-", transforms:"-", boundaries:"3", textdecor:"2", quotations:"2", inlinenotes:"2", digits:"3", otherinline:"3", linebreak:"2", hyphenation:"3", justification:"2", spacing:"2", counters:"2", initialletter:"2", baselines:"2", otherpara:"3", pagelayout:"", notes:"2", pagehead:"", interaction:"", otherpage:"3"},
 ]},
 
 {script:"Hebr", languages:[
