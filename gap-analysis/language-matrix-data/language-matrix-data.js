@@ -60,7 +60,7 @@ langData = [
 ]},
 
 {script:"Guru", languages:[
-{lang: "Panjabi", url:"https://w3c.github.io/iip/gap-analysis/guru-gap", tentative:true, encoding:"3", fonts:"3", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"-", digits:"2", boundaries:"1", quotations:"", spacing:"1", inlinenotes:"-", textdecor:"1", emphasis:"", bidi:"-", otherinline:"3", linebreak:"", hyphenation:"", justification:"3", counters:"2", initialletter:"1", baselines:"", otherpara:"3", bidilayout:"-", vertical:"1", notes:"", pagehead:"",interaction:"", otherpage:"3", interactive:"", pagelayout:""},
+{lang: "Panjabi", url:"https://w3c.github.io/iip/gap-analysis/guru-gap", tentative:true, vertical:"-", bidi:"-", encoding:"2", fonts:"3", fontstyle:"3", glyphcontrol:"-", cursive:"-", transforms:"-", boundaries:"1", textdecor:"1", quotations:"2", inlinenotes:"-", digits:"2", otherinline:"2", linebreak:"", hyphenation:"", justification:"3", spacing:"1", counters:"2", initialletter:"1", baselines:"", otherpara:"3", pagelayout:"", notes:"3", pagehead:"", interaction:"", otherpage:"3"},
 ]},
 
 
