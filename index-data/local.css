@@ -198,3 +198,5 @@ div.exampleBox {
 .linkList li:first-child:before { content: ''; margin-left:0; margin-right:0; }
 .linkList li:before { content: '\2022'; color:red; margin-left: .3em; margin-right:.6em; }
 	
+
+.dot { color: red; margin: 0 .75em; }
