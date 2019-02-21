@@ -62,13 +62,13 @@ vertical_text = {
 
 
 "gap_analysis": [
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap"],
-	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap"],
-	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap"]
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#vertical"],
+	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl#vertical"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#vertical"],
+	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu#vertical"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#vertical"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#vertical"]
 	]
 }
 
@@ -123,7 +123,7 @@ bidi_text = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#bidi"]
 	]
 }
 
@@ -171,9 +171,9 @@ fonts = {
 
 
 "gap_analysis": [
-	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher"],
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap"]
+	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher#fonts"],
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#fonts"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#fonts"]
 	]
 }
 
@@ -219,7 +219,7 @@ font_style = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#fontstyle"]
 	]
 }
 
@@ -255,7 +255,7 @@ glyphs = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#glyphs"]
 	]
 }
 
@@ -291,7 +291,7 @@ cursive = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#cursive"]
 	]
 }
 
@@ -337,8 +337,11 @@ transforms = {
 
 
 "gap_analysis": [
-	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher"],
-	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl"]
+	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher#transforms"],
+	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl#transforms"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#transforms"],
+	["Greek","http://w3c.github.io/typography/gap-analysis/docs/el-gap/#transforms"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#transforms"]
 	]
 }
 
@@ -385,6 +388,13 @@ boundaries = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#boundaries"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#boundaries"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#boundaries"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#boundaries"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#boundaries"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#boundaries"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#boundaries"]
 	]
 }
 
@@ -528,6 +538,15 @@ text_decoration = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#textdecor"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#textdecor"],
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#textdecor"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#textdecor"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#textdecor"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#textdecoration"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#textdecor"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#textdecor"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#textdecor"]
 	]
 }
 
@@ -586,6 +605,19 @@ quotations = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#quotations"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#quotations"],
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#quotations"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#quotations"],
+	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl#quotations"],
+	["Greek","http://w3c.github.io/typography/gap-analysis/docs/el-gap/#quotations"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#quotations"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#quotations"],
+	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu#quotations"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#quotations"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#quotations"],
+	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#quotations"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#quotations"]
 	]
 }
 
@@ -664,6 +696,9 @@ inline_notes = {
 
 
 "gap_analysis": [
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#inlinenotes"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#ruby"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#inlinenotes"]
 	]
 }
 
@@ -693,6 +728,13 @@ numbers = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#numbers"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#numbers"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#numbers"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#numbers"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#numbers"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#numbers"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#numbers"]
 	]
 }
 
@@ -776,6 +818,12 @@ line_breaking = {
 
 
 "gap_analysis": [
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#linebreak"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#linebreak"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#linebreak"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#linebreak"],
+	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#linebreak"],
+	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#linebreak"]
 	]
 }
 
@@ -823,6 +871,10 @@ hyphenation = {
 
 
 "gap_analysis": [
+	["Devanagari","https"],
+	["Dutch","https://w3c.github.io/typography/gap-analysis/docs/latn-nl#hyphenation"],
+	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu#hyphenation"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#hyphenation"]
 	]
 }
 
@@ -930,6 +982,9 @@ justification = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#justification"],
+	["Dutch","https://w3c.github.io/typography/gap-analysis/docs/latn-nl#justification"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#justification"]
 	]
 }             
 
@@ -980,6 +1035,14 @@ spacing = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#spacing"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#spacing"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#spacing"],
+	["Dutch","https://w3c.github.io/typography/gap-analysis/docs/latn-nl#spacing"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#spacing"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#spacing"],
+	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#spacing"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#spacing"]
 	]
 }             
 
@@ -1024,6 +1087,17 @@ lists = {
 
 
 "gap_analysis": [
+	["Arabic","https://w3c.github.io/alreq/gap-analysis/#counters"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#counters"],
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/#counters"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#counters"],
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#counters"],
+	["Greek","https://w3c.github.io/typography/gap-analysis/docs/el-gap/#counters"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#counters"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#counters"],
+	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#counters"],
+	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#counters"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#counters"]
 	]
 }             
 
@@ -1075,6 +1149,12 @@ initials = {
 
 
 "gap_analysis": [
+	["Arabic","https"],
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#initialletter"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#initialletter"],
+	["Dutch","https://w3c.github.io/typography/gap-analysis/docs/latn-nl#initialletter"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#initialletter"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#initialletter"]
 	]
 }
 
@@ -1124,6 +1204,11 @@ baselines = {
 
 
 "gap_analysis": [
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#baselines"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#baselines"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#baselines"],
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#baselines"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#baselines"]
 	]
 }
 
@@ -1266,6 +1351,7 @@ footnotes_etc = {
 
 
 "gap_analysis": [
+	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#notes"]
 	]
 }
 
@@ -1311,6 +1397,7 @@ headers_footers = {
 
 
 "gap_analysis": [
+	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#pageheaders"],
 	]
 }
 
