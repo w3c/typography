@@ -171,6 +171,9 @@ fonts = {
 
 
 "gap_analysis": [
+	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher"],
+	["Chinese","https://w3c.github.io/clreq/gap-analysis/"],
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap"]
 	]
 }
 
@@ -183,7 +186,7 @@ fonts = {
 
 // FONT STYLES
 
-font_styles = {
+font_style = {
 
 "requirements": [
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
@@ -216,6 +219,7 @@ font_styles = {
 
 
 "gap_analysis": [
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
 	]
 }
 
@@ -251,6 +255,7 @@ glyphs = {
 
 
 "gap_analysis": [
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
 	]
 }
 
@@ -286,6 +291,7 @@ cursive = {
 
 
 "gap_analysis": [
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
 	]
 }
 
@@ -331,6 +337,8 @@ transforms = {
 
 
 "gap_analysis": [
+	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher"],
+	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl"]
 	]
 }
 
