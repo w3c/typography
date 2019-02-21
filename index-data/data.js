@@ -367,6 +367,13 @@ boundaries = {
 			{"title":"Text segmentation", "url":"https://w3c.github.io/ilreq/#h_text_segmentation"}
 			]
 		},
+	{ 	"title":"Mongolian Layout Requirements", 
+		"sections": [ 
+			{"title":"Selection rules", "url":"https://w3c.github.io/mlreq/#selection_rules"},
+			{"title":"Cursor movement rules", "url":"https://w3c.github.io/mlreq/#cursor_movement"},
+			{"title":"Mouse pointer rules", "url":"https://w3c.github.io/mlreq/#mouse_pointer"}
+			]
+		},
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
 			{"title":"Tibetan Syllables", "url":"https://w3c.github.io/tlreq/#tibetan_syllables"},
@@ -447,6 +454,12 @@ punctuation = {
 			{"title":"Design Grouping of Characters and Symbols depending on their Positioning", "url":"https://w3c.github.io/jlreq/#grouping_of_characters_and_symbols_depending_on_their_positioning"}
 			]
 		},
+	{ 	"title":"Mongolian Layout Requirements", 
+		"sections": [ 
+			{"title":"Punctuation rules", "url":"https://w3c.github.io/mlreq/#punctuation_rules"},
+			{"title":"Display rules for Mongolian space", "url":"https://w3c.github.io/mlreq/#mongolian_space"}
+			]
+		},
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
 			{"title":"Tibetan Punctuation", "url":"https://w3c.github.io/tlreq/#punctuation"},
@@ -510,6 +523,11 @@ text_decoration = {
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
 		"sections": [ 
 			{"title":"Boutens", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#8329"}
+			]
+		},
+	{ 	"title":"Mongolian Layout Requirements", 
+		"sections": [ 
+			{"title":"Text decoration", "url":"https://w3c.github.io/mlreq/#h_text_decoration"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements", 
@@ -871,7 +889,6 @@ hyphenation = {
 
 
 "gap_analysis": [
-	["Devanagari","https"],
 	["Dutch","https://w3c.github.io/typography/gap-analysis/docs/latn-nl#hyphenation"],
 	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu#hyphenation"],
 	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#hyphenation"]
@@ -953,6 +970,11 @@ justification = {
 		"sections": [ 
 			{"title":"Justification", "url":"https://www.w3.org/TR/dpub-latinreq/#justification"},
 			{"title":"Paragraphs and indentation", "url":"https://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation"}
+			]
+		},
+	{ 	"title":"Mongolian script layout requirements",
+		"sections": [ 
+			{"title":"Text alignment", "url":"https://w3c.github.io/mlreq/#h_textalign"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements",
@@ -1061,7 +1083,12 @@ lists = {
 	{ 	"title":"Ready-made counter styles", "url":"https://w3c.github.io/predefined-counter-styles/",
 		"sections": [ 
 			]
-		}
+		},
+	{ 	"title":"Mongolian script layout requirements",
+		"sections": [ 
+			{"title":"Counters, lists, etc", "url":"https://w3c.github.io/mlreq/#h_counters"}
+			]
+		},
 	],
 
 
@@ -1175,6 +1202,11 @@ baselines = {
 			{"title":"Baseline Grids", "url":"https://www.w3.org/TR/dpub-latinreq/#baseline-grids"}
 			]
 		},
+	{ 	"title":"Mongolian script layout requirements",
+		"sections": [ 
+			{"title":"Baselines", "url":"https://w3c.github.io/mlreq/#h_baselines"}
+			]
+		},
 	{ 	"title":"Tibetan Layout Requirements",
 		"sections": [ 
 			{"title":"Baseline alignment", "url":"https://w3c.github.io/tlreq/#baseline_alignment"}
@@ -1249,6 +1281,15 @@ page_layout = {
 			{"title":"Paginating Single-Column Text", "url":"http://w3c.github.io/dpub-pagination/#paginating-single-column-text"},
 			{"title":"Heads", "url":"http://w3c.github.io/dpub-pagination/#heads"},
 			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"http://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
+			]
+		},
+	{ 	"title":"Mongolian script layout requirements",
+		"sections": [ 
+			{"title":"Bookbinding and the Direction of Page Turning", "url":"https://w3c.github.io/mlreq/#h_binding"},
+			{"title":"Paper direction", "url":"https://w3c.github.io/mlreq/#h_paper_direction"},
+			{"title":"Paper scrolling direction", "url":"https://w3c.github.io/mlreq/#h_paper_rolling_direction"},
+			{"title":"The scrolling direction of scroll bars", "url":"https://w3c.github.io/mlreq/#h_scrollbag_direction"},
+			{"title":"Columns", "url":"https://w3c.github.io/mlreq/#h_columns"},
 			]
 		},
 	],
@@ -1381,7 +1422,12 @@ headers_footers = {
 		"sections": [ 
 			{"title":"Running headers and footers", "url":"http://w3c.github.io/dpub-pagination/#running-headers-and-footers"}
 			]
-		}
+		},
+	{ 	"title":"Mongolian script layout requirements",
+		"sections": [ 
+			{"title":"Page numbering, running headers, etc", "url":"https://w3c.github.io/mlreq/#h_page_numbering"},
+			]
+		},
 	],
 
 
@@ -1415,7 +1461,11 @@ interaction = {
 "requirements": [
 	{ 	"title":"Mongolian Layout Requirements",
 		"sections": [ 
-			{"title":"User interaction", "url":"https://w3c.github.io/mlreq/#h_input"}
+			{"title":"User interaction", "url":"https://w3c.github.io/mlreq/#h_input"},
+			{"title":"Select", "url":"https://w3c.github.io/mlreq/#select_control"},
+			{"title":"Textarea", "url":"https://w3c.github.io/mlreq/#textarea_control"},
+			{"title":"Label", "url":"https://w3c.github.io/mlreq/#label_control"},
+			{"title":"Fieldset", "url":"https://w3c.github.io/mlreq/#fieldset_control"},
 			]
 		}
 	],
