@@ -6,12 +6,13 @@ section_vertical_text = {
 "requirements": [
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Writing Mode", "url":"https://www.w3.org/TR/clreq/#writing_modes"}
+			{"title":"Writing Modes in Chinese", "url":"https://www.w3.org/TR/clreq/#writing_modes_in_chinese_composition"},
+			{"title":"Major Differences Between Horizontal and Vertical Writing Modes", "url":"https://www.w3.org/TR/clreq/#major_differences_between_horizontal_and_vertical_writing_modes"}
 			]
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Vertical arrangements of characters", "url":"https://w3c.github.io/ilreq/#h_letter_spacing"}
+			{"title":"Vertical arrangements of characters", "url":"https://w3c.github.io/ilreq/#h_vertical_arrangements_of_characters"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
@@ -41,11 +42,14 @@ section_vertical_text = {
 	],
 
 
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
+
+
 "spec_links": [
 	{	"title":"CSS3 Writing Modes",
 		"sections": [
-			{"title":"Vertical Text Layout","url":"https://drafts.csswg.org/css-writing-modes-3/#intro-text-layout"},
-			{"title":"Glyph Composition","url":"https://drafts.csswg.org/css-writing-modes-3/#intro-text-layout"}
+			{"title":"Introduction to Vertical Text Layout","url":"https://drafts.csswg.org/css-writing-modes-3/#intro-text-layout"},
+			{"title":" Horizontal-in-Vertical Composition: the text-combine-upright property","url":"https://drafts.csswg.org/css-writing-modes-3/#text-combine-upright"}
 			]
 		}
 	],
@@ -53,19 +57,18 @@ section_vertical_text = {
 
 "tests": [
 	["CSS Writing Modes: Vertical text","https://w3c.github.io/i18n-tests/results/writing-mode-vertical"],
-	["CSS Writing Modes: Horizontal in vertical","https://w3c.github.io/i18n-tests/results/horizontal-in-vertical.html#text_orientation"],
+	["CSS Writing Modes: Horizontal in vertical","https://w3c.github.io/i18n-tests/results/horizontal-in-vertical.html"],
 	],
 
 
 "gap_analysis": [
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Japanese","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Dutch","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Hungarian","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"]
+	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap"],
+	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap"],
+	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap"],
+	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu"],
+	["Japanese","https://w3c.github.io/jlreq/gap-analysis/"],
+	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap"]
 	]
 }
 
@@ -78,7 +81,7 @@ section_vertical_text = {
 section_bidi_text = {
 
 "requirements": [
-	{ 	"title":"Additional Requirements for Bidi in HTML", "url":"https://www.w3.org/International/docs/html-bidi-requirements/",
+	{ 	"title":"Additional Requirements for Bidi in HTML", "url":"https://www.w3.org/TR/html-bidi/",
 		"sections": [ 
 			]
 		},
@@ -90,7 +93,7 @@ section_bidi_text = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -108,21 +111,19 @@ section_bidi_text = {
 
 
 "tests": [
-	["HTML5: dir basics","https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-basics"],
-	["HTML5: dir isolation","https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-isolation"],
-	["HTML5: dir dir=auto","https://www.w3.org/International/tests/repository/html5/the-dir-attribute/results-dir-auto"],
-	["HTML5: the bdo element","https://www.w3.org/International/tests/repository/html5/the-bdo-element/results-bdo"],
-	["HTML5: the br element","https://www.w3.org/International/tests/repository/html5/the-br-element/results-br"],
-	["HTML5: the pre element","https://www.w3.org/International/tests/repository/html5/the-pre-element/results-pre"],
-	["HTML5: the dirname attribute","https://www.w3.org/International/tests/repository/html5/the-dirname-attribute/results-dirname"],
-	["HTML5: the textarea element","https://www.w3.org/International/tests/repository/html5/the-textarea-element/results-textarea"],
-	["HTML5: native user interfaces","https://www.w3.org/International/tests/repository/html5/native-user-interfaces/results-chrome"],
-	["CSS Writing Modes: Bidi","https://www.w3.org/International/tests/repo/results/writing-modes-bidi"]
+	["HTML5: dir basics","https://w3c.github.io/i18n-tests/results/the-dir-attribute"],
+	["HTML5: dir isolation","https://w3c.github.io/i18n-tests/results/the-dir-attribute-isolation"],
+	["HTML5: Bidirectional text rendering","https://w3c.github.io/i18n-tests/results/bidi-text-rendering"],
+	["HTML5: dir=auto","https://w3c.github.io/i18n-tests/results/the-dir-attribute-auto"],
+	["HTML5: The bdo element","https://w3c.github.io/i18n-tests/results/the-bdo-element"],
+	["HTML5: The dirname attribute","https://w3c.github.io/i18n-tests/results/the-dirname-attribute"],
+	["HTML5: Native user interfaces","https://w3c.github.io/i18n-tests/results/native-user-interfaces"],
+	["CSS Writing Modes: Bidi","https://w3c.github.io/i18n-tests/results/writing-modes-bidi"]
 	],
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#bidi"]
+	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/"]
 	]
 }
 
@@ -153,7 +154,7 @@ section_fonts = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -198,7 +199,7 @@ section_font_styles = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -232,13 +233,13 @@ section_glyphs = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Positioning diacritics relative to base characters", "url":"https://w3c.github.io/alreq/index.html#h_diacritics"}
+			{"title":"Diacritics", "url":"https://w3c.github.io/alreq/index.html#h_diacritics"}
 			]
 		},
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -273,7 +274,7 @@ section_cursive = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -308,7 +309,7 @@ section_transforms = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -364,7 +365,7 @@ section_graphemes = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -437,7 +438,7 @@ section_punctuation = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -466,10 +467,10 @@ section_text_decoration = {
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Indicator Punctuation Marks > Fullwidth low line", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"},
-			{"title":"Hei Emphasis Dots", "url":"https://w3c.github.io/clreq/#hei"}
+			{"title":"Indicator Punctuation Marks > Emphasis Dots", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"}
 			]
 		},
-	{ 	"title":"Wikipedia: Underline (chinese)", "url":"https://en.wikipedia.org/wiki/Underline#Underlines_in_non-Latin_scripts",
+	{ 	"title":"Wikipedia: Underlines in non-Latin scripts (chinese)", "url":"https://en.wikipedia.org/wiki/Underline#Underlines_in_non-Latin_scripts",
 		"sections": [ 
 			]
 		},
@@ -501,7 +502,7 @@ section_text_decoration = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -554,7 +555,7 @@ section_quotations = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -632,7 +633,7 @@ section_annotations = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -650,7 +651,7 @@ section_annotations = {
 
 
 "tests": [
-	["HTML5: The ruby element and its children","https://www.w3.org/International/tests/repository/html5/the-ruby-element/results-ruby"]
+	["HTML5: The ruby element and its children","https://w3c.github.io/i18n-tests/results/ruby-html"]
 	],
 
 
@@ -672,7 +673,7 @@ section_numbers = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -731,7 +732,7 @@ section_line_breaking = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Vertical text", "url":"https://w3c.github.io/mlreq/#h_vertical_text"}
+			{"title":"Line breaking", "url":"https://w3c.github.io/mlreq/#h_line_breaking"}
 			]
 		},
 	{ 	"title":"Thoughts on Word and Sentence Segmentation in Thai", "url":"http://pioneer.netserv.chula.ac.th/%7Eawirote/ling/snlp2007-wirote.pdf",
@@ -746,7 +747,7 @@ section_line_breaking = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -759,12 +760,10 @@ section_line_breaking = {
 
 
 "tests": [
-	["CSS Text: Line break, BA: Break after","https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-ba"],
-	["CSS Text: Line break, OP, CL and NS","https://www.w3.org/International/tests/repository/css3-text/line-break-opclns/results-opclns"],
-	["CSS Text: Non-tailorable line breaking","https://www.w3.org/International/tests/repository/css3-text/line-break-baspglwj/results-gl-wj"],
-	["CSS Text: Line break, Japanese","https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-ja"],
-	["CSS Text: Line break, Chinese","https://www.w3.org/International/tests/repository/css3-text/line-break-jazh/results-zh"],
-	["CSS Text: Word-break","https://www.w3.org/International/tests/repo/results/word-break"]
+	["CSS Text: Line breaking","https://w3c.github.io/i18n-tests/results/line-breaking"],
+	["CSS Text: Non-tailorable line breaking","https://w3c.github.io/i18n-tests/results/line-breaks-glwj"],
+	["CSS Text: Japanese & Chinese line breaks","https://w3c.github.io/i18n-tests/results/line-breaks-jazh"],
+	["CSS Text: Word-break","https://w3c.github.io/i18n-tests/results/word-break"]
 	],
 
 
@@ -798,7 +797,7 @@ section_hyphenation = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -811,7 +810,7 @@ section_hyphenation = {
 
 
 "tests": [
-	["CSS Text: Hyphenation","https://www.w3.org/International/tests/repo/results/hyphens"]
+	["CSS Text: Hyphens","https://w3c.github.io/i18n-tests/results/hyphens"]
 	],
 
 
@@ -904,7 +903,7 @@ section_justification = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -918,7 +917,7 @@ section_justification = {
 
 
 "tests": [
-	["CSS3 Text: text-align, text-align-last, text-justify","https://www.w3.org/International/tests/repo/results/text-align"]
+	["CSS3 Text: text-align, text-align-last, text-justify","https://w3c.github.io/i18n-tests/results/text-align"]
 	],
 
 
@@ -956,7 +955,7 @@ section_letter_spacing = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -995,21 +994,24 @@ section_counters = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
-	{	"title":"CSS3 Counter Styles", "url":"https://drafts.csswg.org/css-counter-styles/#predefined-counters",
+	{	"title":"CSS3 Counter Styles",
 		"sections": [
+			{"title":"Defining Custom Counter Styles: the @counter-style rule", "url":"https://drafts.csswg.org/css-counter-styles/#the-counter-style-rule"},
+			{"title":"Simple Predefined Counter Styles", "url":"https://drafts.csswg.org/css-counter-styles/#predefined-counters"},
+			{"title":"Complex Predefined Counter Styles", "url":"https://drafts.csswg.org/css-counter-styles/#complex-predefined-counters"}
 			]
 		}
 	],
 
 
 "tests": [
-	["CSS3 Counter Styles","https://www.w3.org/International/tests/repo/results/counter-styles"],
-	["CSS3 Counter Styles, predefined counters","https://www.w3.org/International/tests/repo/results/predefined-counter-styles"],
-	["Predefined counter styles","https://www.w3.org/International/tests/repository/predefined-counter-styles/results-predefined-counter-styles"]
+	["CSS3 Counter Styles","https://w3c.github.io/i18n-tests/results/counter-styles"],
+	["CSS3 Counter Styles, predefined styles","https://w3c.github.io/i18n-tests/results/predefined-counter-styles"],
+	["Custom counter styles","https://w3c.github.io/i18n-tests/results/custom-counter-styles"]
 	],
 
 
@@ -1031,7 +1033,7 @@ section_initials = {
 "requirements": [
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"First Letter", "url":"https://w3c.github.io/ilreq/#h_initial_letter_styling"}
+			{"title":"Initial letter styling", "url":"https://w3c.github.io/ilreq/#h_initial_letter_styling"}
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
@@ -1042,7 +1044,7 @@ section_initials = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -1060,7 +1062,7 @@ section_initials = {
 
 
 "tests": [
-	["CSS3 Selectors: first-letter","https://www.w3.org/International/tests/repo/results/first-letter"]
+	["CSS3 Selectors: first-letter","https://w3c.github.io/i18n-tests/results/first-letter#latin"]
 	],
 
 
@@ -1093,7 +1095,7 @@ section_baselines = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1144,8 +1146,9 @@ section_layout = {
 			{"title":"Block Direction Setting Process of Lines, Paragraphs etc.", "url":"https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs"}
 			]
 		},
-	{ 	"title":"Hangul Layout Requirements", "url":"http://www.w3.org/TR/klreq/#page-layout",
+	{ 	"title":"Hangul Layout Requirements",
 		"sections": [ 
+			{"title":"Page layout", "url":"http://www.w3.org/TR/klreq/#page-layout"},
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
@@ -1158,7 +1161,7 @@ section_layout = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1192,13 +1195,13 @@ section_tables = {
 		},
 	{ 	"title":"Mongolian Layout Requirements",
 		"sections": [ 
-			{"title":"Tables", "url":"https://w3c.github.io/mlreq/#tables"}
+			{"title":"Tables", "url":"https://w3c.github.io/mlreq/#h_tables"}
 			]
 		},
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1243,7 +1246,7 @@ section_footnotes = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1288,7 +1291,7 @@ section_page_header = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussions":false,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussions":false, "samples":false,
 
 
 "spec_links": [
@@ -1317,13 +1320,13 @@ section_user_interaction = {
 "requirements": [
 	{ 	"title":"Mongolian Layout Requirements",
 		"sections": [ 
-			{"title":"User interaction", "url":"https://w3c.github.io/mlreq/#input"}
+			{"title":"User interaction", "url":"https://w3c.github.io/mlreq/#h_input"}
 			]
 		}
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussions":false,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussions":false, "samples":false,
 
 
 "spec_links": [

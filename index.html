@@ -148,16 +148,24 @@
 
 
 	// do github links
-	var githubLabels = ['type-info-request','spec-type-issue','browser-type-bug','useful-discussions']
-	var labelTitles = ['Request for information','Spec issues','Browser bugs','Useful discussions']
+	var githubLabels = ['type-info-request','spec-type-issue','browser-type-bug','useful-discussion']
+	var labelTitles = ['Requests for information','Spec issues','Browser bugs','Useful discussions']
 	var ghFound = false
 	out += '<dt>GitHub resources</dt>\n<dd>\n'
 	out += '<ul>\n'
 	for (let i=0;i<githubLabels.length;i++) {
 		if (section[githubLabels[i]]) {
-			out += '<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3A'+githubLabels[i]+'%20label%3A'+label+'">'+labelTitles[i]+'</a>'
+			out += '<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3A'+githubLabels[i]+'%20label%3A'+label+'">'+labelTitles[i]+'</a>'
 			ghFound = true
 			}
+		}
+	//if (section["useful-discussion"]) {
+	//	out += '<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Auseful-discussion%20label%3A'+label+'">Useful discussions</a>'
+	//	ghFound = true
+	//	}
+	if (section.samples) {
+		out += '<li><a target="_blank" href="https://w3c.github.io/type-samples/?feature='+label+'">Type samples</a>'
+		ghFound = true
 		}
 	if (! ghFound) out += '<li>None</li>'
 	out += '</ul>\n'
@@ -201,7 +209,7 @@
 		out += '<ul class="linkList">\n'
 		for (let i=0;i<section.gap_analysis.length;i++) {
 			//if (i>0) out += '<span class="dot">•</span>'
-			out += '<li><a target="_blank" href="'+section.gap_analysis[i][1]+'">'+section.gap_analysis[i][0]+'</a>'
+			out += '<li><a target="_blank" href="'+section.gap_analysis[i][1]+'#'+ga_frag+'">'+section.gap_analysis[i][0]+'</a>'
 			}
 		out += '</ul>\n'
 		out += '</dd>'
@@ -477,7 +485,7 @@
     <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters. Another aspect of inline-spacing relates to separation of characters or items in text. For example, French uses spaces before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
            
 	<div id="placeholder_letter_spacing"></div>
-	<script>displaySection("placeholder_letter_spacing", section_letter_spacing, 'letter-spacing', 'letter_spacing')</script>
+	<script>displaySection("placeholder_letter_spacing", section_letter_spacing, 'inline-spacing', 'letter_spacing')</script>
 
   </section>
 
@@ -488,7 +496,7 @@
     <p>List numbering in vertical text runs across the page, but may need to be rotated to run horizontally. In a list where items are alternatively right-to-left and left-to-right, where does the counter go, and how is the list aligned? The CSS specification describes a  set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. It also provides a generic mechanism for content authors to create their own counter styles. One has to consider not only the characters and algorithms to be used (numeric, alphabetic, additive, etc), but also what the separator or other associated marks look like.</p>
             
 	<div id="placeholder_counters"></div>
-	<script>displaySection("placeholder_counters", section_counters, 'counters', 'counters')</script>
+	<script>displaySection("placeholder_counters", section_counters, 'lists', 'counters')</script>
 
   </section>
 
@@ -499,7 +507,7 @@
     <p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps? </p>
              
 	<div id="placeholder_initials"></div>
-	<script>displaySection("placeholder_initials", section_initials, 'first-letter', 'initials')</script>
+	<script>displaySection("placeholder_initials", section_initials, 'initial-letter', 'initials')</script>
 
   </section>
 
@@ -575,8 +583,9 @@
 <p>Other topics that belong here include any local requirements for things such as  printer marks,  tables of contents and indexes.</p>
                
 	<div id="placeholder_layout"></div>
-	<script>displaySection("placeholder_layout", section_layout, 'layout', 'layout')</script>
+	<script>displaySection("placeholder_layout", section_layout, 'pagination', 'layout')</script>
 
+<p>See also <a href="#tables"></a></p>
   </section>
   
   
@@ -598,7 +607,7 @@
     <p>Support for notes, footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to represent notes inline or to link to footnotes.</p>
                  
 	<div id="placeholder_footnotes"></div>
-	<script>displaySection("placeholder_footnotes", section_footnotes, 'footnotes', 'footnotes')</script>
+	<script>displaySection("placeholder_footnotes", section_footnotes, 'notes-footnotes', 'footnotes')</script>
 
 	<p>See also <a href="#ruby_annotation"></a></p>
   </section>
@@ -606,13 +615,13 @@
   
   
   <section id="page_numbering_running_headers">
-  <h3>Page numbering, running headers, etc</h3>
+  <h3>Page  headers, footers, etc</h3>
     <p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
                   
-	<div id="placeholder_page_header"></div>
-	<script>displaySection("placeholder_page_header", section_page_header, 'page-header', 'page_header')</script>
+  <div id="placeholder_page_header"></div>
+  <script>displaySection("placeholder_page_header", section_page_header, 'header-footer', 'page_header')</script>
 
-  </section>
+</section>
   
   
   
