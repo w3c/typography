@@ -4,6 +4,11 @@
 vertical_text = {
 
 "requirements": [
+	{ 	"title":"Arabic Layout Requirements",
+		"sections": [ 
+			{"title":"Vertical text", "url":"https://w3c.github.io/alreq/#h_vertical_text"}
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
 			{"title":"Writing Modes in Chinese", "url":"https://www.w3.org/TR/clreq/#writing_modes_in_chinese_composition"},
@@ -87,6 +92,7 @@ bidi_text = {
 		},
 	{ 	"title":"Text Layout Requirements for the Arabic Script",
 		"sections": [ 
+			{"title":"Direction", "url":"http://w3c.github.io/alreq/index.html#h_direction"},
 			{"title":"Direction", "url":"http://w3c.github.io/alreq/index.html#h_direction"}
 			]
 		}
@@ -189,6 +195,12 @@ fonts = {
 font_style = {
 
 "requirements": [
+	{ 	"title":"Arabic layout requirements",
+		"sections": [ 
+			{"title":"Arabic Style and Calligraphy", "url":"https://w3c.github.io/alreq/#h_arabic_style_and_calligraphy"},
+			{"title":"Different Writing Styles", "url":"https://w3c.github.io/alreq/#h_different_writing_styles"},
+			]
+		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
 		"sections": [ 
 			{"title":"Slanted Text", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#6d57"}
@@ -197,6 +209,11 @@ font_style = {
 	{ 	"title":"An Introduction to Writing Systems & Unicode",
 		"sections": [ 
 			{"title":"Italics (Cyrillic)", "url":"https://r12a.github.io/scripts/tutorial/part6#italics"}
+			]
+		},
+	{ 	"title":"Khmer layout requirements",
+		"sections": [ 
+			{"title":"Font styles", "url":"https://w3c.github.io/sealreq/khmer/#h_font_styles"}
 			]
 		}
 	],
@@ -237,7 +254,9 @@ glyphs = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Diacritics", "url":"https://w3c.github.io/alreq/index.html#h_diacritics"}
+			{"title":"Ligatures", "url":"https://w3c.github.io/alreq/#h_ligatures"},
+			{"title":"Diacritics", "url":"https://w3c.github.io/alreq/index.html#h_diacritics"},
+			{"title":"Positioning diacritics relative to base characters", "url":"https://w3c.github.io/alreq/#h_diacritic_position"},
 			]
 		},
 	],
@@ -273,7 +292,9 @@ cursive = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://w3c.github.io/alreq/#h_letterhighlights"}
+			{"title":"Joining", "url":"https://w3c.github.io/alreq/#h_joining"},
+			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://w3c.github.io/alreq/#h_letterhighlights"},
+			{"title":"Arabic Script and Typography", "url":"https://w3c.github.io/alreq/#h_arabic_script_and_typography"},
 			]
 		},
 	],
@@ -356,9 +377,26 @@ transforms = {
 boundaries = {
 
 "requirements": [
+	{ 	"title":"Arabic Layout Requirements", 
+		"sections": [ 
+			{"title":"Text Segmentation", "url":"https://w3c.github.io/alreq/#h_segmentation"}
+			]
+		},
+	{ 	"title":"Bengali Layout Requirements", 
+		"sections": [ 
+			{"title":"Grapheme boundaries", "url":"https://w3c.github.io/iip/bengali/#h_graphemes"},
+			{"title":"Word boundaries", "url":"https://w3c.github.io/iip/bengali/#h_words"},
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Characters and Principles for Setting them in Chinese Composition", "url":"https://w3c.github.io/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition"}
+			]
+		},
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Grapheme boundaries", "url":"https://w3c.github.io/iip/devanagari/#h_graphemes"},
+			{"title":"Word boundaries", "url":"https://w3c.github.io/iip/devanagari/#h_words"},
 			]
 		},
 	{ 	"title":"Indic Layout Requirements", 
@@ -367,11 +405,23 @@ boundaries = {
 			{"title":"Text segmentation", "url":"https://w3c.github.io/ilreq/#h_text_segmentation"}
 			]
 		},
+	{ 	"title":"Khmer Layout Requirements", 
+		"sections": [ 
+			{"title":"Word boundaries", "url":"https://w3c.github.io/sealreq/khmer/#h_words"},
+			{"title":"Zero-width space (ZWSP) & Word-joiner (WJ)", "url":"https://w3c.github.io/sealreq/khmer/#h_zwsp"}
+			]
+		},
 	{ 	"title":"Mongolian Layout Requirements", 
 		"sections": [ 
 			{"title":"Selection rules", "url":"https://w3c.github.io/mlreq/#selection_rules"},
 			{"title":"Cursor movement rules", "url":"https://w3c.github.io/mlreq/#cursor_movement"},
 			{"title":"Mouse pointer rules", "url":"https://w3c.github.io/mlreq/#mouse_pointer"}
+			]
+		},
+	{ 	"title":"Thai Layout Requirements", 
+		"sections": [ 
+			{"title":"Word boundaries", "url":"https://w3c.github.io/sealreq/thai/#h_words"},
+			{"title":"Zero-width space (ZWSP) & Word-joiner (WJ)", "url":"https://w3c.github.io/sealreq/thai/#h_zwsp"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements", 
@@ -416,6 +466,11 @@ boundaries = {
 punctuation = {
 
 "requirements": [
+	{ 	"title":"Bengali Layout Requirements", 
+		"sections": [ 
+			{"title":"Phrase boundaries: Danda & double danda", "url":"https://w3c.github.io/iip/bengali/#h_danda"},
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Categories and Usage of Punctuation Marks", "url":"https://w3c.github.io/clreq/#categories_and_usage_of_punctuation_marks"},
@@ -424,6 +479,11 @@ punctuation = {
 			{"title":"Punctuation marks in Chinese", "url":"https://w3c.github.io/clreq/#tables_of_chinese_punctuation_marks"},
 			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
 			{"title":"Prohibition Rules for Unbreakable Marks", "url":"https://w3c.github.io/clreq/#h-unbreakable_marks_punctuation"}
+			]
+		},
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Phrase boundaries: Danda & double danda", "url":"https://w3c.github.io/iip/devanagari/#h_danda"},
 			]
 		},
 	{ 	"title":"Ethiopic Layout Requirements", 
@@ -579,9 +639,19 @@ text_decoration = {
 quotations = {
 
 "requirements": [
+	{ 	"title":"Bengali Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/iip/bengali/#h_quotations"},
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Indicator Punctuation Marks", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"}
+			]
+		},
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/iip/devanagari/#h_quotations"},
 			]
 		},
 	{ 	"title":"Ethiopic Layout Requirements", 
@@ -596,7 +666,32 @@ quotations = {
 			{"title":"Adjustment of Processing of Realm in Block Direction", "url":"https://www.w3.org/TR/jlreq/#adjustment_of_processing_of_realm_in_block_direction"},
 			{"title":"Differences in Vertical and Horizontal Composition in Use of Punctuation Marks", "url":"https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks"}
 			]
-		}
+		},
+	{ 	"title":"Javanese Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/javanese/#h_quotations"}
+			]
+		},
+	{ 	"title":"Lao Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/lao/#h_quotations"}
+			]
+		},
+	{ 	"title":"Khmer Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/khmer/#h_quotations"}
+			]
+		},
+	{ 	"title":"Tamil Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/iip/tamil/#h_quotations"},
+			]
+		},
+	{ 	"title":"Thai Layout Requirements", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/thai/#h_quotations"}
+			]
+		},
 	],
 
 
@@ -731,6 +826,11 @@ inline_notes = {
 numbers = {
 
 "requirements": [
+	{ 	"title":"Arabic Layout Requirements", 
+		"sections": [ 
+			{"title":"Numbers", "url":"https://w3c.github.io/alreq/#h_numbers"},
+			]
+		},
 	],
 
 
@@ -776,10 +876,25 @@ line_breaking = {
 
 
 "requirements": [
+	{ 	"title":"Arabic Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/alreq/#h_line_breaking"},
+			]
+		},
+	{ 	"title":"Bengali Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/iip/bengali/#h_line_breaking"},
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
 			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
 			{"title":"Hanging Punctuation at Line End", "url":"https://w3c.github.io/clreq/#hanging_punctuation_marks_at_line_end"}
+			]
+		},
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/iip/devanagari/#h_line_breaking"},
 			]
 		},
 	{ 	"title":"Indic Layout Requirements",
@@ -798,6 +913,21 @@ line_breaking = {
 			{"title":"Writing Process for Punctuation Marks, etc", "url":"https://www.w3.org/TR/klreq/#punc-process"}
 			]
 		},
+	{ 	"title":"Javanese Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/sealreq/javanese/#h_line_breaking"}
+			]
+		},
+	{ 	"title":"Lao script layout requirements",
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/sealreq/lao/#h_line_breaking"}
+			]
+		},
+	{ 	"title":"Khmer script layout requirements",
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/sealreq/khmer/#h_line_breaking"}
+			]
+		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
 			{"title":"Line breaking", "url":"https://w3c.github.io/mlreq/#h_line_breaking"}
@@ -805,6 +935,16 @@ line_breaking = {
 		},
 	{ 	"title":"Thoughts on Word and Sentence Segmentation in Thai", "url":"http://pioneer.netserv.chula.ac.th/%7Eawirote/ling/snlp2007-wirote.pdf",
 		"sections": [ 
+			]
+		},
+	{ 	"title":"Tamil Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/iip/tamil/#h_line_breaking"},
+			]
+		},
+	{ 	"title":"Thai Layout Requirements", 
+		"sections": [ 
+			{"title":"Line breaking", "url":"https://w3c.github.io/sealreq/thai/#h_line_breaking"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements",
@@ -917,7 +1057,10 @@ justification = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements",
 		"sections": [ 
-			{"title":"Justification", "url":"https://w3c.github.io/alreq/index.html#h_justification"}
+			{"title":"Justification", "url":"https://w3c.github.io/alreq/index.html#h_justification"},
+			{"title":"Kashida", "url":"https://w3c.github.io/alreq/#h_justification_kashida"},
+			{"title":"Tatweel", "url":"https://w3c.github.io/alreq/#h_justification_tatweel"},
+			{"title":"Combination of the Mechanisms", "url":"https://w3c.github.io/alreq/#h_combination_of_the_mechanisms"},
 			]
 		},
 	{ 	"title":"Arabic text justification", "url":"https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf",
@@ -1022,6 +1165,11 @@ spacing = {
 
 
 "requirements": [
+	{ 	"title":"Arabic Layout Requirements",
+		"sections": [ 
+			{"title":"Letter-spacing", "url":"https://w3c.github.io/alreq/#h_letterspacing"}
+			]
+		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
 			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://w3c.github.io/clreq/#principles_of_arrangement_of_han_characters"}
@@ -1030,6 +1178,11 @@ spacing = {
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
 			{"title":"Letter spacing", "url":"https://w3c.github.io/ilreq/#h_letter_spacing"}
+			]
+		},
+	{ 	"title":"Khmer Layout Requirements",
+		"sections": [ 
+			{"title":"Letter spacing", "url":"https://w3c.github.io/sealreq/khmer/#h_spacing"}
 			]
 		},
 	{ 	"title":"Hangul Layout Requirements",
@@ -1084,9 +1237,39 @@ lists = {
 		"sections": [ 
 			]
 		},
+	{ 	"title":"Bengali Layout Requirements", 
+		"sections": [ 
+			{"title":"Counters", "url":"https://w3c.github.io/iip/bengali/#h_counters"},
+			]
+		},
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Counters", "url":"https://w3c.github.io/iip/devanagari/#h_counters"},
+			]
+		},
+	{ 	"title":"Lao script layout requirements",
+		"sections": [ 
+			{"title":"Counters", "url":"https://w3c.github.io/sealreq/lao/#h_counters"}
+			]
+		},
+	{ 	"title":"Khmer Layout Requirements",
+		"sections": [ 
+			{"title":"List counters", "url":"https://w3c.github.io/sealreq/khmer/#h_counters"}
+			]
+		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
 			{"title":"Counters, lists, etc", "url":"https://w3c.github.io/mlreq/#h_counters"}
+			]
+		},
+	{ 	"title":"Tamil Layout Requirements", 
+		"sections": [ 
+			{"title":"Counters", "url":"https://w3c.github.io/iip/tamil/#h_counters"},
+			]
+		},
+	{ 	"title":"Thai Layout Requirements", 
+		"sections": [ 
+			{"title":"List counters", "url":"https://w3c.github.io/sealreq/thai/#h_counters"}
 			]
 		},
 	],
@@ -1140,6 +1323,11 @@ initials = {
 
 
 "requirements": [
+	{ 	"title":"Devanagari Layout Requirements", 
+		"sections": [ 
+			{"title":"Styling initials", "url":"https://w3c.github.io/iip/devanagari/#h_styling_initials"},
+			]
+		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
 			{"title":"Initial letter styling", "url":"https://w3c.github.io/ilreq/#h_initial_letter_styling"}
@@ -1197,6 +1385,11 @@ baselines = {
 
 
 "requirements": [
+	{ 	"title":"Arabic layout requirements",
+		"sections": [ 
+			{"title":"Multi-level baselines", "url":"https://w3c.github.io/alreq/#multi-level-baselines"},
+			]
+		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
 			{"title":"Baseline Grids", "url":"https://www.w3.org/TR/dpub-latinreq/#baseline-grids"}
