@@ -223,7 +223,7 @@ font_style = {
 
 
 "spec_links": [
-	{	"title":"CSS Fonts", "url":"https://drafts.csswg.org/css-fonts/",
+	{	"title":"CSS Fonts", 
 		"sections": [
 			{"title":"Font style: the font-style property", "url":"https://drafts.csswg.org/css-fonts/#font-style-prop"},
 			{"title":"Font weight: the font-weight property", "url":"https://drafts.csswg.org/css-fonts/#font-weight-prop"}
@@ -305,7 +305,7 @@ cursive = {
 
 
 "spec_links": [
-	{	"title":"CSS Text", "url":"https://drafts.csswg.org/css-text/",
+	{	"title":"CSS Text",
 		"sections": [
 			{"title":"Shaping Across Element Boundaries", "url":"https://drafts.csswg.org/css-text/#boundary-shaping"}
 			]
@@ -1693,27 +1693,3 @@ interaction = {
 "gap_analysis": [
 	]
 }
-
-
-
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
