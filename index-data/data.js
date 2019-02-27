@@ -223,9 +223,10 @@ font_style = {
 
 
 "spec_links": [
-	{	"title":"CSS3 Fonts", "url":"https://drafts.csswg.org/css-fonts/",
+	{	"title":"CSS Fonts", "url":"https://drafts.csswg.org/css-fonts/",
 		"sections": [
-			{"title":"Font style: the font-style property", "url":"https://drafts.csswg.org/css-fonts-3/#font-style-prop"}
+			{"title":"Font style: the font-style property", "url":"https://drafts.csswg.org/css-fonts/#font-style-prop"},
+			{"title":"Font weight: the font-weight property", "url":"https://drafts.csswg.org/css-fonts/#font-weight-prop"}
 			]
 		},
 	],
@@ -304,10 +305,17 @@ cursive = {
 
 
 "spec_links": [
+	{	"title":"CSS Text", "url":"https://drafts.csswg.org/css-text/",
+		"sections": [
+			{"title":"Shaping Across Element Boundaries", "url":"https://drafts.csswg.org/css-text/#boundary-shaping"}
+			]
+		},
 	],
 
 
 "tests": [
+	["CSS3 Text, Cursive joining","https://w3c.github.io/i18n-tests/results/css-text-shaping"],
+	["Exploratory: Cursive behaviour","https://w3c.github.io/i18n-tests/results/cursive"]
 	],
 
 
@@ -612,6 +620,8 @@ text_decoration = {
 
 
 "tests": [
+	["CSS3 Text decoration, Line decoration","https://w3c.github.io/i18n-tests/results/line-decoration"],
+	["CSS3 Text decoration, emphasis marks","https://w3c.github.io/i18n-tests/results/emphasis-marks"]
 	],
 
 
@@ -714,6 +724,7 @@ quotations = {
 
 
 "tests": [
+	["The q element","https://w3c.github.io/i18n-tests/results/the-q-element.html"]
 	],
 
 
@@ -793,6 +804,7 @@ inline_notes = {
 	{ 	"title":"HTML5", 
 		"sections": [ 
 			{"title":"The ruby element", "url":"https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element"},
+			{"title":"The sub and sup elements", "url":"https://www.w3.org/TR/html5/textlevel-semantics.html#the-sub-and-sup-elements"},
 			{"title":"The blockquote element", "url":"https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element"}
 			]
 		},
@@ -804,7 +816,8 @@ inline_notes = {
 
 
 "tests": [
-	["HTML5: The ruby element and its children","https://w3c.github.io/i18n-tests/results/ruby-html"]
+	["HTML5: The ruby element and its children","https://w3c.github.io/i18n-tests/results/ruby-html"],
+	["CSS Ruby","https://w3c.github.io/i18n-tests/results/css-ruby"]
 	],
 
 
@@ -1142,7 +1155,8 @@ justification = {
 
 
 "tests": [
-	["CSS3 Text: text-align, text-align-last, text-justify","https://w3c.github.io/i18n-tests/results/text-align"]
+	["CSS3 Text: text-align, text-align-last, text-justify","https://w3c.github.io/i18n-tests/results/text-align"],
+	["Exploratory tests: Justification & letter-spacing","https://w3c.github.io/i18n-tests/results/exploring-justify-space"]
 	],
 
 
@@ -1206,6 +1220,7 @@ spacing = {
 
 
 "tests": [
+	["Exploratory tests: Justification & letter-spacing","https://w3c.github.io/i18n-tests/results/exploring-justify-space"]
 	],
 
 
