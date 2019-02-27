@@ -47,7 +47,7 @@ vertical_text = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -179,7 +179,8 @@ fonts = {
 "gap_analysis": [
 	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher#fonts"],
 	["Chinese","https://w3c.github.io/clreq/gap-analysis/#fonts"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#fonts"]
+	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#fonts"],
+	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#fonts"],
 	]
 }
 
@@ -1322,6 +1323,7 @@ lists = {
 	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#counters"],
 	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#counters"],
 	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#counters"],
+	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#counters"],
 	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#counters"]
 	]
 }             
@@ -1691,5 +1693,6 @@ interaction = {
 
 
 "gap_analysis": [
+	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#interaction"],
 	]
 }
