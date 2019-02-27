@@ -131,7 +131,7 @@ langData = [
 ]},
 
 {script:"Mong", languages:[
- {lang: "Mongolian", url: "", tentative:true, encoding:"1", fonts:"", fontstyle:"", glyphcontrol:"3", cursive:"", transforms:"", digits:"3", boundaries:"", quotations:"", spacing:"", inlinenotes:"2", textdecor:"", emphasis:"", bidi:"-", otherinline:"3", linebreak:"", hyphenation:"", justification:"", counters:"", initialletter:"", baselines:"", otherpara:"3", bidilayout:"-", vertical:"1", notes:"", pagehead:"",interaction:"", otherpage:"3", interactive:"", pagelayout:""  },
+{lang: "Mongolian", url:"https://w3c.github.io/mlreq/gap-analysis/", tentative:true, vertical:"", bidi:"", encoding:"1", fonts:"1", fontstyle:"", glyphcontrol:"1", cursive:"", transforms:"", boundaries:"", textdecor:"", quotations:"", inlinenotes:"", digits:"", otherinline:"3", linebreak:"", hyphenation:"", justification:"", spacing:"", counters:"2", initialletter:"", baselines:"", otherpara:"3", pagelayout:"", notes:"", pagehead:"", interaction:"1", otherpage:"3"},
 ]},
 
 {script:"Mymr", languages:[
