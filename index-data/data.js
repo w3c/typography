@@ -1320,7 +1320,7 @@ lists = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
