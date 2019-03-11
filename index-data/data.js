@@ -1387,7 +1387,7 @@ initials = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
