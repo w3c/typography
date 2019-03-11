@@ -99,7 +99,7 @@ bidi_text = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":true, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -160,7 +160,7 @@ fonts = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -220,7 +220,7 @@ font_style = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -264,7 +264,7 @@ glyphs = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -876,6 +876,35 @@ numbers = {
 
 
 
+// MORE INLINE
+
+more_inline = {
+
+"requirements": [
+	],
+
+
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+
+
+"spec_links": [
+	],
+
+
+"tests": [
+	],
+
+
+"gap_analysis": [
+	]
+}
+
+
+
+
+
+
+
 // LINE BREAKING
 
 line_breaking = {
@@ -1025,7 +1054,7 @@ hyphenation = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -1641,7 +1670,7 @@ headers_footers = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussions":false, "samples":false,
+"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1681,7 +1710,7 @@ interaction = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussions":false, "samples":false,
+"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":true, "samples":false,
 
 
 "spec_links": [
