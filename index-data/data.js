@@ -931,8 +931,7 @@ line_breaking = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
-			{"title":"Hanging Punctuation at Line End", "url":"https://w3c.github.io/clreq/#hanging_punctuation_marks_at_line_end"}
+			{"title":"Prohibition Rules for Line Start and Line End", "url":"https://w3c.github.io/clreq/#prohibition_rules_for_line_start_end"},
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
