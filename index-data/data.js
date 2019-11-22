@@ -220,7 +220,7 @@ font_style = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":true, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -264,7 +264,7 @@ glyphs = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -302,7 +302,7 @@ cursive = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -345,7 +345,7 @@ transforms = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -442,7 +442,7 @@ boundaries = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":true, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -538,7 +538,7 @@ punctuation = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -706,7 +706,7 @@ quotations = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -848,7 +848,7 @@ numbers = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":true,
 
 
 "spec_links": [
@@ -884,7 +884,7 @@ more_inline = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -998,7 +998,7 @@ line_breaking = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1054,7 +1054,7 @@ hyphenation = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":true,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":true,
 
 
 "spec_links": [
@@ -1454,7 +1454,7 @@ baselines = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1534,7 +1534,7 @@ page_layout = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1574,7 +1574,7 @@ grids_tables = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1619,7 +1619,7 @@ footnotes_etc = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1670,7 +1670,7 @@ headers_footers = {
 	],
 
 
-"type-info-request":false, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":false, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":false, "samples":false,
 
 
 "spec_links": [
@@ -1710,7 +1710,7 @@ interaction = {
 	],
 
 
-"type-info-request":true, "spec-type-issue":false, "browser-type-bug":false, "useful-discussion":true, "samples":false,
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":false, "useful-discussion":true, "samples":false,
 
 
 "spec_links": [
