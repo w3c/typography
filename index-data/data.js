@@ -81,7 +81,7 @@ vertical_text = {
 
 
 
-// BIDIRECTIONAL TEXT DIRECTION
+// BIDIRECTIONAL TEXT
 
 bidi_text = {
 
@@ -133,6 +133,36 @@ bidi_text = {
 	]
 }
 
+
+
+
+
+
+
+
+
+// CHARACTERS & ENCODINGS
+
+fonts = {
+
+"requirements": [
+	],
+
+
+"type-info-request":true, "spec-type-issue":true, "browser-type-bug":true, "useful-discussion":true, "samples":true,
+
+
+"spec_links": [
+	],
+
+
+"tests": [
+	],
+
+
+"gap_analysis": [
+	]
+}
 
 
 
@@ -381,9 +411,9 @@ transforms = {
 
 
 
-// TEXT SEGMENTATION & SELECTION
+// GRAPHEME/WORD SEGMENTATION & SELECTION
 
-boundaries = {
+segmentation = {
 
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
@@ -472,7 +502,7 @@ boundaries = {
 
 // PUNCTUATION
 
-punctuation = {
+punctuation_etc = {
 
 "requirements": [
 	{ 	"title":"Bengali Layout Requirements", 
@@ -837,7 +867,7 @@ inline_notes = {
 
 // NUMBERS & DIGITS
 
-numbers = {
+numbers_dates_etc = {
 
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
@@ -1203,7 +1233,7 @@ justification = {
 
 
 
-// WORD & LETTER SPACING
+// LETTER SPACING
 
 spacing = {
 

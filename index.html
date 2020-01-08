@@ -231,7 +231,7 @@
   
   
 <section id="bidi_text">
-    <h3>Bidirectional text direction</h3>
+    <h3>Bidirectional text</h3>
     <p>Scripts whose characters are typically written right-to-left, like Arabic, Hebrew, Thaana, and so on, become bidirectional when they include numbers or text from other scripts (such as Latin acronyms). Browsers and applications need to support bidirectionality. This means supporting the Unicode Bidirectional Algorithm, but also different visual locations of line start and end, isolation of embedded strings, correct line alignment, and so forth.</p>
  
  	<div id="placeholder_bidi"></div>
@@ -248,11 +248,26 @@
   <h2>Characters &amp; phrases</h2>
 
   
-  <section id="fonts">
-    <h3>Fonts</h3>
-    <p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically. In some scripts it is common to use different fonts for headings or emphasis, rather than bolding or italicisation. Fallback font families used by browsers (eg. serif, sans-serif, cursive, etc.) may need to be mapped differently to fonts for different scripts. Special OpenType features may  need to be supported.</p>
+<section id="charset">
+    <h3>Characters &amp; encodings</h3>
+<p>Most languages are now supported by Unicode, but there are still occasional issues. In particular, there may be issues related to ordering of characters, or competing encodings (as in Myanmar), or standardisation of variation selectors or the encoding model (as in Mongolian).</p>
+<div id="placeholder_charset"></div>
+	<script>displaySection("placeholder_charset", charset, 'i:charset')</script>
 
-	<div id="placeholder_fonts"></div>
+</section>
+
+   
+   
+  
+    
+  
+  
+<section id="fonts">
+    <h3>Fonts</h3>
+  <p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically. In some scripts it is common to use different fonts for headings or emphasis, rather than bolding or italicisation. Fallback font families used by browsers (eg. serif, sans-serif, cursive, etc.) may need to be mapped differently to fonts for different scripts. For example, Khmer has slanted, upright, and round font styles, and Arabic has naskh, nasta'liq, ruq'a, kano, etc., which may need special handling. Special OpenType features may  need to be supported.</p>
+<p>See also [[[#font_style]]]</p>
+
+  <div id="placeholder_fonts"></div>
 	<script>displaySection("placeholder_fonts", fonts, 'i:fonts')</script>
 
   </section>
@@ -266,6 +281,7 @@
   <section id="font_style">
     <h3>Font styles, weight, etc.</h3>
     <p>In CSS, italic and oblique are described as font styles. Non-Latin script can add requirements for such styling.  For example, oblique styles in Arabic or Hebrew scripts text may lean to the left. Proper italic glyphs in Cyrillic text can look very different from normal variants, and so synthesising italics can produce poor results. Chinese, Japanese and Korean fonts almost always lack italic or oblique faces, because those are not native typographic traditions. Bold text is similar in usage and in problems to the use of italics. Control and use of font-weight is also relevant to this section.</p>
+<p>See also [[[#fonts]]].</p>
  
 	<div id="placeholder_font_style"></div>
 	<script>displaySection("placeholder_font_style", font_style, 'i:font-style')</script>
@@ -276,12 +292,14 @@
   
   <section id="glyphs">
     <h3>Glyph shaping &amp; positioning</h3>
-    <p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted. In addition, controls (based on Unicode characters or otherwise) may allow the user to control the shaping and positioning of glyphs, for example to compose/decompose conjuncts in brahmi-derived scripts. (See also the separate section on cursive shaping.)    </p>
+    <p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted. In addition, controls (based on Unicode characters or otherwise) may allow the user to control the shaping and positioning of glyphs, for example to compose/decompose conjuncts in brahmi-derived scripts.</p>
+<p>See also the separate section [[[#cursive]]].) </p>
  
 	<div id="placeholder_glyphs"></div>
 	<script>displaySection("placeholder_glyphs", glyphs, 'i:glyphs')</script>
 
   </section>
+
 
 
 
@@ -297,7 +315,23 @@
   </section>
 
 
-  <section id="transforms">
+
+
+
+  <section id="baselines">
+    <h3>Baselines &amp; inline alignment</h3>
+    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
+              
+	<div id="placeholder_baselines"></div>
+  <script>displaySection("placeholder_baselines", baselines, 'i:baselines')</script>
+
+</section>
+
+
+
+
+
+<section id="transforms">
     <h3>Transforming characters</h3>
     <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language. In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
    
@@ -307,25 +341,27 @@
   </section>
 
 
-  <section id="boundaries">
-    <h3>Text segmentation &amp; selection</h3>
+  <section id="segmentation">
+    <h3>Grapheme/word segmentation &amp; selection</h3>
     <p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
     <p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
    
-	<div id="placeholder_graphemes"></div>
-	<script>displaySection("placeholder_graphemes", boundaries, 'i:boundaries')</script>
+	<div id="placeholder_segmentation"></div>
+	<script>displaySection("placeholder_segmentation", segmentation, 'i:segmentation')</script>
 
   </section>
 
 
-<section id="punctuation">
-    <h3>Punctuation</h3>
-    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text. </p>
-     
-	<div id="placeholder_punctuation"></div>
-	<script>displaySection("placeholder_punctuation", punctuation, 'i:punctuation')</script>
+<section id="punctuation_etc">
+    <h3>Punctuation &amp; other inline features</h3>
+    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text.</p>
+<p>Another aspect of this relates to separation of characters or items in text. For example, French inserts a particular type of space before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
+<p>Other special inline markers may appear when handling abbreviation, ellipsis, and iteration, bracketing information, or demarcating things such as proper nouns, etc. </p>
+<p>See also [[[#text_decoration]]], [[[#quotations]]], and [[[#inline_notes]]], which are broken out into separate sections.</p>
 
-    <p>See also <a href="#quotations"></a> and <a href="#line_breaking"></a>.</p>
+	<div id="placeholder_punctuation_etc"></div>
+	<script>displaySection("placeholder_punctuation_etc", punctuation_etc, 'i:punctuation_etc')</script>
+
 </section>
   
 
@@ -333,12 +369,13 @@
 
 <section id="text_decoration">
     <h3>Text decoration</h3>
-    <p>Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over. Also, bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Note that italicisation is not only a way to express emphasis: see also the section on font style. See also the section on text decoration.</p>
+    <p>Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over. Also, for many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc.</p>
       
 	<div id="placeholder_text_decoration"></div>
 	<script>displaySection("placeholder_text_decoration", text_decoration, 'i:text-decoration')</script>
 
-  </section>
+	<p>See also [[[#punctuation_etc]]].</p>
+</section>
   
   
   
@@ -351,7 +388,7 @@
 	<div id="placeholder_quotations"></div>
 	<script>displaySection("placeholder_quotations", quotations, 'i:quotations')</script>
 
-	<p>See also <a href="#punctuation"></a>.</p>
+	<p>See also [[[#punctuation_etc]]].</p>
   </section>
   
   
@@ -364,34 +401,21 @@
 	<div id="placeholder_annotations"></div>
 	<script>displaySection("placeholder_annotations", inline_notes, 'i:inline-notes')</script>
 
-	<p>See also <a href="#footnotes_etc"></a>.</p>
+	<p>See also [[[#footnotes_etc]]].</p>
   </section>
 
 
 
 
 <section id="numbers">
- <h3>Numbers &amp; digits</h3>
+ <h3>Numbers &amp; data formats</h3>
     <p>Some scripts have one or sometimes more sets of their own numeric characters. In some cases, numeric characters represent numbers like 100, or 10,000. Numeric formats can also vary significantly, in terms not only of the separators and negative signs used, but also the groupings used for digits.</p>
+<p>Also relevant here are formats related to number, currency, dates, and so forth.</p>
          
-	<div id="placeholder_numbers"></div>
-	<script>displaySection("placeholder_numbers", numbers, 'i:numbers')</script>
+	<div id="placeholder_numbers_dates_etc"></div>
+	<script>displaySection("placeholder_numbers_dates_etc", numbers_dates_etc, 'i:numbers-dates-etc')</script>
 
 	<p>See also <a href="#lists"></a>.</p>
-  </section>
-
-
-
-  
-
-
-<section id="more_inline">
- <h3>Other inline features</h3>
-    <p>This is a place to capture topics that don't fit into one of the previous categories in the Characters &amp; Phrases section.</p>
-         
-	<div id="placeholder_more_inline"></div>
-	<script>displaySection("placeholder_more_inline", more_inline, 'i:more-inline')</script>
-
   </section>
 
 
@@ -458,6 +482,7 @@
   <h3>Line breaking</h3>
   <p>There are often specific rules about how scripts behave when a line is wrapped. For example,   Chinese, Japanese and Korean tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words. Others break lines at syllable boundaries. (See below for hyphenation.)</p>
   <p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
+<p>See also [[[#hyphenation]]], which is broken out into a separate section.</p>
          
 	<div id="placeholder_line_breaking"></div>
 	<script>displaySection("placeholder_line_breaking", line_breaking, 'i:line-breaking')</script>
@@ -467,7 +492,7 @@
   
   <section id="hyphenation">
     <h3>Hyphenation</h3>
-    <p>Some scripts don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
+    <p>Hyphenation in this sense means identifying broken words after text is wrapped at line end (and not only those involving a hyphen character). See [[[#punctuation_etc]]] for information about the use of regular hyphens in text. Some writing systems don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
           
 	<div id="placeholder_hyphenation"></div>
 	<script>displaySection("placeholder_hyphenation", hyphenation, 'i:hyphenation')</script>
@@ -493,8 +518,8 @@
   
 
     <section id="spacing">
-    <h3>Word &amp; letter spacing </h3>
-    <p>Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters. Another aspect of inline-spacing relates to separation of characters or items in text. For example, French uses spaces before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
+    <h3>Letter spacing </h3>
+    <p>This section is particularly concerned with letter-spacing that is applied inline to indicate some semantic meaning, rather than with full line justification described in the previous section. Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
            
 	<div id="placeholder_letter_spacing"></div>
 	<script>displaySection("placeholder_letter_spacing", spacing, 'i:spacing')</script>
@@ -522,19 +547,6 @@
 	<script>displaySection("placeholder_initials", initials, 'i:initials')</script>
 
   </section>
-
-
-
-
-
-  <section id="baselines">
-    <h3>Baselines &amp; inline alignment</h3>
-    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
-              
-	<div id="placeholder_baselines"></div>
-	<script>displaySection("placeholder_baselines", baselines, 'i:baselines')</script>
-
-</section>
 
 
   
@@ -671,7 +683,8 @@
 Version</h2>
 <p>The following changes have been made since the document was last published to the TR space:</p>
   <ul>
-    <li>Links all checked and amended as needed. Various new links added.</li>
+    <li>Additional clarifications added to section introductions.</li>
+<li>Links all checked and amended as needed. Various new links added.</li>
 <li>Reorganised to use same categorisation as language matrix and gap-analysis docs.</li>
 <li>Added subsection for tables.</li>
 <li>Reorganised the Layout &amp; Pages section. Added new subsections for general page layout and progression, and for user interaction.</li>
