@@ -69,9 +69,9 @@ vertical_text = {
 "gap_analysis": [
 	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical"],
 	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#vertical"],
-	["Dutch","http://w3c.github.io/typography/gap-analysis/docs/latn-nl#vertical"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/guju-gap#vertical"],
-	["Hungarian","http://w3c.github.io/typography/gap-analysis/docs/latn-hu#vertical"],
+	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#vertical"],
+	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#vertical"],
+	["Hungarian","https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap#vertical"],
 	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#vertical"],
 	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#vertical"]
 	]
@@ -867,7 +867,7 @@ inline_notes = {
 
 // NUMBERS & DIGITS
 
-numbers_dates_etc = {
+data_formats = {
 
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
