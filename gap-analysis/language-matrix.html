@@ -128,8 +128,10 @@ f.additionalLinks = ''
       <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
       <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
       <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
-      <p>* next to a language name indicates a tentative score, pending validation by experts</p>
-  </div>
+</div>
+  <p>An asterisk next to a language name indicates tentative coloring, based on set of initial expectations, but it is very possible that the colors will change after further investigation.</p>
+<p>A language name followed by 	† indicates that experts are currently investigating issues and developing the gap analysis. In this case, the coloring is expected to be more reliable, though may still change.</p>
+<p>Whatever the current status of a language, a cell that is currently colored green may change to another colour at a later date if a previously-overlooked issue is discovered.</p>
   </section>
   
   <section>
@@ -182,7 +184,9 @@ for (let s=0;s<langData.length;s++) {
 		else table += '<th>&nbsp;</td>'
 		
 		table += '<td class="language'
-		if (cLang.tentative) table += ' tentative'
+		if (cLang.tentative === true) table += ' tentative'
+		else if (cLang.tentative === false) table += ' inprogress'
+		// items not tentative or in progress should be labelled '', and get no mark
 		table += '">'
 		if (cLang.url) table += '<a target="details" href="'+cLang.url+'">'
 		table += cLang.lang
@@ -234,8 +238,9 @@ for (let i=0;i<tds.length;i++) {
 	if (tds[i].textContent === '1') tds[i].classList.add('l1')
 	if (tds[i].textContent === '0') tds[i].classList.add('l0')
 	if (tds[i].textContent == '') tds[i].textContent = '?'
-	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '*'
-	}
+	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '&nbsp;*'
+	if (tds[i].classList.contains('inprogress')) tds[i].innerHTML += '&nbsp;<sup>†</sup>'
+	}//‡
 
 
 
