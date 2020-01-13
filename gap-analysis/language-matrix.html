@@ -90,27 +90,25 @@ f.additionalLinks = ''
         <td><div><abbr title="Glyph shaping & positioning">Glyph control</abbr></div></td>
         <td><div>Cursive text</div></td>
         <td><div><abbr title="Transforming characters">Transforms</abbr></div></td>
-        <td><div><abbr title="Text segmentation &amp; selection">Boundaries</abbr></div></td>
+        <td><div><abbr title="Baselines &amp; inline alignment">Baselines</abbr></div></td>
+        <td><div><abbr title="Grapheme/word segmentation &amp; selection">Segmentation</abbr></div></td>
+        <td><div><abbr title="Punctuation & other inline features">Inline features</abbr></div></td>
         <td><div><abbr title="Text decoration">Text decoration</abbr></div></td>
         <td><div>Quotations</div></td>
         <td><div><abbr title="Inline notes &amp; annotations">Inline annotation</abbr></div></td>
-        <td><div>Numbers, dates ...</div></td>
-        <td><div><abbr title="Other inline features">Otder inline</abbr></div></td>
+        <td><div><abbr title="Data formats &amp; numbers">Data formats</abbr></div></td>
         
         <td class="newSection"><div>Line breaking</div></td>
         <td><div>Hyphenation</div></td>
-        <td><div><abbr title="Text alignment, spacing &amp; justification">Align, justify ...</abbr></div></td>
-        <td><div><abbr title="Letter &amp; word spacing">Letter/word space</abbr></div></td>
+        <td><div><abbr title="Text alignment, spacing &amp; justification">Align, justify, …</abbr></div></td>
+        <td><div><abbr title="Letter spacing">Letter spacing</abbr></div></td>
         <td><div><abbr title="Lists, counters, etc">Lists, counters</abbr></div></td>
         <td><div>Styling initials</div></td>
-        <td><div><abbr title="Baselines &amp; inline alignment">Baselines</abbr></div></td>
-        <td><div>Other paragraph</div></td>
         
         <td class="newSection"><div><abbr title="General page layout &amp; progression">Page layout</abbr></div></td>
-        <td><div><abbr title="notes, footnotes, etc">Notes, footnotes</abbr></div></td>
-        <td><div><abbr title="page numbering & running headers, etc">Page no.s, heads ...</abbr></div></td>
+        <td><div><abbr title="Footnotes, endnotes, etc">Footnotes, …</abbr></div></td>
+        <td><div><abbr title="Page headers, footers, etc">Headers, footers, …</abbr></div></td>
         <td><div><abbr title="Forms & user interaction">Forms, interaction</abbr></div></td>
-        <td><div>Other pagination</div></td>
     </tr>
   </thead>
   <tbody id="langData">
@@ -185,36 +183,34 @@ for (let s=0;s<langData.length;s++) {
 		
 		table += '<td class="sum">&nbsp;</td>'
 		
-		table += '<td>'+cLang.vertical+'</td>'
-		table += '<td>'+cLang.bidi+'</td>'
+		table += '<td>'+cLang.vertical_text+'</td>'
+		table += '<td>'+cLang.bidi_text+'</td>'
 
-        table += '<td class="newSection">'+cLang.encoding+'</td>'
+        table += '<td class="newSection">'+cLang.charset+'</td>'
 		table += '<td>'+cLang.fonts+'</td>'
-		table += '<td>'+cLang.fontstyle+'</td>'
-		table += '<td>'+cLang.glyphcontrol+'</td>'
+		table += '<td>'+cLang.font_style+'</td>'
+		table += '<td>'+cLang.glyphs+'</td>'
 		table += '<td>'+cLang.cursive+'</td>'
 		table += '<td>'+cLang.transforms+'</td>'
-		table += '<td>'+cLang.boundaries+'</td>'
-		table += '<td>'+cLang.textdecor+'</td>'
+		table += '<td>'+cLang.baselines+'</td>'
+		table += '<td>'+cLang.segmentation+'</td>'
+		table += '<td>'+cLang.punctuation_etc+'</td>'
+		table += '<td>'+cLang.text_decoration+'</td>'
 		table += '<td>'+cLang.quotations+'</td>'
-		table += '<td>'+cLang.inlinenotes+'</td>'
-		table += '<td>'+cLang.digits+'</td>'
-		table += '<td>'+cLang.otherinline+'</td>'
+		table += '<td>'+cLang.inline_notes+'</td>'
+		table += '<td>'+cLang.data_formats+'</td>'
         
-		table += '<td class="newSection">'+cLang.linebreak+'</td>'
+		table += '<td class="newSection">'+cLang.line_breaking+'</td>'
 		table += '<td>'+cLang.hyphenation+'</td>'
 		table += '<td>'+cLang.justification+'</td>'
 		table += '<td>'+cLang.spacing+'</td>'
-		table += '<td>'+cLang.counters+'</td>'
-		table += '<td>'+cLang.initialletter+'</td>'
-		table += '<td>'+cLang.baselines+'</td>'
-		table += '<td>'+cLang.otherpara+'</td>'
+		table += '<td>'+cLang.lists+'</td>'
+		table += '<td>'+cLang.initials+'</td>'
         
-		table += '<td class="newSection">'+cLang.pagelayout+'</td>'
-		table += '<td class="future">'+cLang.notes+'</td>'
-		table += '<td class="future">'+cLang.pagehead+'</td>'
+		table += '<td class="newSection">'+cLang.page_layout+'</td>'
+		table += '<td class="future">'+cLang.footnotes_etc+'</td>'
+		table += '<td class="future">'+cLang.headers_footers+'</td>'
 		table += '<td>'+cLang.interaction+'</td>'
-		table += '<td class="future">'+cLang.otherpage+'</td>'
 		table += '</tr>\n'
 		}
 	}
@@ -315,36 +311,34 @@ document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.le
 // array of ids for links from cells
 idlinks = [
 '',
-'vertical',
-'bidi',
+'vertical_text',
+'bidi_text',
 
-'encoding',
+'charset',
 'fonts',
-'fontstyle',
+'font_style',
 'glyphs',
 'cursive',
 'transforms',
-'boundaries',
-'textdecor',
+'baselines',
+'segmentation',
+'punctuation_etc',
+'text_decoration',
 'quotations',
-'inlinenotes',
-'numbers',
-'otherinline',
+'inline_notes',
+'data_formats',
 
-'linebreak',
+'line_breaking',
 'hyphenation',
 'justification',
 'spacing',
-'counters',
-'initialletter',
-'baselines',
-'otherpara',
+'lists',
+'initials',
 
-'pagelayout',
-'notes',
-'pageheaders',
+'page_layout',
+'footnotes_etc',
+'headers_footers',
 'interaction',
-'morepage',
 ]
 
 
@@ -361,27 +355,25 @@ titlelinks = [
 'Glyph shaping & positioning',
 'Cursive',
 'Transforming characters',
-'Text segmentation & selection',
+'Baselines & line alignment',
+'Grapheme/word segmentation & selection',
+'Punctuation & other inline features',
 'Text decoration',
 'Quotations',
 'Inline notes & annotations',
-'Numbers, dates, etc.',
-'Other inline features',
+'Data formats & numbers',
 
 'Line breaking',
 'Hyphenation',
 'Text alignment & justification',
-'Letter & word spacing',
+'Letter spacing',
 'Lists, counters, etc.',
 'Styling initials',
-'Baselines & line alignment',
-'Other paragraph features',
 
 'General page layout & progression',
-'Notes, footnotes, etc.',
-'Page numbers, running headers, etc.',
+'Footnotes, endnotes, etc.',
+'Page headers, footers, etc.',
 'Forms &amp; user interaction',
-'Other pagination features',
 ]
 
 
