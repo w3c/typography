@@ -1109,7 +1109,8 @@ line_breaking = {
 	["CSS Text: Line breaking","https://w3c.github.io/i18n-tests/results/line-breaking"],
 	["CSS Text: Non-tailorable line breaking","https://w3c.github.io/i18n-tests/results/line-breaks-glwj"],
 	["CSS Text: Japanese & Chinese line breaks","https://w3c.github.io/i18n-tests/results/line-breaks-jazh"],
-	["CSS Text: Word-break","https://w3c.github.io/i18n-tests/results/word-break"]
+	["CSS Text: Word-break","https://w3c.github.io/i18n-tests/results/word-break"],
+	["Interactive tests: line-break & word-break","https://github.com/w3c/i18n-tests/wiki/Test-script-for-line%E2%80%90break-&-word%E2%80%90break"]
 	],
 
 
