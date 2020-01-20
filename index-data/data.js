@@ -61,6 +61,7 @@ vertical_text = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Vertical-text"],
 	["CSS Writing Modes: Vertical text","https://w3c.github.io/i18n-tests/results/writing-mode-vertical"],
 	["CSS Writing Modes: Horizontal in vertical","https://w3c.github.io/i18n-tests/results/horizontal-in-vertical.html"],
 	],
@@ -1106,11 +1107,11 @@ line_breaking = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Line-breaking"],
 	["CSS Text: Line breaking","https://w3c.github.io/i18n-tests/results/line-breaking"],
 	["CSS Text: Non-tailorable line breaking","https://w3c.github.io/i18n-tests/results/line-breaks-glwj"],
 	["CSS Text: Japanese & Chinese line breaks","https://w3c.github.io/i18n-tests/results/line-breaks-jazh"],
 	["CSS Text: Word-break","https://w3c.github.io/i18n-tests/results/word-break"],
-	["Interactive tests: line-break & word-break","https://github.com/w3c/i18n-tests/wiki/Test-script-for-line%E2%80%90break-&-word%E2%80%90break"]
 	],
 
 
@@ -1163,8 +1164,8 @@ hyphenation = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Hyphenation"],
 	["CSS Text: Hyphens","https://w3c.github.io/i18n-tests/results/hyphens"],
-	["Interactive test: Hyphens","https://github.com/w3c/i18n-tests/wiki/Test-script-for-hyphens"]
 	],
 
 
@@ -1282,9 +1283,9 @@ justification = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Text-alignment-&-justification"],
 	["CSS3 Text: text-align, text-align-last, text-justify","https://w3c.github.io/i18n-tests/results/text-align"],
 	["Exploratory tests: Justification & letter-spacing","https://w3c.github.io/i18n-tests/results/exploring-justify-space"],
-	["Interactive tests: text-justify","https://github.com/w3c/i18n-tests/wiki/Test-script-for-text-justify"]
 	],
 
 
@@ -1433,6 +1434,7 @@ lists = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Lists,-Counters,-etc."],
 	["CSS3 Counter Styles","https://w3c.github.io/i18n-tests/results/counter-styles"],
 	["CSS3 Counter Styles, predefined styles","https://w3c.github.io/i18n-tests/results/predefined-counter-styles"],
 	["Custom counter styles","https://w3c.github.io/i18n-tests/results/custom-counter-styles"]
@@ -1503,9 +1505,9 @@ initials = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Styling-initials"],
 	["CSS3 Selectors: first-letter","https://w3c.github.io/i18n-tests/results/first-letter#latin"],
 	["Interactive test: ::first-letter","https://github.com/w3c/i18n-tests/wiki/Test-script-for-::first-letter"],
-	["Interactive test: initial-letter","https://github.com/w3c/i18n-tests/wiki/Test-script-for-initial-letter"]
 	],
 
 
