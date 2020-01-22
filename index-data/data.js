@@ -547,6 +547,7 @@ segmentation = {
 
 
 "tests": [
+	["Exploratory/interactive tests","https://github.com/w3c/i18n-tests/wiki/Test-script-for-Grapheme-word-segmentation-&-selection"],
 	],
 
 
