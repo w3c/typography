@@ -85,7 +85,7 @@ langData = [
 ]},
 
 {script:"Japn", languages:[
-{lang: "Japanese", url:"https://w3c.github.io/jlreq/gap-analysis/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"", font_style:"", glyphs:"-", cursive:"-", transforms:"1", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"", hyphenation:"-", justification:"", spacing:"", lists:"1", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "Japanese", url:"https://w3c.github.io/jlreq/gap-analysis/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"", font_style:"", glyphs:"-", cursive:"-", transforms:"1", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"", line_breaking:"", hyphenation:"-", justification:"", spacing:"", lists:"1", initials:"", page_layout:"1", footnotes_etc:"", headers_footers:"", interaction:"1"},
 ]},
 
 {script:"Khmr", languages:[
