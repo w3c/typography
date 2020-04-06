@@ -349,6 +349,8 @@ cursive = {
 
 
 "tests": [
+	["Exploratory/interactive test results","https://w3c.github.io/i18n-tests/results/int-cursive"],
+	["Exploratory/interactive test repo","https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3ACursive_text+"],
 	["CSS3 Text, Cursive joining","https://w3c.github.io/i18n-tests/results/css-text-shaping"],
 	["Exploratory: Cursive behaviour","https://w3c.github.io/i18n-tests/results/cursive"]
 	],
