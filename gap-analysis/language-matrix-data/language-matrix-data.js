@@ -13,9 +13,9 @@ langData = [
 ]},
 
 {script:"Beng", languages:[
-{lang: "Bangla", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Assamese", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Manipuri", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Bangla", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"1", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Assamese", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"1", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Manipuri", url:"https://w3c.github.io/iip/gap-analysis/beng-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"1", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Cans", languages:[
@@ -37,8 +37,8 @@ langData = [
 ]},
 
 {script:"Deva", languages:[
-{lang: "Hindi", url:"https://w3c.github.io/iip/gap-analysis/deva-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Marathi", url:"https://w3c.github.io/iip/gap-analysis/deva-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Hindi", url:"https://w3c.github.io/iip/gap-analysis/deva-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Marathi", url:"https://w3c.github.io/iip/gap-analysis/deva-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Bhojpuri", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Maithili", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Awadhi", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
@@ -51,19 +51,19 @@ langData = [
 ]},
 
 {script:"Geor", languages:[
-{lang: "Georgian", url:"https://w3c.github.io/eurlreq/gap-analysis/geor-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"1", font_style:"3", glyphs:"-", cursive:"-", transforms:"3", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"3", quotations:"2", inline_notes:"", data_formats:"3", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Georgian", url:"https://w3c.github.io/eurlreq/gap-analysis/geor-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"1", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"3", quotations:"2", inline_notes:"", data_formats:"3", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Grek", languages:[
-{lang: "Greek", url:"https://w3c.github.io/eurlreq/gap-analysis/grek-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"", cursive:"-", transforms:"2", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"3", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Greek", url:"https://w3c.github.io/eurlreq/gap-analysis/grek-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"", cursive:"-", transforms:"2", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"3", quotations:"2", inline_notes:"3", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"2", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Gujr", languages:[
-{lang: "Gujarati", url:"https://w3c.github.io/iip/gap-analysis/gujr-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Gujarati", url:"https://w3c.github.io/iip/gap-analysis/gujr-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Guru", languages:[
-{lang: "Panjabi", url:"https://w3c.github.io/iip/gap-analysis/guru-gap", tentative:false, vertical_text:"-", bidi_text:"-", charset:"2", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Panjabi", url:"https://w3c.github.io/iip/gap-analysis/guru-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"2", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"2", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 
@@ -72,8 +72,8 @@ langData = [
 ]},
 
 {script:"Hani", languages:[
-{lang: "SChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"2", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"2", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"2", spacing:"2", lists:"2", initials:"2", page_layout:"", footnotes_etc:"2", headers_footers:"", interaction:""},
-{lang: "TChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"2", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"2", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"2", spacing:"2", lists:"2", initials:"2", page_layout:"", footnotes_etc:"2", headers_footers:"", interaction:""},
+{lang: "SChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"", lists:"2", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "TChinese", url:"https://w3c.github.io/clreq/gap-analysis/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"", lists:"2", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
 ]},
 
 {script:"Hebr", languages:[
@@ -81,7 +81,7 @@ langData = [
 ]},
 
 {script:"Java", languages:[
-{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-gap", tentative:false, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"2", font_style:"", glyphs:"", cursive:"-", transforms:"3", baselines:"3", segmentation:"1", punctuation_etc:"", text_decoration:"", quotations:"2", inline_notes:"-", data_formats:"3", line_breaking:"0", hyphenation:"3", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Javanese", url:"https://w3c.github.io/sealreq/gap-analysis/java-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"2", font_style:"", glyphs:"", cursive:"-", transforms:"3", baselines:"3", segmentation:"1", punctuation_etc:"", text_decoration:"", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"0", hyphenation:"3", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Japn", languages:[
@@ -89,7 +89,7 @@ langData = [
 ]},
 
 {script:"Khmr", languages:[
-{lang: "Khmer", url:"https://w3c.github.io/sealreq/gap-analysis/khmr-gap", tentative:false, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"-", data_formats:"", line_breaking:"2", hyphenation:"", justification:"", spacing:"2", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Khmer", url:"https://w3c.github.io/sealreq/gap-analysis/khmr-gap", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"3", data_formats:"", line_breaking:"2", hyphenation:"", justification:"", spacing:"2", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Knda", languages:[
@@ -97,7 +97,7 @@ langData = [
 ]},
 
 {script:"Laoo", languages:[
-{lang: "Lao", url:"https://w3c.github.io/sealreq/gap-analysis/laoo-gap", tentative:false, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"2", inline_notes:"-", data_formats:"", line_breaking:"1", hyphenation:"", justification:"", spacing:"3", lists:"2", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Lao", url:"https://w3c.github.io/sealreq/gap-analysis/laoo-gap", tentative:false, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"3", inline_notes:"3", data_formats:"", line_breaking:"1", hyphenation:"", justification:"", spacing:"3", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Latn", languages:[
@@ -122,11 +122,11 @@ langData = [
 {lang: "Igbo", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Azerbaijani", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Cebuano", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Dutch", url:"https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"1", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"1", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"1", justification:"2", spacing:"1", lists:"3", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Dutch", url:"https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"1", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"1", justification:"", spacing:"1", lists:"3", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Kurdish", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Croatian", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Malgasy", url:"", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"?", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"?", line_breaking:"3", hyphenation:"?", justification:"3", spacing:"3", lists:"3", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Hungarian", url:"https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"1", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"2", justification:"3", spacing:"3", lists:"3", initials:"3", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Hungarian", url:"https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"2", justification:"3", spacing:"3", lists:"3", initials:"3", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Mlym", languages:[
@@ -134,7 +134,7 @@ langData = [
 ]},
 
 {script:"Mong", languages:[
-{lang: "Mongolian", url:"https://w3c.github.io/mlreq/gap-analysis/", tentative:true, vertical_text:"", bidi_text:"", charset:"1", fonts:"1", font_style:"", glyphs:"1", cursive:"", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"2", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "Mongolian", url:"https://w3c.github.io/mlreq/gap-analysis/", tentative:true, vertical_text:"", bidi_text:"-", charset:"1", fonts:"1", font_style:"", glyphs:"1", cursive:"", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
 ]},
 
 {script:"Mymr", languages:[
@@ -155,7 +155,7 @@ langData = [
 ]},
 
 {script:"Taml", languages:[
-{lang: "Tamil", url:"https://w3c.github.io/iip/gap-analysis/taml-gap", tentative:false, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"2", hyphenation:"1", justification:"2", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Tamil", url:"https://w3c.github.io/iip/gap-analysis/taml-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"1", hyphenation:"1", justification:"2", spacing:"1", lists:"2", initials:"2", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Telu", languages:[
