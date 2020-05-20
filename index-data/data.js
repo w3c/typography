@@ -94,8 +94,8 @@ bidi_text = {
 		},
 	{ 	"title":"Text Layout Requirements for the Arabic Script",
 		"sections": [ 
-			{"title":"Direction", "url":"http://w3c.github.io/alreq/index.html#h_direction"},
-			{"title":"Direction", "url":"http://w3c.github.io/alreq/index.html#h_direction"}
+			{"title":"Direction", "url":"https://w3c.github.io/alreq/index.html#h_direction"},
+			{"title":"Direction", "url":"https://w3c.github.io/alreq/index.html#h_direction"}
 			]
 		}
 	],
@@ -211,7 +211,7 @@ fonts = {
 
 
 "gap_analysis": [
-	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher#fonts"],
+	["Cherokee","https://w3c.github.io/typography/gap-analysis/docs/cher#fonts"],
 	["Chinese","https://w3c.github.io/clreq/gap-analysis/#fonts"],
 	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#fonts"],
 	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#fonts"],
@@ -438,8 +438,8 @@ transforms = {
 "requirements": [
 	{ 	"title":"r12a blog", 
 		"sections": [ 
-			{"title":"Notes on case conversion", "url":"http://r12a.github.io/blog/201512.html#20160907"},
-			{"title":"Bicameral scripts", "url":"http://r12a.github.io/blog/201512.html#20161106"}
+			{"title":"Notes on case conversion", "url":"https://r12a.github.io/blog/201512.html#20160907"},
+			{"title":"Bicameral scripts", "url":"https://r12a.github.io/blog/201512.html#20161106"}
 			]
 		},
 	],
@@ -467,7 +467,7 @@ transforms = {
 
 
 "gap_analysis": [
-	["Cherokee","http://w3c.github.io/typography/gap-analysis/docs/cher#transforms"],
+	["Cherokee","https://w3c.github.io/typography/gap-analysis/docs/cher#transforms"],
 	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#transforms"],
 	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#transforms"],
 	["Greek","https://w3c.github.io/eurlreq/gap-analysis/grek-gap#transforms"],
@@ -1221,7 +1221,7 @@ justification = {
 		"sections": [ 
 			]
 		},
-	{ 	"title":"Typography questions for HTML & CSS: Arabic justification", "url":"http://r12a.github.io/blog/?p=1059",
+	{ 	"title":"Typography questions for HTML & CSS: Arabic justification", "url":"https://r12a.github.io/blog/?p=1059",
 		"sections": [ 
 			]
 		},
@@ -1241,7 +1241,7 @@ justification = {
 			{"title":"Justification", "url":"https://w3c.github.io/elreq/#ethiopic_justification"}
 			]
 		},
-	{ 	"title":"Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol", "url":"http://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf",
+	{ 	"title":"Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol", "url":"https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf",
 		"sections": [ 
 			]
 		},
@@ -1547,29 +1547,29 @@ page_layout = {
 "requirements": [
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"The Type Area (or Printing Area)", "url":"http://www.w3.org/TR/clreq/#type_area"},
-			{"title":"Handling of Widows and Orphans", "url":"http://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows"},
-			{"title":"Headings & Page Breaks", "url":"http://www.w3.org/TR/clreq/#handling_of_headings"}
+			{"title":"The Type Area (or Printing Area)", "url":"https://www.w3.org/TR/clreq/#type_area"},
+			{"title":"Handling of Widows and Orphans", "url":"https://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows"},
+			{"title":"Headings & Page Breaks", "url":"https://www.w3.org/TR/clreq/#handling_of_headings"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
 		"sections": [ 
-			{"title":"Vertical Writing Mode and Horizontal Writing Mode", "url":"http://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"},
-			{"title":"Page Formats for Japanese Documents", "url":"http://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents"},
-			{"title":"Specifying the Kihon-hanmen", "url":"http://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen"},
+			{"title":"Vertical Writing Mode and Horizontal Writing Mode", "url":"https://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode"},
+			{"title":"Page Formats for Japanese Documents", "url":"https://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents"},
+			{"title":"Specifying the Kihon-hanmen", "url":"https://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen"},
 			{"title":"Block Direction Setting Process of Lines, Paragraphs etc.", "url":"https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs"}
 			]
 		},
 	{ 	"title":"Hangul Layout Requirements",
 		"sections": [ 
-			{"title":"Page layout", "url":"http://www.w3.org/TR/klreq/#page-layout"},
+			{"title":"Page layout", "url":"https://www.w3.org/TR/klreq/#page-layout"},
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Paginating Single-Column Text", "url":"http://w3c.github.io/dpub-pagination/#paginating-single-column-text"},
-			{"title":"Heads", "url":"http://w3c.github.io/dpub-pagination/#heads"},
-			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"http://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
+			{"title":"Paginating Single-Column Text", "url":"https://w3c.github.io/dpub-pagination/#paginating-single-column-text"},
+			{"title":"Heads", "url":"https://w3c.github.io/dpub-pagination/#heads"},
+			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
@@ -1653,17 +1653,17 @@ footnotes_etc = {
 "requirements": [
 	{ 	"title":"Hangul Layout Requirements",
 		"sections": [ 
-			{"title":"Notes (Footnote, Endnote)", "url":"http://www.w3.org/TR/klreq/#notes"}
+			{"title":"Notes (Footnote, Endnote)", "url":"https://www.w3.org/TR/klreq/#notes"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
 		"sections": [ 
-			{"title":"Processing of Notes", "url":"http://www.w3.org/TR/jlreq/#processing_of_notes"}
+			{"title":"Processing of Notes", "url":"https://www.w3.org/TR/jlreq/#processing_of_notes"}
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Footnotes", "url":"http://w3c.github.io/dpub-pagination/#footnotes"}
+			{"title":"Footnotes", "url":"https://w3c.github.io/dpub-pagination/#footnotes"}
 			]
 		}
 	],
@@ -1699,17 +1699,17 @@ headers_footers = {
 "requirements": [
 	{ 	"title":"Hangul Layout Requirements",
 		"sections": [ 
-			{"title":"Page Numbers", "url":"http://www.w3.org/TR/klreq/#page-number"}
+			{"title":"Page Numbers", "url":"https://www.w3.org/TR/klreq/#page-number"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
 		"sections": [ 
-			{"title":"Running Heads and Page Numbers", "url":"http://www.w3.org/TR/jlreq/#running_heads_and_page_numbers"}
+			{"title":"Running Heads and Page Numbers", "url":"https://www.w3.org/TR/jlreq/#running_heads_and_page_numbers"}
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Running headers and footers", "url":"http://w3c.github.io/dpub-pagination/#running-headers-and-footers"}
+			{"title":"Running headers and footers", "url":"https://w3c.github.io/dpub-pagination/#running-headers-and-footers"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
