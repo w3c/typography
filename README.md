@@ -1,4 +1,4 @@
-# International text layout and typography index
+# Language enablement index
 Points to typographic information relevant to the Open Web Platform for scripts and writing systems around the world.
 
 ### Documents
