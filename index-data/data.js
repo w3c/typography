@@ -28,8 +28,8 @@ vertical_text = {
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix",
 		"sections": [ 
-			{"title":"Vertical Subtitles", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#8caf"},
-			{"title":"Tate-chu-yoko", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#877a"}
+			{"title":"Vertical Subtitles", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#8caf"},
+			{"title":"Tate-chu-yoko", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#877a"}
 			]
 		},
 	{ 	"title":"Hangul Layout Requirements",
@@ -69,13 +69,13 @@ vertical_text = {
 
 
 "gap_analysis": [
-	["Bengali","https://www.w3.org/TR/beng-gap#vertical_text"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#vertical_text"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#vertical_text"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#vertical_text"],
-	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#vertical_text"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#vertical_text"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#vertical_text"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#vertical_text"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#vertical_text"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap/#vertical_text"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#vertical_text"],
-	["Tamil","https://www.w3.org/TR/taml-gap#vertical_text"]
+	["Tamil","https://www.w3.org/TR/taml-gap/#vertical_text"]
 	]
 }
 
@@ -94,8 +94,8 @@ bidi_text = {
 		},
 	{ 	"title":"Text Layout Requirements for the Arabic Script",
 		"sections": [ 
-			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/index.html#h_direction"},
-			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/index.html#h_direction"}
+			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"},
+			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"}
 			]
 		}
 	],
@@ -164,7 +164,7 @@ charset = {
 
 "gap_analysis": [
 	["Mongolian","https://www.w3.org/TR/mong-gap/#charset"],
-	["Punjabi","https://www.w3.org/TR/guru-gap#charset"]
+	["Punjabi","https://www.w3.org/TR/guru-gap/#charset"]
 	]
 }
 
@@ -211,9 +211,9 @@ fonts = {
 
 
 "gap_analysis": [
-	["Cherokee","https://www.w3.org/TR/cher-gap#fonts"],
+	["Cherokee","https://www.w3.org/TR/cher-gap/#fonts"],
 	["Chinese","https://www.w3.org/TR/clreq-gap/#fonts"],
-	["Javanese","https://www.w3.org/TR/java-gap#fonts"],
+	["Javanese","https://www.w3.org/TR/java-gap/#fonts"],
 	["Mongolian","https://www.w3.org/TR/mong-gap/#fonts"],
 	]
 }
@@ -232,13 +232,12 @@ font_style = {
 "requirements": [
 	{ 	"title":"Arabic layout requirements",
 		"sections": [ 
-			{"title":"Arabic Style and Calligraphy", "url":"https://www.w3.org/TR/alreq/#h_arabic_style_and_calligraphy"},
-			{"title":"Different Writing Styles", "url":"https://www.w3.org/TR/alreq/#h_different_writing_styles"},
+			{"title":"Writing Styles", "url":"https://www.w3.org/TR/alreq/#h_writing_styles"},
 			]
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
 		"sections": [ 
-			{"title":"Slanted Text", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#6d57"}
+			{"title":"Slanted Text", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#6d57"}
 			]
 		},
 	{ 	"title":"An Introduction to Writing Systems & Unicode",
@@ -291,7 +290,7 @@ glyphs = {
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
 			{"title":"Ligatures", "url":"https://www.w3.org/TR/alreq/#h_ligatures"},
-			{"title":"Diacritics", "url":"https://www.w3.org/TR/alreq/index.html#h_diacritics"},
+			{"title":"Diacritics", "url":"https://www.w3.org/TR/alreq/#h_diacritics"},
 			{"title":"Positioning diacritics relative to base characters", "url":"https://www.w3.org/TR/alreq/#h_diacritic_position"},
 			]
 		},
@@ -330,7 +329,7 @@ cursive = {
 		"sections": [ 
 			{"title":"Joining", "url":"https://www.w3.org/TR/alreq/#h_joining"},
 			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://www.w3.org/TR/alreq/#h_letterhighlights"},
-			{"title":"Arabic Script and Typography", "url":"https://www.w3.org/TR/alreq/#h_arabic_script_and_typography"},
+			{"title":"Arabic Script and Typography", "url":"https://www.w3.org/TR/alreq/#h_typography"},
 			]
 		},
 	],
@@ -417,11 +416,11 @@ baselines = {
 
 
 "gap_analysis": [
-	["Bengali","https://www.w3.org/TR/beng-gap#baselines"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#baselines"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#baselines"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#baselines"],
-	["Tamil","https://www.w3.org/TR/taml-gap#baselines"]
+	["Bengali","https://www.w3.org/TR/beng-gap/#baselines"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#baselines"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#baselines"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#baselines"],
+	["Tamil","https://www.w3.org/TR/taml-gap/#baselines"]
 	]
 }
 
@@ -467,10 +466,10 @@ transforms = {
 
 
 "gap_analysis": [
-	["Cherokee","https://www.w3.org/TR/cher-gap#transforms"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#transforms"],
+	["Cherokee","https://www.w3.org/TR/cher-gap/#transforms"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#transforms"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#transforms"],
-	["Greek","https://www.w3.org/TR/grek-gap#transforms"],
+	["Greek","https://www.w3.org/TR/grek-gap/#transforms"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#transforms"]
 	]
 }
@@ -557,12 +556,12 @@ segmentation = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#segmentation"],
-	["Bengali","https://www.w3.org/TR/beng-gap#segmentation"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#segmentation"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#segmentation"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#segmentation"],
-	["Javanese","https://www.w3.org/TR/java-gap#segmentation"],
-	["Tamil","https://www.w3.org/TR/taml-gap#segmentation"]
+	["Bengali","https://www.w3.org/TR/beng-gap/#segmentation"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#segmentation"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#segmentation"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#segmentation"],
+	["Javanese","https://www.w3.org/TR/java-gap/#segmentation"],
+	["Tamil","https://www.w3.org/TR/taml-gap/#segmentation"]
 	]
 }
 
@@ -693,7 +692,7 @@ text_decoration = {
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
 		"sections": [ 
-			{"title":"Boutens", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#8329"}
+			{"title":"Boutens", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#8329"}
 			]
 		},
 	{ 	"title":"Mongolian Layout Requirements", 
@@ -730,14 +729,14 @@ text_decoration = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#text_decoration"],
-	["Bengali","https://www.w3.org/TR/beng-gap#text_decoration"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#text_decoration"],
 	["Chinese","https://www.w3.org/TR/clreq-gap/#text_decoration"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#text_decoration"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#text_decoration"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#text_decoration"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#text_decoration"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#text_decoration"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#text_decoration"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#text_decoration"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#text_decoration"],
-	["Tamil","https://www.w3.org/TR/taml-gap#text_decoration"]
+	["Tamil","https://www.w3.org/TR/taml-gap/#text_decoration"]
 	]
 }
 
@@ -835,18 +834,18 @@ quotations = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#quotations"],
-	["Bengali","https://www.w3.org/TR/beng-gap#quotations"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#quotations"],
 	["Chinese","https://www.w3.org/TR/clreq-gap/#quotations"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#quotations"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#quotations"],
-	["Greek","https://www.w3.org/TR/grek-gap#quotations"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#quotations"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#quotations"],
-	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#quotations"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#quotations"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#quotations"],
+	["Greek","https://www.w3.org/TR/grek-gap/#quotations"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#quotations"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#quotations"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap/#quotations"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#quotations"],
-	["Javanese","https://www.w3.org/TR/java-gap#quotations"],
-	["Lao","https://www.w3.org/TR/laoo-gap#quotations"],
-	["Tamil","https://www.w3.org/TR/taml-gap#quotations"]
+	["Javanese","https://www.w3.org/TR/java-gap/#quotations"],
+	["Lao","https://www.w3.org/TR/laoo-gap/#quotations"],
+	["Tamil","https://www.w3.org/TR/taml-gap/#quotations"]
 	]
 }
 
@@ -896,7 +895,7 @@ inline_notes = {
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
 		"sections": [ 
-			{"title":"Rubies", "url":"https://medium.com/netflix-techblog/implementing-japanese-subtitles-on-netflix-c165fbe61989#2ca1"}
+			{"title":"Rubies", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#2ca1"}
 			]
 		}
 	],
@@ -964,12 +963,12 @@ data_formats = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#data_formats"],
-	["Bengali","https://www.w3.org/TR/beng-gap#data_formats"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#data_formats"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#data_formats"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#data_formats"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#data_formats"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#data_formats"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#data_formats"],
-	["Tamil","https://www.w3.org/TR/taml-gap#data_formats"]
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#data_formats"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#data_formats"],
+	["Tamil","https://www.w3.org/TR/taml-gap/#data_formats"]
 	]
 }
 
@@ -1126,10 +1125,10 @@ line_breaking = {
 "gap_analysis": [
 	["Chinese","https://www.w3.org/TR/clreq-gap/#line_breaking"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#line_breaking"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#line_breaking"],
-	["Javanese","https://www.w3.org/TR/java-gap#line_breaking"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#line_breaking"],
+	["Javanese","https://www.w3.org/TR/java-gap/#line_breaking"],
 	["Khmer","https://www.w3.org/TR/khmr-gap#line_breaking"],
-	["Lao","https://www.w3.org/TR/laoo-gap#line_breaking"]
+	["Lao","https://www.w3.org/TR/laoo-gap/#line_breaking"]
 	]
 }
 
@@ -1179,9 +1178,9 @@ hyphenation = {
 
 
 "gap_analysis": [
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#hyphenation"],
-	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#hyphenation"],
-	["Javanese","https://www.w3.org/TR/java-gap#hyphenation"]
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#hyphenation"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap/#hyphenation"],
+	["Javanese","https://www.w3.org/TR/java-gap/#hyphenation"]
 	]
 }
 
@@ -1207,7 +1206,7 @@ justification = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements",
 		"sections": [ 
-			{"title":"Justification", "url":"https://www.w3.org/TR/alreq/index.html#h_justification"},
+			{"title":"Justification", "url":"https://www.w3.org/TR/alreq/#h_justification"},
 			{"title":"Kashida", "url":"https://www.w3.org/TR/alreq/#h_justification_kashida"},
 			{"title":"Tatweel", "url":"https://www.w3.org/TR/alreq/#h_justification_tatweel"},
 			{"title":"Combination of the Mechanisms", "url":"https://www.w3.org/TR/alreq/#h_combination_of_the_mechanisms"},
@@ -1301,7 +1300,7 @@ justification = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#justification"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#justification"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#justification"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#justification"]
 	]
 }             
@@ -1365,13 +1364,13 @@ spacing = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#spacing"],
-	["Bengali","https://www.w3.org/TR/beng-gap#spacing"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#spacing"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#spacing"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#spacing"],
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#spacing"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#spacing"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#spacing"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#spacing"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#spacing"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#spacing"],
 	["Khmer","https://www.w3.org/TR/khmr-gap#spacing"],
-	["Tamil","https://www.w3.org/TR/taml-gap#spacing"]
+	["Tamil","https://www.w3.org/TR/taml-gap/#spacing"]
 	]
 }             
 
@@ -1454,17 +1453,17 @@ lists = {
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#lists"],
-	["Bengali","https://www.w3.org/TR/beng-gap#lists"],
+	["Bengali","https://www.w3.org/TR/beng-gap/#lists"],
 	["Chinese","https://www.w3.org/TR/clreq-gap/#lists"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#lists"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#lists"],
 	["Ethiopic","https://www.w3.org/TR/elreq-gap/#lists"],
-	["Greek","https://www.w3.org/TR/grek-gap#lists"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#lists"],
+	["Greek","https://www.w3.org/TR/grek-gap/#lists"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#lists"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#lists"],
 	["Khmer","https://www.w3.org/TR/khmr-gap#lists"],
-	["Lao","https://www.w3.org/TR/laoo-gap#lists"],
+	["Lao","https://www.w3.org/TR/laoo-gap/#lists"],
 	["Mongolian","https://www.w3.org/TR/mong-gap/#lists"],
-	["Tamil","https://www.w3.org/TR/taml-gap#lists"]
+	["Tamil","https://www.w3.org/TR/taml-gap/#lists"]
 	]
 }             
 
@@ -1504,7 +1503,7 @@ initials = {
 "spec_links": [
 	{	"title":"CSS3 Selectors",
 		"sections": [
-			{"title":" The ::first-letter pseudo-element","url":"https://www.w3.org/TR/css3-selectors/#first-letter"}
+			{"title":" The ::first-letter pseudo-element","url":"https://www.w3.org/TR/selectors-3/#first-letter"}
 			]
 		},
 	{	"title":"CSS3 Inline Layout",
@@ -1518,18 +1517,18 @@ initials = {
 "tests": [
 	["Exploratory/interactive test results","https://w3c.github.io/i18n-tests/results/int-styling-initials.html"],
 	["Exploratory/interactive test repo","https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AStyling_initials"],
-	["CSS3 Selectors: first-letter","https://w3c.github.io/i18n-tests/results/first-letter#latin"],
+	["CSS3 Selectors: first-letter","https://w3c.github.io/i18n-tests/results/first-letter-pseudo#latin"],
 	["Interactive test: ::first-letter","https://github.com/w3c/i18n-tests/wiki/Test-script-for-::first-letter"],
 	],
 
 
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#initials"],
-	["Bengali","https://www.w3.org/TR/beng-gap#initials"],
-	["Devanagari","https://www.w3.org/TR/deva-gap#initials"],
-	["Dutch","https://www.w3.org/TR/latn-nl-gap#initials"],
-	["Gujarati","https://www.w3.org/TR/gujr-gap#initials"],
-	["Tamil","https://www.w3.org/TR/taml-gap#initials"]
+	["Bengali","https://www.w3.org/TR/beng-gap/#initials"],
+	["Devanagari","https://www.w3.org/TR/deva-gap/#initials"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap/#initials"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap/#initials"],
+	["Tamil","https://www.w3.org/TR/taml-gap/#initials"]
 	]
 }
 
@@ -1567,9 +1566,9 @@ page_layout = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Paginating Single-Column Text", "url":"https://www.w3.org/TR/dpub-pagination/#paginating-single-column-text"},
-			{"title":"Heads", "url":"https://www.w3.org/TR/dpub-pagination/#heads"},
-			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://www.w3.org/TR/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
+			{"title":"Paginating Single-Column Text", "url":"https://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text"},
+			{"title":"Heads", "url":"https://www.w3.org/TR/dpub-latinreq/#heads"},
+			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
@@ -1663,7 +1662,7 @@ footnotes_etc = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Footnotes", "url":"https://www.w3.org/TR/dpub-pagination/#footnotes"}
+			{"title":"Footnotes", "url":"https://www.w3.org/TR/dpub-latinreq/#footnotes"}
 			]
 		}
 	],
@@ -1681,7 +1680,7 @@ footnotes_etc = {
 
 
 "gap_analysis": [
-	["Gurmukhi","https://www.w3.org/TR/guru-gap#footnotes_etc"]
+	["Gurmukhi","https://www.w3.org/TR/guru-gap/#footnotes_etc"]
 	]
 }
 
@@ -1709,7 +1708,7 @@ headers_footers = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Running headers and footers", "url":"https://www.w3.org/TR/dpub-pagination/#running-headers-and-footers"}
+			{"title":"Running headers and footers", "url":"https://www.w3.org/TR/dpub-latinreq/#running-headers-and-footers"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
@@ -1732,7 +1731,7 @@ headers_footers = {
 
 
 "gap_analysis": [
-	["Ethiopic","https://www.w3.org/TR/elreq/gap-analysis/#headers_footers"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#headers_footers"],
 	]
 }
 
