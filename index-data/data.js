@@ -6,7 +6,7 @@ vertical_text = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements",
 		"sections": [ 
-			{"title":"Vertical text", "url":"https://w3c.github.io/alreq/#h_vertical_text"}
+			{"title":"Vertical text", "url":"https://www.w3.org/TR/alreq/#h_vertical_text"}
 			]
 		},
 	{ 	"title":"Chinese Layout Requirements",
@@ -17,7 +17,7 @@ vertical_text = {
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Vertical arrangements of characters", "url":"https://w3c.github.io/ilreq/#h_vertical_arrangements_of_characters"}
+			{"title":"Vertical arrangements of characters", "url":"https://www.w3.org/TR/ilreq/#h_vertical_arrangements_of_characters"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
@@ -41,7 +41,7 @@ vertical_text = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Vertical text", "url":"https://w3c.github.io/mlreq/#h_vertical_text"}
+			{"title":"Vertical text", "url":"https://www.w3.org/TR/mlreq/#h_vertical_text"}
 			]
 		}
 	],
@@ -69,13 +69,13 @@ vertical_text = {
 
 
 "gap_analysis": [
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#vertical_text"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#vertical_text"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#vertical_text"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#vertical_text"],
-	["Hungarian","https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap#vertical_text"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#vertical_text"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#vertical_text"]
+	["Bengali","https://www.w3.org/TR/beng-gap#vertical_text"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#vertical_text"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#vertical_text"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#vertical_text"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#vertical_text"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#vertical_text"],
+	["Tamil","https://www.w3.org/TR/taml-gap#vertical_text"]
 	]
 }
 
@@ -94,8 +94,8 @@ bidi_text = {
 		},
 	{ 	"title":"Text Layout Requirements for the Arabic Script",
 		"sections": [ 
-			{"title":"Direction", "url":"https://w3c.github.io/alreq/index.html#h_direction"},
-			{"title":"Direction", "url":"https://w3c.github.io/alreq/index.html#h_direction"}
+			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/index.html#h_direction"},
+			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/index.html#h_direction"}
 			]
 		}
 	],
@@ -131,7 +131,7 @@ bidi_text = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#bidi_text"]
+	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#bidi_text"]
 	]
 }
 
@@ -163,8 +163,8 @@ charset = {
 
 
 "gap_analysis": [
-	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#charset"],
-	["Punjabi","https://w3c.github.io/iip/gap-analysis/guru-gap#charset"]
+	["Mongolian","https://www.w3.org/TR/mong-gap/#charset"],
+	["Punjabi","https://www.w3.org/TR/guru-gap#charset"]
 	]
 }
 
@@ -182,7 +182,7 @@ fonts = {
 "requirements": [
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Typefaces for Chinese Characters", "url":"https://w3c.github.io/clreq/#commonly_used_chinese_typefaces"}
+			{"title":"Typefaces for Chinese Characters", "url":"https://www.w3.org/TR/clreq/#commonly_used_chinese_typefaces"}
 			]
 		},
 	{ 	"title":"Hangul Layout Requirements",
@@ -211,10 +211,10 @@ fonts = {
 
 
 "gap_analysis": [
-	["Cherokee","https://w3c.github.io/typography/gap-analysis/docs/cher#fonts"],
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#fonts"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#fonts"],
-	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#fonts"],
+	["Cherokee","https://www.w3.org/TR/cher-gap#fonts"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#fonts"],
+	["Javanese","https://www.w3.org/TR/java-gap#fonts"],
+	["Mongolian","https://www.w3.org/TR/mong-gap/#fonts"],
 	]
 }
 
@@ -232,8 +232,8 @@ font_style = {
 "requirements": [
 	{ 	"title":"Arabic layout requirements",
 		"sections": [ 
-			{"title":"Arabic Style and Calligraphy", "url":"https://w3c.github.io/alreq/#h_arabic_style_and_calligraphy"},
-			{"title":"Different Writing Styles", "url":"https://w3c.github.io/alreq/#h_different_writing_styles"},
+			{"title":"Arabic Style and Calligraphy", "url":"https://www.w3.org/TR/alreq/#h_arabic_style_and_calligraphy"},
+			{"title":"Different Writing Styles", "url":"https://www.w3.org/TR/alreq/#h_different_writing_styles"},
 			]
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
@@ -272,7 +272,7 @@ font_style = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#font_style"]
+	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#font_style"]
 	]
 }
 
@@ -290,9 +290,9 @@ glyphs = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Ligatures", "url":"https://w3c.github.io/alreq/#h_ligatures"},
-			{"title":"Diacritics", "url":"https://w3c.github.io/alreq/index.html#h_diacritics"},
-			{"title":"Positioning diacritics relative to base characters", "url":"https://w3c.github.io/alreq/#h_diacritic_position"},
+			{"title":"Ligatures", "url":"https://www.w3.org/TR/alreq/#h_ligatures"},
+			{"title":"Diacritics", "url":"https://www.w3.org/TR/alreq/index.html#h_diacritics"},
+			{"title":"Positioning diacritics relative to base characters", "url":"https://www.w3.org/TR/alreq/#h_diacritic_position"},
 			]
 		},
 	],
@@ -310,7 +310,7 @@ glyphs = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#glyphs"]
+	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#glyphs"]
 	]
 }
 
@@ -328,9 +328,9 @@ cursive = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Joining", "url":"https://w3c.github.io/alreq/#h_joining"},
-			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://w3c.github.io/alreq/#h_letterhighlights"},
-			{"title":"Arabic Script and Typography", "url":"https://w3c.github.io/alreq/#h_arabic_script_and_typography"},
+			{"title":"Joining", "url":"https://www.w3.org/TR/alreq/#h_joining"},
+			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://www.w3.org/TR/alreq/#h_letterhighlights"},
+			{"title":"Arabic Script and Typography", "url":"https://www.w3.org/TR/alreq/#h_arabic_script_and_typography"},
 			]
 		},
 	],
@@ -357,7 +357,7 @@ cursive = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://w3c.github.io/alreq/gap-analysis/#cursive"]
+	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#cursive"]
 	]
 }
 
@@ -375,7 +375,7 @@ baselines = {
 "requirements": [
 	{ 	"title":"Arabic layout requirements",
 		"sections": [ 
-			{"title":"Multi-level baselines", "url":"https://w3c.github.io/alreq/#multi-level-baselines"},
+			{"title":"Multi-level baselines", "url":"https://www.w3.org/TR/alreq/#multi-level-baselines"},
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
@@ -385,12 +385,12 @@ baselines = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Baselines", "url":"https://w3c.github.io/mlreq/#h_baselines"}
+			{"title":"Baselines", "url":"https://www.w3.org/TR/mlreq/#h_baselines"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements",
 		"sections": [ 
-			{"title":"Baseline alignment", "url":"https://w3c.github.io/tlreq/#baseline_alignment"}
+			{"title":"Baseline alignment", "url":"https://www.w3.org/TR/tlreq/#baseline_alignment"}
 			]
 		}
 	],
@@ -417,11 +417,11 @@ baselines = {
 
 
 "gap_analysis": [
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#baselines"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#baselines"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#baselines"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#baselines"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#baselines"]
+	["Bengali","https://www.w3.org/TR/beng-gap#baselines"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#baselines"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#baselines"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#baselines"],
+	["Tamil","https://www.w3.org/TR/taml-gap#baselines"]
 	]
 }
 
@@ -467,11 +467,11 @@ transforms = {
 
 
 "gap_analysis": [
-	["Cherokee","https://w3c.github.io/typography/gap-analysis/docs/cher#transforms"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#transforms"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#transforms"],
-	["Greek","https://w3c.github.io/eurlreq/gap-analysis/grek-gap#transforms"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#transforms"]
+	["Cherokee","https://www.w3.org/TR/cher-gap#transforms"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#transforms"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#transforms"],
+	["Greek","https://www.w3.org/TR/grek-gap#transforms"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#transforms"]
 	]
 }
 
@@ -488,7 +488,7 @@ segmentation = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Text Segmentation", "url":"https://w3c.github.io/alreq/#h_segmentation"}
+			{"title":"Text Segmentation", "url":"https://www.w3.org/TR/alreq/#h_segmentation"}
 			]
 		},
 	{ 	"title":"Bengali Layout Requirements", 
@@ -499,7 +499,7 @@ segmentation = {
 		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Characters and Principles for Setting them in Chinese Composition", "url":"https://w3c.github.io/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition"}
+			{"title":"Characters and Principles for Setting them in Chinese Composition", "url":"https://www.w3.org/TR/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition"}
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
@@ -510,8 +510,8 @@ segmentation = {
 		},
 	{ 	"title":"Indic Layout Requirements", 
 		"sections": [ 
-			{"title":"Indic orthographic syllable boundaries", "url":"https://w3c.github.io/ilreq/#h_indic_orthographic_syllable_boundaries"},
-			{"title":"Text segmentation", "url":"https://w3c.github.io/ilreq/#h_text_segmentation"}
+			{"title":"Indic orthographic syllable boundaries", "url":"https://www.w3.org/TR/ilreq/#h_indic_orthographic_syllable_boundaries"},
+			{"title":"Text segmentation", "url":"https://www.w3.org/TR/ilreq/#h_text_segmentation"}
 			]
 		},
 	{ 	"title":"Khmer Layout Requirements", 
@@ -522,9 +522,9 @@ segmentation = {
 		},
 	{ 	"title":"Mongolian Layout Requirements", 
 		"sections": [ 
-			{"title":"Selection rules", "url":"https://w3c.github.io/mlreq/#selection_rules"},
-			{"title":"Cursor movement rules", "url":"https://w3c.github.io/mlreq/#cursor_movement"},
-			{"title":"Mouse pointer rules", "url":"https://w3c.github.io/mlreq/#mouse_pointer"}
+			{"title":"Selection rules", "url":"https://www.w3.org/TR/mlreq/#selection_rules"},
+			{"title":"Cursor movement rules", "url":"https://www.w3.org/TR/mlreq/#cursor_movement"},
+			{"title":"Mouse pointer rules", "url":"https://www.w3.org/TR/mlreq/#mouse_pointer"}
 			]
 		},
 	{ 	"title":"Thai Layout Requirements", 
@@ -535,8 +535,8 @@ segmentation = {
 		},
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
-			{"title":"Tibetan Syllables", "url":"https://w3c.github.io/tlreq/#tibetan_syllables"},
-			{"title":"Text Segmentation in Tibetan", "url":"https://w3c.github.io/tlreq/#text_segmentation"}
+			{"title":"Tibetan Syllables", "url":"https://www.w3.org/TR/tlreq/#tibetan_syllables"},
+			{"title":"Text Segmentation in Tibetan", "url":"https://www.w3.org/TR/tlreq/#text_segmentation"}
 			]
 		},
 	],
@@ -556,13 +556,13 @@ segmentation = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#segmentation"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#segmentation"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#segmentation"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#segmentation"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#segmentation"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#segmentation"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#segmentation"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#segmentation"],
+	["Bengali","https://www.w3.org/TR/beng-gap#segmentation"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#segmentation"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#segmentation"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#segmentation"],
+	["Javanese","https://www.w3.org/TR/java-gap#segmentation"],
+	["Tamil","https://www.w3.org/TR/taml-gap#segmentation"]
 	]
 }
 
@@ -584,12 +584,12 @@ punctuation_etc = {
 		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Categories and Usage of Punctuation Marks", "url":"https://w3c.github.io/clreq/#categories_and_usage_of_punctuation_marks"},
-			{"title":"Sizes and positions of Punctuation Marks", "url":"https://w3c.github.io/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"},
-			{"title":"Atypical punctuation marks and their composition", "url":"https://w3c.github.io/clreq/#atypical_punctuation_marks_and_their_arrangements"},
-			{"title":"Punctuation marks in Chinese", "url":"https://w3c.github.io/clreq/#tables_of_chinese_punctuation_marks"},
-			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
-			{"title":"Prohibition Rules for Unbreakable Marks", "url":"https://w3c.github.io/clreq/#h-unbreakable_marks_punctuation"}
+			{"title":"Categories and Usage of Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#categories_and_usage_of_punctuation_marks"},
+			{"title":"Sizes and positions of Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"},
+			{"title":"Atypical punctuation marks and their composition", "url":"https://www.w3.org/TR/clreq/#atypical_punctuation_marks_and_their_arrangements"},
+			{"title":"Punctuation marks in Chinese", "url":"https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks"},
+			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks"},
+			{"title":"Prohibition Rules for Unbreakable Marks", "url":"https://www.w3.org/TR/clreq/#h-unbreakable_marks_punctuation"}
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
@@ -599,42 +599,42 @@ punctuation_etc = {
 		},
 	{ 	"title":"Ethiopic Layout Requirements", 
 		"sections": [ 
-			{"title":"Punctuation", "url":"https://w3c.github.io/elreq/#punctuation"}
+			{"title":"Punctuation", "url":"https://www.w3.org/TR/elreq/#punctuation"}
 			]
 		},
 	{ 	"title":"Hangul Layout Requirements", 
 		"sections": [ 
-			{"title":"Hangul Punctuation Mark Code Ranges based on Unicode", "url":"https://w3c.github.io/klreq/#fonts-punctuationcodes"},
-			{"title":"Hangul Punctuation Marks in Horizontal and Vertical Writing", "url":"https://w3c.github.io/klreq/#fonts-horizvertpunct"},
-			{"title":"Arrangement of 'Letter Face Position in Character Frame' for Full Width Parentheses", "url":"https://w3c.github.io/klreq/#fonts-faceposnparens"},
-			{"title":"Arrangement of 'Letter Face Position in Character Frame' for Punctuation", "url":"https://w3c.github.io/klreq/#fonts-facepos-punc"},
-			{"title":"Writing Process for Punctuation Marks, etc.", "url":"https://w3c.github.io/klreq/#punc-process"}
+			{"title":"Hangul Punctuation Mark Code Ranges based on Unicode", "url":"https://www.w3.org/TR/klreq/#fonts-punctuationcodes"},
+			{"title":"Hangul Punctuation Marks in Horizontal and Vertical Writing", "url":"https://www.w3.org/TR/klreq/#fonts-horizvertpunct"},
+			{"title":"Arrangement of 'Letter Face Position in Character Frame' for Full Width Parentheses", "url":"https://www.w3.org/TR/klreq/#fonts-faceposnparens"},
+			{"title":"Arrangement of 'Letter Face Position in Character Frame' for Punctuation", "url":"https://www.w3.org/TR/klreq/#fonts-facepos-punc"},
+			{"title":"Writing Process for Punctuation Marks, etc.", "url":"https://www.w3.org/TR/klreq/#punc-process"}
 			]
 		},
 	{ 	"title":"Indic Layout Requirements", 
 		"sections": [ 
-			{"title":"Guiding principles of Line breaking for Indian languages", "url":"https://w3c.github.io/ilreq/#h_guiding_principles_line_breaking_indian_languages"}
+			{"title":"Guiding principles of Line breaking for Indian languages", "url":"https://www.w3.org/TR/ilreq/#h_guiding_principles_line_breaking_indian_languages"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements", 
 		"sections": [ 
-			{"title":"Characters Used for Japanese Composition", "url":"https://w3c.github.io/jlreq/#characters_used_for_japanese_composition"},
-			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/jlreq/#line_composition_rules_for_punctuation_marks"},
-			{"title":"Examples of Items Jutting Out of the Kihon-hanmen", "url":"https://w3c.github.io/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen"},
-			{"title":"Character Positioning based on Kihon-hanmen", "url":"https://w3c.github.io/jlreq/#character_positioning_based_on_kihonhanmen_design"},
-			{"title":"Design Grouping of Characters and Symbols depending on their Positioning", "url":"https://w3c.github.io/jlreq/#grouping_of_characters_and_symbols_depending_on_their_positioning"}
+			{"title":"Characters Used for Japanese Composition", "url":"https://www.w3.org/TR/jlreq/#characters_used_for_japanese_composition"},
+			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://www.w3.org/TR/jlreq/#line_composition_rules_for_punctuation_marks"},
+			{"title":"Examples of Items Jutting Out of the Kihon-hanmen", "url":"https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen"},
+			{"title":"Character Positioning based on Kihon-hanmen", "url":"https://www.w3.org/TR/jlreq/#character_positioning_based_on_kihonhanmen_design"},
+			{"title":"Design Grouping of Characters and Symbols depending on their Positioning", "url":"https://www.w3.org/TR/jlreq/#grouping_of_characters_and_symbols_depending_on_their_positioning"}
 			]
 		},
 	{ 	"title":"Mongolian Layout Requirements", 
 		"sections": [ 
-			{"title":"Punctuation rules", "url":"https://w3c.github.io/mlreq/#punctuation_rules"},
-			{"title":"Display rules for Mongolian space", "url":"https://w3c.github.io/mlreq/#mongolian_space"}
+			{"title":"Punctuation rules", "url":"https://www.w3.org/TR/mlreq/#punctuation_rules"},
+			{"title":"Display rules for Mongolian space", "url":"https://www.w3.org/TR/mlreq/#mongolian_space"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
-			{"title":"Tibetan Punctuation", "url":"https://w3c.github.io/tlreq/#punctuation"},
-			{"title":"Character List", "url":"https://w3c.github.io/tlreq/#character_list"}
+			{"title":"Tibetan Punctuation", "url":"https://www.w3.org/TR/tlreq/#punctuation"},
+			{"title":"Character List", "url":"https://www.w3.org/TR/tlreq/#character_list"}
 			]
 		},
 	],
@@ -668,8 +668,8 @@ text_decoration = {
 "requirements": [
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Indicator Punctuation Marks > Fullwidth low line", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"},
-			{"title":"Indicator Punctuation Marks > Emphasis Dots", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"}
+			{"title":"Indicator Punctuation Marks > Fullwidth low line", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"},
+			{"title":"Indicator Punctuation Marks > Emphasis Dots", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"}
 			]
 		},
 	{ 	"title":"Wikipedia: Underlines in non-Latin scripts (chinese)", "url":"https://en.wikipedia.org/wiki/Underline#Underlines_in_non-Latin_scripts",
@@ -678,17 +678,17 @@ text_decoration = {
 		},
 	{ 	"title":"Ethiopic Layout Requirements", 
 		"sections": [ 
-			{"title":"Emphasis", "url":"https://w3c.github.io/elreq/#h_emphasis"},
-			{"title":"Emphasis Within Prose", "url":"https://w3c.github.io/elreq/#emphasis_within_prose"},
-			{"title":"Emphasis With Ethiopic Wordspace", "url":"https://w3c.github.io/elreq/#emphasis_with_wordspace"},
-			{"title":"Section Headings", "url":"https://w3c.github.io/elreq/#section_headings"}
+			{"title":"Emphasis", "url":"https://www.w3.org/TR/elreq/#h_emphasis"},
+			{"title":"Emphasis Within Prose", "url":"https://www.w3.org/TR/elreq/#emphasis_within_prose"},
+			{"title":"Emphasis With Ethiopic Wordspace", "url":"https://www.w3.org/TR/elreq/#emphasis_with_wordspace"},
+			{"title":"Section Headings", "url":"https://www.w3.org/TR/elreq/#section_headings"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements", 
 		"sections": [ 
 			{"title":"Examples of Items Jutting Out of the Kihon-hanmen", "url":"https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen"},
 			{"title":"Line Gap Arrangement with Ruby and Other Objects", "url":"https://www.w3.org/TR/jlreq/#line_gap_arrangement_with_ruby_and_other_objects"},
-			{"title":"Composition of Emphasis Dots", "url":"https://w3c.github.io/jlreq/#composition_of_emphasis_dots"}
+			{"title":"Composition of Emphasis Dots", "url":"https://www.w3.org/TR/jlreq/#composition_of_emphasis_dots"}
 			]
 		},
 	{ 	"title":"Implementing Japanese Subtitles on Netflix", 
@@ -698,12 +698,12 @@ text_decoration = {
 		},
 	{ 	"title":"Mongolian Layout Requirements", 
 		"sections": [ 
-			{"title":"Text decoration", "url":"https://w3c.github.io/mlreq/#h_text_decoration"}
+			{"title":"Text decoration", "url":"https://www.w3.org/TR/mlreq/#h_text_decoration"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
-			{"title":"Text Emphasis and Highlighting", "url":"https://w3c.github.io/tlreq/#emphasis_and_highlighting"}
+			{"title":"Text Emphasis and Highlighting", "url":"https://www.w3.org/TR/tlreq/#emphasis_and_highlighting"}
 			]
 		}
 	],
@@ -729,15 +729,15 @@ text_decoration = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#text_decoration"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#text_decoration"],
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#text_decoration"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#text_decoration"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#text_decoration"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#text_decoration"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#text_decoration"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#text_decoration"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#text_decoration"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#text_decoration"],
+	["Bengali","https://www.w3.org/TR/beng-gap#text_decoration"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#text_decoration"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#text_decoration"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#text_decoration"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#text_decoration"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#text_decoration"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#text_decoration"],
+	["Tamil","https://www.w3.org/TR/taml-gap#text_decoration"]
 	]
 }
 
@@ -759,7 +759,7 @@ quotations = {
 		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Indicator Punctuation Marks", "url":"https://w3c.github.io/clreq/#indication_punctuation_marks"}
+			{"title":"Indicator Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"}
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
@@ -769,7 +769,7 @@ quotations = {
 		},
 	{ 	"title":"Ethiopic Layout Requirements", 
 		"sections": [ 
-			{"title":"Quotation", "url":"https://w3c.github.io/elreq/#quotation"}
+			{"title":"Quotation", "url":"https://www.w3.org/TR/elreq/#quotation"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements", 
@@ -797,7 +797,7 @@ quotations = {
 		},
 	{ 	"title":"Tamil Layout Requirements", 
 		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/iip/tamil/#h_quotations"},
+			{"title":"Quotations", "url":"https://www.w3.org/TR/ilreq-taml/#h_quotations"},
 			]
 		},
 	{ 	"title":"Thai Layout Requirements", 
@@ -834,19 +834,19 @@ quotations = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#quotations"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#quotations"],
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#quotations"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#quotations"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#quotations"],
-	["Greek","https://w3c.github.io/eurlreq/gap-analysis/grek-gap#quotations"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#quotations"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#quotations"],
-	["Hungarian","https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap#quotations"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#quotations"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#quotations"],
-	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#quotations"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#quotations"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#quotations"],
+	["Bengali","https://www.w3.org/TR/beng-gap#quotations"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#quotations"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#quotations"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#quotations"],
+	["Greek","https://www.w3.org/TR/grek-gap#quotations"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#quotations"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#quotations"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#quotations"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#quotations"],
+	["Javanese","https://www.w3.org/TR/java-gap#quotations"],
+	["Lao","https://www.w3.org/TR/laoo-gap#quotations"],
+	["Tamil","https://www.w3.org/TR/taml-gap#quotations"]
 	]
 }
 
@@ -863,7 +863,7 @@ inline_notes = {
 "requirements": [
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
-			{"title":"Interlinear annotations", "url":"https://w3c.github.io/clreq/#interlinear_annotations"}
+			{"title":"Interlinear annotations", "url":"https://www.w3.org/TR/clreq/#interlinear_annotations"}
 			]
 		},
 	{ 	"title":"Bopomofo on the Web", "url":"https://r12a.github.io/scripts/bopomofo/ontheweb",
@@ -880,9 +880,9 @@ inline_notes = {
 		"sections": [ 
 			{"title":"Ruby and Emphasis Dots", "url":"https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots"},
 			{"title":"Positioning of Jukugo-ruby", "url":"https://www.w3.org/TR/jlreq/#positioning_of_jukugoruby"},
-			{"title":"Inline Cutting Note (Warichu)", "url":"https://w3c.github.io/jlreq/#inline_cutting_note"},
-			{"title":"Superscripts and Superscripts", "url":"https://w3c.github.io/jlreq/#superscripts_and_superscripts"},
-			{"title":"Furiwake Processing", "url":"https://w3c.github.io/jlreq/#furiwake_processing"}
+			{"title":"Inline Cutting Note (Warichu)", "url":"https://www.w3.org/TR/jlreq/#inline_cutting_note"},
+			{"title":"Superscripts and Superscripts", "url":"https://www.w3.org/TR/jlreq/#superscripts_and_superscripts"},
+			{"title":"Furiwake Processing", "url":"https://www.w3.org/TR/jlreq/#furiwake_processing"}
 			]
 		},
 	{ 	"title":"r12a blog", 
@@ -927,8 +927,8 @@ inline_notes = {
 
 
 "gap_analysis": [
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#inline_notes"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#inline_notes"]
+	["Chinese","https://www.w3.org/TR/clreq-gap/#inline_notes"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#inline_notes"]
 	]
 }
 
@@ -945,7 +945,7 @@ data_formats = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Numbers", "url":"https://w3c.github.io/alreq/#h_numbers"},
+			{"title":"Numbers", "url":"https://www.w3.org/TR/alreq/#h_numbers"},
 			]
 		},
 	],
@@ -963,13 +963,13 @@ data_formats = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#data_formats"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#data_formats"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#data_formats"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#data_formats"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#data_formats"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#data_formats"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#data_formats"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#data_formats"],
+	["Bengali","https://www.w3.org/TR/beng-gap#data_formats"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#data_formats"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#data_formats"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#data_formats"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#data_formats"],
+	["Tamil","https://www.w3.org/TR/taml-gap#data_formats"]
 	]
 }
 
@@ -1024,7 +1024,7 @@ line_breaking = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
-			{"title":"Line breaking", "url":"https://w3c.github.io/alreq/#h_line_breaking"},
+			{"title":"Line breaking", "url":"https://www.w3.org/TR/alreq/#h_line_breaking"},
 			]
 		},
 	{ 	"title":"Bengali Layout Requirements", 
@@ -1034,8 +1034,8 @@ line_breaking = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
-			{"title":"Hanging Punctuation at Line End", "url":"https://w3c.github.io/clreq/#hanging_punctuation_marks_at_line_end"}
+			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks"},
+			{"title":"Hanging Punctuation at Line End", "url":"https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end"}
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
@@ -1045,7 +1045,7 @@ line_breaking = {
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Guiding principles of Line breaking for Indian languages", "url":"https://w3c.github.io/ilreq/#h_guiding_principles_line_breaking_indian_languages"}
+			{"title":"Guiding principles of Line breaking for Indian languages", "url":"https://www.w3.org/TR/ilreq/#h_guiding_principles_line_breaking_indian_languages"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements",
@@ -1076,7 +1076,7 @@ line_breaking = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Line breaking", "url":"https://w3c.github.io/mlreq/#h_line_breaking"}
+			{"title":"Line breaking", "url":"https://www.w3.org/TR/mlreq/#h_line_breaking"}
 			]
 		},
 	{ 	"title":"Thoughts on Word and Sentence Segmentation in Thai", "url":"http://pioneer.netserv.chula.ac.th/%7Eawirote/ling/snlp2007-wirote.pdf",
@@ -1085,7 +1085,7 @@ line_breaking = {
 		},
 	{ 	"title":"Tamil Layout Requirements", 
 		"sections": [ 
-			{"title":"Line breaking", "url":"https://w3c.github.io/iip/tamil/#h_line_breaking"},
+			{"title":"Line breaking", "url":"https://www.w3.org/TR/ilreq-taml/#h_line_breaking"},
 			]
 		},
 	{ 	"title":"Thai Layout Requirements", 
@@ -1095,7 +1095,7 @@ line_breaking = {
 		},
 	{ 	"title":"Tibetan Layout Requirements",
 		"sections": [ 
-			{"title":"Line breaking", "url":"https://w3c.github.io/tlreq/#line_breaking"}
+			{"title":"Line breaking", "url":"https://www.w3.org/TR/tlreq/#line_breaking"}
 			]
 		}
 	],
@@ -1124,12 +1124,12 @@ line_breaking = {
 
 
 "gap_analysis": [
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#line_breaking"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#line_breaking"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#line_breaking"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#line_breaking"],
-	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#line_breaking"],
-	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#line_breaking"]
+	["Chinese","https://www.w3.org/TR/clreq-gap/#line_breaking"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#line_breaking"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#line_breaking"],
+	["Javanese","https://www.w3.org/TR/java-gap#line_breaking"],
+	["Khmer","https://www.w3.org/TR/khmr-gap#line_breaking"],
+	["Lao","https://www.w3.org/TR/laoo-gap#line_breaking"]
 	]
 }
 
@@ -1147,7 +1147,7 @@ hyphenation = {
 "requirements": [
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Hyphenation", "url":"https://w3c.github.io/ilreq/#h_hyphenation"}
+			{"title":"Hyphenation", "url":"https://www.w3.org/TR/ilreq/#h_hyphenation"}
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
@@ -1179,9 +1179,9 @@ hyphenation = {
 
 
 "gap_analysis": [
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#hyphenation"],
-	["Hungarian","https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap#hyphenation"],
-	["Javanese","https://w3c.github.io/sealreq/gap-analysis/java-gap#hyphenation"]
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#hyphenation"],
+	["Hungarian","https://www.w3.org/TR/latn-hu-gap-gap#hyphenation"],
+	["Javanese","https://www.w3.org/TR/java-gap#hyphenation"]
 	]
 }
 
@@ -1207,10 +1207,10 @@ justification = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements",
 		"sections": [ 
-			{"title":"Justification", "url":"https://w3c.github.io/alreq/index.html#h_justification"},
-			{"title":"Kashida", "url":"https://w3c.github.io/alreq/#h_justification_kashida"},
-			{"title":"Tatweel", "url":"https://w3c.github.io/alreq/#h_justification_tatweel"},
-			{"title":"Combination of the Mechanisms", "url":"https://w3c.github.io/alreq/#h_combination_of_the_mechanisms"},
+			{"title":"Justification", "url":"https://www.w3.org/TR/alreq/index.html#h_justification"},
+			{"title":"Kashida", "url":"https://www.w3.org/TR/alreq/#h_justification_kashida"},
+			{"title":"Tatweel", "url":"https://www.w3.org/TR/alreq/#h_justification_tatweel"},
+			{"title":"Combination of the Mechanisms", "url":"https://www.w3.org/TR/alreq/#h_combination_of_the_mechanisms"},
 			]
 		},
 	{ 	"title":"Arabic text justification", "url":"https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf",
@@ -1231,14 +1231,14 @@ justification = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://w3c.github.io/clreq/#line_composition_rules_for_punctuation_marks"},
-			{"title":"Paragraph Adjustment Rules", "url":"https://w3c.github.io/clreq/#paragraph_adjustment_rules"},
-			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://w3c.github.io/clreq/#chinese_and_western_mixed_text_composition"}
+			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks"},
+			{"title":"Paragraph Adjustment Rules", "url":"https://www.w3.org/TR/clreq/#paragraph_adjustment_rules"},
+			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition"}
 			]
 		},
 	{ 	"title":"Ethiopic Layout Requirements",
 		"sections": [ 
-			{"title":"Justification", "url":"https://w3c.github.io/elreq/#ethiopic_justification"}
+			{"title":"Justification", "url":"https://www.w3.org/TR/elreq/#ethiopic_justification"}
 			]
 		},
 	{ 	"title":"Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol", "url":"https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf",
@@ -1267,12 +1267,12 @@ justification = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Text alignment", "url":"https://w3c.github.io/mlreq/#h_textalign"}
+			{"title":"Text alignment", "url":"https://www.w3.org/TR/mlreq/#h_textalign"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements",
 		"sections": [ 
-			{"title":"Justification", "url":"https://w3c.github.io/tlreq/#punctuation_marks"}
+			{"title":"Justification", "url":"https://www.w3.org/TR/tlreq/#punctuation_marks"}
 			]
 		}
 	],
@@ -1300,9 +1300,9 @@ justification = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#justification"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#justification"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#justification"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#justification"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#justification"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#justification"]
 	]
 }             
 
@@ -1320,17 +1320,17 @@ spacing = {
 "requirements": [
 	{ 	"title":"Arabic Layout Requirements",
 		"sections": [ 
-			{"title":"Letter-spacing", "url":"https://w3c.github.io/alreq/#h_letterspacing"}
+			{"title":"Letter-spacing", "url":"https://www.w3.org/TR/alreq/#h_letterspacing"}
 			]
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://w3c.github.io/clreq/#principles_of_arrangement_of_han_characters"}
+			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"}
 			]
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Letter spacing", "url":"https://w3c.github.io/ilreq/#h_letter_spacing"}
+			{"title":"Letter spacing", "url":"https://www.w3.org/TR/ilreq/#h_letter_spacing"}
 			]
 		},
 	{ 	"title":"Khmer Layout Requirements",
@@ -1364,14 +1364,14 @@ spacing = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#spacing"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#spacing"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#spacing"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#spacing"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#spacing"],
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#spacing"],
-	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#spacing"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#spacing"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#spacing"],
+	["Bengali","https://www.w3.org/TR/beng-gap#spacing"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#spacing"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#spacing"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#spacing"],
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#spacing"],
+	["Khmer","https://www.w3.org/TR/khmr-gap#spacing"],
+	["Tamil","https://www.w3.org/TR/taml-gap#spacing"]
 	]
 }             
 
@@ -1387,7 +1387,7 @@ lists = {
 
 
 "requirements": [
-	{ 	"title":"Ready-made counter styles", "url":"https://w3c.github.io/predefined-counter-styles/",
+	{ 	"title":"Ready-made counter styles", "url":"https://www.w3.org/TR/predefined-counter-styles/",
 		"sections": [ 
 			]
 		},
@@ -1413,12 +1413,12 @@ lists = {
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Counters, lists, etc", "url":"https://w3c.github.io/mlreq/#h_counters"}
+			{"title":"Counters, lists, etc", "url":"https://www.w3.org/TR/mlreq/#h_counters"}
 			]
 		},
 	{ 	"title":"Tamil Layout Requirements", 
 		"sections": [ 
-			{"title":"Counters", "url":"https://w3c.github.io/iip/tamil/#h_counters"},
+			{"title":"Counters", "url":"https://www.w3.org/TR/ilreq-taml/#h_counters"},
 			]
 		},
 	{ 	"title":"Thai Layout Requirements", 
@@ -1453,18 +1453,18 @@ lists = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#lists"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#lists"],
-	["Chinese","https://w3c.github.io/clreq/gap-analysis/#lists"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#lists"],
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#lists"],
-	["Greek","https://w3c.github.io/eurlreq/gap-analysis/grek-gap#lists"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#lists"],
-	["Japanese","https://w3c.github.io/jlreq/gap-analysis/#lists"],
-	["Khmer","https://w3c.github.io/sealreq/gap-analysis/khmr-gap#lists"],
-	["Lao","https://w3c.github.io/sealreq/gap-analysis/laoo-gap#lists"],
-	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#lists"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#lists"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#lists"],
+	["Bengali","https://www.w3.org/TR/beng-gap#lists"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#lists"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#lists"],
+	["Ethiopic","https://www.w3.org/TR/elreq-gap/#lists"],
+	["Greek","https://www.w3.org/TR/grek-gap#lists"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#lists"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#lists"],
+	["Khmer","https://www.w3.org/TR/khmr-gap#lists"],
+	["Lao","https://www.w3.org/TR/laoo-gap#lists"],
+	["Mongolian","https://www.w3.org/TR/mong-gap/#lists"],
+	["Tamil","https://www.w3.org/TR/taml-gap#lists"]
 	]
 }             
 
@@ -1487,7 +1487,7 @@ initials = {
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
-			{"title":"Initial letter styling", "url":"https://w3c.github.io/ilreq/#h_initial_letter_styling"}
+			{"title":"Initial letter styling", "url":"https://www.w3.org/TR/ilreq/#h_initial_letter_styling"}
 			]
 		},
 	{ 	"title":"Latin Layout Requirements",
@@ -1524,12 +1524,12 @@ initials = {
 
 
 "gap_analysis": [
-	["Arabic","https://w3c.github.io/alreq/gap-analysis/#initials"],
-	["Bengali","https://w3c.github.io/iip/gap-analysis/beng-gap#initials"],
-	["Devanagari","https://w3c.github.io/iip/gap-analysis/deva-gap#initials"],
-	["Dutch","https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#initials"],
-	["Gujarati","https://w3c.github.io/iip/gap-analysis/gujr-gap#initials"],
-	["Tamil","https://w3c.github.io/iip/gap-analysis/taml-gap#initials"]
+	["Arabic","https://www.w3.org/TR/alreq-gap/#initials"],
+	["Bengali","https://www.w3.org/TR/beng-gap#initials"],
+	["Devanagari","https://www.w3.org/TR/deva-gap#initials"],
+	["Dutch","https://www.w3.org/TR/latn-nl-gap#initials"],
+	["Gujarati","https://www.w3.org/TR/gujr-gap#initials"],
+	["Tamil","https://www.w3.org/TR/taml-gap#initials"]
 	]
 }
 
@@ -1567,18 +1567,18 @@ page_layout = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Paginating Single-Column Text", "url":"https://w3c.github.io/dpub-pagination/#paginating-single-column-text"},
-			{"title":"Heads", "url":"https://w3c.github.io/dpub-pagination/#heads"},
-			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://w3c.github.io/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
+			{"title":"Paginating Single-Column Text", "url":"https://www.w3.org/TR/dpub-pagination/#paginating-single-column-text"},
+			{"title":"Heads", "url":"https://www.w3.org/TR/dpub-pagination/#heads"},
+			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://www.w3.org/TR/dpub-pagination/#the-classical-rules-of-hyphenation-and-pagination"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Bookbinding and the Direction of Page Turning", "url":"https://w3c.github.io/mlreq/#h_binding"},
-			{"title":"Paper direction", "url":"https://w3c.github.io/mlreq/#h_paper_direction"},
-			{"title":"Paper scrolling direction", "url":"https://w3c.github.io/mlreq/#h_paper_rolling_direction"},
-			{"title":"The scrolling direction of scroll bars", "url":"https://w3c.github.io/mlreq/#h_scrollbag_direction"},
-			{"title":"Columns", "url":"https://w3c.github.io/mlreq/#h_columns"},
+			{"title":"Bookbinding and the Direction of Page Turning", "url":"https://www.w3.org/TR/mlreq/#h_binding"},
+			{"title":"Paper direction", "url":"https://www.w3.org/TR/mlreq/#h_paper_direction"},
+			{"title":"Paper scrolling direction", "url":"https://www.w3.org/TR/mlreq/#h_paper_rolling_direction"},
+			{"title":"The scrolling direction of scroll bars", "url":"https://www.w3.org/TR/mlreq/#h_scrollbag_direction"},
+			{"title":"Columns", "url":"https://www.w3.org/TR/mlreq/#h_columns"},
 			]
 		},
 	],
@@ -1618,7 +1618,7 @@ grids_tables = {
 		},
 	{ 	"title":"Mongolian Layout Requirements",
 		"sections": [ 
-			{"title":"Tables", "url":"https://w3c.github.io/mlreq/#h_tables"}
+			{"title":"Tables", "url":"https://www.w3.org/TR/mlreq/#h_tables"}
 			]
 		},
 	],
@@ -1663,7 +1663,7 @@ footnotes_etc = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Footnotes", "url":"https://w3c.github.io/dpub-pagination/#footnotes"}
+			{"title":"Footnotes", "url":"https://www.w3.org/TR/dpub-pagination/#footnotes"}
 			]
 		}
 	],
@@ -1681,7 +1681,7 @@ footnotes_etc = {
 
 
 "gap_analysis": [
-	["Gurmukhi","https://w3c.github.io/iip/gap-analysis/guru-gap#footnotes_etc"]
+	["Gurmukhi","https://www.w3.org/TR/guru-gap#footnotes_etc"]
 	]
 }
 
@@ -1709,12 +1709,12 @@ headers_footers = {
 		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
-			{"title":"Running headers and footers", "url":"https://w3c.github.io/dpub-pagination/#running-headers-and-footers"}
+			{"title":"Running headers and footers", "url":"https://www.w3.org/TR/dpub-pagination/#running-headers-and-footers"}
 			]
 		},
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
-			{"title":"Page numbering, running headers, etc", "url":"https://w3c.github.io/mlreq/#h_page_numbering"},
+			{"title":"Page numbering, running headers, etc", "url":"https://www.w3.org/TR/mlreq/#h_page_numbering"},
 			]
 		},
 	],
@@ -1732,7 +1732,7 @@ headers_footers = {
 
 
 "gap_analysis": [
-	["Ethiopic","https://w3c.github.io/elreq/gap-analysis/#headers_footers"],
+	["Ethiopic","https://www.w3.org/TR/elreq/gap-analysis/#headers_footers"],
 	]
 }
 
@@ -1750,11 +1750,11 @@ interaction = {
 "requirements": [
 	{ 	"title":"Mongolian Layout Requirements",
 		"sections": [ 
-			{"title":"User interaction", "url":"https://w3c.github.io/mlreq/#h_input"},
-			{"title":"Select", "url":"https://w3c.github.io/mlreq/#select_control"},
-			{"title":"Textarea", "url":"https://w3c.github.io/mlreq/#textarea_control"},
-			{"title":"Label", "url":"https://w3c.github.io/mlreq/#label_control"},
-			{"title":"Fieldset", "url":"https://w3c.github.io/mlreq/#fieldset_control"},
+			{"title":"User interaction", "url":"https://www.w3.org/TR/mlreq/#h_input"},
+			{"title":"Select", "url":"https://www.w3.org/TR/mlreq/#select_control"},
+			{"title":"Textarea", "url":"https://www.w3.org/TR/mlreq/#textarea_control"},
+			{"title":"Label", "url":"https://www.w3.org/TR/mlreq/#label_control"},
+			{"title":"Fieldset", "url":"https://www.w3.org/TR/mlreq/#fieldset_control"},
 			]
 		}
 	],
@@ -1772,6 +1772,6 @@ interaction = {
 
 
 "gap_analysis": [
-	["Mongolian","https://w3c.github.io/mlreq/gap-analysis/#interaction"],
+	["Mongolian","https://www.w3.org/TR/mong-gap/#interaction"],
 	]
 }
