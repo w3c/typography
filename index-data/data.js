@@ -771,6 +771,11 @@ quotations = {
 			{"title":"Quotation", "url":"https://www.w3.org/TR/elreq/#quotation"}
 			]
 		},
+	{ 	"title":"Quotations (Wikipedia)", 
+		"sections": [ 
+			{"title":"French", "url":"https://en.wikipedia.org/wiki/Quotation_mark#French"}
+			]
+		},
 	{ 	"title":"Japanese Layout Requirements", 
 		"sections": [ 
 			{"title":"Line Head Indent and Line End Indent", "url":"https://www.w3.org/TR/jlreq/#line_head_indent_and_line_end_indent"},
