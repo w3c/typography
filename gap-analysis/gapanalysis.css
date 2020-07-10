@@ -24,6 +24,7 @@ h4 { margin-left: 0; }
 .na:after { content: 'Not applicable'; color: gray; font-weight: normal; font-size: 120%; }
 
 .advanced { border-left: 5em solid #0f0; padding-left: 2em; }
+.advanced { border-left: 5em solid moccasin; padding-left: 2em; }
 .advanced:after { content: 'Needs work for advanced level support.'; color: gray; font-weight: normal; font-size: 120%; }
 
 .basic { border-left: 5em solid orange; padding-left: 2em; }
