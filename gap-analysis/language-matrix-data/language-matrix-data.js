@@ -19,12 +19,12 @@ langData = [
 ]},
 
 {script:"Cans", languages:[
-{lang: "Inuktitut", url:"https://www.w3.org/TR/cans-iu-cr-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"3", cursive:"-", transforms:"-", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"3", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Cree", url:"https://www.w3.org/TR/cans-iu-cr-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"3", cursive:"-", transforms:"-", baselines:"3", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"3", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Inuktitut", url:"https://www.w3.org/TR/cans-iu-cr-gap/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"3", cursive:"-", transforms:"-", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"", quotations:"2", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Cree", url:"https://www.w3.org/TR/cans-iu-cr-gap/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"3", cursive:"-", transforms:"-", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"", quotations:"2", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Cher", languages:[
-{lang: "Cherokee", url:"https://www.w3.org/TR/cher-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"1", font_style:"3", glyphs:"", cursive:"-", transforms:"1", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"3", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Cherokee", url:"https://www.w3.org/TR/cher-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"1", font_style:"3", glyphs:"", cursive:"-", transforms:"3", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Cyrl", languages:[
@@ -143,7 +143,11 @@ langData = [
 ]},
 
 {script:"Orya", languages:[
- {lang: "Odia", url: "", tentative:true, charset:"3", fonts:"", font_style:"", glyphs:"3", cursive:"-", transforms:"", data_formats:"3", segmentation:"3", quotations:"3", spacing:"", inline_notes:"-", text_decoration:"", emphasis:"", bidi_text:"-", punctuation_etc:"3", line_breaking:"", hyphenation:"", justification:"", lists:"", initials:"", baselines:"", otherpara:"3", bidilayout:"-", vertical_text:"-", footnotes_etc:"3", headers_footers:"3",interaction:"", otherpage:"3", interaction:"3", page_layout:"3"  },
+{lang: "Odia", url: "", tentative:true, charset:"3", fonts:"", font_style:"", glyphs:"3", cursive:"-", transforms:"", data_formats:"3", segmentation:"3", quotations:"3", spacing:"", inline_notes:"-", text_decoration:"", emphasis:"", bidi_text:"-", punctuation_etc:"3", line_breaking:"", hyphenation:"", justification:"", lists:"", initials:"", baselines:"", otherpara:"3", bidilayout:"-", vertical_text:"-", footnotes_etc:"3", headers_footers:"3",interaction:"", otherpage:"3", interaction:"3", page_layout:"3"  },
+]},
+
+{script:"Osage", languages:[
+{lang: "Osage", url:"https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"3", segmentation:"3", punctuation_etc:"3", text_decoration:"3", quotations:"2", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Sinh", languages:[
