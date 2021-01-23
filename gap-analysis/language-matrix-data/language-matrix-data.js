@@ -1,6 +1,10 @@
 
 langData = [
 
+{script:"Adlam", languages:[
+{lang: "Fula", url:"https://w3c.github.io/afrlreq/gap-analysis/adlm-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"", font_style:"", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+]},
+
 {script:"Arab", languages:[
 {lang: "Arabic", url:"https://www.w3.org/TR/alreq-gap/", tentative:true, vertical_text:"-", bidi_text:"1", charset:"3", fonts:"3", font_style:"2", glyphs:"2", cursive:"2", transforms:"-", baselines:"3", segmentation:"3", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"3", data_formats:"3", line_breaking:"3", hyphenation:"-", justification:"1", spacing:"1", lists:"1", initials:"3", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:""},
 {lang: "Urdu", url:"", tentative:true, vertical_text:"-", bidi_text:"1", charset:"3", fonts:"", font_style:"", glyphs:"", cursive:"2", transforms:"-", baselines:"3", segmentation:"3", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"", line_breaking:"3", hyphenation:"3", justification:"2", spacing:"1", lists:"1", initials:"3", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:""},
@@ -38,7 +42,8 @@ langData = [
 
 {script:"Deva", languages:[
 {lang: "Hindi", url:"https://www.w3.org/TR/deva-gap/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
-{lang: "Marathi", url:"https://www.w3.org/TR/deva-gap/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},{lang: "Bhojpuri", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Marathi", url:"https://www.w3.org/TR/deva-gap/", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"3", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"", inline_notes:"3", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"1", lists:"2", initials:"1", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Bhojpuri", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Maithili", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Awadhi", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 {lang: "Nepali", url:"", tentative:true, vertical_text:"2", bidi_text:"-", charset:"3", fonts:"", font_style:"3", glyphs:"3", cursive:"-", transforms:"-", baselines:"1", segmentation:"1", punctuation_etc:"", text_decoration:"1", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"3", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
@@ -141,6 +146,10 @@ langData = [
  {lang: "Shan", url: "", tentative:true, charset:"3", fonts:"", font_style:"", glyphs:"3", cursive:"-", transforms:"", data_formats:"3", segmentation:"", quotations:"3", spacing:"", inline_notes:"-", text_decoration:"", emphasis:"", bidi_text:"-", punctuation_etc:"3", line_breaking:"", hyphenation:"", justification:"", lists:"", initials:"", baselines:"", otherpara:"3", bidilayout:"-", vertical_text:"-", footnotes_etc:"3", headers_footers:"3", interaction:"3", page_layout:"3"  },
 ]},
 
+{script:"N’Ko", languages:[
+{lang: "N’Ko", url:"https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"", font_style:"1", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+]},
+
 {script:"Orya", languages:[
 {lang: "Odia", url: "", tentative:true, charset:"3", fonts:"", font_style:"", glyphs:"3", cursive:"-", transforms:"", data_formats:"3", segmentation:"3", quotations:"3", spacing:"", inline_notes:"-", text_decoration:"", emphasis:"", bidi_text:"-", punctuation_etc:"3", line_breaking:"", hyphenation:"", justification:"", lists:"", initials:"", baselines:"", otherpara:"3", bidilayout:"-", vertical_text:"-", footnotes_etc:"3", headers_footers:"3",interaction:"", otherpage:"3", interaction:"3", page_layout:"3"  },
 ]},
@@ -166,7 +175,7 @@ langData = [
 ]},
 
 {script:"Thai", languages:[
-{lang: "Thai", url:"https://www.w3.org/TR/thai-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"", fonts:"", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Thai", url:"https://www.w3.org/TR/thai-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Tibt", languages:[
