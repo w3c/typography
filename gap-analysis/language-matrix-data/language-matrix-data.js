@@ -138,7 +138,7 @@ langData = [
 ]},
 
 {script:"Mong", languages:[
-{lang: "Mongolian", url:"https://www.w3.org/TR/mong-gap/", tentative:true, vertical_text:"", bidi_text:"-", charset:"1", fonts:"1", font_style:"", glyphs:"1", cursive:"", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "Mongolian", url:"https://www.w3.org/TR/mong-gap/", tentative:true, vertical_text:"1", bidi_text:"-", charset:"1", fonts:"1", font_style:"", glyphs:"1", cursive:"", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
 ]},
 
 {script:"Mymr", languages:[
