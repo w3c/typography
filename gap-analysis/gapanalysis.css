@@ -51,4 +51,7 @@ h4 { margin-left: 0; }
 	border-radius: .2em;
 	}
 
-
+.subhead {
+	display: block;
+	font-weigth: bold;
+	}
