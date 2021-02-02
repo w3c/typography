@@ -175,7 +175,7 @@ langData = [
 ]},
 
 {script:"Thai", languages:[
-{lang: "Thai", url:"https://www.w3.org/TR/thai-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Thai", url:"https://www.w3.org/TR/thai-gap/", tentative:true, vertical_text:"-", bidi_text:"-", charset:"3", fonts:"3", font_style:"", glyphs:"", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"3", inline_notes:"-", data_formats:"3", line_breaking:"2", hyphenation:"", justification:"2", spacing:"2", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Tibt", languages:[
