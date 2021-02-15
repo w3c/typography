@@ -2,7 +2,7 @@
 langData = [
 
 {script:"Adlam", languages:[
-{lang: "Fula", url:"https://w3c.github.io/afrlreq/gap-analysis/adlm-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"", font_style:"", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Fula", url:"https://w3c.github.io/afrlreq/gap-analysis/adlm-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"2", font_style:"", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"}
 ]},
 
 {script:"Arab", languages:[
@@ -147,7 +147,7 @@ langData = [
 ]},
 
 {script:"N’Ko", languages:[
-{lang: "N’Ko", url:"https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"", font_style:"1", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "N’Ko", url:"https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"2", font_style:"1", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Orya", languages:[
