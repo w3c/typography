@@ -12,6 +12,7 @@ function showDoc (url) {
     if (document.getElementById('useED').checked) url = urlArray[1]
     else url = urlArray[0]
     document.getElementById('out').src = url + document.getElementById('fragid').value
+    document.getElementById('currentURL').textContent = url
     }
 </script>
 </head>
@@ -98,6 +99,7 @@ function showDoc (url) {
 <a href="https://www.w3.org/TR/tibt-gap|https://w3c.github.io/tlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Tibetan</a>
 </div>
 
+<p id="currentURL" style="float:right; font-size: 80%;"></p>
 <p><label>Use ED? <input type="checkbox" id="useED"></label></p>
 
 <iframe id="out"></iframe>
