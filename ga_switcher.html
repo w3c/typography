@@ -19,7 +19,7 @@ function showDoc (url) {
 <body>
 <h1>Gap Analysis doc switcher</h1>
 
-<p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid"></p>
+<p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid">
 
 <select onChange="document.getElementById('fragid').value='#'+this.value">
 <option value="vertical_text">Vertical text</option>
@@ -48,6 +48,7 @@ function showDoc (url) {
 <option value="headers_footers">Page headers, footers, etc.</option>
 <option value="interaction">Forms &amp; user interaction</option>
 </select>
+</p>
 
 
 <p style="margin-block-end: 0;">Then click on a document:</p>
@@ -61,43 +62,43 @@ function showDoc (url) {
 
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">Americas</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/cher-gap" onClick="showDoc(this.href); return false;">Cherokee</a> • 
-<a href="https://www.w3.org/TR/cans-iu-cr-gap" onClick="showDoc(this.href); return false;">Inuktitut/Cree</a> • 
-<a href="https://www.w3.org/TR/osge-osa-gap" onClick="showDoc(this.href); return false;">Osage</a> • 
+<a href="https://www.w3.org/TR/cher-gap|    https://w3c.github.io/amlreq/gap-analysis/chr-gap.html" onClick="showDoc(this.href); return false;">Cherokee</a> • 
+<a href="https://www.w3.org/TR/cans-iu-cr-gap|     https://www.w3.org/TR/cans-iu-cr-gap/" onClick="showDoc(this.href); return false;">Inuktitut/Cree</a> • 
+<a href="https://www.w3.org/TR/osge-osa-gap|    https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap" onClick="showDoc(this.href); return false;">Osage</a> • 
 
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">East Asia</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/clreq-gap" onClick="showDoc(this.href); return false;">Chinese</a> •
-<a href="https://www.w3.org/TR/jpan-gap" onClick="showDoc(this.href); return false;">Japanese</a> • 
-<a href="https://www.w3.org/TR/mong-gap" onClick="showDoc(this.href); return false;">Mongolian</a>
+<a href="https://www.w3.org/TR/clreq-gap|    https://w3c.github.io/clreq/gap-analysis/" onClick="showDoc(this.href); return false;">Chinese</a> •
+<a href="https://www.w3.org/TR/jpan-gap|https://w3c.github.io/jlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Japanese</a> • 
+<a href="https://www.w3.org/TR/mong-gap|https://w3c.github.io/mlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Mongolian</a>
 
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">Europe</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/latn-nl-gap" onClick="showDoc(this.href); return false;">Dutch</a> •
-<a href="https://www.w3.org/TR/latn-fr-gap" onClick="showDoc(this.href); return false;">French</a> • 
-<a href="https://www.w3.org/TR/geor-gap" onClick="showDoc(this.href); return false;">Georgian</a> •
-<a href="https://www.w3.org/TR/latn-de-gap" onClick="showDoc(this.href); return false;">German</a> • 
-<a href="https://www.w3.org/TR/grek-gap" onClick="showDoc(this.href); return false;">Greek</a> • 
-<a href="https://www.w3.org/TR/latn-hu-gap" onClick="showDoc(this.href); return false;">Hungarian</a> 
+<a href="https://www.w3.org/TR/latn-nl-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap" onClick="showDoc(this.href); return false;">Dutch</a> •
+<a href="https://www.w3.org/TR/latn-fr-gap|https://www.w3.org/TR/latn-fr-gap/" onClick="showDoc(this.href); return false;">French</a> • 
+<a href="https://www.w3.org/TR/geor-gap|https://w3c.github.io/eurlreq/gap-analysis/geor-gap.html" onClick="showDoc(this.href); return false;">Georgian</a> •
+<a href="https://www.w3.org/TR/latn-de-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-de-gap" onClick="showDoc(this.href); return false;">German</a> • 
+<a href="https://www.w3.org/TR/grek-gap|https://w3c.github.io/eurlreq/gap-analysis/grek-gap" onClick="showDoc(this.href); return false;">Greek</a> • 
+<a href="https://www.w3.org/TR/latn-hu-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap" onClick="showDoc(this.href); return false;">Hungarian</a> 
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">South Asia</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/beng-gap" onClick="showDoc(this.href); return false;">Bengali</a> • 
-<a href="https://www.w3.org/TR/deva-gap" onClick="showDoc(this.href); return false;">Devanagari</a> • 
-<a href="https://www.w3.org/TR/gujr-gap" onClick="showDoc(this.href); return false;">Gujarati</a> • 
-<a href="https://www.w3.org/TR/guru-gap" onClick="showDoc(this.href); return false;">Gurmukhi</a> • 
-<a href="https://www.w3.org/TR/taml-gap" onClick="showDoc(this.href); return false;">Tamil</a> 
+<a href="https://www.w3.org/TR/beng-gap|https://w3c.github.io/iip/gap-analysis/beng-gap" onClick="showDoc(this.href); return false;">Bengali</a> • 
+<a href="https://www.w3.org/TR/deva-gap|https://w3c.github.io/iip/gap-analysis/deva-gap" onClick="showDoc(this.href); return false;">Devanagari</a> • 
+<a href="https://www.w3.org/TR/gujr-gap|https://www.w3.org/TR/gujr-gap" onClick="showDoc(this.href); return false;">Gujarati</a> • 
+<a href="https://www.w3.org/TR/guru-gap|https://w3c.github.io/iip/gap-analysis/guru-gap" onClick="showDoc(this.href); return false;">Gurmukhi</a> • 
+<a href="https://www.w3.org/TR/taml-gap|https://w3c.github.io/iip/gap-analysis/taml-gap" onClick="showDoc(this.href); return false;">Tamil</a> 
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">Southeast Asia</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/laoo-gap" onClick="showDoc(this.href); return false;">Lao</a> • 
-<a href="https://www.w3.org/TR/thai-gap" onClick="showDoc(this.href); return false;">Thai</a> •
-<a href="https://www.w3.org/TR/khmr-gap" onClick="showDoc(this.href); return false;">Khmer</a> • 
-<a href="https://www.w3.org/TR/java-gap" onClick="showDoc(this.href); return false;">Javanese</a>
+<a href="https://www.w3.org/TR/laoo-gap|https://w3c.github.io/sealreq/gap-analysis/laoo-gap" onClick="showDoc(this.href); return false;">Lao</a> • 
+<a href="https://www.w3.org/TR/thai-gap|https://w3c.github.io/sealreq/gap-analysis/thai-gap" onClick="showDoc(this.href); return false;">Thai</a> •
+<a href="https://www.w3.org/TR/khmr-gap|https://w3c.github.io/sealreq/gap-analysis/khmr-gap" onClick="showDoc(this.href); return false;">Khmer</a> • 
+<a href="https://www.w3.org/TR/java-gap|https://w3c.github.io/sealreq/gap-analysis/java-gap" onClick="showDoc(this.href); return false;">Javanese</a>
 
 <br><span style="font-size: 100%; color:brown;font-weight:bold;">Central Asia</span> &nbsp;&nbsp;
-<a href="https://www.w3.org/TR/tibt-gap" onClick="showDoc(this.href); return false;">Tibetan</a>
+<a href="https://www.w3.org/TR/tibt-gap|https://w3c.github.io/tlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Tibetan</a>
 </div>
 
-<p style="display: block;"><label>Use ED? <input type="checkbox" id="useED"></label></p>
+<p><label>Use ED? <input type="checkbox" id="useED"></label></p>
 
 <iframe id="out"></iframe>
 
