@@ -19,7 +19,7 @@ function showDoc (url) {
 <body>
 <h1>Gap Analysis doc switcher</h1>
 
-<p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid">
+<p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid"></p>
 
 <select onChange="document.getElementById('fragid').value='#'+this.value">
 <option value="vertical_text">Vertical text</option>
@@ -97,7 +97,7 @@ function showDoc (url) {
 <a href="https://www.w3.org/TR/tibt-gap" onClick="showDoc(this.href); return false;">Tibetan</a>
 </div>
 
-<p style="display: none;"><label>Use ED? <input type="checkbox" id="useED"></label></p>
+<p style="display: block;"><label>Use ED? <input type="checkbox" id="useED"></label></p>
 
 <iframe id="out"></iframe>
 
