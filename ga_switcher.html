@@ -4,7 +4,9 @@
 <meta charset="utf-8" />
 <title>Gap Analysis doc switcher</title>
 <style>
-#out { width: 100%; height: 80rem; border: 0; }
+body { overflow: hidden; }
+#flexContainer { display: flex; width: 100%; min-height: 100vh; flex-direction: column; overflow: hidden; }
+#out { flex-grow: 1; border: none; margin: 0; padding: 0; width: 100%;  }
 </style>
 <script>
 function showDoc (url) {
@@ -18,6 +20,8 @@ function showDoc (url) {
 </head>
 
 <body>
+<div id="flexContainer">
+<div id="frontMatter">
 <h1>Gap Analysis doc switcher</h1>
 
 <p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid">
@@ -101,9 +105,10 @@ function showDoc (url) {
 
 <p id="currentURL" style="float:right; font-size: 80%;"></p>
 <p><label>Use ED? <input type="checkbox" id="useED"></label></p>
+</div>
 
 <iframe id="out"></iframe>
-
+</div>
 
 </body>
 </html>
