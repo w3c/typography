@@ -43,7 +43,12 @@ vertical_text = {
 		"sections": [ 
 			{"title":"Vertical text", "url":"https://www.w3.org/TR/mlreq/#h_vertical_text"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Text direction (see Chinese, Japanese, Korean, Mongolian)", "url":"https://r12a.github.io/scripts/switch?section=direction"},
+			]
+		},
 	],
 
 
@@ -97,7 +102,12 @@ bidi_text = {
 			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"},
 			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Text direction", "url":"https://r12a.github.io/scripts/switch?section=direction"},
+			]
+		},
 	],
 
 
@@ -249,7 +259,12 @@ font_style = {
 		"sections": [ 
 			{"title":"Font styles", "url":"https://w3c.github.io/sealreq/khmer/#h_font_styles"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Font styles (esp. Tibetan, Thai, Arabic, Hebrew, N'Ko, Pular, Russian, Uighur)", "url":"https://r12a.github.io/scripts/switch?section=fontstyle"},
+			]
+		},
 	],
 
 
@@ -294,6 +309,11 @@ glyphs = {
 			{"title":"Positioning diacritics relative to base characters", "url":"https://www.w3.org/TR/alreq/#h_diacritic_position"},
 			]
 		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Glyph shaping & positioning", "url":"https://r12a.github.io/scripts/switch?section=shaping"},
+			]
+		},
 	],
 
 
@@ -330,6 +350,11 @@ cursive = {
 			{"title":"Joining", "url":"https://www.w3.org/TR/alreq/#h_joining"},
 			{"title":"Special requirements when dealing with cursive glyphs", "url":"https://www.w3.org/TR/alreq/#h_letterhighlights"},
 			{"title":"Arabic Script and Typography", "url":"https://www.w3.org/TR/alreq/#h_typography"},
+			]
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Cursive script (esp. Arabic, Syriac, Urdu, Rohingya, Mongolian, N'Ko, Pular, Assyrian, Turoyo, Kashmiri, Mandaic)", "url":"https://r12a.github.io/scripts/switch?section=cursive"},
 			]
 		},
 	],
@@ -441,6 +466,11 @@ transforms = {
 			{"title":"Bicameral scripts", "url":"https://r12a.github.io/blog/201512.html#20161106"}
 			]
 		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Case & other character transforms (esp. Armenian, Georgian, Greek, Osage, Pular, Russian, Cherokee, Hausa [latn])", "url":"https://r12a.github.io/scripts/switch?section=transforms"},
+			]
+		},
 	],
 
 
@@ -536,6 +566,12 @@ segmentation = {
 		"sections": [ 
 			{"title":"Tibetan Syllables", "url":"https://www.w3.org/TR/tlreq/#tibetan_syllables"},
 			{"title":"Text Segmentation in Tibetan", "url":"https://www.w3.org/TR/tlreq/#text_segmentation"}
+			]
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Grapheme boundaries", "url":"https://r12a.github.io/scripts/switch?section=graphemes"},
+			{"title":"Word boundaries", "url":"https://r12a.github.io/scripts/switch?section=word"},
 			]
 		},
 	],
@@ -636,6 +672,11 @@ punctuation_etc = {
 			{"title":"Character List", "url":"https://www.w3.org/TR/tlreq/#character_list"}
 			]
 		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Punctuation & inline features", "url":"https://r12a.github.io/scripts/switch?section=inline"},
+			]
+		},
 	],
 
 
@@ -704,7 +745,7 @@ text_decoration = {
 		"sections": [ 
 			{"title":"Text Emphasis and Highlighting", "url":"https://www.w3.org/TR/tlreq/#emphasis_and_highlighting"}
 			]
-		}
+		},
 	],
 
 
@@ -751,24 +792,21 @@ text_decoration = {
 quotations = {
 
 "requirements": [
-	{ 	"title":"Bengali Layout Requirements", 
+	{ 	"title":"Layout Requirements, Quotations", 
 		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/iip/bengali/#h_quotations"},
+			{"title":"Bengali", "url":"https://w3.org/International/ilreq/bengali/#h_quotations"},
+			{"title":"Devanagari", "url":"https://w3.org/International/ilreq/devanagari/#h_quotations"},
+			{"title":"Ethiopic", "url":"https://www.w3.org/TR/elreq/#quotation"},
+			{"title":"Javanese", "url":"https://w3.org/International/sealreq/javanese/#h_quotations"},
+			{"title":"Khmer", "url":"https://w3.org/International/sealreq/khmer/#h_quotations"},
+			{"title":"Lao", "url":"https://w3.org/International/sealreq/lao/#h_quotations"},
+			{"title":"Tamil", "url":"https://www.w3.org/TR/ilreq-taml/#h_quotations"},
+			{"title":"Thai", "url":"https://w3.org/International/sealreq/thai/#h_quotations"},
 			]
 		},
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Indicator Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"}
-			]
-		},
-	{ 	"title":"Devanagari Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/iip/devanagari/#h_quotations"},
-			]
-		},
-	{ 	"title":"Ethiopic Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotation", "url":"https://www.w3.org/TR/elreq/#quotation"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements", 
@@ -779,34 +817,14 @@ quotations = {
 			{"title":"Differences in Vertical and Horizontal Composition in Use of Punctuation Marks", "url":"https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks"}
 			]
 		},
-	{ 	"title":"Javanese Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/javanese/#h_quotations"}
-			]
-		},
-	{ 	"title":"Lao Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/lao/#h_quotations"}
-			]
-		},
-	{ 	"title":"Khmer Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/khmer/#h_quotations"}
-			]
-		},
-	{ 	"title":"Tamil Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://www.w3.org/TR/ilreq-taml/#h_quotations"},
-			]
-		},
-	{ 	"title":"Thai Layout Requirements", 
-		"sections": [ 
-			{"title":"Quotations", "url":"https://w3c.github.io/sealreq/thai/#h_quotations"}
-			]
-		},
 	{ 	"title":"Wikipedia", 
 		"sections": [ 
 			{"title":"Quotations", "url":"https://en.wikipedia.org/wiki/Quotation_mark"}
+			]
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Quotations", "url":"https://r12a.github.io/scripts/switch?section=quotations"},
 			]
 		},
 	],
@@ -902,7 +920,12 @@ inline_notes = {
 		"sections": [ 
 			{"title":"Rubies", "url":"https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#2ca1"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Inline notes & annotations", "url":"https://r12a.github.io/scripts/switch?section=inlinenotes"},
+			]
+		},
 	],
 
 
@@ -950,6 +973,11 @@ data_formats = {
 	{ 	"title":"Arabic Layout Requirements", 
 		"sections": [ 
 			{"title":"Numbers", "url":"https://www.w3.org/TR/alreq/#h_numbers"},
+			]
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Numbers", "url":"https://r12a.github.io/scripts/switch?section=numbers"},
 			]
 		},
 	],
@@ -1101,7 +1129,12 @@ line_breaking = {
 		"sections": [ 
 			{"title":"Line breaking", "url":"https://www.w3.org/TR/tlreq/#line_breaking"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Line breaking & hyphenation", "url":"https://r12a.github.io/scripts/switch?section=linebreak"},
+			]
+		},
 	],
 
 
@@ -1159,7 +1192,12 @@ hyphenation = {
 			{"title":"Hyphenation", "url":"https://www.w3.org/TR/dpub-latinreq/#hyphenation"},
 			{"title":"The Classical Rules of Hyphenation and Pagination", "url":"https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Line breaking & hyphenation", "url":"https://r12a.github.io/scripts/switch?section=linebreak"},
+			]
+		},
 	],
 
 
@@ -1278,7 +1316,12 @@ justification = {
 		"sections": [ 
 			{"title":"Justification", "url":"https://www.w3.org/TR/tlreq/#punctuation_marks"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Text alignment & justification", "url":"https://r12a.github.io/scripts/switch?section=justification"},
+			]
+		},
 	],
 
 
@@ -1346,7 +1389,12 @@ spacing = {
 		"sections": [ 
 			{"title":"Writing Process for Punctuation Marks, etc.", "url":"https://www.w3.org/TR/klreq/#punc-process"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Letter spacing", "url":"https://r12a.github.io/scripts/switch?section=letterspace"},
+			]
+		},
 	],
 
 
@@ -1430,6 +1478,11 @@ lists = {
 			{"title":"List counters", "url":"https://w3c.github.io/sealreq/thai/#h_counters"}
 			]
 		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Counters, lists, etc.", "url":"https://r12a.github.io/scripts/switch?section=lists"},
+			]
+		},
 	],
 
 
@@ -1498,7 +1551,12 @@ initials = {
 		"sections": [ 
 			{"title":"Initial Capitals", "url":"https://www.w3.org/TR/dpub-latinreq/#initial-capitals"}
 			]
-		}
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Styling initials", "url":"https://r12a.github.io/scripts/switch?section=initials"},
+			]
+		},
 	],
 
 
@@ -1583,6 +1641,11 @@ page_layout = {
 			{"title":"Paper scrolling direction", "url":"https://www.w3.org/TR/mlreq/#h_paper_rolling_direction"},
 			{"title":"The scrolling direction of scroll bars", "url":"https://www.w3.org/TR/mlreq/#h_scrollbag_direction"},
 			{"title":"Columns", "url":"https://www.w3.org/TR/mlreq/#h_columns"},
+			]
+		},
+	{ 	"title":"Orthography Notes", 
+		"sections": [ 
+			{"title":"Page & book layout", "url":"https://r12a.github.io/scripts/switch?section=page"},
 			]
 		},
 	],
