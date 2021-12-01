@@ -1275,7 +1275,8 @@ justification = {
 		"sections": [ 
 			{"title":"Line Composition Rules for Punctuation Marks", "url":"https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks"},
 			{"title":"Paragraph Adjustment Rules", "url":"https://www.w3.org/TR/clreq/#paragraph_adjustment_rules"},
-			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition"}
+			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://www.w3.org/TR/clreq/#chinese_and_western_mixed_text_composition"},
+			{"title":"Line Adjustment", "url":"https://www.w3.org/TR/clreq/#line_adjustment"}
 			]
 		},
 	{ 	"title":"Ethiopic Layout Requirements",
