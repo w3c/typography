@@ -55,3 +55,9 @@ h4 { margin-left: 0; }
 	display: block;
 	font-weight: bold;
 	}
+
+.ghLink {
+	margin-block-start: 0;
+	float: right;
+	font-size: 90%;
+	}
