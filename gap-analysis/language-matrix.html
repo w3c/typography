@@ -36,9 +36,9 @@ f.additionalLinks = ''
 <script src="language-matrix-data/translations.js"> </script>
 <script src="../../i18n-drafts/javascript/doc-structure/article-dt.js"> </script>
 <script src="../../i18n-drafts/javascript/boilerplate-text/boilerplate-en.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
-<script src="../../i18n-drafts/javascript/doc-structure/sitepage.js"> </script>
-<script src="../../i18n-drafts/javascript/articletoc-html5.js"></script>
-<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2016.css" />
+<script src="../../i18n-drafts/javascript/doc-structure/sitepage-2022.js"> </script>
+<script src="../../i18n-drafts/javascript/articletoc-2022.js"></script>
+<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css" />
 <link rel="stylesheet" href="language-matrix-data/local.css" />
 <link rel="copyright" href="#copyright"/>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -75,8 +75,11 @@ f.additionalLinks = ''
 </section>
 
 <div id="bodycontent" style="clear: both;">
-<section>
-    <h2 id="reference"><a href="#reference">The matrix</a></h2>
+
+
+<section id="reference">
+<h2>The matrix</h2>
+
 <p>Where a language name has a link, you can click on any cell in that row for more detailed information.</p>
 <table id="results">
   <thead>
@@ -120,22 +123,33 @@ f.additionalLinks = ''
 </table>
 </section>
 
-  <section>
-    <h2 id="colors"><a href="#colors">Color key</a></h2>
-  <div id="key">
-    <p>
-      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
-      <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
-      <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
-      <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
+
+
+
+
+<section id="colors">
+<h2>Color key</h2>
+
+<div id="key">
+<p>
+  <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
+  <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
+  <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
+  <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
 </div>
   <p>An asterisk next to a language name indicates tentative coloring, based on set of initial expectations, but it is very possible that the colors will change after further investigation.</p>
 <p>A language name followed by 	† indicates that experts are currently investigating issues and developing the gap analysis. In this case, the coloring is expected to be more reliable, though may still change.</p>
 <p>Whatever the current status of a language, a cell that is currently colored green may change to another colour at a later date if a previously-overlooked issue is discovered.</p>
-  </section>
-  
-<section>
-    <h2 id="howto"><a href="#howto">Detailed information about the chart</a></h2>
+</section>
+
+
+
+
+
+
+<section id="howto">
+<h2>Detailed information about the chart</h2>
+
 <p>The colour to the left of the language is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The column immediately to the right of the language name graphically summarises the available data for that language (by reordering the squares in the main part of the table).</p>
 <p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of  support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
 <p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers.</p>
@@ -147,19 +161,24 @@ f.additionalLinks = ''
 <p>The column with the title Page Layout and the two columns to its right  all  relate to rendering paged media. In the general case, various  paged media features are still not widely available on the Web; however, these columns are particularly focused on whether there are language-specific adaptations of the general approach which need attention.</p>
 <p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
 </section>
+
+
+
+
+
   
-  
-<section>
-    <h2 id="help"><a href="#help">How to help</a></h2>
+<section id="help">
+<h2>How to help</h2>
+
 <p>We are actively looking for people and organizations that can help us complete the missing information in the matrix, and compile requirements for spec and browser developers. The following links may be helpful.</p>
 
 <ul>
-<li><a href="https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web" style="font-size: 120%;">Analysing support for text layout on the Web</a> <br>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/language_framework_overview" style="font-size: 120%;">Analysing support for text layout on the Web</a> <br>
 An overview of the various parts of the Language Enablement framework in which the work is done.</li>
-<li><a href="https://w3c.github.io/typography/" style="font-size: 120%;">Language Enablement Index</a><br>
+<li><a href="https://www.w3.org/International/typography/" style="font-size: 120%;">Language Enablement Index</a><br>
 A single location to find information related to Language Enablement.
 </li>
-<li><a href="https://w3c.github.io/i18n-activity/guidelines/le-participation" style="font-size: 120%;">How to contribute to an Language Enablement group</a><br>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/languagedev_participation" style="font-size: 120%;">How to contribute to an Language Enablement group</a><br>
 Pointers for getting involved in the work. </li>
 <li style="margin-top: 1em;"><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></li>
 <li><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">Setting up a Gap Analysis Project</a></li>
