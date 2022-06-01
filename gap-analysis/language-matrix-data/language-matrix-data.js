@@ -77,8 +77,8 @@ langData = [
 ]},
 
 {script:"Hani", languages:[
-{lang: "SChinese", url:"https://www.w3.org/TR/clreq-gap/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"", lists:"2", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
-{lang: "TChinese", url:"https://www.w3.org/TR/clreq-gap/", tentative:false, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"", lists:"2", initials:"", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "SChinese", url:"https://www.w3.org/TR/clreq-gap/", tentative:true, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"2", lists:"1", initials:"3", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
+{lang: "TChinese", url:"https://www.w3.org/TR/clreq-gap/", tentative:true, vertical_text:"1", bidi_text:"-", charset:"3", fonts:"2", font_style:"3", glyphs:"-", cursive:"-", transforms:"-", baselines:"-", segmentation:"3", punctuation_etc:"", text_decoration:"2", quotations:"2", inline_notes:"1", data_formats:"3", line_breaking:"2", hyphenation:"-", justification:"", spacing:"2", lists:"1", initials:"3", page_layout:"", footnotes_etc:"", headers_footers:"", interaction:"1"},
 ]},
 
 {script:"Hebr", languages:[
