@@ -37,6 +37,8 @@ td {
 	background-color: yellow;
 	background-color: #00ff00;
 	color: #00ff00;
+	background-color: moccasin;
+	color: moccasin;
 }
 .l1 {
 	background-color: #FF9A00;
@@ -117,6 +119,7 @@ table {
      display: inline-block;
    height:16px;
     background-color:#00FF00;
+    background-color: moccasin;
     }
 .guage3 {
     display: inline-block;
@@ -147,6 +150,7 @@ table {
     }
 .low2 {
     border-left: 12px solid #00FF00;
+    border-left: 12px solid moccasin;
     }
 .low3 {
     border-left: 12px solid green;

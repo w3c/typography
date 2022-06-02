@@ -1,4 +1,4 @@
-body { font-size: 16px; }
+body { font-size: 15px; }
 h2 { margin-left: 0; margin-top: 8em; }
 h3 { margin-top: 3em; }
 h3 a { color: #006; }
@@ -24,6 +24,7 @@ h4 { margin-left: 0; }
 .na:after { content: 'Not applicable'; color: gray; font-weight: normal; font-size: 120%; }
 
 .advanced { border-left: 5em solid #0f0; padding-left: 2em; }
+.advanced { border-left: 5em solid moccasin; padding-left: 2em; }
 .advanced:after { content: 'Needs work for advanced level support.'; color: gray; font-weight: normal; font-size: 120%; }
 
 .basic { border-left: 5em solid orange; padding-left: 2em; }
@@ -50,4 +51,13 @@ h4 { margin-left: 0; }
 	border-radius: .2em;
 	}
 
+.subhead {
+	display: block;
+	font-weight: bold;
+	}
 
+.ghLink {
+	margin-block-start: 0;
+	float: right;
+	font-size: 90%;
+	}

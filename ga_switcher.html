@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Gap Analysis doc switcher</title>
+<style>
+body { overflow: hidden; }
+#flexContainer { display: flex; width: 100%; min-height: 100vh; flex-direction: column; overflow: hidden; }
+#out { flex-grow: 1; border: none; margin: 0; padding: 0; width: 100%;  }
+</style>
+<script>
+function showDoc (url) {
+    urlArray = url.split('|')
+    if (document.getElementById('useED').checked) url = urlArray[1]
+    else url = urlArray[0]
+    document.getElementById('out').src = url + document.getElementById('fragid').value
+    document.getElementById('currentURL').textContent = url
+    }
+</script>
+</head>
+
+<body>
+<div id="flexContainer">
+<div id="frontMatter">
+<h1>Gap Analysis doc switcher</h1>
+
+<p>Set a fragment id, then click on a document: <input placeholder="frag id" id="fragid">
+
+<select onChange="document.getElementById('fragid').value='#'+this.value">
+<option value="vertical_text">Vertical text</option>
+<option value="bidi_text">Bidirectional text</option>
+<option value="charset">Characters &amp; encoding</option>
+<option value="fonts">Fonts</option>
+<option value="font_style">Font styles, weight, etc</option>
+<option value="glyphs">Glyph shaping and positioning</option>
+<option value="cursive">Cursive text</option>
+<option value="baselines">Baselines, line-height, etc</option>
+<option value="transforms">Transforming characters</option>
+<option value="segmentation">Grapheme/word segmentation &amp; selection</option>
+<option value="punctuation_etc">Inline features &amp; punctuation</option>
+<option value="text_decoration">Text decoration</option>
+<option value="quotations">Quotations</option>
+<option value="inline_notes">Inline notes &amp; annotations</option>
+<option value="data_formats">Data formats &amp; numbers</option>
+<option value="line_breaking">Line breaking</option>
+<option value="hyphenation">Hyphenation</option>
+<option value="justification">Text alignment &amp; justification</option>
+<option value="spacing">Letter spacing</option>
+<option value="lists">Lists, counters, etc.</option>
+<option value="initials">Styling initials</option>
+<option value="page_layout">General page layout &amp; progression</option>
+<option value="footnotes_etc">Footnotes, endnotes, etc.</option>
+<option value="headers_footers">Page headers, footers, etc.</option>
+<option value="interaction">Forms &amp; user interaction</option>
+</select>
+</p>
+
+
+<p style="margin-block-end: 0;">Then click on a document:</p>
+<div id="summaries" style="font-size: 80%;text-align:start; margin-block-end: 1em;">
+<span style="font-size: 100%; color:brown;font-weight:bold;">Africa &amp; West Asia</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/adlm-gap|https://w3c.github.io/afrlreq/gap-analysis/adlm-gap" onClick="showDoc(this.href); return false;">Adlam</a> • 
+<a href="https://www.w3.org/TR/nkoo-gap|https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap" onClick="showDoc(this.href); return false;">N'Ko</a> • 
+<a href="https://www.w3.org/TR/elreq-gap|https://w3c.github.io/elreq/gap-analysis/" onClick="showDoc(this.href); return false;">Ethiopic</a> • 
+<a href="https://www.w3.org/TR/alreq-gap|https://w3c.github.io/alreq/gap-analysis/" onClick="showDoc(this.href); return false;">Arabic/Persian</a> • 
+<a href="https://www.w3.org/TR/hebr-gap|https://w3c.github.io/hlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Hebrew</a>
+
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">Americas</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/cher-gap|https://w3c.github.io/amlreq/gap-analysis/chr-gap.html" onClick="showDoc(this.href); return false;">Cherokee</a> • 
+<a href="https://www.w3.org/TR/cans-iu-cr-gap|https://www.w3.org/TR/cans-iu-cr-gap/" onClick="showDoc(this.href); return false;">Inuktitut/Cree</a> • 
+<a href="https://www.w3.org/TR/osge-osa-gap|https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap" onClick="showDoc(this.href); return false;">Osage</a> • 
+
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">East Asia</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/clreq-gap|https://w3c.github.io/clreq/gap-analysis/" onClick="showDoc(this.href); return false;">Chinese</a> •
+<a href="https://www.w3.org/TR/jpan-gap|https://w3c.github.io/jlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Japanese</a> • 
+<a href="https://www.w3.org/TR/mong-gap|https://w3c.github.io/mlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Mongolian</a>
+
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">Europe</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/latn-nl-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap" onClick="showDoc(this.href); return false;">Dutch</a> •
+<a href="https://www.w3.org/TR/latn-fr-gap|https://www.w3.org/TR/latn-fr-gap/" onClick="showDoc(this.href); return false;">French</a> • 
+<a href="https://www.w3.org/TR/geor-gap|https://w3c.github.io/eurlreq/gap-analysis/geor-gap.html" onClick="showDoc(this.href); return false;">Georgian</a> •
+<a href="https://www.w3.org/TR/latn-de-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-de-gap" onClick="showDoc(this.href); return false;">German</a> • 
+<a href="https://www.w3.org/TR/grek-gap|https://w3c.github.io/eurlreq/gap-analysis/grek-gap" onClick="showDoc(this.href); return false;">Greek</a> • 
+<a href="https://www.w3.org/TR/latn-hu-gap|https://w3c.github.io/eurlreq/gap-analysis/latn-hu-gap" onClick="showDoc(this.href); return false;">Hungarian</a> 
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">South Asia</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/beng-gap|https://w3c.github.io/iip/gap-analysis/beng-gap" onClick="showDoc(this.href); return false;">Bengali</a> • 
+<a href="https://www.w3.org/TR/deva-gap|https://w3c.github.io/iip/gap-analysis/deva-gap" onClick="showDoc(this.href); return false;">Devanagari</a> • 
+<a href="https://www.w3.org/TR/gujr-gap|https://w3c.github.io/iip/gap-analysis/gujr-gap" onClick="showDoc(this.href); return false;">Gujarati</a> • 
+<a href="https://www.w3.org/TR/guru-gap|https://w3c.github.io/iip/gap-analysis/guru-gap" onClick="showDoc(this.href); return false;">Gurmukhi</a> • 
+<a href="https://www.w3.org/TR/taml-gap|https://w3c.github.io/iip/gap-analysis/taml-gap" onClick="showDoc(this.href); return false;">Tamil</a> 
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">Southeast Asia</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/laoo-gap|https://w3c.github.io/sealreq/gap-analysis/laoo-gap" onClick="showDoc(this.href); return false;">Lao</a> • 
+<a href="https://www.w3.org/TR/thai-gap|https://w3c.github.io/sealreq/gap-analysis/thai-gap" onClick="showDoc(this.href); return false;">Thai</a> •
+<a href="https://www.w3.org/TR/khmr-gap|https://w3c.github.io/sealreq/gap-analysis/khmr-gap" onClick="showDoc(this.href); return false;">Khmer</a> • 
+<a href="https://www.w3.org/TR/java-gap|https://w3c.github.io/sealreq/gap-analysis/java-gap" onClick="showDoc(this.href); return false;">Javanese</a>
+
+<br><span style="font-size: 100%; color:brown;font-weight:bold;">Central Asia</span> &nbsp;&nbsp;
+<a href="https://www.w3.org/TR/tibt-gap|https://w3c.github.io/tlreq/gap-analysis/" onClick="showDoc(this.href); return false;">Tibetan</a>
+</div>
+
+<p id="currentURL" style="float:right; font-size: 80%;"></p>
+<p><label>Use ED? <input type="checkbox" id="useED"></label></p>
+</div>
+
+<iframe id="out"></iframe>
+</div>
+
+</body>
+</html>

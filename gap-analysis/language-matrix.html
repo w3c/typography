@@ -6,7 +6,7 @@
 <script src="language-matrix-data/language-matrix-data.js"> </script>
 <link rel="stylesheet" href="language-matrix-data/matrix.css"/>
 
-<script type="text/javascript">
+<script>
 var f = { }
 
 // AUTHORS should fill in these assignments:
@@ -36,12 +36,15 @@ f.additionalLinks = ''
 <script src="language-matrix-data/translations.js"> </script>
 <script src="../../i18n-drafts/javascript/doc-structure/article-dt.js"> </script>
 <script src="../../i18n-drafts/javascript/boilerplate-text/boilerplate-en.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
-<script src="../../i18n-drafts/javascript/doc-structure/sitepage.js"> </script>
-<script src="../../i18n-drafts/javascript/articletoc-html5.js"></script>
-<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2016.css" type="text/css" />
-<link rel="stylesheet" href="language-matrix-data/local.css" type="text/css" />
+<script src="../../i18n-drafts/javascript/doc-structure/sitepage-2022.js"> </script>
+<script src="../../i18n-drafts/javascript/articletoc-2022.js"></script>
+<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css" />
+<link rel="stylesheet" href="language-matrix-data/local.css" />
 <link rel="copyright" href="#copyright"/>
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<style>
+#table_headers a, #table_headers a:visited { color: #444; font-weight: bold; }
+</style>
 </head>
 
 <body>
@@ -58,7 +61,7 @@ f.additionalLinks = ''
 
 <section>
 <p class="intro">Languages and writing systems have varying typographic conventions, and users and content authors expect local conventions to be supported on the Web and in eBooks. This page provides a ‘heat-map’ indicating the degree to which missing support for local features impacts use of the Web. Viewed as a whole, the table gives an idea of the amount of work still to be done. Dark green means there's no problem; red means that, currently, issues with this feature make the language very difficult or impossible to use.</p>
-<p class="intro">Across the top are  feature categories; down the side are languages, listed by writing-system. </p>
+<p class="intro">Across the top are  feature categories; down the side are languages, listed by script. </p>
 
 <p class="intro">For the <span id="langCount">&nbsp;</span> languages currently listed, we see the following problem areas. This page is updated as information becomes available.</p>
 
@@ -72,8 +75,11 @@ f.additionalLinks = ''
 </section>
 
 <div id="bodycontent" style="clear: both;">
-<section>
-    <h2 id="reference"><a href="#reference">The matrix</a></h2>
+
+
+<section id="reference">
+<h2>The matrix</h2>
+
 <p>Where a language name has a link, you can click on any cell in that row for more detailed information.</p>
 <table id="results">
   <thead>
@@ -81,36 +87,34 @@ f.additionalLinks = ''
       <th scope="row">script</th>
       <th>language</th>
       <td>summary</td>
-        <td><div>Vertical text</div></td>
-        <td><div>Bidirectional text</div></td>
+        <td><div><a href="https://w3c.github.io/typography/#vertical_text">Vertical text</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#bidi_text">Bidirectional text</a></div></td>
         
-        <td class="newSection"><div><abbr title="Characters &amp; encodings">Characters </abbr></div></td>
-        <td><div>Fonts</div></td>
-        <td><div><abbr title="Font styles, weight, etc.">Font styles</abbr></div></td>
-        <td><div><abbr title="Glyph shaping & positioning">Glyph control</abbr></div></td>
-        <td><div>Cursive text</div></td>
-        <td><div><abbr title="Transforming characters">Transforms</abbr></div></td>
-        <td><div><abbr title="Text segmentation &amp; selection">Boundaries</abbr></div></td>
-        <td><div><abbr title="Text decoration">Text decoration</abbr></div></td>
-        <td><div>Quotations</div></td>
-        <td><div><abbr title="Inline notes &amp; annotations">Inline annotation</abbr></div></td>
-        <td><div>Numbers, dates ...</div></td>
-        <td><div><abbr title="Other inline features">Otder inline</abbr></div></td>
+        <td class="newSection"><div><abbr title="Characters &amp; encodings"><a href="https://w3c.github.io/typography/#charset">Characters </a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#fonts">Fonts</a></div></td>
+        <td><div><abbr title="Font styles, weight, etc."><a href="https://w3c.github.io/typography/#font_style">Font styles</a></abbr></div></td>
+        <td><div><abbr title="Glyph shaping & positioning"><a href="https://w3c.github.io/typography/#glyphs">Glyph control</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#cursive">Cursive text</a></div></td>
+        <td><div><abbr title="Transforming characters"><a href="https://w3c.github.io/typography/#transforms">Transforms</a></abbr></div></td>
+        <td><div><abbr title="Baselines &amp; inline alignment"><a href="https://w3c.github.io/typography/#baselines">Baselines</a></abbr></div></td>
+        <td><div><abbr title="Grapheme/word segmentation &amp; selection"><a href="https://w3c.github.io/typography/#segmentation">Segmentation</a></abbr></div></td>
+        <td><div><abbr title="Punctuation & other inline features"><a href="https://w3c.github.io/typography/#punctuation_etc">Inline features</a></abbr></div></td>
+        <td><div><abbr title="Text decoration"><a href="https://w3c.github.io/typography/#text_decoration">Text decoration</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#quotations">Quotations</a></div></td>
+        <td><div><abbr title="Inline notes &amp; annotations"><a href="https://w3c.github.io/typography/#inline_notes">Inline annotation</a></abbr></div></td>
+        <td><div><abbr title="Data formats &amp; numbers"><a href="https://w3c.github.io/typography/#data_formats">Data formats</a></abbr></div></td>
         
-        <td class="newSection"><div>Line breaking</div></td>
-        <td><div>Hyphenation</div></td>
-        <td><div><abbr title="Text alignment, spacing &amp; justification">Align, justify ...</abbr></div></td>
-        <td><div><abbr title="Letter &amp; word spacing">Letter/word space</abbr></div></td>
-        <td><div><abbr title="Lists, counters, etc">Lists, counters</abbr></div></td>
-        <td><div>Styling initials</div></td>
-        <td><div><abbr title="Baselines &amp; inline alignment">Baselines</abbr></div></td>
-        <td><div>Other paragraph</div></td>
+        <td class="newSection"><div><a href="https://w3c.github.io/typography/#line_breaking">Line breaking</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#hyphenation">Hyphenation</a></div></td>
+        <td><div><abbr title="Text alignment, spacing &amp; justification"><a href="https://w3c.github.io/typography/#justification">Align, justify, …</a></abbr></div></td>
+        <td><div><abbr title="Letter spacing"><a href="https://w3c.github.io/typography/#spacing">Letter spacing</a></abbr></div></td>
+        <td><div><abbr title="Lists, counters, etc"><a href="https://w3c.github.io/typography/#lists">Lists, counters</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#initials">Styling initials</a></div></td>
         
-        <td class="newSection"><div><abbr title="General page layout &amp; progression">Page layout</abbr></div></td>
-        <td><div><abbr title="notes, footnotes, etc">Notes, footnotes</abbr></div></td>
-        <td><div><abbr title="page numbering & running headers, etc">Page no.s, heads ...</abbr></div></td>
-        <td><div><abbr title="Forms & user interaction">Forms, interaction</abbr></div></td>
-        <td><div>Other pagination</div></td>
+        <td class="newSection"><div><abbr title="General page layout &amp; progression"><a href="https://w3c.github.io/typography/#page_layout">Page layout</a></abbr></div></td>
+        <td><div><abbr title="Footnotes, endnotes, etc"><a href="https://w3c.github.io/typography/#footnotes_etc">Footnotes, …</a></abbr></div></td>
+        <td><div><abbr title="Page headers, footers, etc"><a href="https://w3c.github.io/typography/#headers_footers">Headers, footers, …</a></abbr></div></td>
+        <td><div><abbr title="Forms & user interaction"><a href="https://w3c.github.io/typography/#interaction">Forms, interaction</a></abbr></div></td>
     </tr>
   </thead>
   <tbody id="langData">
@@ -119,41 +123,67 @@ f.additionalLinks = ''
 </table>
 </section>
 
-  <section>
-    <h2 id="colors"><a href="#colors">Color key</a></h2>
-  <div id="key">
-    <p>
-      <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
-      <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
-      <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
-      <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
-      <p>* next to a language name indicates a tentative score, pending validation by experts</p>
-  </div>
-  </section>
-  
-  <section>
-    <h2 id="howto"><a href="#howto">Detailed information about the chart</a></h2>
+
+
+
+
+<section id="colors">
+<h2>Color key</h2>
+
+<div id="key">
+<p>
+  <span class="l3"> ■</span> <i class="highlight">3</i> All needs covered (ie. OK), or not applicable<br/>
+  <span class="l2"> ■</span> <i class="highlight">2</i> Basic needs covered, but work needed for advance publishing<br/>
+  <span class="l1"> ■</span> <i class="highlight">1</i> Can create interoperable web pages, but work still needed for basic features<br/>
+  <span class="l0"> ■</span> <i class="highlight">0</i> Something prevents interoperable or effective use of the language in webpages</p>
+</div>
+  <p>An asterisk next to a language name indicates tentative coloring, based on set of initial expectations, but it is very possible that the colors will change after further investigation.</p>
+<p>A language name followed by 	† indicates that experts are currently investigating issues and developing the gap analysis. In this case, the coloring is expected to be more reliable, though may still change.</p>
+<p>Whatever the current status of a language, a cell that is currently colored green may change to another colour at a later date if a previously-overlooked issue is discovered.</p>
+</section>
+
+
+
+
+
+
+<section id="howto">
+<h2>Detailed information about the chart</h2>
+
 <p>The colour to the left of the language is the lowest score of any of the cells to its right, and represents the level for the language as a whole. The column immediately to the right of the language name graphically summarises the available data for that language (by reordering the squares in the main part of the table).</p>
 <p>A question mark indicates that we don't yet have a reasonable degree of confidence about level of  support for this aspect of the language. There may not be an issue, or there may be something that needs fixing which we are as yet unaware of.</p>
 <p>The chart is arranged by script. Note that some languages use more than one script, and so appear in more than one place in the chart. For each script, a list of languages appears in order of the highest to lowest number of speakers.</p>
 <p>The list currently targets some of the more common languages, or scripts that have important implications for general support. It is expected that the list will grow as data becomes available, and we welcome contributions for other languages from local experts. Some less common languages are already represented, sometimes because they present features that need to be taken into account while designing the overall technological architecture, other times simply because we have information about them and including them helps the local community ensure the survival of their language on the Web.</p>
-<p>Each cell is the intersection of a language and a category of typographic features. The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
+<p>Each cell is the intersection of a language and an aspect of language enablement. The colours indicate what needs work, and whether the work is needed to bring the language to the next level. If no work is needed for a language, either because it is fully supported, or because that feature is not applicable, the dark green colour is used to indicate that no work is needed.</p>
 <p>An asterisk next to a language name indicates that the scores for that language are tentative, ie. our best guess pending thorough analysis and validation by experts representing the language user community.</p>
 <p>When a language name has a link, you can follow that link to find a draft report that gives details about work needed. That also needs validation and prioritization by experts if the language name has an asterisk.</p>
-<p>Click the feature categories along the top of the chart to get an idea of what kind of typographic features are included in that category. You are taken to the document <a href="https://w3c.github.io/typography/">International Text Layout and Typography Index</a>. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
+<p>Click the feature categories along the top of the chart to get an idea of what kind of typographic features are included in that category. You are taken to the document <a href="https://w3c.github.io/typography/" style="font-size: 120%;">Language enablement Index</a>. From there you can follow links to current requirements, requests for information, spec wording, and issues related to that group of features.</p>
+<p>The column with the title Page Layout and the two columns to its right  all  relate to rendering paged media. In the general case, various  paged media features are still not widely available on the Web; however, these columns are particularly focused on whether there are language-specific adaptations of the general approach which need attention.</p>
 <p>What qualifies a cell for a score of 3 (OK)? A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. For the latter, a specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all  browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in browsers.)</p>
 </section>
+
+
+
+
+
   
-  
-    <section>
-    <h2 id="help"><a href="#help">How to help</a></h2>
+<section id="help">
+<h2>How to help</h2>
+
 <p>We are actively looking for people and organizations that can help us complete the missing information in the matrix, and compile requirements for spec and browser developers. The following links may be helpful.</p>
 
 <ul>
-<li><a href="https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web">Analysing support for text layout on the Web</a></li>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/language_framework_overview" style="font-size: 120%;">Analysing support for text layout on the Web</a> <br>
+An overview of the various parts of the Language Enablement framework in which the work is done.</li>
+<li><a href="https://www.w3.org/International/typography/" style="font-size: 120%;">Language Enablement Index</a><br>
+A single location to find information related to Language Enablement.
+</li>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/languagedev_participation" style="font-size: 120%;">How to contribute to an Language Enablement group</a><br>
+Pointers for getting involved in the work. </li>
+<li style="margin-top: 1em;"><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></li>
 <li><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">Setting up a Gap Analysis Project</a></li>
-<li><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></li>
 <li><a href="https://github.com/w3c/typography/tree/gh-pages/gap-analysis">Raise an issue or see the source code</a></li>
+<li><a href="https://www.w3.org/International/layout" rel="nofollow">Overview of language enablement work in progress</a></li>
 </ul>
 </section>
 </div>
@@ -161,7 +191,7 @@ f.additionalLinks = ''
 
 <br style="clear: both;" />
 
-<footer id="thefooter"></footer><script type="text/javascript">document.getElementById('thefooter').innerHTML = g.bottomOfPage</script>
+<footer id="thefooter"></footer><script>document.getElementById('thefooter').innerHTML = g.bottomOfPage</script>
 <script>
 
 // add rows to table from .js file
@@ -176,7 +206,9 @@ for (let s=0;s<langData.length;s++) {
 		else table += '<th>&nbsp;</td>'
 		
 		table += '<td class="language'
-		if (cLang.tentative) table += ' tentative'
+		if (cLang.tentative === true) table += ' tentative'
+		else if (cLang.tentative === false) table += ' inprogress'
+		// items not tentative or in progress should be labelled '', and get no mark
 		table += '">'
 		if (cLang.url) table += '<a target="details" href="'+cLang.url+'">'
 		table += cLang.lang
@@ -185,36 +217,34 @@ for (let s=0;s<langData.length;s++) {
 		
 		table += '<td class="sum">&nbsp;</td>'
 		
-		table += '<td>'+cLang.vertical+'</td>'
-		table += '<td>'+cLang.bidi+'</td>'
+		table += '<td>'+cLang.vertical_text+'</td>'
+		table += '<td>'+cLang.bidi_text+'</td>'
 
-        table += '<td class="newSection">'+cLang.encoding+'</td>'
+        table += '<td class="newSection">'+cLang.charset+'</td>'
 		table += '<td>'+cLang.fonts+'</td>'
-		table += '<td>'+cLang.fontstyle+'</td>'
-		table += '<td>'+cLang.glyphcontrol+'</td>'
+		table += '<td>'+cLang.font_style+'</td>'
+		table += '<td>'+cLang.glyphs+'</td>'
 		table += '<td>'+cLang.cursive+'</td>'
 		table += '<td>'+cLang.transforms+'</td>'
-		table += '<td>'+cLang.boundaries+'</td>'
-		table += '<td>'+cLang.textdecor+'</td>'
+		table += '<td>'+cLang.baselines+'</td>'
+		table += '<td>'+cLang.segmentation+'</td>'
+		table += '<td>'+cLang.punctuation_etc+'</td>'
+		table += '<td>'+cLang.text_decoration+'</td>'
 		table += '<td>'+cLang.quotations+'</td>'
-		table += '<td>'+cLang.inlinenotes+'</td>'
-		table += '<td>'+cLang.digits+'</td>'
-		table += '<td>'+cLang.otherinline+'</td>'
+		table += '<td>'+cLang.inline_notes+'</td>'
+		table += '<td>'+cLang.data_formats+'</td>'
         
-		table += '<td class="newSection">'+cLang.linebreak+'</td>'
+		table += '<td class="newSection">'+cLang.line_breaking+'</td>'
 		table += '<td>'+cLang.hyphenation+'</td>'
 		table += '<td>'+cLang.justification+'</td>'
 		table += '<td>'+cLang.spacing+'</td>'
-		table += '<td>'+cLang.counters+'</td>'
-		table += '<td>'+cLang.initialletter+'</td>'
-		table += '<td>'+cLang.baselines+'</td>'
-		table += '<td>'+cLang.otherpara+'</td>'
+		table += '<td>'+cLang.lists+'</td>'
+		table += '<td>'+cLang.initials+'</td>'
         
-		table += '<td class="newSection">'+cLang.pagelayout+'</td>'
-		table += '<td class="future">'+cLang.notes+'</td>'
-		table += '<td class="future">'+cLang.pagehead+'</td>'
+		table += '<td class="newSection">'+cLang.page_layout+'</td>'
+		table += '<td class="future">'+cLang.footnotes_etc+'</td>'
+		table += '<td class="future">'+cLang.headers_footers+'</td>'
 		table += '<td>'+cLang.interaction+'</td>'
-		table += '<td class="future">'+cLang.otherpage+'</td>'
 		table += '</tr>\n'
 		}
 	}
@@ -230,8 +260,9 @@ for (let i=0;i<tds.length;i++) {
 	if (tds[i].textContent === '1') tds[i].classList.add('l1')
 	if (tds[i].textContent === '0') tds[i].classList.add('l0')
 	if (tds[i].textContent == '') tds[i].textContent = '?'
-	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '*'
-	}
+	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '&nbsp;*'
+	if (tds[i].classList.contains('inprogress')) tds[i].innerHTML += '&nbsp;<sup>†</sup>'
+	}//‡
 
 
 
@@ -315,36 +346,34 @@ document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.le
 // array of ids for links from cells
 idlinks = [
 '',
-'vertical',
-'bidi',
+'vertical_text',
+'bidi_text',
 
-'encoding',
+'charset',
 'fonts',
-'fontstyle',
+'font_style',
 'glyphs',
 'cursive',
 'transforms',
-'boundaries',
-'textdecor',
+'baselines',
+'segmentation',
+'punctuation_etc',
+'text_decoration',
 'quotations',
-'inlinenotes',
-'numbers',
-'otherinline',
+'inline_notes',
+'data_formats',
 
-'linebreak',
+'line_breaking',
 'hyphenation',
 'justification',
 'spacing',
-'counters',
-'initialletter',
-'baselines',
-'otherpara',
+'lists',
+'initials',
 
-'pagelayout',
-'notes',
-'pageheaders',
+'page_layout',
+'footnotes_etc',
+'headers_footers',
 'interaction',
-'morepage',
 ]
 
 
@@ -361,27 +390,25 @@ titlelinks = [
 'Glyph shaping & positioning',
 'Cursive',
 'Transforming characters',
-'Text segmentation & selection',
+'Baselines & line alignment',
+'Grapheme/word segmentation & selection',
+'Punctuation & other inline features',
 'Text decoration',
 'Quotations',
 'Inline notes & annotations',
-'Numbers, dates, etc.',
-'Other inline features',
+'Data formats & numbers',
 
 'Line breaking',
 'Hyphenation',
 'Text alignment & justification',
-'Letter & word spacing',
+'Letter spacing',
 'Lists, counters, etc.',
 'Styling initials',
-'Baselines & line alignment',
-'Other paragraph features',
 
 'General page layout & progression',
-'Notes, footnotes, etc.',
-'Page numbers, running headers, etc.',
+'Footnotes, endnotes, etc.',
+'Page headers, footers, etc.',
 'Forms &amp; user interaction',
-'Other pagination features',
 ]
 
 
