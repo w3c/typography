@@ -931,8 +931,9 @@ line_breaking = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Prohibition Rules for Line Start and Line End", "url":"https://w3c.github.io/clreq/#prohibition_rules_for_line_start_end"},
-			{"title":"Prohibition Rules for Unbreakable Marks", "url":"https://w3c.github.io/clreq/#prohibition_rules_for_unbreakable_marks"},
+			{"title":"Prohibition Rules for Line Start and Line End", "url":"https://www.w3.org/TR/clreq/#prohibition_rules_for_line_start_end"},
+			{"title":"Prohibition Rules for Unbreakable Marks", "url":"https://www.w3.org/TR/clreq/#prohibition_rules_for_unbreakable_marks"},
+			{"title":"Hanging Punctuation at Line End", "url":"https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end"},
 			]
 		},
 	{ 	"title":"Devanagari Layout Requirements", 
@@ -1124,9 +1125,10 @@ justification = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://w3c.github.io/clreq/#chinese_and_western_mixed_text_composition"},
-			{"title":"Paragraph Adjustment Rules", "url":"https://w3c.github.io/clreq/#paragraph_adjustment_rules"},
-			{"title":"Compression Rules for Punctuation Marks ", "url":"https://w3c.github.io/clreq/#compression_rules_for_consecutive_punctuation_marks"},
+			{"title":"Composition of Chinese and Western Mixed Texts", "url":"https://www.w3.org/TR/clreq/#composition_of_chinese_and_western_mixed_text"},
+			{"title":"Paragraph Adjustment Rules", "url":"https://www.w3.org/TR/clreq/#paragraph_adjustment_rules"},
+			{"title":"Punctuation Width Adjustment", "url":"https://www.w3.org/TR/clreq/#punctuation_width_adjustment"},
+			{"title":"Line Adjustment", "url":"https://www.w3.org/TR/clreq/#line_adjustment"},
 			]
 		},
 	{ 	"title":"Ethiopic Layout Requirements",
