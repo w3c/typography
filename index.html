@@ -306,19 +306,6 @@
 
 
 
-  <section id="baselines">
-    <h3>Baselines &amp; inline alignment</h3>
-    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly.</p>
-              
-	<div id="placeholder_baselines"></div>
-  <script>displaySection("placeholder_baselines", baselines, 'i:baselines')</script>
-
-</section>
-
-
-
-
-
 <section id="transforms">
     <h3>Transforming characters</h3>
     <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language. In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
@@ -505,13 +492,27 @@
   
 
     <section id="spacing">
-    <h3>Letter spacing </h3>
-    <p>This section is particularly concerned with letter-spacing that is applied inline to indicate some semantic meaning, rather than with full line justification described in the previous section. Many scripts create emphasis or other effects by spacing out the letters or syllables in a word. There are questions  about how this should work in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.</p>
-           
-	<div id="placeholder_letter_spacing"></div>
+    <h3>Text spacing </h3>
+    <p>This section is   concerned with spacing that is adjusted around and between characters on a line that is driven by aims different from the full line justification described in the previous section, although it will affect line layout. Examples follow. Many scripts create emphasis or other effects by moving apart the letters or syllables in a word. (This may even apply in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.) Other times, increasing or decreasing the typical space between characters aids readability. Scripts used for Japanese or Chinese may also seek to reduce space between adjacent punctuation, to avoid large gaps. On the other hand, it may be necessary to add a gap around embedded numbers or Latin text in scripts that don't normally use spaces around words. Some scripts prefer to indent the first line of a paragraph, rather than leave vertical gaps between paragraphs. And in some scripts space needs to be carefully controlled before and after certain punctuation marks, such as in French or Thai.</p>
+<div id="placeholder_letter_spacing"></div>
 	<script>displaySection("placeholder_letter_spacing", spacing, 'i:spacing')</script>
 
   </section>
+
+
+
+
+
+  <section id="baselines">
+    <h3>Baselines, line-height, etc.</h3>
+    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly. The complexity of characters in a script may affect line height settings. However, some scripts also expect larger inter-line gaps than others, in addition to the line height. This section covers these and other factors related to vertical spacing of lines.</p>
+              
+	<div id="placeholder_baselines"></div>
+  <script>displaySection("placeholder_baselines", baselines, 'i:baselines')</script>
+
+</section>
+
+
 
 
 
