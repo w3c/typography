@@ -894,8 +894,8 @@ inline_notes = {
 		},
 	{ 	"title":"The Manual of the Phonetic Symbols of the Mandarin Script", 
 		"sections": [ 
-			{"title":"english", "url":"http://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_en/index.html"},
-			{"title":"chinese", "url":"http://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html"}
+			{"title":"english", "url":"https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_en/index.html"},
+			{"title":"chinese", "url":"https://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html"}
 			]
 		},
 	{ 	"title":"Japanese Layout Requirements", 
@@ -1268,7 +1268,7 @@ justification = {
 		"sections": [ 
 			]
 		},
-	{ 	"title":"Rule-based expert system for Urdu nastaleeq justification", "url":"http://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf",
+	{ 	"title":"Rule-based expert system for Urdu nastaleeq justification", "url":"https://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf",
 		"sections": [ 
 			]
 		},
