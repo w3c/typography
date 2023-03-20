@@ -1374,12 +1374,19 @@ spacing = {
 		},
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
-			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"}
+			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"},
+			{"title":"Mixed Text Composition in Horizontal Writing Mode", "url":"https://www.w3.org/TR/clreq/#mixed_text_composition_in_horizontal_writing_mode"},
+			{"title":"Mixed Text Composition in Vertical Writing Mode", "url":"https://www.w3.org/TR/clreq/#mixed_text_composition_in_vertical_writing_mode"}
 			]
 		},
 	{ 	"title":"Indic Layout Requirements",
 		"sections": [ 
 			{"title":"Letter spacing", "url":"https://www.w3.org/TR/ilreq/#h_letter_spacing"}
+			]
+		},
+	{ 	"title":"Japanese Layout Requirements",
+		"sections": [ 
+			{"title":"Handling of Western Text in Japanese Text using Proportional Western Fonts", "url":"https://www.w3.org/TR/jlreq/#handling_of_western_text_in_japanese_text_using_proportional_western_fonts"}
 			]
 		},
 	{ 	"title":"Khmer Layout Requirements",
@@ -1420,10 +1427,12 @@ spacing = {
 "gap_analysis": [
 	["Arabic","https://www.w3.org/TR/alreq-gap/#spacing"],
 	["Bengali","https://www.w3.org/TR/beng-gap/#spacing"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#spacing"],
 	["Devanagari","https://www.w3.org/TR/deva-gap/#spacing"],
 	["Dutch","https://www.w3.org/TR/latn-nl-gap/#spacing"],
 	["Gujarati","https://www.w3.org/TR/gujr-gap/#spacing"],
 	["Gurmukhi","https://www.w3.org/TR/guru-gap/#spacing"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#spacing"],
 	["Khmer","https://www.w3.org/TR/khmr-gap#spacing"],
 	["Tamil","https://www.w3.org/TR/taml-gap/#spacing"]
 	]
