@@ -99,7 +99,6 @@ bidi_text = {
 		},
 	{ 	"title":"Text Layout Requirements for the Arabic Script",
 		"sections": [ 
-			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"},
 			{"title":"Direction", "url":"https://www.w3.org/TR/alreq/#h_direction"}
 			]
 		},
