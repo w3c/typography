@@ -708,10 +708,11 @@ text_decoration = {
 	{ 	"title":"Chinese Layout Requirements", 
 		"sections": [ 
 			{"title":"Indicator Punctuation Marks > Fullwidth low line", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"},
-			{"title":"Indicator Punctuation Marks > Emphasis Dots", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"}
+			{"title":"Indicator Punctuation Marks > Emphasis Dots", "url":"https://www.w3.org/TR/clreq/#indication_punctuation_marks"},
+			{"title":"Handling Interlinear Punctuation", "url":"https://www.w3.org/TR/clreq/#handling_interlinear_punctuation"}
 			]
 		},
-	{ 	"title":"Wikipedia: Underlines in non-Latin scripts (chinese)", "url":"https://en.wikipedia.org/wiki/Underline#Underlines_in_non-Latin_scripts",
+	{ 	"title":"Wikipedia: Underlines in Chinese", "url":"https://en.wikipedia.org/wiki/Underscore#Underlines_in_Chinese",
 		"sections": [ 
 			]
 		},
