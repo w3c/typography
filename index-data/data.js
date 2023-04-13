@@ -1264,7 +1264,7 @@ justification = {
 		"sections": [ 
 			]
 		},
-	{ 	"title":"Typography questions for HTML & CSS: Arabic justification", "url":"https://r12a.github.io/blog/?p=1059",
+	{ 	"title":"Typography questions for HTML & CSS: Arabic justification", "url":"https://r12a.github.io/blog/201110.html#20140523",
 		"sections": [ 
 			]
 		},
