@@ -1689,6 +1689,16 @@ grids_tables = {
 
 
 "requirements": [
+	{ 	"title":"Chinese Layout Requirements",
+		"sections": [ 
+			{"title":"Handling of Grid Alignment in Chinese and Western Mixed Text Composition", "url":"https://www.w3.org/TR/clreq/#handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition"}
+			]
+		},
+	{ 	"title":"Japanese Layout Requirements",
+		"sections": [ 
+			{"title":"Processing of Tables", "url":"https://www.w3.org/TR/jlreq/#processing_of_tables"}
+			]
+		},
 	{ 	"title":"Hangul Layout Requirements",
 		"sections": [ 
 			{"title":"Tables", "url":"https://www.w3.org/TR/klreq/#tables"}
