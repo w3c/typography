@@ -75,6 +75,7 @@ vertical_text = {
 
 "gap_analysis": [
 	["Bengali","https://www.w3.org/TR/beng-gap/#vertical_text"],
+	["Chinese","https://www.w3.org/TR/clreq-gap/#vertical_text"],
 	["Devanagari","https://www.w3.org/TR/deva-gap/#vertical_text"],
 	["Dutch","https://www.w3.org/TR/latn-nl-gap/#vertical_text"],
 	["Gujarati","https://www.w3.org/TR/gujr-gap/#vertical_text"],
