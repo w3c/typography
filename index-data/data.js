@@ -1376,6 +1376,7 @@ spacing = {
 	{ 	"title":"Chinese Layout Requirements",
 		"sections": [ 
 			{"title":"Principles for Arranging Characters during Chinese Composition", "url":"https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters"},
+			{"title":"Punctuation Width Adjustment", "url":"https://www.w3.org/TR/clreq/#punctuation_width_adjustment"},
 			{"title":"Mixed Text Composition in Horizontal Writing Mode", "url":"https://www.w3.org/TR/clreq/#mixed_text_composition_in_horizontal_writing_mode"},
 			{"title":"Mixed Text Composition in Vertical Writing Mode", "url":"https://www.w3.org/TR/clreq/#mixed_text_composition_in_vertical_writing_mode"}
 			]
@@ -1387,6 +1388,7 @@ spacing = {
 		},
 	{ 	"title":"Japanese Layout Requirements",
 		"sections": [ 
+			{"title":"Positioning of Consecutive Opening Brackets, Closing Brackets, Commas, Full Stops and Middle Dots", "url":"https://www.w3.org/TR/jlreq/#positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots"},
 			{"title":"Handling of Western Text in Japanese Text using Proportional Western Fonts", "url":"https://www.w3.org/TR/jlreq/#handling_of_western_text_in_japanese_text_using_proportional_western_fonts"}
 			]
 		},
@@ -1421,7 +1423,8 @@ spacing = {
 
 
 "tests": [
-	["Exploratory tests: Justification & letter-spacing","https://w3c.github.io/i18n-tests/results/exploring-justify-space"]
+	["Exploratory tests: Justification & letter-spacing","https://w3c.github.io/i18n-tests/results/exploring-justify-space"],
+	["Interactive tests: Letter spacing","https://www.w3.org/International/i18n-tests/results/int-letter-spacing"],
 	],
 
 
