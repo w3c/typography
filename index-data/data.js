@@ -818,6 +818,11 @@ quotations = {
 			{"title":"Differences in Vertical and Horizontal Composition in Use of Punctuation Marks", "url":"https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks"}
 			]
 		},
+	{ 	"title":"Hangul Layout Requirements", 
+		"sections": [ 
+			{"title":"Changing Punctuation Marks Depending on Writing Direction", "url":"https://www.w3.org/TR/klreq/#writing-dir-mark"}
+			]
+		},
 	{ 	"title":"Wikipedia", 
 		"sections": [ 
 			{"title":"Quotations", "url":"https://en.wikipedia.org/wiki/Quotation_mark"}
