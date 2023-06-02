@@ -5,8 +5,8 @@ h3 a { color: #006; }
 h3 a:link { color: #006; }
 h3 a:active { color: #006; }
 h3 a:visited { color: #006; }
-h4 { margin-left: 0; font-size:1.4rem !Important; }
-h5 { margin-top: 2rem !Important; }
+h4 { margin-left: 0; font-size:1.4rem !important; }
+h5 { margin-top: 1rem !important; }
 
 
 .status_prompt {
