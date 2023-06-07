@@ -16,22 +16,33 @@ h5 { margin-top: 1rem !important; }
     margin-bottom: 4em;
     }
 
+.issueLink { font-weight:bold; padding:.5rem 1rem; border-radius:.2rem; }
 
 .ok { border-left: 5em solid green; padding-left: 2em; }
 .ok:after { content: 'OK'; color: gray; font-weight: normal; font-size: 120%; }
+.okIssue { background-color: green; color:antiquewhite;  }
+.issueLink.okIssue:visited, .issueLink.basicIssue:link { color: antiquewhite; }
 
 .na { border-left: 5em solid green; padding-left: 2em; }
 .na:after { content: 'Not applicable'; color: gray; font-weight: normal; font-size: 120%; }
+.naIssue { background-color: green; color:antiquewhite; }
+.issueLink.naIssue:visited, .issueLink.basicIssue:link { color: antiquewhite; }
 
 .advanced { border-left: 5em solid #0f0; padding-left: 2em; }
 .advanced { border-left: 5em solid moccasin; padding-left: 2em; }
 .advanced:after { content: 'Needs work for advanced level support.'; color: gray; font-weight: normal; font-size: 120%; }
+.advancedIssue { background-color: moccasin; color:chocolate; }
+.issueLink.advancedIssue:visited, .issueLink.basicIssue:link { color: chocolate; }
 
 .basic { border-left: 5em solid orange; padding-left: 2em; }
 .basic:after { content: 'Needs work for basic styling support.'; color: gray; font-weight: normal; font-size: 120%; }
+.basicIssue { background-color: orange; color:antiquewhite; }
+.issueLink.basicIssue:visited, .issueLink.basicIssue:link { color: antiquewhite; }
 
 .broken { border-left: 5em solid red; padding-left: 2em; }
 .broken:after { content: 'Basic display issues that prevent effective use on the Web for this language.'; color: gray; font-weight: normal; font-size: 120%; }
+.brokenIssue { background-color: red; color:antiquewhite; }
+.issueLink.brokenIssue:visited, .issueLink.basicIssue:link { color: antiquewhite; }
 
 
 .tbd { border-left: 5em solid #eee; padding-left: 2em; }
