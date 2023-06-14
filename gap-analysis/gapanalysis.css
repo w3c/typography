@@ -6,7 +6,7 @@ h3 a:link { color: #006; }
 h3 a:active { color: #006; }
 h3 a:visited { color: #006; }
 h4 { margin-left: 0; font-size:1.4rem !important; }
-h5 { margin-top: 1rem !important; }
+h5 { margin-top: 1rem !important; border-block-end:1px solid #ccc !important; width:100% !important; font-style:normal !important; }
 
 
 .status_prompt {
