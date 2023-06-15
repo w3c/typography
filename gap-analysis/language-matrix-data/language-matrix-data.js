@@ -149,7 +149,7 @@ langData = [
 ]},
 
 {script:"N’Ko", languages:[
-{lang: "N’Ko", url:"https://www.w3.org/TR/nkoo-gap/", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"1", font_style:"1", glyphs:"", cursive:"2", transforms:"", baselines:"", segmentation:"2", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "N’Ko", url:"https://www.w3.org/TR/nkoo-gap/", tentative:true, vertical_text:"2", bidi_text:"1", charset:"3", fonts:"1", font_style:"1", glyphs:"2", cursive:"2", transforms:"3", baselines:"3", segmentation:"2", punctuation_etc:"3", text_decoration:"3", quotations:"3", inline_notes:"3", data_formats:"3", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Orya", languages:[
