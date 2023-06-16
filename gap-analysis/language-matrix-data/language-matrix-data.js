@@ -2,7 +2,7 @@
 langData = [
 
 {script:"Adlam", languages:[
-{lang: "Fula", url:"https://www.w3.org/TR/adlm-gap/", tentative:true, vertical_text:"2", bidi_text:"1", charset:"", fonts:"2", font_style:"", glyphs:"", cursive:"2", transforms:"3", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"", inline_notes:"", data_formats:"", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
+{lang: "Fula", url:"https://www.w3.org/TR/adlm-gap/", tentative:true, vertical_text:"2", bidi_text:"1", charset:"3", fonts:"2", font_style:"3", glyphs:"3", cursive:"2", transforms:"3", baselines:"3", segmentation:"", punctuation_etc:"3", text_decoration:"3", quotations:"3", inline_notes:"3", data_formats:"3", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"1", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3"},
 ]},
 
 {script:"Arab", languages:[
