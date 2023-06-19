@@ -354,7 +354,7 @@ cursive = {
 		},
 	{ 	"title":"N'Ko Layout Requirements", 
 		"sections": [ 
-			{"title":"Cursive text", "url":"https://w3c.github.io/afrlreq/nko/#cursive"},
+			{"title":"Cursive text", "url":"https://www.w3.org/TR/nkoo-lreq/#cursive"},
 			]
 		},
 	{ 	"title":"Orthography Notes", 
