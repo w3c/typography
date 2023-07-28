@@ -402,6 +402,11 @@ baselines = {
 			{"title":"Multi-level baselines", "url":"https://www.w3.org/TR/alreq/#multi-level-baselines"},
 			]
 		},
+	{ 	"title":"Requirements for Chinese Text Layout",
+		"sections": [ 
+			{"title":"Considerations when Designing the Type Area", "url":"https://www.w3.org/TR/clreq/#considerations_in_designing_type_area"},
+			]
+		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
 			{"title":"Baseline Grids", "url":"https://www.w3.org/TR/dpub-latinreq/#baseline-grids"}
@@ -410,6 +415,16 @@ baselines = {
 	{ 	"title":"Mongolian script layout requirements",
 		"sections": [ 
 			{"title":"Baselines", "url":"https://www.w3.org/TR/mlreq/#h_baselines"}
+			]
+		},
+	{ 	"title":"Tamil Layout Requirements",
+		"sections": [ 
+			{"title":"Baselines, line height, etc.", "url":"https://www.w3.org/International/ilreq/tamil/#baselines"}
+			]
+		},
+	{ 	"title":"Thai Layout Requirements",
+		"sections": [ 
+			{"title":"Baselines, line height, etc.", "url":"https://www.w3.org/International/sealreq/thai/#baselines"}
 			]
 		},
 	{ 	"title":"Tibetan Layout Requirements",
@@ -429,10 +444,15 @@ baselines = {
 			{"title":" Inline-level Alignment","url":"https://drafts.csswg.org/css-writing-modes-3/#inline-alignment"}
 			]
 		},
+	{	"title":"CSS3 Inline Layout",
+		"sections": [
+			{"title":"Line Spacing: the line-height property","url":"https://drafts.csswg.org/css-inline/#line-height-property"}
+			]
+		},
 	{	"title":"CSS Line Grid", "url":"https://drafts.csswg.org/css-line-grid/",
 		"sections": [
 			]
-		}
+		},
 	],
 
 
