@@ -352,6 +352,11 @@ cursive = {
 			{"title":"Arabic Script and Typography", "url":"https://www.w3.org/TR/alreq/#h_typography"},
 			]
 		},
+	{ 	"title":"N'Ko Layout Requirements", 
+		"sections": [ 
+			{"title":"Cursive text", "url":"https://www.w3.org/TR/nkoo-lreq/#cursive"},
+			]
+		},
 	{ 	"title":"Orthography Notes", 
 		"sections": [ 
 			{"title":"Cursive script (esp. Arabic, Syriac, Urdu, Rohingya, Mongolian, N'Ko, Pular, Assyrian, Turoyo, Kashmiri, Mandaic)", "url":"https://r12a.github.io/scripts/switch?section=cursive"},
@@ -381,7 +386,8 @@ cursive = {
 
 
 "gap_analysis": [
-	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#cursive"]
+	["Arabic & Persian","https://www.w3.org/TR/alreq-gap/#cursive"],
+	["N’Ko","https://www.w3.org/TR/nkoo-gap/#cursive"]
 	]
 }
 
