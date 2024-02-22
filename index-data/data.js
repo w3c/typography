@@ -1885,6 +1885,8 @@ interaction = {
 
 
 "gap_analysis": [
+	["Chinese","https://www.w3.org/TR/clreq-gap/#interaction"],
+	["Japanese","https://www.w3.org/TR/jpan-gap/#interaction"],
 	["Mongolian","https://www.w3.org/TR/mong-gap/#interaction"],
 	]
 }
