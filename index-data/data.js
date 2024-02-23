@@ -81,6 +81,7 @@ vertical_text = {
 	["Gujarati","https://www.w3.org/TR/gujr-gap/#vertical_text"],
 	["Hungarian","https://www.w3.org/TR/latn-hu-gap/#vertical_text"],
 	["Japanese","https://www.w3.org/TR/jpan-gap/#vertical_text"],
+	["Mongolian","https://www.w3.org/TR/mong-gap/#vertical_text"],
 	["Tamil","https://www.w3.org/TR/taml-gap/#vertical_text"]
 	]
 }
