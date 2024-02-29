@@ -1878,10 +1878,19 @@ interaction = {
 
 
 "spec_links": [
+	{	"title":"HTML",
+		"sections": [
+			{"title":"The <code>input</code> element", "url":"https://html.spec.whatwg.org/multipage/input.html#the-input-element"},
+			{"title":"The <code>select</code> element", "url":"https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element"},
+			{"title":"The <code>textarea</code> element", "url":"https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element"},
+			{"title":"The <code>fieldset</code> element", "url":"https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element"},
+			]
+		}
 	],
 
 
 "tests": [
+	["CSS3 Writing Modes: vertical text","https://w3c.github.io/i18n-tests/results/writing-mode-vertical#rl_forms"],
 	],
 
 
