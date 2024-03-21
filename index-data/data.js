@@ -1336,6 +1336,11 @@ justification = {
 			{"title":"Paragraph Adjustment Rules", "url":"https://www.w3.org/TR/jlreq/#paragraph_adjustment_rules"}
 			]
 		},
+	{ 	"title":"Khmer Layout Requirements",
+		"sections": [ 
+			{"title":"Text alignment & justification", "url":"https://www.w3.org/International/sealreq/khmer/#h_alignment"},
+			]
+		},
 	{ 	"title":"Latin Layout Requirements",
 		"sections": [ 
 			{"title":"Justification", "url":"https://www.w3.org/TR/dpub-latinreq/#justification"},
