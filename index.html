@@ -87,130 +87,44 @@
     <p>When dealing with vertical lines of text, it's common for content authors to want to mix short horizontal runs of text, such as 2-digit numbers, in a vertical column (tate chu yoko). It's also important to provide appropriate support for text in scripts that are normally only horizontal. Also, there are often special requirements related to the orientation of characters within vertical text.</p>
 	
 	
-	<div id="placeholder_vertical_text">
-	</div>
-	
-	<script>
-	function displaySection (section_id, section, label) {
-	
-	out = '<dl class="reslinks">\n'
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_vertical_text">Vertical text</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#writing_modes_in_chinese_composition">Writing Modes in Chinese</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#major_differences_between_horizontal_and_vertical_writing_modes">Major Differences Between Horizontal and Vertical Writing Modes</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_vertical_arrangements_of_characters">Vertical arrangements of characters</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#japanese_and_western_mixed_text_composition">Japanese and Western Mixed Text Composition (including Horizontal-in-Vertical Text Composition)</a></li>
+<li><cite>Implementing Japanese Subtitles on Netflix</cite>: <a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#8caf">Vertical Subtitles</a><span class="dot">•</span><a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#877a">Tate-chu-yoko</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#para-direction">Writing Direction (Horizontal Writing, Vertical Writing)</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#hangulromanmix">Hangul and Latin Mixed Writing (Including Partial Horizontal Writing in Vertical Writing)</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_vertical_text">Vertical text</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=direction">Text direction (see Chinese, Japanese, Korean, Mongolian)</a></li>
+</ul>
+</dd>
 
-	// do background reading
-	if (section.background && section.background.length > 0) {
-		out += '<dt>Background reading</dt>\n<dd>\n'
-		if (section.background.length > 0) {
-			out += '<ul>\n'
-			for (let i=0;i<section.background.length;i++) {
-				if (section.background[i].url) out += '<li><cite><a target="_blank" href="'+section.background[i].url+'">'+section.background[i].title+'</a></cite> '
-				else out += '<li><cite>'+section.background[i].title+'</cite>: '
-				for (let j=0;j<section.background[i].sections.length;j++) {
-					if (j>0) out += '<span class="dot">•</span>'
-					out += '<a target="_blank" href="'+section.background[i].sections[j].url+'">'+section.background[i].sections[j].title+'</a>'
-					}
-				out += '</li>\n'
-				}
-			out += '</ul>\n'
-			}
-		out += '</dd>\n\n'
-		}
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:vertical-text">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:vertical-text">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:vertical-text">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:vertical-text">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:vertical-text">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:vertical-text">Type samples</a></li></ul>
+</dd>
 
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Writing Modes</cite>: <a target="_blank" href="https://drafts.csswg.org/css-writing-modes-3/#intro-text-layout">Introduction to Vertical Text Layout</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-writing-modes-3/#text-combine-upright"> Horizontal-in-Vertical Composition: the text-combine-upright property</a></li>
+</ul>
+</dd>
 
-	// do requirements
-	if (section.requirements.length > 0) {
-		out += '<dt>Requirements</dt>\n<dd>\n'
-		if (section.requirements.length > 0) {
-			out += '<ul>\n'
-			for (let i=0;i<section.requirements.length;i++) {
-				if (section.requirements[i].url) out += '<li><cite><a target="_blank" href="'+section.requirements[i].url+'">'+section.requirements[i].title+'</a></cite> '
-				else out += '<li><cite>'+section.requirements[i].title+'</cite>: '
-				for (let j=0;j<section.requirements[i].sections.length;j++) {
-					if (j>0) out += '<span class="dot">•</span>'
-					out += '<a target="_blank" href="'+section.requirements[i].sections[j].url+'">'+section.requirements[i].sections[j].title+'</a>'
-					}
-				out += '</li>\n'
-				}
-			out += '</ul>\n'
-			}
-		out += '</dd>\n\n'
-		}
-
-
-	// do github links
-	var githubLabels = ['type-info-request','spec-type-issue','browser-type-bug','useful-discussion']
-	var labelTitles = ['Requests for information','Spec issues','Browser bugs','Useful discussions']
-	var ghFound = false
-	out += '<dt>GitHub resources</dt>\n<dd>\n'
-	out += '<ul>\n'
-	out += '<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3A'+label+'">All issues</a></li>'
-
-	for (let i=0;i<githubLabels.length;i++) {
-		if (section[githubLabels[i]]) {
-			out += '<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3A'+githubLabels[i]+'%20label%3A'+label+'">'+labelTitles[i]+'</a>'
-			ghFound = true
-			}
-		}
-
-	if (section.samples) {
-		out += '<li><a target="_blank" href="https://w3c.github.io/type-samples/?feature='+label+'">Type samples</a>'
-		ghFound = true
-		}
-	if (! ghFound) out += '<li>None</li>'
-	out += '</ul>\n'
-	out += '</dd>\n\n'
-	
-	
-	// do specs
-	if (section.spec_links.length > 0) {
-		out += '<dt>Spec links</dt>\n<dd>\n'
-		out += '<ul>\n'
-		for (let i=0;i<section.spec_links.length;i++) {
-			if (section.spec_links[i].url) out += '<li><cite><a target="_blank" href="'+section.spec_links[i].url+'">'+section.spec_links[i].title+'</a></cite> '
-			else out += '<li><cite>'+section.spec_links[i].title+'</cite>: '
-		//out += '<li><cite>'+section.spec_links[i].title+'</cite>: '
-			for (let j=0;j<section.spec_links[i].sections.length;j++) {
-				if (j>0) out += '<span class="dot">•</span>'
-				out += '<a target="_blank" href="'+section.spec_links[i].sections[j].url+'">'+section.spec_links[i].sections[j].title+'</a>'
-				}
-			out += '</li>\n'
-			}
-		out += '</ul>\n'
-		}
-	out += '</dd>\n\n'
-
-		
-	// do tests
-	if (section.tests.length > 0) {
-		out += '<dt>Tests</dt>\n<dd>\n'
-		out += '<ul>\n'
-		for (let i=0;i<section.tests.length;i++) {
-			out += '<li><a target="_blank" href="'+section.tests[i][1]+'">'+section.tests[i][0]+'</a>'
-			}
-		out += '</ul>\n'
-		out += '</dd>'
-		}
-
-		
-	// do gap analysis
-	if (section.gap_analysis.length > 0) {
-		out += '<dt>Gap analysis</dt>\n<dd>\n'
-		out += '<ul class="linkList">\n'
-		for (let i=0;i<section.gap_analysis.length;i++) {
-			out += '<li><a target="_blank" href="'+section.gap_analysis[i][1]+'">'+section.gap_analysis[i][0]+'</a>'
-			}
-		out += '</ul>\n'
-		out += '</dd>'
-		}
-
-	out += '</dl>\n'
-
-	document.getElementById(section_id).innerHTML = out
-	}
-
-
-	displaySection("placeholder_vertical_text", vertical_text, 'i:vertical-text', 'vertical')
-	</script>
-	
-	
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-vertical-text">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/text_direction_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AVertical_text">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/writing-mode-vertical">CSS Writing Modes: Vertical text</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/horizontal-in-vertical.html">CSS Writing Modes: Horizontal in vertical</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#vertical_text">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#vertical_text">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#vertical_text">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#vertical_text">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#vertical_text">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-hu-gap/#vertical_text">Hungarian</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#vertical_text">Japanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/mong-gap/#vertical_text">Mongolian</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#vertical_text">Tamil</a></li></ul>
+</dd>
+</dl>
 </section>
   
   
@@ -222,9 +136,40 @@
     <h3>Bidirectional text</h3>
     <p>Scripts whose characters are typically written right-to-left, like Arabic, Hebrew, Thaana, and so on, become bidirectional when they include numbers or text from other scripts (such as Latin acronyms). Browsers and applications need to support bidirectionality. This means supporting the Unicode Bidirectional Algorithm, but also different visual locations of line start and end, isolation of embedded strings, correct line alignment, and so forth.</p>
  
- 	<div id="placeholder_bidi"></div>
-	<script>displaySection("placeholder_bidi", bidi_text, 'i:bidi-text')</script>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite><a target="_blank" href="https://www.w3.org/TR/html-bidi/">Additional Requirements for Bidi in HTML</a></cite> </li>
+<li><cite>Text Layout Requirements for the Arabic Script</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_direction">Direction</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=direction">Text direction</a></li>
+</ul>
+</dd>
 
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:bidi-text">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:bidi-text">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:bidi-text">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:bidi-text">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:bidi-text">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:bidi-text">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>HTML5</cite>: <a target="_blank" href="https://www.w3.org/TR/html5/dom.html#the-dir-attribute">The dir attribute</a></li>
+<li><cite>CSS3 Writing Modes</cite>: <a target="_blank" href="https://drafts.csswg.org/css-writing-modes-3/#text-direction">Inline direction and bidirectionality</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-dir-attribute">HTML5: dir basics</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-dir-attribute-isolation">HTML5: dir isolation</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/bidi-text-rendering">HTML5: Bidirectional text rendering</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-dir-attribute-auto">HTML5: dir=auto</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-bdo-element">HTML5: The bdo element</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-dirname-attribute">HTML5: The dirname attribute</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/native-user-interfaces">HTML5: Native user interfaces</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/writing-modes-bidi">CSS Writing Modes: Bidi</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#bidi_text">Arabic &amp; Persian</a></li></ul>
+</dd>
+</dl>
 </section>
 </section>
 
@@ -232,33 +177,140 @@
 
 
 
-<section id="characters_and_phrases">
-  <h2>Characters &amp; phrases</h2>
 
-  
-<section id="charset">
-    <h3>Characters &amp; encodings</h3>
-<p>Most languages are now supported by Unicode, but there are still occasional issues. In particular, there may be issues related to ordering of characters, or competing encodings (as in Myanmar), or standardisation of variation selectors or the encoding model (as in Mongolian).</p>
-<div id="placeholder_charset"></div>
-	<script>displaySection("placeholder_charset", charset, 'i:charset')</script>
 
-</section>
 
-   
-   
-  
-    
-  
+
+
+
+<section id="shaping">
+<h2>Glyph shaping &amp; positioning</h2>
+
   
 <section id="fonts">
-    <h3>Fonts</h3>
-  <p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically. In some scripts it is common to use different fonts for headings or emphasis, rather than bolding or italicisation. Fallback font families used by browsers (eg. serif, sans-serif, cursive, etc.) may need to be mapped differently to fonts for different scripts. For example, Khmer has slanted, upright, and round font styles, and Arabic has naskh, nasta'liq, ruq'a, kano, etc., which may need special handling. Special OpenType features may  need to be supported.</p>
+<h3>Fonts &amp; font styles</h3>
+
+<p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically. In some scripts it is common to use different fonts for headings or emphasis, rather than bolding or italicisation. Fallback font families used by browsers (eg. serif, sans-serif, cursive, etc.) may need to be mapped differently to fonts for different scripts. For example, Khmer has slanted, upright, and round font styles, and Arabic has naskh, nasta'liq, ruq'a, kano, etc., which may need special handling. Special OpenType features may  need to be supported.</p>
+
 <p>See also [[[#font_style]]]</p>
 
-  <div id="placeholder_fonts"></div>
-	<script>displaySection("placeholder_fonts", fonts, 'i:fonts')</script>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#commonly_used_chinese_typefaces">Typefaces for Chinese Characters</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-letterfaceposn">'Letter Face Position in Character Frame' Standard</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-kerning">Kerning for Hangul Fonts</a></li>
+</ul>
+</dd>
 
-  </section>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:fonts">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:fonts">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:fonts">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:fonts">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:fonts">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:fonts">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite><a target="_blank" href="https://drafts.csswg.org/css-fonts/">CSS3 Fonts</a></cite> </li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/default-font">Exploratory: Language-specific default fonts</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/cher-gap/#fonts">Cherokee</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#fonts">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/java-gap/#fonts">Javanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/mong-gap/#fonts">Mongolian</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+  
+<section id="glyphs">
+<h3>Context-based shaping &amp; positioning</h3>
+
+<p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted. In addition, controls (based on Unicode characters or otherwise) may allow the user to control the shaping and positioning of glyphs, for example to compose/decompose conjuncts in brahmi-derived scripts.</p>
+
+<p>See also the separate section [[[#cursive]]]. </p>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_ligatures">Ligatures</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_diacritics">Diacritics</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_diacritic_position">Positioning diacritics relative to base characters</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=shaping">Glyph shaping &amp; positioning</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:glyphs">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:glyphs">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:glyphs">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:glyphs">Browser bugs</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:glyphs">Type samples</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#glyphs">Arabic &amp; Persian</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="cursive">
+<h3>Cursive text</h3>
+
+<p>In  scripts such as Arabic, Mongolian and N'Ko adjacent characters are joined together in normal printed text. It is important to ensure that those connections can be maintained correctly when characters are forced apart, or when transparency is applied to the text, etc. There are also situations where cursive joining behaviour exists when there is no adjacent character, or where joining needs to be disabled between glyphs. Cursive links shouldn't be broken by appropriate markup or styling. Etc.</p>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_joining">Joining</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_letterhighlights">Special requirements when dealing with cursive glyphs</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_typography">Arabic Script and Typography</a></li>
+<li><cite>N'Ko Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/nkoo-lreq/#cursive">Cursive text</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=cursive">Cursive script (esp. Arabic, Syriac, Urdu, Rohingya, Mongolian, N'Ko, Pular, Assyrian, Turoyo, Kashmiri, Mandaic)</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:cursive">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:cursive">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:cursive">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:cursive">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:cursive">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:cursive">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text/#boundary-shaping">Shaping Across Element Boundaries</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-cursive">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3ACursive_text+">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/css-text-shaping">CSS3 Text, Cursive joining</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/cursive">Exploratory: Cursive behaviour</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#cursive">Arabic &amp; Persian</a></li><li><a target="_blank" href="https://www.w3.org/TR/nkoo-gap/#cursive">N’Ko</a></li></ul>
+</dd>
+</dl>
+</section>
 
    
    
@@ -266,131 +318,457 @@
     
   
   
-  <section id="font_style">
-    <h3>Font styles, weight, etc.</h3>
-    <p>In CSS, italic and oblique are described as font styles. Non-Latin script can add requirements for such styling.  For example, oblique styles in Arabic or Hebrew scripts text may lean to the left. Proper italic glyphs in Cyrillic text can look very different from normal variants, and so synthesising italics can produce poor results. Chinese, Japanese and Korean fonts almost always lack italic or oblique faces, because those are not native typographic traditions. Bold text is similar in usage and in problems to the use of italics. Control and use of font-weight is also relevant to this section.</p>
+<section id="font_style">
+<h3>Letterform slopes, weights, &amp; italics</h3>
+
+<p>In CSS, italic and oblique are described as font styles. Non-Latin script can add requirements for such styling.  For example, oblique styles in Arabic or Hebrew scripts text may lean to the left. Proper italic glyphs in Cyrillic text can look very different from normal variants, and so synthesising italics can produce poor results. Chinese, Japanese and Korean fonts almost always lack italic or oblique faces, because those are not native typographic traditions. Bold text is similar in usage and in problems to the use of italics. Control and use of font-weight is also relevant to this section.</p>
+
 <p>See also [[[#fonts]]].</p>
- 
-	<div id="placeholder_font_style"></div>
-	<script>displaySection("placeholder_font_style", font_style, 'i:font-style')</script>
-
-  </section>
-
-  
-  
-  <section id="glyphs">
-    <h3>Glyph shaping &amp; positioning</h3>
-    <p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted. In addition, controls (based on Unicode characters or otherwise) may allow the user to control the shaping and positioning of glyphs, for example to compose/decompose conjuncts in brahmi-derived scripts.</p>
-<p>See also the separate section [[[#cursive]]]. </p>
- 
-	<div id="placeholder_glyphs"></div>
-	<script>displaySection("placeholder_glyphs", glyphs, 'i:glyphs')</script>
-
-  </section>
 
 
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_writing_styles">Writing Styles</a></li>
+<li><cite>Implementing Japanese Subtitles on Netflix</cite>: <a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#6d57">Slanted Text</a></li>
+<li><cite>An Introduction to Writing Systems &amp; Unicode</cite>: <a target="_blank" href="https://r12a.github.io/scripts/tutorial/part6#italics">Italics (Cyrillic)</a></li>
+<li><cite>Khmer layout requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_font_styles">Font styles</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=fontstyle">Font styles (esp. Tibetan, Thai, Arabic, Hebrew, N'Ko, Pular, Russian, Uighur)</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:font-style">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:font-style">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:font-style">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:font-style">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:font-style">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS Fonts</cite>: <a target="_blank" href="https://drafts.csswg.org/css-fonts/#font-style-prop">Font style: the font-style property</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-fonts/#font-weight-prop">Font weight: the font-weight property</a></li>
+</ul>
+</dd>
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#font_style">Arabic &amp; Persian</a></li></ul>
+</dd>
+</dl>
+</section>
 
 
-
-
-  <section id="cursive">
-    <h3>Cursive text</h3>
-    <p>In  scripts such as Arabic, Mongolian and N'Ko adjacent characters are joined together in normal printed text. It is important to ensure that those connections can be maintained correctly when characters are forced apart, or when transparency is applied to the text, etc. There are also situations where cursive joining behaviour exists when there is no adjacent character, or where joining needs to be disabled between glyphs. Cursive links shouldn't be broken by appropriate markup or styling. Etc.</p>
- 
-	<div id="placeholder_cursive"></div>
-	<script>displaySection("placeholder_cursive", cursive, 'i:cursive')</script>
-
-  </section>
 
 
 
 
 
 <section id="transforms">
-    <h3>Transforming characters</h3>
-    <p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language. In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
-   
-	<div id="placeholder_transforms"></div>
-	<script>displaySection("placeholder_transforms", transforms, 'i:transforms')</script>
+<h3>Transforming characters</h3>
 
-  </section>
+<p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language. In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
 
 
-  <section id="segmentation">
-    <h3>Grapheme/word segmentation &amp; selection</h3>
-    <p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
-    <p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
-   
-	<div id="placeholder_segmentation"></div>
-	<script>displaySection("placeholder_segmentation", segmentation, 'i:segmentation')</script>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>r12a blog</cite>: <a target="_blank" href="https://r12a.github.io/blog/201512.html#20160907">Notes on case conversion</a><span class="dot">•</span><a target="_blank" href="https://r12a.github.io/blog/201512.html#20161106">Bicameral scripts</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=transforms">Case &amp; other character transforms (esp. Armenian, Georgian, Greek, Osage, Pular, Russian, Cherokee, Hausa [latn])</a></li>
+</ul>
+</dd>
 
-  </section>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:transforms">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:transforms">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:transforms">Spec issues</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-3/#transforming">Transforming text</a></li>
+<li><cite><a target="_blank" href="https://specs.rivoal.net/css-custom-tt/">CSS Custom Text transformations</a></cite> </li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/text-transform">CSS3 Text: text transform</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/cher-gap/#transforms">Cherokee</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#transforms">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#transforms">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/grek-gap/#transforms">Greek</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#transforms">Japanese</a></li></ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="typographic_units">
+<h2>Typographic units</h2>
+
+  
+<section id="charset">
+<h3>Characters &amp; encodings</h3>
+
+<p>Most languages are now supported by Unicode, but there are still occasional issues. In particular, there may be issues related to ordering of characters, or competing encodings (as in Myanmar), or standardisation of variation selectors or the encoding model (as in Mongolian).</p>
+
+
+<dl class="reslinks">
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:charset">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:charset">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:charset">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:charset">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:charset">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:charset">Type samples</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/mong-gap/#charset">Mongolian</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#charset">Punjabi</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="segmentation">
+<h3>Grapheme/word segmentation &amp; selection</h3>
+
+<p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
+
+<p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_segmentation">Text Segmentation</a></li>
+<li><cite>Bengali Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/bengali/#h_graphemes">Grapheme boundaries</a><span class="dot">•</span><a target="_blank" href="https://w3c.github.io/iip/bengali/#h_words">Word boundaries</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#characters_and_the_principles_of_setting_them_for_chinese_composition">Characters and Principles for Setting them in Chinese Composition</a></li>
+<li><cite>Devanagari Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_graphemes">Grapheme boundaries</a><span class="dot">•</span><a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_words">Word boundaries</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_indic_orthographic_syllable_boundaries">Indic orthographic syllable boundaries</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/ilreq/#h_text_segmentation">Text segmentation</a></li>
+<li><cite>Khmer Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_words">Word boundaries</a><span class="dot">•</span><a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_zwsp">Zero-width space (ZWSP) &amp; Word-joiner (WJ)</a></li>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#selection_rules">Selection rules</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#cursor_movement">Cursor movement rules</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#mouse_pointer">Mouse pointer rules</a></li>
+<li><cite>Thai Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/thai/#h_words">Word boundaries</a><span class="dot">•</span><a target="_blank" href="https://w3c.github.io/sealreq/thai/#h_zwsp">Zero-width space (ZWSP) &amp; Word-joiner (WJ)</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#tibetan_syllables">Tibetan Syllables</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/tlreq/#text_segmentation">Text Segmentation in Tibetan</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=graphemes">Grapheme boundaries</a><span class="dot">•</span><a target="_blank" href="https://r12a.github.io/scripts/switch?section=word">Word boundaries</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:segmentation">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:segmentation">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:segmentation">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:segmentation">Browser bugs</a></li></ul>
+</dd>
+
+
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-grapheme-word-segmentation">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AGrapheme_word">Exploratory/interactive test repo</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#segmentation">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#segmentation">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#segmentation">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#segmentation">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#segmentation">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/java-gap/#segmentation">Javanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#segmentation">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="characters_and_phrases">
+<h2>Punctuation &amp; inline features</h2>
+
 
 
 <section id="punctuation_etc">
-    <h3>Punctuation &amp; other inline features</h3>
-    <p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text.</p>
+<h3>Phrase &amp; section boundaries</h3>
+
+<p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text.</p>
+
 <p>Another aspect of this relates to separation of characters or items in text. For example, French inserts a particular type of space before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
+
 <p>Other special inline markers may appear when handling abbreviation, ellipsis, and iteration, bracketing information, or demarcating things such as proper nouns, etc. </p>
+
 <p>See also [[[#text_decoration]]], [[[#quotations]]], and [[[#inline_notes]]], which are broken out into separate sections.</p>
 
-	<div id="placeholder_punctuation_etc"></div>
-	<script>displaySection("placeholder_punctuation_etc", punctuation_etc, 'i:punctuation-etc')</script>
 
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Bengali Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/bengali/#h_danda">Phrase boundaries: Danda &amp; double danda</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#categories_and_usage_of_punctuation_marks">Categories and Usage of Punctuation Marks</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">Sizes and positions of Punctuation Marks</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#atypical_punctuation_marks_and_their_arrangements">Atypical punctuation marks and their composition</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks">Punctuation marks in Chinese</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#h-unbreakable_marks_punctuation">Prohibition Rules for Unbreakable Marks</a></li>
+<li><cite>Devanagari Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_danda">Phrase boundaries: Danda &amp; double danda</a></li>
+<li><cite>Ethiopic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/elreq/#punctuation">Punctuation</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-punctuationcodes">Hangul Punctuation Mark Code Ranges based on Unicode</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-horizvertpunct">Hangul Punctuation Marks in Horizontal and Vertical Writing</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-faceposnparens">Arrangement of 'Letter Face Position in Character Frame' for Full Width Parentheses</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#fonts-facepos-punc">Arrangement of 'Letter Face Position in Character Frame' for Punctuation</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_guiding_principles_line_breaking_indian_languages">Guiding principles of Line breaking for Indian languages</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#characters_used_for_japanese_composition">Characters Used for Japanese Composition</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#line_composition_rules_for_punctuation_marks">Line Composition Rules for Punctuation Marks</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen">Examples of Items Jutting Out of the Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#character_positioning_based_on_kihonhanmen_design">Character Positioning based on Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#grouping_of_characters_and_symbols_depending_on_their_positioning">Design Grouping of Characters and Symbols depending on their Positioning</a></li>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#punctuation_rules">Punctuation rules</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#mongolian_space">Display rules for Mongolian space</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#punctuation">Tibetan Punctuation</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/tlreq/#character_list">Character List</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=inline">Punctuation &amp; inline features</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:punctuation-etc">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:punctuation-etc">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:punctuation-etc">Spec issues</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:punctuation-etc">Type samples</a></li></ul>
+</dd>
+</dl>
 </section>
   
+  
+
+
+
+
+
+
+
+
+<section id="quotations">
+<h3>Quotations &amp; citations</h3>
+
+<p>Quotation marks vary from language to language, not just from script to script. Also, you should expect variations in behavior when quotation marks are nested. Furthermore, the quotation marks used for vertical Japanese text are not the same as those typically used for the same text when horizontally laid out.</p>
+
+<p>See also [[[#punctuation_etc]]].</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Layout Requirements, Quotations</cite>: <a target="_blank" href="https://w3.org/International/ilreq/bengali/#h_quotations">Bengali</a><span class="dot">•</span><a target="_blank" href="https://w3.org/International/ilreq/devanagari/#h_quotations">Devanagari</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#quotation">Ethiopic</a><span class="dot">•</span><a target="_blank" href="https://w3.org/International/sealreq/javanese/#h_quotations">Javanese</a><span class="dot">•</span><a target="_blank" href="https://w3.org/International/sealreq/khmer/#h_quotations">Khmer</a><span class="dot">•</span><a target="_blank" href="https://w3.org/International/sealreq/lao/#h_quotations">Lao</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/ilreq-taml/#h_quotations">Tamil</a><span class="dot">•</span><a target="_blank" href="https://w3.org/International/sealreq/thai/#h_quotations">Thai</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#line_head_indent_and_line_end_indent">Line Head Indent and Line End Indent</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#processing_of_spaces_between_paragraphs">Processing of Spaces between Paragraphs</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#adjustment_of_processing_of_realm_in_block_direction">Adjustment of Processing of Realm in Block Direction</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#differences_in_vertical_and_horizontal_composition_in_use_of_punctuation_marks">Differences in Vertical and Horizontal Composition in Use of Punctuation Marks</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#writing-dir-mark">Changing Punctuation Marks Depending on Writing Direction</a></li>
+<li><cite>Wikipedia</cite>: <a target="_blank" href="https://en.wikipedia.org/wiki/Quotation_mark">Quotations</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=quotations">Quotations</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:quotations">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:quotations">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:quotations">Spec issues</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:quotations">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>HTML5</cite>: <a target="_blank" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-q-element">The q element</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element">The blockquote element</a></li>
+<li><cite>CSS3 Generated and Replaced Content</cite>: <a target="_blank" href="https://www.w3.org/TR/css-content-3/#quotes">Specifying quotes with the 'quotes' property</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-quotations">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/character_phrase_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AQuotations">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/the-q-element.html">The q element</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#quotations">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#quotations">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#quotations">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#quotations">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#quotations">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/grek-gap/#quotations">Greek</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#quotations">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#quotations">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-hu-gap/#quotations">Hungarian</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#quotations">Japanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/java-gap/#quotations">Javanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/laoo-gap/#quotations">Lao</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#quotations">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
+  
+
+
+
+
+
 
 
 
 <section id="text_decoration">
-    <h3>Text decoration</h3>
-    <p>Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over. Also, for many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc.</p>
-      
-	<div id="placeholder_text_decoration"></div>
-	<script>displaySection("placeholder_text_decoration", text_decoration, 'i:text-decoration')</script>
+<h3>Emphasis</h3>
 
-	<p>See also [[[#punctuation_etc]]].</p>
+<p>Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over. Also, for many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc.</p>
+
+<p>See also [[[#punctuation_etc]]].</p>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Fullwidth low line</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Emphasis Dots</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#handling_interlinear_punctuation">Handling Interlinear Punctuation</a></li>
+<li><cite><a target="_blank" href="https://en.wikipedia.org/wiki/Underscore#Underlines_in_Chinese">Wikipedia: Underlines in Chinese</a></cite> </li>
+<li><cite>Ethiopic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/elreq/#h_emphasis">Emphasis</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#emphasis_within_prose">Emphasis Within Prose</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#emphasis_with_wordspace">Emphasis With Ethiopic Wordspace</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#section_headings">Section Headings</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen">Examples of Items Jutting Out of the Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#line_gap_arrangement_with_ruby_and_other_objects">Line Gap Arrangement with Ruby and Other Objects</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#composition_of_emphasis_dots">Composition of Emphasis Dots</a></li>
+<li><cite>Implementing Japanese Subtitles on Netflix</cite>: <a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#8329">Boutens</a></li>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_text_decoration">Text decoration</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#emphasis_and_highlighting">Text Emphasis and Highlighting</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:text-decoration">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:text-decoration">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:text-decoration">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:text-decoration">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:text-decoration">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text Decoration</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-decor-3/#line-decoration">Line Decoration: Underline, Overline, and Strike-Through</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-text-decor-3/#emphasis-marks">Emphasis Marks</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-decoration">CSS3 Text decoration, Line decoration</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/emphasis-marks">CSS3 Text decoration, emphasis marks</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#text_decoration">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#text_decoration">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#text_decoration">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#text_decoration">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#text_decoration">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#text_decoration">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#text_decoration">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#text_decoration">Japanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#text_decoration">Tamil</a></li></ul>
+</dd>
+</dl>
 </section>
-  
-  
-  
 
 
-  <section id="quotations">
-    <h3>Quotations</h3>
-    <p>Quotation marks vary from language to language, not just from script to script. Also, you should expect variations in behavior when quotation marks are nested. Furthermore, the quotation marks used for vertical Japanese text are not the same as those typically used for the same text when horizontally laid out.</p>
-       
-	<div id="placeholder_quotations"></div>
-	<script>displaySection("placeholder_quotations", quotations, 'i:quotations')</script>
 
-	<p>See also [[[#punctuation_etc]]].</p>
-  </section>
-  
+
+
+
   
 
 
-  <section id="inline_notes">
-    <h3>Inline notes &amp;  annotations</h3>
-    <p>Ruby is used for  phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. In addition to positioning annotations along the correct side of the base text, there are many fine adjustments of the annotation and base text to support.  Warichu is a kind of inline annotation where the note text is two approximately equal lines of half sized text, one above the other, but both within the normal line height.</p>
-        
-	<div id="placeholder_annotations"></div>
-	<script>displaySection("placeholder_annotations", inline_notes, 'i:inline-notes')</script>
+<section id="inline_notes">
+<h3>Inline notes &amp;  annotations</h3>
 
-	<p>See also [[[#footnotes_etc]]].</p>
-  </section>
+<p>Ruby is used for  phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. In addition to positioning annotations along the correct side of the base text, there are many fine adjustments of the annotation and base text to support.  Warichu is a kind of inline annotation where the note text is two approximately equal lines of half sized text, one above the other, but both within the normal line height.</p>
+
+<p>See also [[[#footnotes_etc]]].</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#interlinear_annotations">Interlinear annotations</a></li>
+<li><cite><a target="_blank" href="https://r12a.github.io/scripts/bopomofo/ontheweb">Bopomofo on the Web</a></cite> </li>
+<li><cite>The Manual of the Phonetic Symbols of the Mandarin Script</cite>: <a target="_blank" href="http://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_en/index.html">english</a><span class="dot">•</span><a target="_blank" href="http://language.moe.gov.tw/001/Upload/files/site_content/M0001/juyin/html_ch/index.html">chinese</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">Ruby and Emphasis Dots</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#positioning_of_jukugoruby">Positioning of Jukugo-ruby</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#superscripts_and_superscripts">Superscripts and Superscripts</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#furiwake_processing">Furiwake Processing</a></li>
+<li><cite>r12a blog</cite>: <a target="_blank" href="https://r12a.github.io/blog/201002.html#20100924">What’s so difficult about jukugo ruby?</a></li>
+<li><cite><a target="_blank" href="https://www.w3.org/TR/ruby-use-cases/">Use Cases &amp; Exploratory Approaches for Ruby Markup</a></cite> </li>
+<li><cite>Implementing Japanese Subtitles on Netflix</cite>: <a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#2ca1">Rubies</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=inlinenotes">Inline notes &amp; annotations</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:inline-notes">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:inline-notes">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:inline-notes">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:inline-notes">Browser bugs</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:inline-notes">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>HTML5</cite>: <a target="_blank" href="https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element">The ruby element</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/html5/textlevel-semantics.html#the-sub-and-sup-elements">The sub and sup elements</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element">The blockquote element</a></li>
+<li><cite><a target="_blank" href="https://drafts.csswg.org/css-ruby-1/">CSS3 Ruby</a></cite> </li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/ruby-html">HTML5: The ruby element and its children</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/css-ruby">CSS Ruby</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#inline_notes">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#inline_notes">Japanese</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
 
 
 
 
 <section id="data_formats">
- <h3>Data formats &amp; numbers</h3>
-    <p>Relevant here are formats related to number, currency, dates, personal names, addresses, and so forth. Also, some scripts have one or sometimes more sets of their own numeric characters. In some cases, numeric characters represent numbers like 100, or 10,000. Numeric formats can also vary significantly, in terms not only of the separators and negative signs used, but also the groupings used for digits, and sometimes the mechanisms used to distinguish numbers from the text.</p>
-	
-<div id="placeholder_data_formats"></div>
-	<script>displaySection("placeholder_data_formats", data_formats, 'i:data-formats')</script>
+<h3>Data formats &amp; numbers</h3>
 
-	<p>See also <a href="#lists"></a>.</p>
-  </section>
+<p>Relevant here are formats related to number, currency, dates, personal names, addresses, and so forth. Also, some scripts have one or sometimes more sets of their own numeric characters. In some cases, numeric characters represent numbers like 100, or 10,000. Numeric formats can also vary significantly, in terms not only of the separators and negative signs used, but also the groupings used for digits, and sometimes the mechanisms used to distinguish numbers from the text.</p>
+
+<p>See also <a href="#lists"></a>.</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_numbers">Numbers</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=numbers">Numbers</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:data-formats">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:data-formats">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:data-formats">Spec issues</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:data-formats">Type samples</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#data_formats">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#data_formats">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#data_formats">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#data_formats">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#data_formats">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#data_formats">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#data_formats">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
 
 
 
@@ -399,14 +777,15 @@
 
 
 
-  <!--section id="more_inline">
-    <h3>Other inline features</h3>
-    <p>A script may call for other inline features than those mentioned above. An example in Japanese is <span class="qterm">kumimoji</span>. Kumimoji is a way of combining several characters into a single character space. Syriac and Ethiopic identify numbers by drawing lines above them: the line extends to the width of the number. Arabic also has special characters that stretch to the length of certain numbers. There may be other such inline features in these and other scripts.</p>
-    <dl class="reslinks">
-      <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><cite>Japanese Layout Requirements</cite>:
+<section id="more_inline">
+<h3>Other inline features</h3>
+
+<p>A script may call for other inline features than those mentioned above. An example in Japanese is <span class="qterm">kumimoji</span>. Kumimoji is a way of combining several characters into a single character space. Syriac and Ethiopic identify numbers by drawing lines above them: the line extends to the width of the number. Arabic also has special characters that stretch to the length of certain numbers. There may be other such inline features in these and other scripts.</p>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Japanese Layout Requirements</cite>:
 <ul class="linkList">
 <li><a href="https://w3c.github.io/jlreq/#inline_cutting_note"> Inline Cutting Note (Warichu)</a></li>
 <li><a href="https://w3c.github.io/jlreq/#furiwake_processing"> Furiwake Processing</a></li>
@@ -414,31 +793,47 @@
 </ul>
 </li>
 </ul>
-      </dd>
-      <dt>GitHub resources</dt>
-      <dd>
-        <ul>
-          <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">Requests for information</a></li>
-          <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Aspec-type-issue">Spec issues</a>
-          </li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Abrowser-type-bug">Browser bugs</a>
-          </li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=inline-features">Type samples</a></li>
-        </ul>
-      </dd>
-      <dt>Spec links</dt>
-      <dd>
-        <ul>
-          <li><cite>tbd</cite></li>
-        </ul>
-      </dd>
-      <dt>Tests</dt>
-      <dd>
-        <ul>
-          <li>tbd</li>
-        </ul>
-      </dd>
-    </dl>
-  </section-->
+</dd>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">Requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Aspec-type-issue">Spec issues</a>
+</li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Abrowser-type-bug">Browser bugs</a>
+</li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=inline-features">Type samples</a></li>
+</ul>
+</dd>
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>tbd</cite></li>
+</ul>
+</dd>
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>tbd</li>
+</ul>
+</dd>
+</dl>
 </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -451,93 +846,399 @@
  
 
 
-  
 <section id="line_breaking">
-  <h3>Line breaking</h3>
-  <p>There are often specific rules about how scripts behave when a line is wrapped. For example,   Chinese, Japanese and Korean tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words. Others break lines at syllable boundaries. (See below for hyphenation.)</p>
-  <p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
+<h3>Line breaking</h3>
+
+<p>There are often specific rules about how scripts behave when a line is wrapped. For example,   Chinese, Japanese and Korean tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words. Others break lines at syllable boundaries. (See below for hyphenation.)</p>
+
+<p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
+
 <p>See also [[[#hyphenation]]], which is broken out into a separate section.</p>
-         
-	<div id="placeholder_line_breaking"></div>
-	<script>displaySection("placeholder_line_breaking", line_breaking, 'i:line-breaking')</script>
 
-  </section>
-  
-  
-  <section id="hyphenation">
-    <h3>Hyphenation</h3>
-    <p>Hyphenation in this sense means identifying broken words after text is wrapped at line end (and not only those involving a hyphen character). See [[[#punctuation_etc]]] for information about the use of regular hyphens in text. Some writing systems don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
-          
-	<div id="placeholder_hyphenation"></div>
-	<script>displaySection("placeholder_hyphenation", hyphenation, 'i:hyphenation')</script>
+<dl class="reslinks">
+<dt>Background reading</dt>
+<dd>
+<ul>
+<li><cite><a target="_blank" href="https://www.w3.org/International/articles/typography/linebreak">Approaches to line breaking</a></cite> </li>
+</ul>
+</dd>
 
-  </section>
-  
-  
-  
-  
-  
-  
-  
-  <section id="justification">
-    <h3>Text alignment &amp; justification</h3>
-<p>Typographers have come up with various methods for effective full justification – causing the text to completely fill the line, in order to create visual alignment on both edges of a paragraph.    </p>
-    <p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
-          
-	<div id="placeholder_justification"></div>
-	<script>displaySection("placeholder_justification", justification, 'i:justification')</script>
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_line_breaking">Line breaking</a></li>
+<li><cite>Bengali Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/bengali/#h_line_breaking">Line breaking</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#prohibition_rules_for_line_start_end">Prohibition Rules for Line Start and Line End</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#prohibition_rules_for_unbreakable_marks">Prohibition Rules for Unbreakable Marks</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#hanging_punctuation_marks_at_line_end">Hanging Punctuation at Line End</a></li>
+<li><cite>Devanagari Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_line_breaking">Line breaking</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_guiding_principles_line_breaking_indian_languages">Guiding principles of Line breaking for Indian languages</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#possibilities_for_linebreaking_between_characters">Possibilities for Line-breaking between Characters</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#line-break">Line Breaking Rules</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc</a></li>
+<li><cite>Javanese Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/javanese/#h_line_breaking">Line breaking</a></li>
+<li><cite>Lao script layout requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/lao/#h_line_breaking">Line breaking</a></li>
+<li><cite>Khmer script layout requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_line_breaking">Line breaking</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_line_breaking">Line breaking</a></li>
+<li><cite><a target="_blank" href="http://pioneer.netserv.chula.ac.th/%7Eawirote/ling/snlp2007-wirote.pdf">Thoughts on Word and Sentence Segmentation in Thai</a></cite> </li>
+<li><cite>Tamil Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq-taml/#h_line_breaking">Line breaking</a></li>
+<li><cite>Thai Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/thai/#h_line_breaking">Line breaking</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#line_breaking">Line breaking</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=linebreak">Line breaking &amp; hyphenation</a></li>
+</ul>
+</dd>
 
-  </section>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:line-breaking">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:line-breaking">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:line-breaking">Spec issues</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-3/#line-breaking">Line Breaking and Word Boundaries</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-line-breaking">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3ALine_breaking">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-breaking">CSS Text: Line breaking</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-breaks-glwj">CSS Text: Non-tailorable line breaking</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/line-breaks-jazh">CSS Text: Japanese &amp; Chinese line breaks</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/word-break">CSS Text: Word-break</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#line_breaking">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#line_breaking">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#line_breaking">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/java-gap/#line_breaking">Javanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/khmr-gap#line_breaking">Khmer</a></li><li><a target="_blank" href="https://www.w3.org/TR/laoo-gap/#line_breaking">Lao</a></li></ul>
+</dd>
+</dl>
+</section>
   
-  
-
-    <section id="spacing">
-    <h3>Text spacing </h3>
-    <p>This section is   concerned with spacing that is adjusted around and between characters on a line that is driven by aims different from the full line justification described in the previous section, although it will affect line layout. Examples follow. Many scripts create emphasis or other effects by moving apart the letters or syllables in a word. (This may even apply in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.) Other times, increasing or decreasing the typical space between characters aids readability. Scripts used for Japanese or Chinese may also seek to reduce space between adjacent punctuation, to avoid large gaps. On the other hand, it may be necessary to add a gap around embedded numbers or Latin text in scripts that don't normally use spaces around words. Some scripts prefer to indent the first line of a paragraph, rather than leave vertical gaps between paragraphs. And in some scripts space needs to be carefully controlled before and after certain punctuation marks, such as in French or Thai.</p>
-<div id="placeholder_letter_spacing"></div>
-	<script>displaySection("placeholder_letter_spacing", spacing, 'i:spacing')</script>
-
-  </section>
 
 
 
 
 
-  <section id="baselines">
-    <h3>Baselines, line-height, etc.</h3>
-    <p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly. The complexity of characters in a script may affect line height settings. However, some scripts also expect larger inter-line gaps than others, in addition to the line height. This section covers these and other factors related to vertical spacing of lines.</p>
-              
-	<div id="placeholder_baselines"></div>
-  <script>displaySection("placeholder_baselines", baselines, 'i:baselines')</script>
 
+<section id="hyphenation">
+<h3>Hyphenation</h3>
+
+<p>Hyphenation in this sense means identifying broken words after text is wrapped at line end (and not only those involving a hyphen character). See [[[#punctuation_etc]]] for information about the use of regular hyphens in text. Some writing systems don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_hyphenation">Hyphenation</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#hyphenation">Hyphenation</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=linebreak">Line breaking &amp; hyphenation</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:hyphenation">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:hyphenation">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:hyphenation">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:hyphenation">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:hyphenation">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-3/#hyphenation"> Hyphenation: the hyphens property</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-line-breaking">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3ALine_breaking">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/hyphens">CSS Text: Hyphens</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#hyphenation">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-hu-gap/#hyphenation">Hungarian</a></li><li><a target="_blank" href="https://www.w3.org/TR/java-gap/#hyphenation">Javanese</a></li></ul>
+</dd>
+</dl>
 </section>
 
 
 
 
 
+
+
+
+
+<section id="justification">
+<h3>Text alignment &amp; justification</h3>
+
+<p>Typographers have come up with various methods for effective full justification – causing the text to completely fill the line, in order to create visual alignment on both edges of a paragraph.    </p>
+
+<p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
+
+<dl class="reslinks">
+<dt>Background reading</dt>
+<dd>
+<ul>
+<li><cite><a target="_blank" href="https://www.w3.org/International/articles/typography/justification">Approaches to full justification</a></cite> </li>
+</ul>
+</dd>
+
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_justification">Justification</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_justification_kashida">Kashida</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_justification_tatweel">Tatweel</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/alreq/#h_combination_of_the_mechanisms">Combination of the Mechanisms</a></li>
+<li><cite><a target="_blank" href="https://www.tug.org/tugboat/tb27-2/tb87benatia.pdf">Arabic text justification</a></cite> </li>
+<li><cite><a target="_blank" href="http://quod.lib.umich.edu/j/jep/3336451.0013.105?view=text;rgn=main">Justify Just or Just Justify (Arabic)</a></cite> </li>
+<li><cite><a target="_blank" href="https://r12a.github.io/blog/201110.html#20140523">Typography questions for HTML &amp; CSS: Arabic justification</a></cite> </li>
+<li><cite><a target="_blank" href="http://www.cle.org.pk/Publication/papers/2004/rule-based-expert-system.pdf">Rule-based expert system for Urdu nastaleeq justification</a></cite> </li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#composition_of_chinese_and_western_mixed_text">Composition of Chinese and Western Mixed Texts</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#paragraph_adjustment_rules">Paragraph Adjustment Rules</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#punctuation_width_adjustment">Punctuation Width Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#line_adjustment">Line Adjustment</a></li>
+<li><cite>Ethiopic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/elreq/#ethiopic_justification">Justification</a></li>
+<li><cite><a target="_blank" href="https://www.unicode.org/L2/L2015/15148-ethiopic-wordspace.pdf">Proposal to Reclassify Ethiopic Wordspace as a Space Separator (Zs) Symbol</a></cite> </li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#paraadjust">Paragraph Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/klreq/#line-adjust">Line Adjustment Process</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#line_adjustment">Line Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_reduction_during_line_adjustment">Opportunities for Inter-character Space Reduction during Line Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#opportunities_for_intercharacter_space_expansion_during_line_adjustment">Opportunities for Inter-character Space Expansion during Line Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#paragraph_adjustment_rules">Paragraph Adjustment Rules</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#justification">Justification</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation">Paragraphs and indentation</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_textalign">Text alignment</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#punctuation_marks">Justification</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=justification">Text alignment &amp; justification</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:justification">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:justification">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:justification">Spec issues</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:justification">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-3/#justification">Alignment and Justification</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-text-3/#edge-effects">Edge effects</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-text-alignment-justification">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AText_alignment_justification">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/text-align">CSS3 Text: text-align, text-align-last, text-justify</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/exploring-justify-space">Exploratory tests: Justification &amp; letter-spacing</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#justification">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#justification">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#justification">Ethiopic</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="spacing">
+<h3>Text spacing </h3>
+
+<p>This section is   concerned with spacing that is adjusted around and between characters on a line that is driven by aims different from the full line justification described in the previous section, although it will affect line layout. Examples follow. Many scripts create emphasis or other effects by moving apart the letters or syllables in a word. (This may even apply in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.) Other times, increasing or decreasing the typical space between characters aids readability. Scripts used for Japanese or Chinese may also seek to reduce space between adjacent punctuation, to avoid large gaps. On the other hand, it may be necessary to add a gap around embedded numbers or Latin text in scripts that don't normally use spaces around words. Some scripts prefer to indent the first line of a paragraph, rather than leave vertical gaps between paragraphs. And in some scripts space needs to be carefully controlled before and after certain punctuation marks, such as in French or Thai.</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#h_letterspacing">Letter-spacing</a></li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#principles_of_arrangement_of_han_characters">Principles for Arranging Characters during Chinese Composition</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#punctuation_width_adjustment">Punctuation Width Adjustment</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#mixed_text_composition_in_horizontal_writing_mode">Mixed Text Composition in Horizontal Writing Mode</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#mixed_text_composition_in_vertical_writing_mode">Mixed Text Composition in Vertical Writing Mode</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_letter_spacing">Letter spacing</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#positioning_of_consecutive_opening_brackets_closing_brackets_comma_full_stops_and_middle_dots">Positioning of Consecutive Opening Brackets, Closing Brackets, Commas, Full Stops and Middle Dots</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#handling_of_western_text_in_japanese_text_using_proportional_western_fonts">Handling of Western Text in Japanese Text using Proportional Western Fonts</a></li>
+<li><cite>Khmer Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_spacing">Letter spacing</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#punc-process">Writing Process for Punctuation Marks, etc.</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=letterspace">Letter spacing</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:spacing">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:spacing">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:spacing">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:spacing">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:spacing">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Text</cite>: <a target="_blank" href="https://drafts.csswg.org/css-text-3/#spacing">Spacing</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/exploring-justify-space">Exploratory tests: Justification &amp; letter-spacing</a></li><li><a target="_blank" href="https://www.w3.org/International/i18n-tests/results/int-letter-spacing">Interactive tests: Letter spacing</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#spacing">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#spacing">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#spacing">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#spacing">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#spacing">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#spacing">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#spacing">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#spacing">Japanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/khmr-gap#spacing">Khmer</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#spacing">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+<section id="baselines">
+<h3>Baselines, line-height, etc.</h3>
+
+<p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly. The complexity of characters in a script may affect line height settings. However, some scripts also expect larger inter-line gaps than others, in addition to the line height. This section covers these and other factors related to vertical spacing of lines.</p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Arabic layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/alreq/#multi-level-baselines">Multi-level baselines</a></li>
+<li><cite>Requirements for Chinese Text Layout</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#considerations_in_designing_type_area">Considerations when Designing the Type Area</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#baseline-grids">Baseline Grids</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_baselines">Baselines</a></li>
+<li><cite>Tamil Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/International/ilreq/tamil/#baselines">Baselines, line height, etc.</a></li>
+<li><cite>Thai Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/International/sealreq/thai/#baselines">Baselines, line height, etc.</a></li>
+<li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#baseline_alignment">Baseline alignment</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:baselines">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:baselines">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:baselines">Spec issues</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Writing Modes</cite>: <a target="_blank" href="https://drafts.csswg.org/css-writing-modes-3/#inline-alignment"> Inline-level Alignment</a></li>
+<li><cite>CSS3 Inline Layout</cite>: <a target="_blank" href="https://drafts.csswg.org/css-inline/#line-height-property">Line Spacing: the line-height property</a></li>
+<li><cite><a target="_blank" href="https://drafts.csswg.org/css-line-grid/">CSS Line Grid</a></cite> </li>
+</ul>
+</dd>
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#baselines">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#baselines">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#baselines">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#baselines">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#baselines">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
 <section id="lists">
-    <h3>Lists, counters, etc</h3>
-    <p>List numbering in vertical text runs across the page, but may need to be rotated to run horizontally. In a list where items are alternatively right-to-left and left-to-right, where does the counter go, and how is the list aligned? The CSS specification describes a  set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. It also provides a generic mechanism for content authors to create their own counter styles. One has to consider not only the characters and algorithms to be used (numeric, alphabetic, additive, etc), but also what the separator or other associated marks look like.</p>
-            
-	<div id="placeholder_counters"></div>
-	<script>displaySection("placeholder_counters", lists, 'i:lists')</script>
+<h3>Lists, counters, etc</h3>
 
-  </section>
+<p>List numbering in vertical text runs across the page, but may need to be rotated to run horizontally. In a list where items are alternatively right-to-left and left-to-right, where does the counter go, and how is the list aligned? The CSS specification describes a  set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. It also provides a generic mechanism for content authors to create their own counter styles. One has to consider not only the characters and algorithms to be used (numeric, alphabetic, additive, etc), but also what the separator or other associated marks look like.</p>
 
 
 
-  <section id="initials">
-    <h3>Styling initials</h3>
-    <p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps? </p>
-             
-	<div id="placeholder_initials"></div>
-	<script>displaySection("placeholder_initials", initials, 'i:initials')</script>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite><a target="_blank" href="https://www.w3.org/TR/predefined-counter-styles/">Ready-made counter styles</a></cite> </li>
+<li><cite>Bengali Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/bengali/#h_counters">Counters</a></li>
+<li><cite>Devanagari Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_counters">Counters</a></li>
+<li><cite>Lao script layout requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/lao/#h_counters">Counters</a></li>
+<li><cite>Khmer Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/khmer/#h_counters">List counters</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_counters">Counters, lists, etc</a></li>
+<li><cite>Tamil Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq-taml/#h_counters">Counters</a></li>
+<li><cite>Thai Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/sealreq/thai/#h_counters">List counters</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=lists">Counters, lists, etc.</a></li>
+</ul>
+</dd>
 
-  </section>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:lists">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:lists">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:lists">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Abrowser-type-bug%20label%3Ai:lists">Browser bugs</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:lists">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:lists">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Counter Styles</cite>: <a target="_blank" href="https://drafts.csswg.org/css-counter-styles/#the-counter-style-rule">Defining Custom Counter Styles: the @counter-style rule</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-counter-styles/#predefined-counters">Simple Predefined Counter Styles</a><span class="dot">•</span><a target="_blank" href="https://drafts.csswg.org/css-counter-styles/#complex-predefined-counters">Complex Predefined Counter Styles</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-lists-counters-etc">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3ALists_counters_etc">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/counter-styles">CSS3 Counter Styles</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/predefined-counter-styles">CSS3 Counter Styles, predefined styles</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/custom-counter-styles">Custom counter styles</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#lists">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#lists">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/clreq-gap/#lists">Chinese</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#lists">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#lists">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/grek-gap/#lists">Greek</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#lists">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/jpan-gap/#lists">Japanese</a></li><li><a target="_blank" href="https://www.w3.org/TR/khmr-gap#lists">Khmer</a></li><li><a target="_blank" href="https://www.w3.org/TR/laoo-gap/#lists">Lao</a></li><li><a target="_blank" href="https://www.w3.org/TR/mong-gap/#lists">Mongolian</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#lists">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
 
 
-  
+
+
+
+
+
+
+<section id="initials">
+<h3>Styling initials</h3>
+
+<p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps? </p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Devanagari Layout Requirements</cite>: <a target="_blank" href="https://w3c.github.io/iip/devanagari/#h_styling_initials">Styling initials</a></li>
+<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_initial_letter_styling">Initial letter styling</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#initial-capitals">Initial Capitals</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=initials">Styling initials</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:initials">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:initials">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:initials">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:initials">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:initials">Type samples</a></li></ul>
+</dd>
+
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>CSS3 Selectors</cite>: <a target="_blank" href="https://www.w3.org/TR/selectors-3/#first-letter"> The ::first-letter pseudo-element</a></li>
+<li><cite>CSS3 Inline Layout</cite>: <a target="_blank" href="https://drafts.csswg.org/css-inline/#initial-letter-styling"> Initial Letters</a></li>
+</ul>
+</dd>
+
+<dt>Tests</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/int-styling-initials.html">Exploratory/interactive test results</a></li><li><a target="_blank" href="https://github.com/w3c/line_paragraph_tests/issues?q=is%3Aissue+is%3Aopen+label%3Adoc%3AStyling_initials">Exploratory/interactive test repo</a></li><li><a target="_blank" href="https://w3c.github.io/i18n-tests/results/first-letter-pseudo#latin">CSS3 Selectors: first-letter</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-tests/wiki/Test-script-for-::first-letter">Interactive test: ::first-letter</a></li></ul>
+</dd><dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#initials">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#initials">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#initials">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/latn-nl-gap/#initials">Dutch</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#initials">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#initials">Tamil</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
   <!--section id="more_para">
     <h3>Other paragraph features</h3>
     <p>Some scripts have particular rules about indenting text at the start of a paragraph, or indeed whether that's normal. Some allow punctuation to hang outside the text box at the start or end of a line. There may be other aspects of how paragraphs are presented that vary from script to script, or need to be controlled by the content author.</p>
@@ -582,71 +1283,208 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="layout">
 <h2>Layout &amp; pages</h2>
 
 
-
-
-
 <section id="page_layout">
 <h3>General page layout and progression</h3>
+
 <p>In paged media for right-to-left scripts or vertically set documents, pages  progress from right to left, and  the front and back cover are in the opposite locations to, say, an English book. Unlike the general Western approach, the size of the  main text block in Japanese pages (called the <span class="foreign">hanmen</span>) is traditionally established by counting character cells, and margin space is then defined by the remaining space.  Columns run across a page in vertically-set pages. The standard page layout for Mongolian is landscape, and horizontal scrolling within a page is much more important than in the West, so default scrollbar positions may need special support.</p>
+
 <p>Other topics that belong here include any local requirements for things such as  printer marks,  tables of contents and indexes.</p>
-               
-	<div id="placeholder_layout"></div>
-	<script>displaySection("placeholder_layout", page_layout, 'i:page-layout')</script>
 
 <p>See also <a href="#grids_tables"></a></p>
-  </section>
-  
-  
-  
-  
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#type_area">The Type Area (or Printing Area)</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#adjustments_of_orphans_and_widows">Handling of Widows and Orphans</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#handling_of_headings">Headings &amp; Page Breaks</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#vertical_writing_mode_and_horizontal_writing_mode">Vertical Writing Mode and Horizontal Writing Mode</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#page_formats_for_japanese_documents">Page Formats for Japanese Documents</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#specifying_the_kihonhanmen">Specifying the Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs">Block Direction Setting Process of Lines, Paragraphs etc.</a></li>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#page-layout">Page layout</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#paginating-single-column-text">Paginating Single-Column Text</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#heads">Heads</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#the-classical-rules-of-hyphenation-and-pagination">The Classical Rules of Hyphenation and Pagination</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_binding">Bookbinding and the Direction of Page Turning</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#h_paper_direction">Paper direction</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#h_paper_rolling_direction">Paper scrolling direction</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#h_scrollbag_direction">The scrolling direction of scroll bars</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#h_columns">Columns</a></li>
+<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=page">Page &amp; book layout</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:page-layout">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:page-layout">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:page-layout">Spec issues</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
 <section id="grids_tables">
 <h3>Grids &amp; tables</h3>
-    <p>Are there any special considerations related to the layout and design of tables? Due to their essentially monospaced character repertoire, Chinese and Japanese are partial to a grid-based system of layout that has some special requirements.</p>
-                
-	<div id="placeholder_tables"></div>
-	<script>displaySection("placeholder_tables", grids_tables, 'i:grids-tables')</script>
 
-  </section>
-  
-  
-  
-  <section id="footnotes_etc">
-  <h3>Footnotes, endnotes, etc</h3>
-    <p>Support for  footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to locate the notes or to link to them from the text. (See [[[#inline_notes]]] for purely inline annotations, such as ruby or warichu. This section is more about annotation systems that separate the reference marks and the content of the notes.)</p>
-                 
-	<div id="placeholder_footnotes"></div>
-	<script>displaySection("placeholder_footnotes", footnotes_etc, 'i:footnotes-etc')</script>
+<p>Are there any special considerations related to the layout and design of tables? Due to their essentially monospaced character repertoire, Chinese and Japanese are partial to a grid-based system of layout that has some special requirements.</p>
 
-	<p>For inline annotations, see <a href="#inline_notes"></a></p>
-  </section>
-  
-  
-  
-  <section id="headers_footers">
-  <h3>Page  headers, footers, etc</h3>
-    <p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
-                  
-  <div id="placeholder_page_header"></div>
-  <script>displaySection("placeholder_page_header", headers_footers, 'i:headers-footers')</script>
 
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#tables">Tables</a></li>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_tables">Tables</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:grids-tables">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:grids-tables">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:grids-tables">Spec issues</a></li></ul>
+</dd>
+</dl>
 </section>
-  
-  
-  
-  <section id="interaction">
-  <h3>Forms &amp; user interaction</h3>
-    <p>Where a page allows users to input information in forms or interact with a page, there may be special requirements for the layout and orientation of the input fields and associated labels. There may also be other aspects of user interaction with the page that differ.</p>
-                   
-	<div id="placeholder_user_interaction"></div>
-	<script>displaySection("placeholder_user_interaction", interaction, 'i:interaction')</script>
 
-  </section>
-  
-  
+
+
+
+
+
+
+<section id="footnotes_etc">
+<h3>Footnotes, endnotes, etc</h3>
+
+<p>Support for  footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to locate the notes or to link to them from the text. (See [[[#inline_notes]]] for purely inline annotations, such as ruby or warichu. This section is more about annotation systems that separate the reference marks and the content of the notes.)</p>
+
+<p>For inline annotations, see <a href="#inline_notes"></a></p>
+
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#notes">Notes (Footnote, Endnote)</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#processing_of_notes">Processing of Notes</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#footnotes">Footnotes</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:footnotes-etc">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:footnotes-etc">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:footnotes-etc">Spec issues</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:footnotes-etc">Type samples</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#footnotes_etc">Gurmukhi</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+
+<section id="headers_footers">
+<h3>Page  headers, footers, etc</h3>
+
+<p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
+
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Hangul Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/klreq/#page-number">Page Numbers</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#running_heads_and_page_numbers">Running Heads and Page Numbers</a></li>
+<li><cite>Latin Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/dpub-latinreq/#running-headers-and-footers">Running headers and footers</a></li>
+<li><cite>Mongolian script layout requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_page_numbering">Page numbering, running headers, etc</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:headers-footers">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:headers-footers">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:headers-footers">Spec issues</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#headers_footers">Ethiopic</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
+
+
+
+
+
+<section id="interaction">
+<h3>Forms &amp; user interaction</h3>
+
+<p>Where a page allows users to input information in forms or interact with a page, there may be special requirements for the layout and orientation of the input fields and associated labels. There may also be other aspects of user interaction with the page that differ.</p>
+
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_input">User interaction</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#select_control">Select</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#textarea_control">Textarea</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#label_control">Label</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/mlreq/#fieldset_control">Fieldset</a></li>
+</ul>
+</dd>
+
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Ai:interaction">All issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Atype-info-request%20label%3Ai:interaction">Requests for information</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Aspec-type-issue%20label%3Ai:interaction">Spec issues</a></li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20label%3Auseful-discussion%20label%3Ai:interaction">Useful discussions</a></li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=i:interaction">Type samples</a></li></ul>
+</dd>
+
+
+
+<dt>Gap analysis</dt>
+<dd>
+<ul class="linkList">
+<li><a target="_blank" href="https://www.w3.org/TR/mong-gap/#interaction">Mongolian</a></li></ul>
+</dd>
+</dl>
+</section>
+
+
   <!--section id="more_page">
   <h3>Other page- or document-level features</h3>
 <p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, and so forth.</p>
