@@ -624,24 +624,23 @@
 
 
 
-<section id="text_decoration">
-<h3>Emphasis</h3>
+<section id="emphasis">
+<h3>Emphasis &amp; highlighting</h3>
 
-<p>Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over. Also, for many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc.</p>
 
-<p>See also [[[#punctuation_etc]]].</p>
+<p>For many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc. Other approaches involve substituting a different font, or using quotation marks, brackets, etc. Underlining is also not used for emphasis in many scripts, and may have a different function altogether.</p>
+
+<p>See also [[[#more_inline]]].</p>
 
 
 <dl class="reslinks">
 <dt>Requirements</dt>
 <dd>
 <ul>
-<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Fullwidth low line</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Emphasis Dots</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#handling_interlinear_punctuation">Handling Interlinear Punctuation</a></li>
-<li><cite><a target="_blank" href="https://en.wikipedia.org/wiki/Underscore#Underlines_in_Chinese">Wikipedia: Underlines in Chinese</a></cite> </li>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Emphasis Dots</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#handling_interlinear_punctuation">Handling Interlinear Punctuation</a></li>
 <li><cite>Ethiopic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/elreq/#h_emphasis">Emphasis</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#emphasis_within_prose">Emphasis Within Prose</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#emphasis_with_wordspace">Emphasis With Ethiopic Wordspace</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/elreq/#section_headings">Section Headings</a></li>
-<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen">Examples of Items Jutting Out of the Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#line_gap_arrangement_with_ruby_and_other_objects">Line Gap Arrangement with Ruby and Other Objects</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#composition_of_emphasis_dots">Composition of Emphasis Dots</a></li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#composition_of_emphasis_dots">Composition of Emphasis Dots</a></li>
 <li><cite>Implementing Japanese Subtitles on Netflix</cite>: <a target="_blank" href="https://netflixtechblog.com/implementing-japanese-subtitles-on-netflix-c165fbe61989#8329">Boutens</a></li>
-<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_text_decoration">Text decoration</a></li>
 <li><cite>Tibetan Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/tlreq/#emphasis_and_highlighting">Text Emphasis and Highlighting</a></li>
 </ul>
 </dd>
@@ -731,6 +730,58 @@
 
 
 
+  
+
+
+
+
+<section id="text_decoration">
+<h3>Other inline features</h3>
+
+<p>This section groups together other text decoration and punctuation that don't fall under the previous headings. Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over.  A script may call for specialised inline features. An example in Japanese is <span class="qterm">kumimoji</span>, a way of combining several characters into a single character space. Syriac and Ethiopic identify numbers by drawing lines above them: the line extends to the width of the number. Arabic also has special characters that stretch to the length of certain numbers. There may be other such inline features in these and other scripts.</p>
+<dl class="reslinks">
+<dt>Requirements</dt>
+<dd>
+<ul>
+<li><cite>Chinese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/clreq/#indication_punctuation_marks">Indicator Punctuation Marks &gt; Fullwidth low line</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/clreq/#handling_interlinear_punctuation">Handling Interlinear Punctuation</a></li>
+<li><cite><a target="_blank" href="https://en.wikipedia.org/wiki/Underscore#Underlines_in_Chinese">Wikipedia: Underlines in Chinese</a></cite> </li>
+<li><cite>Japanese Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/jlreq/#examples_of_items_jutting_out_of_the_kihonhanmen">Examples of Items Jutting Out of the Kihon-hanmen</a><span class="dot">•</span><a target="_blank" href="https://www.w3.org/TR/jlreq/#line_gap_arrangement_with_ruby_and_other_objects">Line Gap Arrangement with Ruby and Other Objects</a></li>
+<li><cite>Mongolian Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/mlreq/#h_text_decoration">Text decoration</a></li>
+<li><cite>Japanese Layout Requirements</cite>:
+<ul class="linkList">
+<li><a href="https://w3c.github.io/jlreq/#inline_cutting_note"> Inline Cutting Note (Warichu)</a></li>
+<li><a href="https://w3c.github.io/jlreq/#furiwake_processing"> Furiwake Processing</a></li>
+<li><a href="https://w3c.github.io/jlreq/#superscripts_and_superscripts"> Superscripts and Superscripts</a></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt>GitHub resources</dt>
+<dd>
+<ul>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">Requests for information</a></li>
+<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Aspec-type-issue">Spec issues</a>
+</li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Abrowser-type-bug">Browser bugs</a>
+</li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=inline-features">Type samples</a></li>
+</ul>
+</dd>
+<dt>Spec links</dt>
+<dd>
+<ul>
+<li><cite>tbd</cite></li>
+</ul>
+</dd>
+<dt>Tests</dt>
+<dd>
+<ul>
+<li>tbd</li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+
 
 
 
@@ -766,54 +817,6 @@
 <dd>
 <ul class="linkList">
 <li><a target="_blank" href="https://www.w3.org/TR/alreq-gap/#data_formats">Arabic</a></li><li><a target="_blank" href="https://www.w3.org/TR/beng-gap/#data_formats">Bengali</a></li><li><a target="_blank" href="https://www.w3.org/TR/deva-gap/#data_formats">Devanagari</a></li><li><a target="_blank" href="https://www.w3.org/TR/elreq-gap/#data_formats">Ethiopic</a></li><li><a target="_blank" href="https://www.w3.org/TR/gujr-gap/#data_formats">Gujarati</a></li><li><a target="_blank" href="https://www.w3.org/TR/guru-gap/#data_formats">Gurmukhi</a></li><li><a target="_blank" href="https://www.w3.org/TR/taml-gap/#data_formats">Tamil</a></li></ul>
-</dd>
-</dl>
-</section>
-
-
-
-  
-
-
-
-
-<section id="more_inline">
-<h3>Other inline features</h3>
-
-<p>A script may call for other inline features than those mentioned above. An example in Japanese is <span class="qterm">kumimoji</span>. Kumimoji is a way of combining several characters into a single character space. Syriac and Ethiopic identify numbers by drawing lines above them: the line extends to the width of the number. Arabic also has special characters that stretch to the length of certain numbers. There may be other such inline features in these and other scripts.</p>
-<dl class="reslinks">
-<dt>Requirements</dt>
-<dd>
-<ul>
-<li><cite>Japanese Layout Requirements</cite>:
-<ul class="linkList">
-<li><a href="https://w3c.github.io/jlreq/#inline_cutting_note"> Inline Cutting Note (Warichu)</a></li>
-<li><a href="https://w3c.github.io/jlreq/#furiwake_processing"> Furiwake Processing</a></li>
-<li><a href="https://w3c.github.io/jlreq/#superscripts_and_superscripts"> Superscripts and Superscripts</a></li>
-</ul>
-</li>
-</ul>
-</dd>
-<dt>GitHub resources</dt>
-<dd>
-<ul>
-<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">Requests for information</a></li>
-<li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Aspec-type-issue">Spec issues</a>
-</li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Abrowser-type-bug">Browser bugs</a>
-</li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=inline-features">Type samples</a></li>
-</ul>
-</dd>
-<dt>Spec links</dt>
-<dd>
-<ul>
-<li><cite>tbd</cite></li>
-</ul>
-</dd>
-<dt>Tests</dt>
-<dd>
-<ul>
-<li>tbd</li>
-</ul>
 </dd>
 </dl>
 </section>
@@ -1485,7 +1488,7 @@
 </section>
 
 
-  <!--section id="more_page">
+<!--section id="more_page">
   <h3>Other page- or document-level features</h3>
 <p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, and so forth.</p>
     <dl class="reslinks">
