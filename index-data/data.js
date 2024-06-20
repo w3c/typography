@@ -592,7 +592,7 @@ segmentation = {
 	{ 	"title":"Tibetan Layout Requirements", 
 		"sections": [ 
 			{"title":"Tibetan Syllables", "url":"https://www.w3.org/TR/tlreq/#tibetan_syllables"},
-			{"title":"Text Segmentation in Tibetan", "url":"https://www.w3.org/TR/tlreq/#text_segmentation"}
+			{"title":"Text Segmentation in Tibetan", "url":"https://www.w3.org/TR/tlreq/#grapheme-word-segmentation-selection"}
 			]
 		},
 	{ 	"title":"Orthography Notes", 
