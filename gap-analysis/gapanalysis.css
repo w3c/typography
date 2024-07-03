@@ -76,8 +76,11 @@ h5 { margin-top: 1rem !important; border-block-end:1px solid #ccc !important; wi
 
 
 .languageData {
-	font-style: italic;
 	margin-block-start: -.2rem;
+	font-style: italic;
+  	color: #aaa;
+  	font-size: 90%;
+  	margin-bottom: 4em;
 	}
 .issueScore {
 	display: inline;
