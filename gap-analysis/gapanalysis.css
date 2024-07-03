@@ -72,3 +72,20 @@ h5 { margin-top: 1rem !important; border-block-end:1px solid #ccc !important; wi
 	float: right;
 	font-size: 90%;
 	}
+
+
+
+.languageData {
+	font-style: italic;
+	margin-block-start: -.2rem;
+	}
+.issueScore {
+	display: inline;
+	color: #ddd;
+	}
+
+
+
+
+
+
