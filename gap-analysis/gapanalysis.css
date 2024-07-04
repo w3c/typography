@@ -83,7 +83,7 @@ h5 { margin-top: 1rem !important; border-block-end:1px solid #ccc !important; wi
   	margin-bottom: 4em;
 	}
 .issueScore {
-	display: inline;
+	display: none;
 	color: #ddd;
 	}
 
