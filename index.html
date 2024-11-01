@@ -4,6 +4,8 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <title>Language enablement index</title>
 <!-- local styles. Includes the styles from https://www.w3.org/International/i18n-activity/guidelines/editing -->
+<script class="remove" src="../i18n-activity/templates/gap-analysis/prompts.js"></script>
+
 <link rel="stylesheet" href="index-data/local.css">
 <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 <script class="remove">
@@ -37,9 +39,12 @@
           //],
           
           group: "i18n",
-          //wgPublicList: "www-international",
-          
 		  github: "w3c/typography",
+
+        preProcess: [
+            () => { addPrompts() },
+            ],
+
 
       };
 	  
@@ -47,31 +52,50 @@
 </script>
 <script src="index-data/data.js"></script>
 </head>
+
+
+
+
 <body>
+
 <section id="abstract">
-  <p>This document points browser implementers and specification developers to information about how to support typographic features of scripts or writing systems from around the world, and also points to relevant information in specifications, to tests, and to useful articles and papers. It is not exhaustive, and will be added to from time to time.</p>
+<p>This document points browser implementers and specification developers to information about how to support typographic features of scripts or writing systems from around the world, and also points to relevant information in specifications, to tests, and to useful articles and papers. It is not exhaustive, and will be added to from time to time.</p>
 </section>
+
+
+
+
 <section id="sotd">
 <p>The information in this document helps to link users and developers so that browsers can better support typographic needs around the world. It is expected that this document will be constantly updated, as new material becomes available or comes to our attention.</p>
   <div class="note">
     <p data-lang="en">To make it easier to track comments, please raise
       separate issues or emails for each comment, and point to the section
-      you are commenting on&nbsp; using a URL for the dated version of the
+      you are commenting on using a URL for the dated version of the
       document.</p>
   </div>
 </section>
+
+
+
+
+
 <section id="intro">
   <h2>Introduction</h2>
   <p>The W3C and browser implementers need to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as users expect.</p>
-  <p>To that end experts in various parts of the world are documenting layout and typographic requirements, as well as gaps between what is needed and what is currently supported in browsers and ebook readers. (See a <a href="https://www.w3.org/International/i18n-drafts/nav/languagedev">list of relevant work in this area</a> that is supported by the W3C Internationalization groups.)</p>
-  <p>This page points browser implementers and specification developers to information about how to support features of scripts or writing systems from around the world, and also points to relevant information in specifications, to tests, and to useful articles and papers. It is not exhaustive, and will be added to from time to time.</p>
-  <p>The <em>Github resources</em> links point to ongoing discussions of three types:</p>
+  <p>To that end experts in various parts of the world are discussing and documenting layout and typographic requirements, as well as gaps between what is needed and what is currently supported in browsers and ebook readers. (See a <a href="https://www.w3.org/International/i18n-drafts/nav/languagedev">list of relevant work in this area</a> that is supported by the W3C Internationalization groups.)</p>
+  <p>This page points browser implementers and specification developers to information related to support for features of scripts or writing systems from around the world. It is not exhaustive, and will be added to from time to time.</p>
+  <p>The <em>Script resources</em> links point to pages that link to detailed information as follows:</p>
   <ol>
-    <li><strong>Requests for information</strong> point to requests for more information about how one or more scripts work.</li>
-    <li><strong>Spec issues</strong> point to requests to implement a particular script feature in a spec.</li>
-    <li><strong>Browser bugs</strong> point to requests to implement or fix a particular script feature in a browser.</li>
-  </ol>
-  <p><strong class="advisement"> Additional information and references are hereby solicited;
+    <li><strong>Requirements</strong> for a set of  features.</li>
+    <li><strong>Requests for information</strong>  about how the script works.</li>
+    <li><strong>Discussions</strong>  related to features of that script.</li>
+    <li><strong>Spec issues and discussions</strong> relevant to that script.</li>
+    <li><strong>Tests</strong> related to the various features the script has.</li>
+    <li><strong>Gap analysis</strong> reports for that script.</li>
+</ol>
+<p>This document also has links to W3C specifications where a particular feature is discussed, and sometimes tests for that feature.</p>
+
+<p><strong class="advisement"> Additional information and references are hereby solicited;
 	please suggest  additions, clarifications, corrections, and other improvements
 	using the <a href="https://github.com/w3c/typography/issues">github issues list</a>.</strong>&nbsp;</p>
 </section>
@@ -85,8 +109,8 @@
 <section id="writing_mode">
 <h3>Writing mode</h3>
 
-<p>When dealing with vertical lines of text, it's common for content authors to want to mix short horizontal runs of text, such as 2-digit numbers, in a vertical column (tate chu yoko). It's also important to provide appropriate support for text in scripts that are normally only horizontal. Also, there are often special requirements related to the orientation of characters within vertical text.</p>
-	
+<p id="prompt-writing_mode" class="status_prompt promptStub"></p>
+
 	
 <dl class="reslinks">
 
@@ -124,14 +148,6 @@
 </dd>
 
 
-<dt>Requirements</dt>
-<dd>
-<ul>
-<li><cite>Indic Layout Requirements</cite>: <a target="_blank" href="https://www.w3.org/TR/ilreq/#h_vertical_arrangements_of_characters">Vertical arrangements of characters</a></li>
-<li><cite>Orthography Notes</cite>: <a target="_blank" href="https://r12a.github.io/scripts/switch?section=direction">Text direction (see Chinese, Japanese, Korean, Mongolian)</a></li>
-</ul>
-</dd>
-
 <dt>Spec links</dt>
 <dd>
 <ul>
@@ -149,7 +165,7 @@
 <section id="bidi_text">
 <h3>Bidirectional text</h3>
 
-<p>Scripts whose characters are typically written right-to-left, like Arabic, Hebrew, Thaana, and so on, become bidirectional when they include numbers or text from other scripts (such as Latin acronyms). Browsers and applications need to support bidirectionality. This means supporting the Unicode Bidirectional Algorithm, but also different visual locations of line start and end, isolation of embedded strings, correct line alignment, and so forth.</p>
+<p id="prompt-bidi_text" class="status_prompt promptStub"></p>
 
 <dl class="reslinks">
 
@@ -216,9 +232,8 @@
 <section id="fonts">
 <h3>Fonts &amp; font styles</h3>
 
-<p>Some scripts require special handling with regard to how font properties are specified and how font resources are loaded dynamically. In some scripts it is common to use different fonts for headings or emphasis, rather than bolding or italicisation. Fallback font families used by browsers (eg. serif, sans-serif, cursive, etc.) may need to be mapped differently to fonts for different scripts. For example, Khmer has slanted, upright, and round font styles, and Arabic has naskh, nasta'liq, ruq'a, kano, etc., which may need special handling. Special OpenType features may  need to be supported.</p>
+<p id="prompt-fonts" class="status_prompt promptStub"></p>
 
-<p>See also [[[#letterforms]]]</p>
 
 <dl class="reslinks">
 
@@ -274,9 +289,7 @@
 <section id="glyphs">
 <h3>Context-based shaping &amp; positioning</h3>
 
-<p>In some scripts, such as Arabic, it may be desirable to allow the content author to control the placement of glyphs such as diacritics, or to control ligation, etc. Languages written with Arabic and Hebrew scripts have particular rules, of course, about when it is appropriate to show or hide diacritics for short vowel sounds. Many complex scripts have rules about how characters combine in syllabic structures, and scripts like Arabic may need controls to indicate where ligatures are wanted or not wanted. In addition, controls (based on Unicode characters or otherwise) may allow the user to control the shaping and positioning of glyphs, for example to compose/decompose conjuncts in brahmi-derived scripts.</p>
-
-<p>See also the separate section [[[#cursive]]]. </p>
+<p id="prompt-glyphs" class="status_prompt promptStub"></p>
 
 <dl class="reslinks">
 
@@ -324,7 +337,7 @@
 <section id="cursive">
 <h3>Cursive text</h3>
 
-<p>In  scripts such as Arabic, Mongolian and N'Ko adjacent characters are joined together in normal printed text. It is important to ensure that those connections can be maintained correctly when characters are forced apart, or when transparency is applied to the text, etc. There are also situations where cursive joining behaviour exists when there is no adjacent character, or where joining needs to be disabled between glyphs. Cursive links shouldn't be broken by appropriate markup or styling. Etc.</p>
+<p id="prompt-cursive" class="status_prompt promptStub"></p>
 
 <dl class="reslinks">
 
@@ -386,9 +399,7 @@
 <section id="letterforms">
 <h3>Letterform slopes, weights, &amp; italics</h3>
 
-<p>In CSS, italic and oblique are described as font styles. Non-Latin script can add requirements for such styling.  For example, oblique styles in Arabic or Hebrew scripts text may lean to the left. Proper italic glyphs in Cyrillic text can look very different from normal variants, and so synthesising italics can produce poor results. Chinese, Japanese and Korean fonts almost always lack italic or oblique faces, because those are not native typographic traditions. Bold text is similar in usage and in problems to the use of italics. Control and use of font-weight is also relevant to this section.</p>
-
-<p>See also [[[#fonts]]].</p>
+<p id="prompt-letterforms" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -443,9 +454,9 @@
 
 
 <section id="transforms">
-<h3>Transforming characters</h3>
+<h3>Case &amp; other character transforms</h3>
 
-<p>Conversion between lower, upper and title case only applies to a few scripts, most scripts are unicameral. Where it does apply, the rules can vary by language. In other cases, a particular script may require a different type of transform. For example, in Japanese it is important to be able to convert between half-width and full-width presentation forms. </p>
+<p id="prompt-transforms" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -523,9 +534,9 @@
 
   
 <section id="encoding">
-<h3>Characters &amp; encodings</h3>
+<h3>Characters &amp; encoding</h3>
 
-<p>Most languages are now supported by Unicode, but there are still occasional issues. In particular, there may be issues related to ordering of characters, or competing encodings (as in Myanmar), or standardisation of variation selectors or the encoding model (as in Mongolian).</p>
+<p id="prompt-encoding" class="status_prompt promptStub"></p>
 
 <dl class="reslinks">
 <dt>Script resources</dt>
@@ -571,9 +582,7 @@
 <section id="segmentation">
 <h3>Grapheme/word segmentation &amp; selection</h3>
 
-<p>A browser or application needs to correctly apply functions to the basic units of text, be they characters, character sequences, syllables, or words. Some scripts, such as those used in South and South-East Asia, require clusters of characters to be treated as a single unit for most editing operations. Many other scripts use combining characters such as accents, vowel signs, length markers, etc. that must be kept with the base character they are associated with.</p>
-
-<p>When a user double-clicks on some text, the appropriate units should be selected. In scripts such as Chinese and Thai, 'words' should be selected even though they are not separated by spaces. In scripts such as Tibetan and Ethiopic, the word separator may be a visible character, rather than a space. It is important to understand how they should be treated when a 'word' is highlighted, or when text wraps, etc.</p>
+<p id="prompt-segmentation" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -634,13 +643,7 @@
 <section id="punctuation_etc">
 <h3>Phrase &amp; section boundaries</h3>
 
-<p>Many scripts use native punctuation marks in addition to or instead of those used in Latin script text. In other cases, such as Greek, common Latin punctuation marks may mean something different from what they mean in English. It may be important to understand what needs to be supported, how these punctuation marks function, and how they interact with other operations applied to the text.</p>
-
-<p>Another aspect of this relates to separation of characters or items in text. For example, French inserts a particular type of space before certain punctuation marks, and the traditional Mongolian script requires special spacing between word stems and certain suffixes.</p>
-
-<p>Other special inline markers may appear when handling abbreviation, ellipsis, and iteration, bracketing information, or demarcating things such as proper nouns, etc. </p>
-
-<p>See also [[[#text_decoration]]], [[[#quotations]]], and [[[#inline_notes]]], which are broken out into separate sections.</p>
+<p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
 
 
 
@@ -692,9 +695,7 @@
 <section id="quotations">
 <h3>Quotations &amp; citations</h3>
 
-<p>Quotation marks vary from language to language, not just from script to script. Also, you should expect variations in behavior when quotation marks are nested. Furthermore, the quotation marks used for vertical Japanese text are not the same as those typically used for the same text when horizontally laid out.</p>
-
-<p>See also [[[#punctuation_etc]]].</p>
+<p id="prompt-quotations" class="status_prompt promptStub"></p>
 
 
 
@@ -759,10 +760,7 @@
 <section id="emphasis">
 <h3>Emphasis &amp; highlighting</h3>
 
-
-<p>For many scripts bold and italic are not always appropriate for expressing emphasis or highlighting text, and some scripts have their own unique ways of doing it that involve adding special marks alongside letters or syllables, etc. Other approaches involve substituting a different font, or using quotation marks, brackets, etc. Underlining is also not used for emphasis in many scripts, and may have a different function altogether.</p>
-
-<p>See also [[[#text_decoration]]].</p>
+<p id="prompt-emphasis" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -826,7 +824,7 @@
 <section id="abbrev">
 <h3>Abbreviation, ellipsis &amp; repetition</h3>
 
-<p>How are emphasis and highlighting achieved? If lines or marks are drawn alongside, over or through the text, do they need to be a special distance from the text itself? Is it important to skip characters when underlining, etc? How do things change for vertically set text?</p>
+<p id="prompt-abbrev" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -879,9 +877,7 @@
 <section id="inline_notes">
 <h3>Inline notes &amp;  annotations</h3>
 
-<p>Ruby is used for  phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems. In addition to positioning annotations along the correct side of the base text, there are many fine adjustments of the annotation and base text to support.  Warichu is a kind of inline annotation where the note text is two approximately equal lines of half sized text, one above the other, but both within the normal line height.</p>
-
-<p>See also [[[#footnotes_etc]]].</p>
+<p id="prompt-inline_notes" class="status_prompt promptStub"></p>
 
 
 
@@ -945,7 +941,7 @@
 <section id="text_decoration">
 <h3>Other text decoration &amp; inline features</h3>
 
-<p>This section groups together other text decoration and inline features that don't fall under the previous headings. Some aspects related to the drawing of lines or markers alongside or through text involve local typographic considerations. For example, underlines need to be broken in special ways for some scripts, and the height of underlines, strike-through and overlines may vary depending on the script. For vertical text the placement needs to be to the right or left of the line of text, rather than under or over.  A script may call for specialised inline features. An example in Japanese is <span class="qterm">kumimoji</span>, a way of combining several characters into a single character space. Syriac and Ethiopic identify numbers by drawing lines above them: the line extends to the width of the number. Arabic also has special characters that stretch to the length of certain numbers. There may be other such inline features in these and other scripts.</p>
+<p id="prompt-text_decoration" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -1008,9 +1004,7 @@
 <section id="data_formats">
 <h3>Data formats &amp; numbers</h3>
 
-<p>Relevant here are formats related to number, currency, dates, personal names, addresses, and so forth. Also, some scripts have one or sometimes more sets of their own numeric characters. In some cases, numeric characters represent numbers like 100, or 10,000. Numeric formats can also vary significantly, in terms not only of the separators and negative signs used, but also the groupings used for digits, and sometimes the mechanisms used to distinguish numbers from the text.</p>
-
-<p>See also <a href="#lists"></a>.</p>
+<p id="prompt-data_formats" class="status_prompt promptStub"></p>
 
 
 
@@ -1081,11 +1075,8 @@
 <section id="line_breaking">
 <h3>Line breaking</h3>
 
-<p>There are often specific rules about how scripts behave when a line is wrapped. For example,   Chinese, Japanese and Korean tend to break a line in the middle of a word (with no hyphenation) – even in Korean, which has spaces between words. Others break lines at syllable boundaries. (See below for hyphenation.)</p>
+<p id="prompt-line_breaking" class="status_prompt promptStub"></p>
 
-<p>It is common for certain characters to be forbidden at the start or end of a line, but which characters these are, and what rules are applied when depends on the script or language. In some cases, such as Japanese, there may be different rules according to the type of content or the user's preference.</p>
-
-<p>See also [[[#hyphenation]]], which is broken out into a separate section.</p>
 
 <dl class="reslinks">
 
@@ -1159,8 +1150,6 @@
 <section id="hyphenation">
 <h3>Hyphenation</h3>
 
-<p>Hyphenation in this sense means identifying broken words after text is wrapped at line end (and not only those involving a hyphen character). See [[[#punctuation_etc]]] for information about the use of regular hyphens in text. Some writing systems don't use hyphenation, those that do have particular rules about how it should be applied that are typically language-specific.</p>
-
 <p>See [[[#line_breaking]]]</p>
 
 </section>
@@ -1176,9 +1165,9 @@
 <section id="justification">
 <h3>Text alignment &amp; justification</h3>
 
-<p>Typographers have come up with various methods for effective full justification – causing the text to completely fill the line, in order to create visual alignment on both edges of a paragraph.    </p>
+<p id="prompt-justification" class="status_prompt promptStub"></p>
 
-<p>Typographic conventions for full text justification depend on the writing system, the content language, and the calligraphic style of the text. Results also tend to vary based on the capabilities of the layout engine and a given typographer’s preferences for weighing its various detrimental effects on typographic color and readability.</p>
+
 
 <dl class="reslinks">
 
@@ -1243,7 +1232,7 @@
 <section id="spacing">
 <h3>Text spacing </h3>
 
-<p>This section is concerned with spacing that is adjusted around and between characters on a line that is driven by aims different from the full line justification described in the previous section, although it will affect line layout. Examples follow. Many scripts create emphasis or other effects by moving apart the letters or syllables in a word. (This may even apply in Indic and SE Asian scripts, and in Arabic-based scripts which join up adjacent letters.) Other times, increasing or decreasing the typical space between characters aids readability. Scripts used for Japanese or Chinese may also seek to reduce space between adjacent punctuation, to avoid large gaps. On the other hand, it may be necessary to add a gap around embedded numbers or Latin text in scripts that don't normally use spaces around words. Some scripts prefer to indent the first line of a paragraph, rather than leave vertical gaps between paragraphs. And in some scripts space needs to be carefully controlled before and after certain punctuation marks, such as in French or Thai.</p>
+<p id="prompt-spacing" class="status_prompt promptStub"></p>
 
 
 
@@ -1308,7 +1297,7 @@
 <section id="baselines">
 <h3>Baselines, line-height, etc.</h3>
 
-<p>Browsers and applications must accurately and comprehensively cover requirements for baseline alignment between mixed scripts.  For example, Arabic script descenders go far below those of the Latin script, and Armenian characters need to be aligned with ideographic characters in Chinese appropriately with regard to comparative heights and baselines. European, Far Eastern and South Asian scripts tend to use different baselines, which must be aligned correctly. The complexity of characters in a script may affect line height settings. However, some scripts also expect larger inter-line gaps than others, in addition to the line height. This section covers these and other factors related to vertical spacing of lines.</p>
+<p id="prompt-baselines" class="status_prompt promptStub"></p>
 
 
 
@@ -1368,7 +1357,7 @@
 <section id="lists">
 <h3>Lists, counters, etc</h3>
 
-<p>List numbering in vertical text runs across the page, but may need to be rotated to run horizontally. In a list where items are alternatively right-to-left and left-to-right, where does the counter go, and how is the list aligned? The CSS specification describes a  set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. It also provides a generic mechanism for content authors to create their own counter styles. One has to consider not only the characters and algorithms to be used (numeric, alphabetic, additive, etc), but also what the separator or other associated marks look like.</p>
+<p id="prompt-lists" class="status_prompt promptStub"></p>
 
 
 
@@ -1434,8 +1423,7 @@
 <section id="initials">
 <h3>Styling initials</h3>
 
-<p>Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps? </p>
-
+<p id="prompt-initials" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -1489,46 +1477,6 @@
 </dd>
 </dl>
 </section>
-
-
-
-  <!--section id="more_para">
-    <h3>Other paragraph features</h3>
-    <p>Some scripts have particular rules about indenting text at the start of a paragraph, or indeed whether that's normal. Some allow punctuation to hang outside the text box at the start or end of a line. There may be other aspects of how paragraphs are presented that vary from script to script, or need to be controlled by the content author.</p>
-    <dl class="reslinks">
-      <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><cite>Chinese Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="https://w3c.github.io/clreq/#hanging_punctuation_marks_at_line_end">Hanging Punctuation at Line End</a></li>
-          <li><a href="https://w3c.github.io/clreq/#paragraph_adjustment_rules">Paragraph Adjustment Rules</a></li>
-          </ul></li>
-          <li><cite>Japanese Layout Requirements</cite>:<ul class="linkList">
-          <li><a href="https://www.w3.org/TR/jlreq/#page_wise_arrangement_of_kihonhanmen_elements">Page wise Arrangement of Kihon-hanmen Elements</a></li>
-          <li><a href="https://www.w3.org/TR/jlreq/#paragraph_adjustment_rules">Paragraph Adjustment Rules</a></li>
-          <li><a href="https://www.w3.org/TR/jlreq/#block_direction_setting_process_of_lines_paragraphs">Block Direction Setting Process of Lines, Paragraphs etc.</a></li>
-          </ul></li>
-          <li><cite>Hangul Layout Requirements</cite>: <a href="https://www.w3.org/TR/klreq/#paraadjust">Paragraph Adjustment</a></li>
-          <li><cite>Latin Layout Requirements</cite>: <a href="https://www.w3.org/TR/dpub-latinreq/#paragraphs-and-indentation">Paragraphs and indentation</a></li>
-        </ul>
-      </dd>
-        <dt>GitHub resources</dt>
-        <dd>
-          <ul>
-            <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Atype-info-request">Requests for information</a></li>
-            <li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Aspec-type-issue">Spec issues</a>
-            </li><li><a target="_blank" href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Abrowser-type-bug">Browser bugs</a>
-            </li><li><a target="_blank" href="https://w3c.github.io/type-samples/?feature=paragraph-features">Type samples</a></li>
-          </ul>
-        </dd>
-      <dt>Spec links</dt>
-      <dd>
-        <ul>
-          <li><cite>CSS3 Text</cite>: <a href="https://drafts.csswg.org/css-text-3/#edge-effects">Edge effects</a></li>
-        </ul>
-      </dd>
-    </dl>
-  </section-->
 </section>
 
 
@@ -1562,11 +1510,7 @@
 <section id="page_layout">
 <h3>General page layout and progression</h3>
 
-<p>In paged media for right-to-left scripts or vertically set documents, pages  progress from right to left, and  the front and back cover are in the opposite locations to, say, an English book. Unlike the general Western approach, the size of the  main text block in Japanese pages (called the <span class="foreign">hanmen</span>) is traditionally established by counting character cells, and margin space is then defined by the remaining space.  Columns run across a page in vertically-set pages. The standard page layout for Mongolian is landscape, and horizontal scrolling within a page is much more important than in the West, so default scrollbar positions may need special support.</p>
-
-<p>Other topics that belong here include any local requirements for things such as  printer marks,  tables of contents and indexes.</p>
-
-<p>See also [[[#grids_tables]]]</p>
+<p id="prompt-page_layout" class="status_prompt promptStub"></p>
 
 
 
@@ -1616,7 +1560,7 @@
 <section id="grids_tables">
 <h3>Grids &amp; tables</h3>
 
-<p>Are there any special considerations related to the layout and design of tables? Due to their essentially monospaced character repertoire, Chinese and Japanese are partial to a grid-based system of layout that has some special requirements.</p>
+<p id="prompt-grids_tables" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -1666,9 +1610,7 @@
 <section id="footnotes_etc">
 <h3>Footnotes, endnotes, etc</h3>
 
-<p>Support for  footnotes, endnotes or other necessary annotations of this kind may vary in other cultures. In some cases, a script may use a very idiosyncratic approach to locate the notes or to link to them from the text. (See [[[#inline_notes]]] for purely inline annotations, such as ruby or warichu. This section is more about annotation systems that separate the reference marks and the content of the notes.)</p>
-
-<p>For inline annotations, see <a href="#inline_notes"></a></p>
+<p id="prompt-footnotes_etc" class="status_prompt promptStub"></p>
 
 
 
@@ -1718,7 +1660,7 @@
 <section id="headers_footers">
 <h3>Page  headers, footers, etc</h3>
 
-<p>These links point to conventions for managing the content that appears outside the main text block, for example page numbering, or the way that running headers and the like are handled. </p>
+<p id="prompt-headers_footers" class="status_prompt promptStub"></p>
 
 
 <dl class="reslinks">
@@ -1768,7 +1710,7 @@
 <section id="interaction">
 <h3>Forms &amp; user interaction</h3>
 
-<p>Where a page allows users to input information in forms or interact with a page, there may be special requirements for the layout and orientation of the input fields and associated labels. There may also be other aspects of user interaction with the page that differ.</p>
+<p id="prompt-interaction" class="status_prompt promptStub"></p>
 
 <dl class="reslinks">
 
@@ -1807,20 +1749,6 @@
 
 </dl>
 </section>
-
-
-<!--section id="more_page">
-  <h3>Other page- or document-level features</h3>
-<p>Other topics that belong here include any local requirements for things such as cross-references, bookmarks, and so forth.</p>
-    <dl class="reslinks">
-    <dt>Requirements</dt>
-      <dd>
-        <ul>
-          <li><cite>TBD</cite></li>
-</ul>
-      </dd>
-    </dl>
-  </section-->
 </section>
 
 
