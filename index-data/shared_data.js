@@ -567,6 +567,11 @@ spec: "CSS Counter Styles",
 title: "Complex Predefined Counter Styles",
 url: "https://drafts.csswg.org/css-counter-styles/#complex-predefined-counters"
 },
+{
+spec: "CSS Lists", 
+title: "The ::marker Pseudo-Element",
+url: "https://www.w3.org/TR/css-lists-3/#marker-pseudo"
+},
 ], //spec links
 
 
