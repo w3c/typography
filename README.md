@@ -1,4 +1,4 @@
-# Language enablement index
+# Language Enablement Index
 Points to typographic information relevant to the Open Web Platform for scripts and writing systems around the world.
 
 ### Documents
