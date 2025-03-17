@@ -87,7 +87,7 @@ f.additionalLinks = ''
       <th scope="row">script</th>
       <th>language</th>
       <td>summary</td>
-        <td><div><a href="https://w3c.github.io/typography/#vertical_text">Vertical text</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#writing_mode">Writing mode</a></div></td>
         <td><div><a href="https://w3c.github.io/typography/#bidi_text">Bidirectional text</a></div></td>
         
         <td><div><a href="https://w3c.github.io/typography/#fonts">Fonts &amp; font styles</a></div></td>
@@ -235,7 +235,7 @@ for (let s=0;s<langData.length;s++) {
 		
 		table += '<td class="sum">&nbsp;</td>'
 		
-		table += '<td>'+cLang.vertical_text+'</td>'
+		table += '<td>'+cLang.writing_mode+'</td>'
 		table += '<td>'+cLang.bidi_text+'</td>'
 
 		table += '<td class="newSection">'+cLang.fonts+'</td>'
@@ -368,7 +368,7 @@ document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.le
 // array of ids for links from cells
 idlinks = [
 '',
-'vertical_text',
+'writing_mode',
 'bidi_text',
 
 'fonts',
@@ -407,7 +407,7 @@ idlinks = [
 titlelinks = [
 '',
 '',
-'Vertical text',
+'Writing mode',
 'Bidirectional text',
 
 'Fonts',
