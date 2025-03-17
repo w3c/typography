@@ -30,7 +30,7 @@ langData = [
 ]},
 
 {script:"Cher", languages:[
-{lang: "Cher3ee", url:"https://www.w3.org/TR/cher-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"3", encoding:"-", segmentation:"-", punctuation_etc:"-", quotations:"2", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"-", data_formats:"-", line_breaking:"-", justification:"", spacing:"2", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+{lang: "Cherokee", url:"https://www.w3.org/TR/cher-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"3", encoding:"-", segmentation:"-", punctuation_etc:"-", quotations:"2", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"-", data_formats:"-", line_breaking:"-", justification:"", spacing:"2", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Cyrl", languages:[
