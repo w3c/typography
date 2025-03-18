@@ -88,19 +88,23 @@ langData = [
 ]},
 
 {script:"Java", languages:[
-{lang: "Javanese", url:"https://www.w3.org/TR/java-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"-", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"1", punctuation_etc:"", quotations:"2", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"0", justification:"", spacing:"", baselines:"", lists:"", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+{lang: "Javanese", url:"https://www.w3.org/TR/java-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"1", punctuation_etc:"", quotations:"2", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"0", justification:"", spacing:"", baselines:"", lists:"", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Japn", languages:[
-{lang: "Japanese", url:"https://www.w3.org/TR/jpan-gap/", tentative:true, writing_mode:"1", bidi_text:"-", fonts:"-", glyphs:"1", cursive:"-", letterforms:"-", transforms:"1", encoding:"-", segmentation:"-", punctuation_etc:"", quotations:"2", emphasis:"", abbrev:"", inline_notes:"1", text_decoration:"1", data_formats:"", line_breaking:"", justification:"", spacing:"2", baselines:"-", lists:"1", initials:"", page_layout:"", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"1"},
+{lang: "Japanese", url:"https://www.w3.org/TR/jpan-gap/", tentative:true, writing_mode:"1", bidi_text:"-", fonts:"-", glyphs:"1", cursive:"-", letterforms:"-", transforms:"1", encoding:"-", segmentation:"-", punctuation_etc:"", quotations:"2", emphasis:"2", abbrev:"", inline_notes:"1", text_decoration:"1", data_formats:"", line_breaking:"", justification:"", spacing:"2", baselines:"-", lists:"1", initials:"", page_layout:"", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"1"},
 ]},
 
 {script:"Khmr", languages:[
-{lang: "Khmer", url:"https://www.w3.org/TR/khmr-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"-", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"", data_formats:"", line_breaking:"2", justification:"", spacing:"2", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+{lang: "Khmer", url:"https://www.w3.org/TR/khmr-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"2", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"", data_formats:"", line_breaking:"2", justification:"", spacing:"2", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Knda", languages:[
 {lang: "Kannada", url:"", tentative:true, writing_mode:"-", bidi_text:"-", encoding:"3", fonts:"3", letterforms:"", glyphs:"3", cursive:"-", transforms:"-", baselines:"", segmentation:"", punctuation_etc:"", text_decoration:"", quotations:"2", inline_notes:"-", data_formats:"2", line_breaking:"", hyphenation:"", justification:"", spacing:"", lists:"3", initials:"", page_layout:"3", footnotes_etc:"3", headers_footers:"3", interaction:"3", grids_tables:"", emphasis:"", abbrev:"" },
+]},
+
+{script:"Kore", languages:[
+{lang: "Korean", url:"https://www.w3.org/TR/kore-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"-", glyphs:"-", cursive:"-", letterforms:"-", transforms:"-", encoding:"-", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"1", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"2", baselines:"-", lists:"1", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Laoo", languages:[
@@ -142,7 +146,7 @@ langData = [
 ]},
 
 {script:"Mong", languages:[
-{lang: "Mongolian", url:"https://www.w3.org/TR/mong-gap/", tentative:true, writing_mode:"1", bidi_text:"-", fonts:"1", glyphs:"1", cursive:"", letterforms:"", transforms:"-", encoding:"1", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"1", text_decoration:"", data_formats:"", line_breaking:"2", justification:"", spacing:"", baselines:"", lists:"1", initials:"", page_layout:"-", grids_tables:"2", footnotes_etc:"-", headers_footers:"-", interaction:"1"},
+{lang: "Mongolian", url:"https://www.w3.org/TR/mong-gap/", tentative:true, writing_mode:"1", bidi_text:"-", fonts:"1", glyphs:"1", cursive:"", letterforms:"", transforms:"-", encoding:"1", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"1", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"", baselines:"", lists:"1", initials:"", page_layout:"-", grids_tables:"2", footnotes_etc:"-", headers_footers:"-", interaction:"1"},
 ]},
 
 {script:"Mymr", languages:[
@@ -184,6 +188,7 @@ langData = [
 
 {script:"Tibt", languages:[
 {lang: "Tibetan", url:"https://www.w3.org/TR/tibt-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"-", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
-{lang: "Dzongkha", url:"https://www.w3.org/TR/tibt-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"-", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},]},
+{lang: "Dzongkha", url:"https://www.w3.org/TR/tibt-gap/", tentative:true, writing_mode:"", bidi_text:"-", fonts:"-", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"", punctuation_etc:"", quotations:"", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"", baselines:"-", lists:"-", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+]},
 
 ]
