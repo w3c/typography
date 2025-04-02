@@ -61,9 +61,10 @@ thead td {
 	vertical-align: bottom;
 }
 thead td div {
-	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
+	writing-mode: sideways-lr;
 	height: 15em;
+    text-align: start;
 }
 .sum {
 	/*border-right: 5px solid #0623ED;*/
