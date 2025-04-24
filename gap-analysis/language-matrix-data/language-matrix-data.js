@@ -61,7 +61,7 @@ langData = [
 ]},
 
 {script:"Grek", languages:[
-{lang: "Greek", url:"https://www.w3.org/TR/grek-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"-", glyphs:"-", cursive:"-", letterforms:"-", transforms:"1", encoding:"-", segmentation:"", punctuation_etc:"-", quotations:"2", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"2", baselines:"-", lists:"3", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+{lang: "Greek", url:"https://www.w3.org/TR/grek-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"-", glyphs:"-", cursive:"-", letterforms:"-", transforms:"3", encoding:"-", segmentation:"", punctuation_etc:"-", quotations:"2", emphasis:"", abbrev:"", inline_notes:"-", text_decoration:"", data_formats:"", line_breaking:"", justification:"", spacing:"2", baselines:"-", lists:"3", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Gujr", languages:[
