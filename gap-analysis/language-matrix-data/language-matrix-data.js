@@ -88,7 +88,7 @@ langData = [
 ]},
 
 {script:"Java", languages:[
-{lang: "Javanese", url:"https://www.w3.org/TR/java-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"1", punctuation_etc:"", quotations:"2", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"0", justification:"", spacing:"", baselines:"", lists:"", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
+{lang: "Javanese", url:"https://www.w3.org/TR/java-gap/", tentative:true, writing_mode:"-", bidi_text:"-", fonts:"2", glyphs:"", cursive:"-", letterforms:"", transforms:"-", encoding:"-", segmentation:"1", punctuation_etc:"", quotations:"2", emphasis:"", abbrev:"", inline_notes:"", text_decoration:"", data_formats:"", line_breaking:"3", justification:"", spacing:"", baselines:"", lists:"", initials:"", page_layout:"-", grids_tables:"-", footnotes_etc:"-", headers_footers:"-", interaction:"-"},
 ]},
 
 {script:"Japn", languages:[
