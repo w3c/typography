@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Language matrix</title>
 <script src="language-matrix-data/language-matrix-data.js"> </script>
 <link rel="stylesheet" href="language-matrix-data/matrix.css"/>
@@ -22,7 +23,7 @@ f.status = 'notreviewed';  // should be one of draft, review, published, notrevi
 f.path = '../../' // what you need to prepend to a URL to get to the /International directory 
 
 // AUTHORS AND TRANSLATORS should fill in these assignments:
-f.thisVersion = { date:'2017-08-07', time:'12:18'} // date and time of latest edits to this document/translation
+f.thisVersion = { date:'2025-12-16', time:'15:27' } // date and time of latest edits to this document/translation
 f.contributors = ''; // people providing useful contributions or feedback during review or at other times
 // also make sure that the lang attribute on the html tag is correct!
 
@@ -41,7 +42,6 @@ f.additionalLinks = ''
 <link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css" />
 <link rel="stylesheet" href="language-matrix-data/local.css" />
 <link rel="copyright" href="#copyright"/>
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <style>
 #table_headers a, #table_headers a:visited { color: #444; font-weight: bold; }
 </style>
@@ -81,6 +81,7 @@ f.additionalLinks = ''
 <h2>The matrix</h2>
 
 <p>Where a language name has a link, you can click on any cell in that row for more detailed information.</p>
+<div class="table-container">
 <table id="results">
   <thead>
     <tr id="table_headers">
@@ -125,6 +126,7 @@ f.additionalLinks = ''
  
   </tbody>
 </table>
+</div>
 </section>
 
 
@@ -308,11 +310,11 @@ for (let i=0;i<rows.length;i++) {
 		}
 	
     temp = ''
-    if (level0) temp += '<span class="guage0" style="width:'+level0+'px;"></span>'
-    if (level1) temp += '<span class="guage1" style="width:'+level1+'px;"></span>'
-    if (level2) temp += '<span class="guage2" style="width:'+level2+'px;"></span>'
-    if (level3) temp += '<span class="guage3" style="width:'+level3+'px;"></span>'
-    if (levelq) temp += '<span class="guageq" style="width:'+levelq+'px;"></span>'
+    if (level0) temp += '<span class="gauge0" style="width:'+level0+'px;"></span>'
+    if (level1) temp += '<span class="gauge1" style="width:'+level1+'px;"></span>'
+    if (level2) temp += '<span class="gauge2" style="width:'+level2+'px;"></span>'
+    if (level3) temp += '<span class="gauge3" style="width:'+level3+'px;"></span>'
+    if (levelq) temp += '<span class="gaugeq" style="width:'+levelq+'px;"></span>'
     temp += ''
 
     // calculate the lowest level for this language

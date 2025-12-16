@@ -1,20 +1,36 @@
+:root {
+    --color-level3: green;
+    --color-level2: moccasin;
+    --color-level1: orange;
+    --color-level0: red;
+    --color-unknown: #eee;
+}
+
 .directory { display: none; }
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+}
 
 #results {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
 	padding: 3em;
     padding-top: 0;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
 }
+
 #flexwrapper {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: no-wrap;
+	flex-wrap: wrap;
 	margin: 2em;
+    gap: 2em;
 }
-#flexwrapper div {
-	margin: 2em;
-}
+
 th {
 	text-align: end;
 }
@@ -22,33 +38,29 @@ td {
 	text-align: center;
 	border-radius: 2px;
 }
+
+/* Colors */
 .na {
-	background-color: #7CFF7C;
-	background-color: green;
-	color: green;
-	/* color: #7CFF7C; */
+	background-color: var(--color-level3);
+	color: var(--color-level3);
 }
 .l3 {
-	background-color: green;
-	color: green;
-    }
+	background-color: var(--color-level3);
+	color: var(--color-level3);
+}
 .l2 {
-	background-color: #F4CB77;
-	background-color: yellow;
-	background-color: #00ff00;
-	color: #00ff00;
-	background-color: moccasin;
-	color: moccasin;
+	background-color: var(--color-level2);
+	color: var(--color-level2);
 }
 .l1 {
-	background-color: #FF9A00;
-	color: #FF9A00;
-	color: orange;
+	background-color: var(--color-level1);
+	color: var(--color-level1);
 }
 .l0 {
-	background-color: #ff0000;
-	color: #ff0000;
+	background-color: var(--color-level0);
+	color: var(--color-level0);
 }
+
 thead td {
 	font-weight: bold;
 	line-height: 1.5;
@@ -58,75 +70,83 @@ thead td {
 }
 thead td div {
 	writing-mode: vertical-rl;
-	writing-mode: sideways-lr;
     text-align: start;
+    white-space: nowrap;
 }
+
 .sum {
-	/*border-right: 5px solid #0623ED;*/
     width: 100px;
     text-align: left;
-    }
-.future {
-/*	border: 1px dotted blue;
-	border-radius: 10px;
-*/  }
+}
 table { 
     margin:auto;
-    }
+}
 
 #resultsSummary, #key {
     margin-left: 15%; 
+}
+
+@media (max-width: 768px) {
+    #resultsSummary, #key {
+        margin-left: 5%;
     }
+    #results {
+        padding: 1em;
+    }
+    .intro {
+        margin: 1em;
+        font-size: 100%;
+    }
+}
+
 #resultsSummary p {
     margin: 0
-    }
+}
 #resultsSummary strong {
     font-size: 120%;
     margin: 0 1em;
-    }
+}
 .intro {
     margin: 1em 2em;
     font-size: 130%; 
     color: #666;
     font-style: italic;
-    }
+}
 
 .language {
     text-align: left;
     padding-left: 5px;
-    }
+}
 .language a {
     font-weight: bold;
-    }
+}
 
-
-
-.guage0 {
+/* Gauges */
+.gauge0 {
     display: inline-block;
-    height:16px;
-    background-color:red;
-    }
-.guage1 {
+    height: 16px;
+    background-color: var(--color-level0);
+}
+.gauge1 {
     display: inline-block;
-    height:16px;
-    background-color:orange;
-    }
-.guage2 {
-     display: inline-block;
-   height:16px;
-    background-color:#00FF00;
-    background-color: moccasin;
-    }
-.guage3 {
+    height: 16px;
+    background-color: var(--color-level1);
+}
+.gauge2 {
     display: inline-block;
-    height:16px;
-    background-color:green;
-    }
-.guageq {
+    height: 16px;
+    background-color: var(--color-level2);
+}
+.gauge3 {
     display: inline-block;
-    height:16px;
-    background-color:#eee;
-    }
+    height: 16px;
+    background-color: var(--color-level3);
+}
+.gaugeq {
+    display: inline-block;
+    height: 16px;
+    background-color: var(--color-unknown);
+}
 
 .lowest {
     width: 14px;
@@ -135,23 +155,9 @@ table {
     border-radius: 7px;
     font-size: 6px;
     vertical-align: top;
-    }
+}
 
-
-.low0 {
-    border-left: 12px solid red;
-    }
-.low1 {
-    border-left: 12px solid orange;
-    }
-.low2 {
-    border-left: 12px solid #00FF00;
-    border-left: 12px solid moccasin;
-    }
-.low3 {
-    border-left: 12px solid green;
-    }
-
-
-
-
+.low0 { border-left: 12px solid var(--color-level0); }
+.low1 { border-left: 12px solid var(--color-level1); }
+.low2 { border-left: 12px solid var(--color-level2); }
+.low3 { border-left: 12px solid var(--color-level3); }
