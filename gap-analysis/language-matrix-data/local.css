@@ -69,10 +69,10 @@ thead td {
 	vertical-align: bottom;
 }
 thead td div {
-	writing-mode: vertical-rl;
     text-align: start;
     white-space: nowrap;
-}
+    writing-mode: sideways-rl;
+	}
 
 .sum {
     width: 100px;
