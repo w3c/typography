@@ -61,6 +61,14 @@ td {
 	color: var(--color-level0);
 }
 
+thead th,
+thead td {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+
 thead td {
 	font-weight: bold;
 	line-height: 1.5;
@@ -89,6 +97,11 @@ table {
 @media (max-width: 768px) {
     #resultsSummary, #key {
         margin-left: 5%;
+    }
+    .table-container {
+        max-height: 85vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
     }
     #results {
         padding: 1em;
