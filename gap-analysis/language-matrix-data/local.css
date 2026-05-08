@@ -81,7 +81,7 @@ thead td div {
     white-space: nowrap;
     writing-mode: sideways-rl;
 	}
-:lang(zh-hans) thead td div {
+:lang(zh) thead td div {
     writing-mode: vertical-rl;
 }
 
@@ -136,7 +136,7 @@ table {
     color: #666;
     font-style: italic;
 }
-:lang(zh-hans) .intro {
+:lang(zh) .intro {
     font-style: normal;
 }
 
