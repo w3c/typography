@@ -9,7 +9,7 @@
 .directory { display: none; }
 
 .table-container {
-    overflow-x: auto;
+    overflow: visible;
     width: 100%;
 }
 
