@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文种矩阵</title>
+<link rel="canonical" href="https://www.w3.org/International/typography/gap-analysis/language-matrix.zh-hans.html">
+<script src="language-matrix-data/language-matrix-data.js"> </script>
+<link rel="stylesheet" href="language-matrix-data/matrix.css">
+
+<script>
+var f = { }
+
+// AUTHORS should fill in these assignments:
+f.directory = 'typography/gap-analysis'+'/'; // the path to this file, not including /International or the file name
+f.filename = 'language-matrix'; // the file name WITHOUT extensions
+f.translationPaths = { en:'language-matrix.html', 'zh-hans':'language-matrix.zh-hans.html' };
+f.authors = 'Richard Ishida, W3C'; // author(s) and affiliations
+f.previousauthors = ''; // as above
+f.modifiers = ''; // people making substantive changes, and their affiliation
+f.searchString = 'language-matrix'; // blog search string - usually the filename without extensions
+f.firstPubDate = '2017-08-07'; // date of the first publication of the document (after review)
+f.lastSubstUpdate = { date:'2017-08-07', time:'12:18'}  // date and time of latest substantive changes to this document
+f.status = 'notreviewed';  // should be one of draft, review, published, notreviewed or obsolete
+f.path = '../../' // what you need to prepend to a URL to get to the /International directory 
+
+// AUTHORS AND TRANSLATORS should fill in these assignments:
+f.thisVersion = { date:'2026-05-08', time:'00:00' } // date and time of latest edits to this document/translation
+f.contributors = ''; // people providing useful contributions or feedback during review or at other times
+// also make sure that the lang attribute on the html tag is correct!
+
+// TRANSLATORS should fill in these assignments:
+f.translators = '薛富侨'; // translator(s) and their affiliation - a elements allowed, but use double quotes for attributes
+
+f.breadcrumb = '';
+
+f.additionalLinks = ''
+</script>
+<script src="language-matrix-data/translations.js"> </script>
+<script src="../../i18n-drafts/javascript/doc-structure/article-dt.js"> </script>
+<script src="../../i18n-drafts/javascript/boilerplate-text/boilerplate-zh-hans.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
+<script src="../../i18n-drafts/javascript/doc-structure/sitepage-2022.js"> </script>
+<script src="../../i18n-drafts/javascript/articletoc-2022.js"></script>
+<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css">
+<link rel="stylesheet" href="language-matrix-data/local.css">
+<link rel="copyright" href="#copyright">
+<style>
+#table_headers a, #table_headers a:visited { color: #444; font-weight: bold; }
+</style>
+</head>
+
+<body>
+<header>
+  	<nav id="mainNavigation"></nav><script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script>
+	</header>
+<div id="translationLinks"></div><script src="language-matrix-data/translation-links.js"></script>
+<h1>文种矩阵<br>
+<span style="font-size: 80%;">Web上的国际化排版</span> </h1>
+
+
+<section id="sidebarExtras">
+</section>
+
+
+<section>
+<p class="intro">不同的语言和书写系统有不同的排版惯例，用户和内容作者希望Web和电子书能够支持本地惯例。本页面提供了一张“热力图”，显示缺少对本地特性的支持会在多大程度上影响对Web的使用。从整体上看，这张表可以帮助了解还有多少工作需要完成。深绿色表示没有问题；红色表示目前该特性的问题使相关语言很难使用，甚至无法使用。</p>
+<p class="intro">表格顶部是特性类别，左侧是按书写系统列出的语言。</p>
+
+<p class="intro">对于当前列出的 <span id="langCount">&nbsp;</span> 种语言，我们看到了以下问题区域。随着更多信息的出现，本页面会持续更新。</p>
+
+<div id="resultsSummary">
+    <!--p><span class="l3"> ■</span> <strong><span id="level3"></span></strong> may be Ok, based on what information we have for them</p-->
+<p><span class="l2"> ■</span> <strong><span id="level2"></span></strong> 种语言需要改进以支持高级出版</p>
+    <p><span class="l1"> ■</span> <strong><span id="level1"></span></strong> 种语言需要改进以支持基本特性</p>
+    <p><span class="l0"> ■</span> <strong><span id="level0"></span></strong> 种语言在Web上无法良好使用</p>
+    <p><span style="background-color:white; border:1px solid gray;">?</span> <strong><span id="unknown"></span></strong> 的单元格仍需调查。</p>
+</div>
+</section>
+
+<div id="bodycontent" style="clear: both;">
+
+
+<section id="reference">
+<h2>矩阵</h2>
+
+<p>如果语言名称带有链接，可以点击该行中的任意单元格查看更多详细信息。</p>
+<div class="table-container">
+<table id="results">
+  <thead>
+    <tr id="table_headers">
+      <th scope="row">书写系统</th>
+      <th>语言</th>
+      <td>摘要</td>
+        <td><div><a href="https://w3c.github.io/typography/#writing_mode">文本方向</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#bidi_text">双向文本</a></div></td>
+        
+        <td><div><a href="https://w3c.github.io/typography/#fonts">字型与字型样式</a></div></td>
+        <td><div><abbr title="斜体、字重与意大利体"><a href="https://w3c.github.io/typography/#letterforms">字母形态</a></abbr></div></td>
+        <td><div><abbr title="基于上下文的字形变形与定位"><a href="https://w3c.github.io/typography/#glyphs">字形变形与定位</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#cursive">连写文本</a></div></td>
+        <td><div><abbr title="大小写与其他变换"><a href="https://w3c.github.io/typography/#transforms">变换</a></abbr></div></td>
+
+        <td class="newSection"><div><abbr title="字符与编码"><a href="https://w3c.github.io/typography/#encoding">字符</a></abbr></div></td>
+        <td><div><abbr title="字素、词语的分割与选择"><a href="https://w3c.github.io/typography/#segmentation">分割</a></abbr></div></td>
+
+        <td><div><abbr title="短语与章节边界"><a href="https://w3c.github.io/typography/#punctuation_etc">短语与章节边界</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#quotations">引文</a></div></td>
+        <td><div><abbr title="强调与突出显示"><a href="https://w3c.github.io/typography/#emphasis">强调</a></abbr></div></td>
+        <td><div><abbr title="缩写、省略与重复"><a href="https://w3c.github.io/typography/#abbrev">缩写</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#inline_notes">行内注与行间注</a></div></td>
+        <td><div><abbr title="文本标示及其他行内特性"><a href="https://w3c.github.io/typography/#text_decoration">文本标示</a></abbr></div></td>
+        <td><div><abbr title="数据格式与数字"><a href="https://w3c.github.io/typography/#data_formats">数据格式</a></abbr></div></td>
+        
+        <td class="newSection"><div><abbr title="换行与断词连字"><a href="https://w3c.github.io/typography/#line_breaking">换行</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#justification">文本对齐</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#spacing">文本的间距调整</a></div></td>
+        <td><div><abbr title="基线、行高等"><a href="https://w3c.github.io/typography/#baselines">基线</a></abbr></div></td>
+        <td><div><abbr title="列表、计数器等"><a href="https://w3c.github.io/typography/#lists">列表、计数器</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#initials">首字样式</a></div></td>
+        
+        <td class="newSection"><div><abbr title="基本页面版式与装订方向"><a href="https://w3c.github.io/typography/#page_layout">页面版式</a></abbr></div></td>
+        <td><div><abbr title="网格与表格"><a href="https://w3c.github.io/typography/#grids_tables">网格与表格</a></abbr></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#footnotes_etc">脚注、尾注等</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#headers_footers">页眉、页脚等</a></div></td>
+        <td><div><a href="https://w3c.github.io/typography/#interaction">表单与用户交互</a></div></td>
+    </tr>
+  </thead>
+  <tbody id="langData">
+ 
+  </tbody>
+</table>
+</div>
+</section>
+
+
+
+
+
+<section id="colors">
+<h2>颜色说明</h2>
+
+<div id="key">
+<p>
+  <span class="l3"> ■</span> <i class="highlight">3</i> 满足全部需求，或不适用<br/>
+  <span class="l2"> ■</span> <i class="highlight">2</i> 满足基本需求，但高级出版仍需改进<br/>
+  <span class="l1"> ■</span> <i class="highlight">1</i> 可以创建互操作的网页，但基本特性仍需改进<br/>
+  <span class="l0"> ■</span> <i class="highlight">0</i> 某些问题阻碍了该语言在网页中的互操作性或有效使用</p>
+</div>
+  <p>语言名称旁的星号表示颜色是暂定的，基于一组初步预期；进一步调查后，颜色很可能会改变。</p>
+<p>语言名称后面的 † 表示专家正在调查问题并编写差距分析。在这种情况下，颜色预计会更可靠，但仍可能改变。</p>
+<p>无论某种语言当前处于什么状态，如果之后发现了以前忽略的问题，当前为绿色的单元格也可能在以后变成其他颜色。</p>
+</section>
+
+
+
+
+
+<section id="pipeline">
+<h2>差距分析流程看板</h2>
+
+<p>以下链接中的图表显示了目前已发现的差距，并标明每个差距的解决状态。流程看板中的各列显示哪些差距已报告给规范开发者、哪些已报告给浏览器实现者，以及哪些已经成功解决。</p>
+
+<p style="text-align: center; font-size: 1.2em;"><a href="https://github.com/orgs/w3c/projects/95/views/1">差距分析流程看板</a></p>
+
+<p>流程看板会定期更新。如果同一个差距涉及多种语言，看板中只会出现一张卡片，但标签会指出该差距涉及哪些语言。</p>
+</section>
+
+
+
+
+
+
+<section id="howto">
+<h2>关于图表的详细信息</h2>
+
+<p>语言左侧的颜色是其右侧所有单元格中的最低分，表示该语言整体的级别。语言名称右侧紧邻的一列通过重新排列表格主体中的色块，以图形方式概括该语言的情况。</p>
+<p>问号表示我们目前尚无法对该语言这一方面的支持水平有合理的判断。有可能并不存在问题，也有可能存在我们尚未意识到、需要修复的问题。</p>
+<p>表格按书写系统排列。请注意，有些语言使用不止一种书写系统，因此会在图表中出现多次。对于每种书写系统，语言列表按使用人数从多到少排序。</p>
+<p>当前列表主要关注一些较常见的语言，或对通用支持具有重要影响的书写系统。随着更多的调查，列表会继续增长；我们欢迎本地专家为其他语言做出贡献。一些不太常见的语言已经被列入其中，有时是因为它们呈现出的特性在设计整体技术架构时需要考虑，有时则只是因为我们刚好有相关信息，而纳入这些语言有助于本地社区确保其语言能在Web上存续。</p>
+<p>每个单元格都是一种语言与语言支持某个方面的交叉点。颜色表示哪些方面需要改进，以及这些改进是否是把该语言提升到下一级别所必需的。如果某种语言不需要相关工作（因为已完全支持，或该特性不适用），则使用深绿色表示无需改进。</p>
+<p>语言名称旁的星号表示该语言的分数是暂定的，也就是说，这是我们在代表该语言用户社区的专家进行全面分析和验证之前所作出的最佳判断。</p>
+<p>当语言名称带有链接时，可以跟随该链接查看报告草案，了解需要开展工作的详细信息。如果语言名称带有星号，该报告也需要专家进行验证和优先级排序。</p>
+<p>点击图表顶部的特性类别，可以了解该类别包含哪些排版特性。链接会跳转到<a href="https://w3c.github.io/typography/" style="font-size: 120%;">语言支持索引</a>文档。在那里，可以继续访问与该组特性相关的当前需求、征集信息、规范措辞和议题。</p>
+<p>标题为“页面版式”的列及其右侧两列都与分页媒体的渲染有关。总的来说，分页媒体特性在Web上仍未广泛可用。不过，这些列特别关注的是通用方法是否存在需要注意的语言特定调整。</p>
+<p>什么情况下单元格可评为3（也就是OK）？如果相关特性已在合适的规范中定义，并得到了用户代理支持，则该单元格可以评为OK。对于后者，进入CR或更高阶段且在“主流”浏览器中有两个实现的规范即可计入。这意味着该特性可能还没有得到所有浏览器的支持。（将来某个时候，我们可能会尝试在视觉上区分某特性是已在规范中可用但浏览器仍待支持，还是已经获得浏览器支持。）</p>
+</section>
+
+
+
+
+
+  
+<section id="help">
+<h2>如何提供帮助</h2>
+
+<p>我们正在积极寻找能够帮助我们补全矩阵中缺失信息、并为规范和浏览器开发者整理需求的个人和组织。以下链接可能有所帮助。</p>
+
+<ul>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/language_framework_overview.zh-hans.html" style="font-size: 120%;">分析Web上文本排版的支持情况</a> <br>
+语言支持框架各组成部分的概览，这项工作就是在该框架中开展的。</li>
+<li><a href="https://www.w3.org/International/typography/" style="font-size: 120%;">语言支持索引</a><br>
+查找语言支持相关信息的统一入口。
+</li>
+<li><a href="https://www.w3.org/International/i18n-drafts/pages/languagedev_participation.zh-hans.html" style="font-size: 120%;">如何为语言支持小组做贡献</a><br>
+参与这项工作的指引。 </li>
+<li style="margin-top: 1em;"><a href="https://www.w3.org/International/sponsorship/">W3C国际化赞助计划</a></li>
+<li><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">成立一个差距分析项目</a></li>
+<li><a href="https://github.com/w3c/typography/tree/gh-pages/gap-analysis">提交问题或查看源代码</a></li>
+<li><a href="https://www.w3.org/International/i18n-drafts/nav/languagedev.zh-hans.html">进行中的语言支持工作概览</a></li>
+</ul>
+</section>
+</div>
+
+
+<br style="clear: both;">
+
+<footer id="thefooter"></footer><script>document.getElementById('thefooter').innerHTML = g.bottomOfPage</script>
+<script>
+
+// add rows to table from .js file
+var localizedLanguageNames = {
+	'Fula': '富拉语',
+	'Arabic': '阿拉伯语',
+	'Urdu': '乌尔都语',
+	'Persian': '波斯语',
+	'Pashto': '普什图语',
+	'Sindhi': '信德语',
+	'Kurdish': '库尔德语',
+	'Saraiki': '萨拉基语',
+	'Kashmiri': '克什米尔语',
+	'Uighur': '维吾尔语',
+	'Bangla': '孟加拉语',
+	'Assamese': '阿萨姆语',
+	'Manipuri': '曼尼普尔语',
+	'Inuktitut': '因纽特语',
+	'Plains Cree': '平原克里语',
+	'Cherokee': '切罗基语',
+	'Russian': '俄语',
+	'Ukrainian': '乌克兰语',
+	'Uzbek': '乌兹别克语',
+	'Azerbaijani': '阿塞拜疆语',
+	'Bulgarian': '保加利亚语',
+	'Serbian': '塞尔维亚语',
+	'Hindi': '印地语',
+	'Marathi': '马拉地语',
+	'Bhojpuri': '博杰普尔语',
+	'Maithili': '迈蒂利语',
+	'Awadhi': '阿瓦德语',
+	'Nepali': '尼泊尔语',
+	'Amharic': '阿姆哈拉语',
+	'Tigriña': '提格里尼亚语',
+	'Georgian': '格鲁吉亚语',
+	'Greek': '希腊语',
+	'Gujarati': '古吉拉特语',
+	'Panjabi': '旁遮普语',
+	'Korean': '韩语',
+	'SChinese': '简体中文',
+	'TChinese': '繁体中文',
+	'Hebrew': '希伯来语',
+	'Javanese': '爪哇语',
+	'Japanese': '日语',
+	'Khmer': '高棉语',
+	'Kannada': '卡纳达语',
+	'Lao': '老挝语',
+	'English': '英语',
+	'Spanish': '西班牙语',
+	'Portuguese': '葡萄牙语',
+	'German': '德语',
+	'Malay': '马来语',
+	'Vietnamese': '越南语',
+	'French': '法语',
+	'Turkish': '土耳其语',
+	'Italian': '意大利语',
+	'Polish': '波兰语',
+	'Hausa': '豪萨语',
+	'Tagalog': '他加禄语',
+	'Yoruba': '约鲁巴语',
+	'Romanian': '罗马尼亚语',
+	'Oromo': '奥罗莫语',
+	'Igbo': '伊博语',
+	'Cebuano': '宿务语',
+	'Dutch': '荷兰语',
+	'Croatian': '克罗地亚语',
+	'Malagasy': '马达加斯加语',
+	'Hungarian': '匈牙利语',
+	'Catalan': '加泰罗尼亚语',
+	'Malayalam': '马拉雅拉姆语',
+	'Mongolian': '蒙古语',
+	'Burmese': '缅甸语',
+	'Shan': '掸语',
+	'N’Ko': '恩科语',
+	'Odia': '奥里亚语',
+	'Osage': '欧塞奇语',
+	'Sinhalese': '僧伽罗语',
+	'Sundanese': '巽他语',
+	'Tamil': '泰米尔语',
+	'Telugu': '泰卢固语',
+	'Thai': '泰语',
+	'Tibetan': '藏语',
+	'Dzongkha': '宗喀语'
+	}
+
+function getLanguageDisplayName (language) {
+	return localizedLanguageNames[language] || language
+	}
+
+var table = ''
+for (let s=0;s<langData.length;s++) {
+	for (let l=0;l<langData[s].languages.length;l++){
+		var cLang = langData[s].languages[l]
+		table += '<tr'
+		if (cLang.url) table += ' data-url="'+cLang.url+'" id="'+cLang.lang.replace(/ /g,'').toLowerCase()+'"'
+		table += '>\n'
+		if (l===0) table += '<th scope="row">'+langData[s].script+'</th>'
+		else table += '<th>&nbsp;</td>'
+		
+		table += '<td class="language'
+		if (cLang.tentative === true) table += ' tentative'
+		else if (cLang.tentative === false) table += ' inprogress'
+		// items not tentative or in progress should be labelled '', and get no mark
+		table += '">'
+		if (cLang.url) table += '<a target="details" href="'+cLang.url+'">'
+		table += getLanguageDisplayName(cLang.lang)
+		if (cLang.url) table += '</a>'
+		table += '</td>'
+		
+		table += '<td class="sum">&nbsp;</td>'
+		
+		table += '<td>'+cLang.writing_mode+'</td>'
+		table += '<td>'+cLang.bidi_text+'</td>'
+
+		table += '<td class="newSection">'+cLang.fonts+'</td>'
+		table += '<td>'+cLang.glyphs+'</td>'
+		table += '<td>'+cLang.letterforms+'</td>'
+		table += '<td>'+cLang.cursive+'</td>'
+		table += '<td>'+cLang.transforms+'</td>'
+
+        table += '<td class="newSection">'+cLang.encoding+'</td>'
+		table += '<td>'+cLang.segmentation+'</td>'
+
+        table += '<td class="newSection">'+cLang.punctuation_etc+'</td>'
+		table += '<td>'+cLang.quotations+'</td>'
+		table += '<td>'+cLang.emphasis+'</td>'
+		table += '<td>'+cLang.abbrev+'</td>'
+		table += '<td>'+cLang.inline_notes+'</td>'
+		table += '<td>'+cLang.text_decoration+'</td>'
+		table += '<td>'+cLang.data_formats+'</td>'
+        
+		table += '<td class="newSection">'+cLang.line_breaking+'</td>'
+		table += '<td>'+cLang.justification+'</td>'
+		table += '<td>'+cLang.spacing+'</td>'
+        table += '<td>'+cLang.baselines+'</td>'
+		table += '<td>'+cLang.lists+'</td>'
+		table += '<td>'+cLang.initials+'</td>'
+        
+		table += '<td class="newSection">'+cLang.page_layout+'</td>'
+		table += '<td>'+cLang.grids_tables+'</td>'
+		table += '<td>'+cLang.footnotes_etc+'</td>'
+		table += '<td>'+cLang.headers_footers+'</td>'
+		table += '<td>'+cLang.interaction+'</td>'
+		table += '</tr>\n'
+		}
+	}
+document.getElementById('langData').innerHTML = table
+
+
+// add colours to cells & identify tentative scores
+var tds = document.querySelectorAll('td')
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].textContent === '-') tds[i].classList.add('na')
+	if (tds[i].textContent === '3') tds[i].classList.add('l3')
+	if (tds[i].textContent === '2') tds[i].classList.add('l2')
+	if (tds[i].textContent === '1') tds[i].classList.add('l1')
+	if (tds[i].textContent === '0') tds[i].classList.add('l0')
+	if (tds[i].textContent == '') tds[i].textContent = '?'
+	if (tds[i].classList.contains('tentative')) tds[i].innerHTML += '&nbsp;*'
+	if (tds[i].classList.contains('inprogress')) tds[i].innerHTML += '&nbsp;<sup>†</sup>'
+	}//‡
+
+
+
+
+
+// calculate a score for each language
+var lowest, lowestClass
+var rows = document.querySelectorAll('.sum')
+for (let i=0;i<rows.length;i++) {
+	tds = rows[i].parentNode.querySelectorAll('td')
+    if (rows[i].parentNode.id) cLang = rows[i].parentNode.id
+    else cLang = ''
+	level0 = level1 = level2 = level3 = levelq = 0
+    
+	for (let c=0;c<tds.length;c++) {
+		if (tds[c].textContent === '3' || tds[c].textContent === '-') level3+=3
+		else if (tds[c].textContent === '2') level2+=3
+		else if (tds[c].textContent === '1') level1+=3
+		else if (tds[c].textContent === '0') level0+=3
+        else levelq += 3
+		}
+	
+    temp = ''
+    if (level0) temp += '<span class="gauge0" style="width:'+level0+'px;"></span>'
+    if (level1) temp += '<span class="gauge1" style="width:'+level1+'px;"></span>'
+    if (level2) temp += '<span class="gauge2" style="width:'+level2+'px;"></span>'
+    if (level3) temp += '<span class="gauge3" style="width:'+level3+'px;"></span>'
+    if (levelq) temp += '<span class="gaugeq" style="width:'+levelq+'px;"></span>'
+    temp += ''
+
+    // calculate the lowest level for this language
+    lowestClass = 'unknown'
+    if (level0) lowest = lowestClass = '0'
+    else if (level1) lowest = lowestClass = '1'
+    else if (level2) lowest = lowestClass = '2'
+    else if (level3) lowest = lowestClass = '3'
+    
+    //temp = '<span class="lowest '+lowestClass+'">'+lowestClass+'</span> '+temp
+    rows[i].parentNode.querySelector('.language').classList.add('low'+lowestClass)
+    
+    rows[i].innerHTML = temp
+	}
+
+
+
+
+// add number of languages below table
+document.getElementById('langCount').textContent = document.querySelectorAll('.language').length
+
+
+
+
+// get overall scores
+tds = document.querySelectorAll('.language')
+console.log(tds.length)
+//document.getElementById('totalScore').textContent = tds.length
+
+var unknown = level0 = level1 = level2 = level3 = 0
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].classList.contains('na')) ++level3
+	else if (tds[i].classList.contains('low3')) ++level3
+	else if (tds[i].classList.contains('low2')) ++level2
+	else if (tds[i].classList.contains('low1')) ++level1
+	else if (tds[i].classList.contains('low0')) ++level0
+	}
+//document.getElementById('level3').textContent = level3
+document.getElementById('level2').textContent = level2
+document.getElementById('level1').textContent = level1
+document.getElementById('level0').textContent = level0
+document.getElementById('unknown').textContent = unknown
+
+// get percentage of unknown cells
+tds = document.querySelectorAll('td')
+var unknown = 0
+for (let i=0;i<tds.length;i++) {
+	if (tds[i].textContent === '?') unknown++
+	}
+document.getElementById('unknown').textContent = Math.floor((unknown*100)/tds.length)+'%'
+
+
+// array of ids for links from cells
+idlinks = [
+'',
+'writing_mode',
+'bidi_text',
+
+'fonts',
+'glyphs',
+'letterforms',
+'cursive',
+'transforms',
+
+'encoding',
+'segmentation',
+
+'punctuation_etc',
+'quotations',
+'emphasis',
+'abbrev',
+'inline_notes',
+'text_decoration',
+'data_formats',
+
+'line_breaking',
+'justification',
+'spacing',
+'baselines',
+'lists',
+'initials',
+
+'page_layout',
+'grids_tables',
+'footnotes_etc',
+'headers_footers',
+'interaction',
+]
+
+
+// array of titles for cells
+titlelinks = [
+'',
+'',
+'文本方向',
+'双向文本',
+
+'字体',
+'基于上下文的字形变形与定位',
+'斜体、字重与意大利体。',
+'连写文本',
+'大小写与其他变换',
+
+'字符与编码',
+'字素、词语的分割与选择',
+
+'短语与章节边界',
+'引文',
+'强调与突出显示',
+'缩写、省略与重复',
+'行内注与行间注',
+'文本标示及其他行内特性',
+'数据格式与数字',
+
+'换行与断词连字',
+'文本对齐与两端对齐',
+'文本的间距调整',
+'基线、行高等',
+'列表、计数器等',
+'首字样式',
+
+'基本页面版式与装订方向',
+'网格与表格',
+'脚注、尾注等',
+'页眉、页脚等',
+'表单与用户交互',
+]
+
+
+// add titles and links for each colored cell
+rows = document.querySelectorAll('.sum')
+//var headers = document.getElementById('table_headers').querySelectorAll('td')
+for (let i=0;i<rows.length;i++) {
+	tds = rows[i].parentNode.querySelectorAll('td')
+	for (let c=0;c<tds.length;c++) {
+		//tds[c].title = headers[c].textContent
+		tds[c].title = titlelinks[c]
+		if (tds[c].parentNode.dataset.url && ! tds[c].classList.contains('language')) {
+			tds[c].addEventListener('click', function(evt) {
+			details = window.open(evt.target.parentNode.dataset.url+'#'+idlinks[c-1], 'details'); details.focus();
+			console.log(evt.target.parentNode.dataset.url, idlinks[c-1], evt) 
+			})
+			tds[c].style.cursor = 'pointer'
+			}
+		}
+	}
+	
+	</script></body>
+</html>

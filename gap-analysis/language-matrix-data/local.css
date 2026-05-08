@@ -81,6 +81,9 @@ thead td div {
     white-space: nowrap;
     writing-mode: sideways-rl;
 	}
+:lang(zh-hans) thead td div {
+    writing-mode: vertical-rl;
+}
 
 .sum {
     width: 100px;
@@ -112,6 +115,14 @@ table {
     }
 }
 
+.translationLinks {
+    margin: 0.75em 2em;
+    text-align: end;
+}
+.translationLinks p {
+    margin: 0;
+}
+
 #resultsSummary p {
     margin: 0
 }
@@ -124,6 +135,9 @@ table {
     font-size: 130%; 
     color: #666;
     font-style: italic;
+}
+:lang(zh-hans) .intro {
+    font-style: normal;
 }
 
 .language {
