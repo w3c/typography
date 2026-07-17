@@ -348,19 +348,24 @@ abbrev: {
 inline_notes: {
 "spec_links": [
 {
-spec: "HTML5", 
+spec: "HTML", 
 title: "The ruby element",
-url: "https://www.w3.org/TR/html5/text-level-semantics.html#the-ruby-element"
+url: "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element"
 },
 {
-spec: "HTML5", 
+spec: "HTML Ruby Markup Extensions", 
+title: "HTML Ruby Markup Extensions",
+url: "https://www.w3.org/TR/html-ruby-extensions/"
+},
+{
+spec: "HTML", 
 title: "The sub and sup elements",
-url: "https://www.w3.org/TR/html5/textlevel-semantics.html#the-sub-and-sup-elements"
+url: "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements"
 },
 {
-spec: "HTML5", 
+spec: "HTML", 
 title: "The blockquote element",
-url: "https://www.w3.org/TR/html5/grouping-content.html#the-blockquote-element"
+url: "https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element"
 },
 ], //spec links
 
