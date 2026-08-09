@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Language matrix</title>
 <link rel="canonical" href="https://www.w3.org/International/typography/gap-analysis/language-matrix.html">
 <script src="language-matrix-data/language-matrix-data.js"> </script>
-<link rel="stylesheet" href="language-matrix-data/matrix.css"/>
+<link rel="stylesheet" href="language-matrix-data/matrix.css">
 
 <script>
 var f = { }
@@ -14,6 +14,7 @@ var f = { }
 // AUTHORS should fill in these assignments:
 f.directory = 'typography/gap-analysis'+'/'; // the path to this file, not including /International or the file name
 f.filename = 'language-matrix'; // the file name WITHOUT extensions
+f.translationPaths = { en:'language-matrix.html', 'zh-hans':'language-matrix.zh-hans.html' };
 f.authors = 'Richard Ishida, W3C'; // author(s) and affiliations
 f.previousauthors = ''; // as above
 f.modifiers = ''; // people making substantive changes, and their affiliation
@@ -40,9 +41,9 @@ f.additionalLinks = ''
 <script src="../../i18n-drafts/javascript/boilerplate-text/boilerplate-en.js"></script><!--TRANSLATORS must change -en to the subtag for their language!-->
 <script src="../../i18n-drafts/javascript/doc-structure/sitepage-2022.js"> </script>
 <script src="../../i18n-drafts/javascript/articletoc-2022.js"></script>
-<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css" />
-<link rel="stylesheet" href="language-matrix-data/local.css" />
-<link rel="copyright" href="#copyright"/>
+<link rel="stylesheet" href="../../i18n-drafts/style/sitepage-2022.css">
+<link rel="stylesheet" href="language-matrix-data/local.css">
+<link rel="copyright" href="#copyright">
 <style>
 #table_headers a, #table_headers a:visited { color: #444; font-weight: bold; }
 </style>
@@ -52,6 +53,7 @@ f.additionalLinks = ''
 <header>
   	<nav id="mainNavigation"></nav><script>document.getElementById('mainNavigation').innerHTML = mainNavigation</script>
 	</header>
+<div id="translationLinks"></div><script src="language-matrix-data/translation-links.js"></script>
 <h1>Language matrix<br>
 <span style="font-size: 80%; font-style: italic;">International typography on the Web</span> </h1>
 
@@ -204,13 +206,13 @@ Pointers for getting involved in the work. </li>
 <li style="margin-top: 1em;"><a href="https://www.w3.org/International/sponsorship/">The W3C Internationalization Sponsorship Program</a></li>
 <li><a href="https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project">Setting up a Gap Analysis Project</a></li>
 <li><a href="https://github.com/w3c/typography/tree/gh-pages/gap-analysis">Raise an issue or see the source code</a></li>
-<li><a href="https://www.w3.org/International/layout" rel="nofollow">Overview of language enablement work in progress</a></li>
+<li><a href="https://www.w3.org/International/layout">Overview of language enablement work in progress</a></li>
 </ul>
 </section>
 </div>
 
 
-<br style="clear: both;" />
+<br style="clear: both;">
 
 <footer id="thefooter"></footer><script>document.getElementById('thefooter').innerHTML = g.bottomOfPage</script>
 <script>
