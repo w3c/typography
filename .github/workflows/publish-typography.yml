@@ -9,6 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      # index.html loads ../i18n-activity/templates/gap-analysis/prompts.js.
+      # spec-prod serves the repo at localhost:3000, where ".." collapses to "/",
+      # so the shared file must be reachable at /i18n-activity/… during the build.
+      - uses: actions/checkout@v6
+        with:
+          repository: w3c/i18n-activity
+          path: i18n-activity
+          sparse-checkout: templates/gap-analysis
       - uses: w3c/spec-prod@v2
         with:
           TOOLCHAIN: respec
